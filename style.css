@@ -241,21 +241,25 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     background: var(--body-bg); z-index: 200;
     display: flex; flex-direction: column;
+    overflow-y: auto; 
 }
 .login-hero {
-    background-color: var(--header-bg);
+    background-color: var(--header-bg); /* This restores the blue background */
     padding: 40px 0 80px 0;
-    text-align: center;
-    color: white;
+    text-align: center;               /* This centers the text again */
+    color: white;                     /* This makes the text white */
 }
 .login-hero h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 5px; }
 .login-hero h2 { font-size: 1.1rem; font-weight: 400; opacity: 0.9; }
 
 .login-card-container {
     flex: 1; display: flex; justify-content: center; margin-top: -50px;
+    margin-bottom: 50px;
 }
 .login-card {
-    background: white; padding: 30px; width: 420px; max-width: 90%;
+    background: white; padding: 30px; 
+    width: 420px;       /* This restores the small card width */
+    max-width: 90%;
     border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: fit-content;
 }
 .form-label { display: block; margin-bottom: 8px; font-weight: 600; color: #495057; font-size: 0.9rem; }
@@ -348,9 +352,15 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 .inst-table th { background-color: #f5f5f5; font-weight: 500; color: #555; }
 .inst-table td { color: #333; }
 
-/* EXAM VIEW */
+/* EXAM VIEW - Updated for Page Scroll */
 #view-exam {
-    flex: 1; display: none; flex-direction: column; align-items: center; justify-content: center; padding: 20px;
+    flex: 1; 
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; /* Align to top so it grows down */
+    padding: 20px;
+    overflow-y: auto; /* Scrollbar moves to this container */
 }
 .exam-area {
     display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
@@ -370,8 +380,12 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 .nav-float.disabled { opacity: 0.3; pointer-events: none; }
 
 .q-card {
-    flex: 1; height: 95%; background: white; border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; overflow: hidden; position: relative; border: 1px solid #dee2e6;
+    flex: 1; 
+    height: auto; /* Allow growth */
+    background: white; border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; 
+    overflow: visible; /* No internal scroll */
+    position: relative; border: 1px solid #dee2e6;
 }
 .q-num-col {
     width: 80px; padding-top: 40px; display: flex; flex-direction: column; align-items: center; flex-shrink: 0;
@@ -381,7 +395,10 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 .q-bookmark-icon.active { fill: var(--header-bg); stroke: var(--header-bg); }
 
 .q-body {
-    flex: 1; padding: 40px 40px 40px 0; overflow-y: auto; display: flex; flex-direction: column;
+    flex: 1; padding: 40px 40px 40px 0; 
+    overflow: visible; /* No internal scroll */
+    height: auto; 
+    display: flex; flex-direction: column;
 }
 .q-instruction {
     background-color: var(--instruction-bg); border: 1px dashed var(--instruction-border); color: #004085;
@@ -415,11 +432,17 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 .option-row.selected .opt-letter-circle { background-color: var(--header-bg); color: white; }
 
 /* REVIEW MODE STYLES */
+/* REVIEW MODE STYLES */
 .option-row.correct { background-color: #d4edda; border-color: #c3e6cb; }
 .option-row.correct .opt-letter-circle { background-color: #28a745; border-color: #28a745; color: white; }
 
 .option-row.wrong { background-color: #f8d7da; border-color: #f5c6cb; }
 .option-row.wrong .opt-letter-circle { background-color: #dc3545; border-color: #dc3545; color: white; }
+
+/* --- DARK MODE VISIBILITY FIX --- */
+/* Makes backgrounds dark green/red so the light text is visible */
+body.dark-mode .option-row.correct { background-color: #1b4e26; border-color: #143a1d; }
+body.dark-mode .option-row.wrong { background-color: #5a1a1a; border-color: #411111; }
 
 /* Explanation Box */
 .explanation-box {
@@ -435,13 +458,15 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 .explanation-box.visible { display: block; animation: fadeIn 0.3s; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-.layout-split { display: flex; flex-direction: row; height: 100%; width: 100%; }
+.layout-split { display: flex; flex-direction: row; height: auto; width: 100%; min-height: 500px; }
 .split-left-pane {
     flex: 1; padding: 30px; background-color: #fcfcfc; border-right: 1px solid #dee2e6;
-    overflow-y: auto; color: #212529;
+    overflow: visible; color: #212529; height: auto;
 }
 .split-right-pane {
-    flex: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column;
+    flex: 1; padding: 30px; 
+    overflow: visible; height: auto;
+    display: flex; flex-direction: column;
 }
 
 /* Dictionary Tooltip */
@@ -611,15 +636,8 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 
     /* Button Styling */
     .nav-float {
-        flex-direction: row; 
-        background: white;
-        border: 1px solid #dee2e6;
-        padding: 12px;
-        border-radius: 8px;
-        justify-content: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        align-items: center;
-    }
+            position: static; 
+        }
     .nav-circle {
         width: 30px; height: 30px; margin-right: 8px; 
         box-shadow: none; border: 1px solid #eee;
@@ -659,10 +677,33 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
     }
 
     /* Login & Instructions */
-    .login-card { width: 90%; margin: 20px auto; }
-    .captcha-container { flex-wrap: wrap; }
-    #view-login { overflow-y: auto; height: auto; }
-    .inst-container { width: 95%; margin-bottom: 50px; }
+    #view-login { 
+        overflow-y: auto; 
+        height: auto; 
+        min-height: 100vh;
+        position: relative; 
+    }
+    
+    .login-hero {
+        padding: 60px 20px 100px 20px; 
+        /* Do NOT put background-color here, so it keeps the desktop blue */
+    }
+    
+    .login-card-container {
+        display: block; 
+        margin-top: 0;
+    }
+
+    .login-card { 
+        width: 90%; /* This makes it wide ONLY on mobile */
+        margin: 0 auto 50px auto; 
+        position: relative;
+        top: -60px; 
+    }
+    
+    .nav-float {
+        position: static; 
+    }
     
     /* Question Card Internals */
     .q-card {
