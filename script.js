@@ -439,65 +439,79 @@ function changeLang(lang, btn) {
         }
     });
 }
-// --- HIGHLIGHTER LOGIC --- //
+// --- HIGHLIGHTER LOGIC (Mobile & Desktop) --- //
 
-// 1. Highlight text on selection (Mouse Up)
-document.addEventListener('mouseup', function() {
+function handleHighlight() {
     const selection = window.getSelection();
     const text = selection.toString();
 
     // Only proceed if text is selected
     if (text.length > 0) {
-        // Check if selection is inside the question area (to prevent highlighting buttons/menus)
+        // Check if inside question area
         let node = selection.anchorNode;
         let isInsideQuestion = false;
         
-        // Traverse up to find if we are inside a question card
-        while (node && node.nodeType === 1) { // nodeType 1 is Element
+        // Traverse up to find container
+        while (node && node.nodeType === 1) { 
             if (node.classList.contains('q-body') || node.classList.contains('split-left-pane')) {
                 isInsideQuestion = true;
                 break;
             }
             node = node.parentNode;
         }
-        // Also check parent if anchor is text node
+        // Fallback check for text nodes
         if (!isInsideQuestion && selection.anchorNode.parentNode) {
-                let parent = selection.anchorNode.parentNode;
-                while (parent) {
+            let parent = selection.anchorNode.parentNode;
+            while (parent) {
                 if (parent.classList && (parent.classList.contains('q-body') || parent.classList.contains('split-left-pane'))) {
                     isInsideQuestion = true;
                     break;
                 }
                 parent = parent.parentNode;
-                }
+            }
         }
 
         if (isInsideQuestion) {
             try {
                 const range = selection.getRangeAt(0);
+                
+                // Avoid highlighting existing highlights (nested spans)
+                if (range.commonAncestorContainer.parentNode.classList.contains('user-highlight')) {
+                    return;
+                }
+
                 const span = document.createElement('span');
                 span.className = 'user-highlight';
                 range.surroundContents(span);
-                selection.removeAllRanges(); // Clear selection so the yellow stands out
+                selection.removeAllRanges(); // Clear selection
             } catch (e) {
-                // Prevent errors if selection crosses paragraph boundaries
                 console.log("Cannot highlight across different blocks.");
             }
         }
     }
+}
+
+// 1. Mouse Event (Desktop)
+document.addEventListener('mouseup', handleHighlight);
+
+// 2. Touch Event (Mobile)
+document.addEventListener('touchend', function() {
+    // Small delay to allow mobile selection to finalize
+    setTimeout(handleHighlight, 50);
 });
 
-// 2. Remove highlight on Right Click
+// 3. Remove Highlight (Right Click / Long Press)
 document.addEventListener('contextmenu', function(e) {
     if (e.target.classList.contains('user-highlight')) {
-        e.preventDefault(); // Stop the standard right-click menu
+        e.preventDefault(); // Stop right-click menu
         
-        // Unwrap the text (remove the yellow span but keep the text)
+        // Unwrap text
         const parent = e.target.parentNode;
         while (e.target.firstChild) {
             parent.insertBefore(e.target.firstChild, e.target);
         }
         parent.removeChild(e.target);
+        return false;
     }
 });
 
