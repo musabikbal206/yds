@@ -551,40 +551,52 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
    MOBILE / RESPONSIVE VIEW ADJUSTMENTS
    ========================================= */
 @media (max-width: 992px) {
-    /* --- CRITICAL FIX FOR SCROLLING --- */
-    body {
-        overflow-y: auto !important; /* Force scrollbar to appear */
-        height: auto !important;     /* Allow body to grow tall */
+    /* --- CRITICAL SCROLLING FIXES --- */
+    html, body {
+        overflow-y: auto !important; /* Force browser scrollbar */
+        height: auto !important;
         min-height: 100vh;
+        overflow-x: hidden; /* Prevent horizontal wobble */
     }
 
     #view-exam {
         height: auto !important;
         overflow: visible !important;
         display: flex;
-        justify-content: flex-start; /* Start from top, don't center vertically */
-        padding-top: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .exam-area {
+        height: auto !important;
+        overflow: visible !important;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        gap: 15px;
     }
 
     /* --- 1. Header Layout --- */
     #main-header-wrapper {
         height: auto; 
         flex-direction: column;
-        position: relative; /* Unstick header so it scrolls with page (optional) */
+        position: relative;
     }
     
-    /* Hide the big avatar box */
-    .header-avatar-section {
-        display: none; 
-    }
+    .header-avatar-section { display: none; }
     
     .top-blue-bar { padding: 10px; }
+    
     .bottom-white-bar {
         height: auto;
         flex-direction: column;
         padding: 10px 15px;
         gap: 15px;
     }
+    
     .user-info-group {
         margin-right: 0;
         text-align: center;
@@ -592,62 +604,53 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
         border-bottom: 1px solid #eee;
         padding-bottom: 10px;
     }
+
     .header-actions-group {
         width: 100%;
         justify-content: space-around;
     }
-    .action-item span { display: none; } /* Hide text labels */
+    
+    .action-item span { display: none; } /* Hide labels, icons only */
     .action-item svg { width: 28px; height: 28px; }
+
     .timer-group {
         width: 100%;
         justify-content: center;
         background: #f8f9fa;
-        padding: 5px;
+        padding: 8px;
         border-radius: 4px;
+        margin-top: 5px;
     }
 
-    /* --- 2. Login Screen --- */
-    .login-card { width: 90%; margin-top: 20px; margin-bottom: 20px; }
+    /* --- 2. Login & Instructions --- */
+    .login-card { width: 90%; margin: 20px auto; }
     .captcha-container { flex-wrap: wrap; }
-    #view-login { overflow-y: auto; } /* Allow scrolling on login too */
+    #view-login { overflow-y: auto; height: auto; }
+    .inst-container { width: 95%; margin-bottom: 50px; }
+    
+    /* --- 3. Navigation Buttons --- */
+    /* Move buttons below card */
+    #btn-prev { order: 2; width: 48%; float: left; }
+    #btn-next { order: 3; width: 48%; float: right; margin-left: 4%; }
+    #q-card   { order: 1; margin-bottom: 15px; width: 100%; height: auto !important; }
 
-    /* --- 3. Exam Area Layout --- */
-    .exam-area {
-        flex-direction: column; 
-        padding: 5px;
-        padding-bottom: 50px; 
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    /* Navigation Buttons (Prev/Next) */
     .nav-float {
         flex-direction: row; 
         background: white;
         border: 1px solid #dee2e6;
-        padding: 10px;
+        padding: 12px;
         border-radius: 8px;
-        width: 100%;
         justify-content: center;
-        margin-bottom: 10px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-    
-    /* Rearrange: Card first (1), Prev (2), Next (3) */
-    #q-card { order: 1; margin-bottom: 15px; width: 100%; height: auto; min-height: 200px; }
-    #btn-prev { order: 2; width: 48%; float: left; }
-    #btn-next { order: 3; width: 48%; float: right; margin-left: 4%; }
-    
-    .nav-circle {
-        width: 36px; height: 36px; margin-right: 10px; box-shadow: none; border: 1px solid #eee;
-    }
-    .nav-text br { display: none; } 
+    .nav-circle { width: 30px; height: 30px; margin-right: 10px; box-shadow: none; border: 1px solid #eee; }
+    .nav-text br { display: none; }
 
-    /* --- 4. Question Card Internals --- */
+    /* --- 4. Question Card Layout --- */
     .q-card {
         flex-direction: column; 
-        overflow: visible !important; /* Let content grow the card */
-        height: auto !important;
+        overflow: visible !important;
+        background: white;
     }
 
     .q-num-col {
@@ -659,25 +662,26 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
         background-color: #f1f3f5;
         border-bottom: 1px solid #dee2e6;
     }
-    .q-number-big { font-size: 1.4rem; margin-bottom: 0; }
-    
+    .q-number-big { font-size: 1.4rem; margin-bottom: 0; margin-top: 0; }
+    .q-bookmark-icon { width: 24px; height: 30px; }
+
     .q-body {
         padding: 20px;
-        height: auto !important; /* Do not scroll inside div */
+        height: auto !important;
         overflow: visible !important;
     }
 
-    /* --- 5. Split View (Type B Questions) --- */
+    /* --- 5. Split View (Paragraph Questions) --- */
     .layout-split {
         flex-direction: column; 
         height: auto !important;
     }
     .split-left-pane {
         height: auto;
-        max-height: 300px; /* Limit paragraph height, scrollable if HUGE */
+        max-height: 350px; /* Scrollable paragraph if very long */
         overflow-y: auto; 
         border-right: none;
-        border-bottom: 4px solid #e9ecef;
+        border-bottom: 5px solid #e9ecef;
         padding: 15px;
     }
     .split-right-pane {
@@ -686,14 +690,20 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
         height: auto !important;
         overflow: visible !important;
     }
-    .split-right-pane .q-body { padding: 20px; }
-    .split-right-pane .q-num-col { display: none; }
+    .split-right-pane .q-num-col { display: none; } /* Hide duplicate header */
 
-    /* --- 6. Modals & Settings --- */
-    .modal-window { width: 95%; height: 90%; max-height: 90vh; }
+    /* --- 6. Mobile Dark Mode Overrides --- */
+    body.dark-mode .bottom-white-bar { background-color: #1a1a1a; border-color: #333; }
+    body.dark-mode .user-info-group { border-color: #333; }
+    body.dark-mode .timer-group { background-color: #2c2c2c; }
+    body.dark-mode .nav-float { background-color: #1e1e1e; border-color: #333; }
+    body.dark-mode .q-num-col { background-color: #263238; border-color: #333; }
+    body.dark-mode .split-left-pane { border-bottom-color: #333; }
+    body.dark-mode .q-card { box-shadow: none; }
+    body.dark-mode .user-highlight { color: #000 !important; background-color: #ffeb3b; } /* Keep highlight readable */
+    
+    /* Modals on Mobile */
+    .modal-window { width: 95%; height: 90%; }
     .rev-grid { grid-template-columns: repeat(5, 1fr); }
     .settings-panel { width: 100%; right: -100%; }
-    .inst-container { width: 95%; margin-bottom: 50px; }
-    .alert-green, .alert-yellow { flex-direction: column; align-items: flex-start; }
-    .btn-tut-start { width: 100%; margin-top: 10px; }
 }
