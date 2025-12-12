@@ -559,81 +559,57 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
         overflow-x: hidden; /* Prevent horizontal wobble */
     }
 
+    /* FIX: Remove 'display: flex' here so it stays hidden (none) until JS enables it */
     #view-exam {
         height: auto !important;
         overflow: visible !important;
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 10px;
         padding-bottom: 50px;
     }
 
+    /* --- FLEX LAYOUT FOR EXAM AREA (Card Top, Buttons Bottom) --- */
     .exam-area {
         height: auto !important;
         overflow: visible !important;
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* Allow row layout for wrapping */
+        flex-wrap: wrap;     /* Allow items to wrap to next line */
         width: 100%;
         max-width: 100%;
-        gap: 15px;
+        gap: 10px;           /* Gap between buttons */
+        justify-content: space-between;
     }
 
-    /* --- 1. Header Layout --- */
-    #main-header-wrapper {
-        height: auto; 
-        flex-direction: column;
-        position: relative;
-    }
-    
-    .header-avatar-section { display: none; }
-    
-    .top-blue-bar { padding: 10px; }
-    
-    .bottom-white-bar {
-        height: auto;
-        flex-direction: column;
-        padding: 10px 15px;
-        gap: 15px;
-    }
-    
-    .user-info-group {
-        margin-right: 0;
-        text-align: center;
+    /* 1. Question Card takes full top row */
+    #q-card {
+        order: 1;
         width: 100%;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 10px;
+        margin-bottom: 5px;
+        height: auto !important;
+        flex: 0 0 100%;
     }
 
-    .header-actions-group {
-        width: 100%;
-        justify-content: space-around;
-    }
-    
-    .action-item span { display: none; } /* Hide labels, icons only */
-    .action-item svg { width: 28px; height: 28px; }
-
-    .timer-group {
-        width: 100%;
-        justify-content: center;
-        background: #f8f9fa;
-        padding: 8px;
-        border-radius: 4px;
-        margin-top: 5px;
+    /* 2. Previous Button (Left) */
+    #btn-prev {
+        order: 2;
+        width: 48%; /* Almost half width */
+        flex: 0 0 48%;
+        margin: 0;
+        float: none; /* Disable floats */
     }
 
-    /* --- 2. Login & Instructions --- */
-    .login-card { width: 90%; margin: 20px auto; }
-    .captcha-container { flex-wrap: wrap; }
-    #view-login { overflow-y: auto; height: auto; }
-    .inst-container { width: 95%; margin-bottom: 50px; }
-    
-    /* --- 3. Navigation Buttons --- */
-    /* Move buttons below card */
-    #btn-prev { order: 2; width: 48%; float: left; }
-    #btn-next { order: 3; width: 48%; float: right; margin-left: 4%; }
-    #q-card   { order: 1; margin-bottom: 15px; width: 100%; height: auto !important; }
+    /* 3. Next Button (Right) */
+    #btn-next {
+        order: 3;
+        width: 48%; /* Almost half width */
+        flex: 0 0 48%;
+        margin: 0;
+        float: none; /* Disable floats */
+    }
 
+    /* Button Styling */
     .nav-float {
         flex-direction: row; 
         background: white;
@@ -642,57 +618,83 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
         border-radius: 8px;
         justify-content: center;
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        align-items: center;
     }
-    .nav-circle { width: 30px; height: 30px; margin-right: 10px; box-shadow: none; border: 1px solid #eee; }
-    .nav-text br { display: none; }
+    .nav-circle {
+        width: 30px; height: 30px; margin-right: 8px; 
+        box-shadow: none; border: 1px solid #eee;
+    }
+    .nav-text br { display: none; } /* Force text to one line */
 
-    /* --- 4. Question Card Layout --- */
+
+    /* --- REST OF MOBILE STYLES --- */
+
+    /* Header */
+    #main-header-wrapper {
+        height: auto; 
+        flex-direction: column;
+        position: relative;
+    }
+    .header-avatar-section { display: none; }
+    .top-blue-bar { padding: 10px; }
+    .bottom-white-bar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 15px;
+    }
+    .user-info-group {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    .header-actions-group { width: 100%; justify-content: space-around; }
+    .action-item span { display: none; } 
+    .action-item svg { width: 28px; height: 28px; }
+    .timer-group {
+        width: 100%; justify-content: center; background: #f8f9fa;
+        padding: 8px; border-radius: 4px; margin-top: 5px;
+    }
+
+    /* Login & Instructions */
+    .login-card { width: 90%; margin: 20px auto; }
+    .captcha-container { flex-wrap: wrap; }
+    #view-login { overflow-y: auto; height: auto; }
+    .inst-container { width: 95%; margin-bottom: 50px; }
+    
+    /* Question Card Internals */
     .q-card {
         flex-direction: column; 
         overflow: visible !important;
         background: white;
     }
-
     .q-num-col {
-        width: 100%;
-        height: 50px;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 20px;
-        background-color: #f1f3f5;
-        border-bottom: 1px solid #dee2e6;
+        width: 100%; height: 50px; flex-direction: row;
+        justify-content: space-between; padding: 0 20px;
+        background-color: #f1f3f5; border-bottom: 1px solid #dee2e6;
     }
     .q-number-big { font-size: 1.4rem; margin-bottom: 0; margin-top: 0; }
     .q-bookmark-icon { width: 24px; height: 30px; }
-
     .q-body {
         padding: 20px;
         height: auto !important;
         overflow: visible !important;
     }
 
-    /* --- 5. Split View (Paragraph Questions) --- */
-    .layout-split {
-        flex-direction: column; 
-        height: auto !important;
-    }
+    /* Split View (Paragraph Questions) */
+    .layout-split { flex-direction: column; height: auto !important; }
     .split-left-pane {
-        height: auto;
-        max-height: 350px; /* Scrollable paragraph if very long */
-        overflow-y: auto; 
-        border-right: none;
-        border-bottom: 5px solid #e9ecef;
-        padding: 15px;
+        height: auto; max-height: 350px; overflow-y: auto; 
+        border-right: none; border-bottom: 5px solid #e9ecef; padding: 15px;
     }
     .split-right-pane {
-        padding: 0;
-        flex: 1;
-        height: auto !important;
-        overflow: visible !important;
+        padding: 0; flex: 1; height: auto !important; overflow: visible !important;
     }
-    .split-right-pane .q-num-col { display: none; } /* Hide duplicate header */
+    .split-right-pane .q-num-col { display: none; } 
 
-    /* --- 6. Mobile Dark Mode Overrides --- */
+    /* Mobile Dark Mode Overrides */
     body.dark-mode .bottom-white-bar { background-color: #1a1a1a; border-color: #333; }
     body.dark-mode .user-info-group { border-color: #333; }
     body.dark-mode .timer-group { background-color: #2c2c2c; }
@@ -700,9 +702,9 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
     body.dark-mode .q-num-col { background-color: #263238; border-color: #333; }
     body.dark-mode .split-left-pane { border-bottom-color: #333; }
     body.dark-mode .q-card { box-shadow: none; }
-    body.dark-mode .user-highlight { color: #000 !important; background-color: #ffeb3b; } /* Keep highlight readable */
+    body.dark-mode .user-highlight { color: #000 !important; background-color: #ffeb3b; }
     
-    /* Modals on Mobile */
+    /* Modals & Settings */
     .modal-window { width: 95%; height: 90%; }
     .rev-grid { grid-template-columns: repeat(5, 1fr); }
     .settings-panel { width: 100%; right: -100%; }
