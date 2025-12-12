@@ -522,3 +522,84 @@ function changeMode(mode) {
         document.body.classList.remove('dark-mode');
     }
 }
+
+// --- LOGIN & VALIDATION LOGIC ---
+
+let generatedCaptcha = "";
+
+// 1. Initialize Captcha when script loads
+window.addEventListener('load', () => {
+    refreshCaptcha();
+});
+
+// 2. Generate Random Captcha
+function refreshCaptcha() {
+    const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let result = "";
+    for (let i = 0; i < 5; i++) {
+        result += chars[Math.floor(Math.random() * chars.length)];
+    }
+    generatedCaptcha = result;
+    document.getElementById('captcha-display').innerText = result;
+    // Clear user input
+    document.getElementById('captcha-input').value = "";
+}
+
+// 3. Audio Placeholder (Optional)
+function playCaptchaSound() {
+    alert("Captcha code: " + generatedCaptcha.split('').join(' '));
+}
+
+// 4. Main Login Validation
+function validateLogin() {
+    const tcInput = document.getElementById('tc-input').value.trim();
+    const captchaInput = document.getElementById('captcha-input').value.trim();
+
+    // A. Validate Captcha
+    if (captchaInput !== generatedCaptcha) {
+        alert("Hata: Girdiğiniz güvenlik kodu yanlış! Lütfen tekrar deneyiniz.");
+        refreshCaptcha();
+        return;
+    }
+
+    // B. Validate TC ID Number
+    if (!checkTC(tcInput)) {
+        alert("Hata: Geçersiz T.C. Kimlik Numarası girdiniz.");
+        return;
+    }
+
+    // C. Success -> Proceed to Instructions
+    // Update Header Name with ID
+    document.querySelector('.user-id-text').innerText = tcInput;
+    goInstructions(); 
+}
+
+// 5. Official T.C. ID Validation Algorithm
+function checkTC(value) {
+    value = value.toString();
+    
+    // Rule 1: Must be 11 digits, cannot start with 0
+    const isEleven = /^[1-9]{1}[0-9]{9}[02468]{1}$/.test(value);
+    if (!isEleven) return false;
+
+    let digits = value.split('').map(Number);
+    
+    // Rule 2: 10th Digit Check
+    // ((1st+3rd+5th+7th+9th)*7 - (2nd+4th+6th+8th)) % 10 = 10th Digit
+    let oddSum = digits[0] + digits[2] + digits[4] + digits[6] + digits[8];
+    let evenSum = digits[1] + digits[3] + digits[5] + digits[7];
+    
+    let digit10 = ((oddSum * 7) - evenSum) % 10;
+    if (digit10 < 0) digit10 += 10; // Handle JS negative modulo behavior
+
+    if (digit10 !== digits[9]) return false;
+
+    // Rule 3: 11th Digit Check
+    // (Sum of first 10 digits) % 10 = 11th Digit
+    let sumFirst10 = 0;
+    for (let i = 0; i < 10; i++) sumFirst10 += digits[i];
+    
+    if ((sumFirst10 % 10) !== digits[10]) return false;
+
+    return true;
+}
