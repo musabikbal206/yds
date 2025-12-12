@@ -546,4 +546,186 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
     background-color: #ffeb3b; /* Yellow */
     color: #000 !important;    /* Force text black so it's readable in Dark Mode */
     cursor: pointer;
+
+}
+/* =========================================
+   MOBILE / RESPONSIVE VIEW ADJUSTMENTS
+   ========================================= */
+@media (max-width: 992px) {
+    /* --- 1. Header Layout --- */
+    #main-header-wrapper {
+        height: auto; /* Allow height to grow */
+        flex-direction: column;
+    }
+    
+    /* Hide the big avatar box on mobile to save space */
+    .header-avatar-section {
+        display: none; 
+    }
+    
+    .top-blue-bar {
+        padding: 10px;
+    }
+
+    .bottom-white-bar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 15px;
+    }
+
+    /* Center user info */
+    .user-info-group {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    /* Arrange actions (icons) in a row */
+    .header-actions-group {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    /* Hide text labels for actions on very small screens, keep icons */
+    .action-item span {
+        display: none;
+    }
+    .action-item svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Timer Area */
+    .timer-group {
+        width: 100%;
+        justify-content: center;
+        background: #f8f9fa;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    /* --- 2. Login Screen --- */
+    .login-card {
+        width: 90%;
+        margin-top: -20px;
+    }
+    .captcha-container {
+        flex-wrap: wrap;
+    }
+
+    /* --- 3. Exam Area Layout --- */
+    .exam-area {
+        flex-direction: column; /* Stack everything */
+        padding: 10px;
+        padding-bottom: 80px; /* Space for scrolling */
+        justify-content: flex-start;
+    }
+
+    /* Navigation Buttons (Prev/Next) */
+    .nav-float {
+        flex-direction: row; /* Horizontal layout for buttons */
+        background: white;
+        border: 1px solid #dee2e6;
+        padding: 10px;
+        border-radius: 8px;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    /* Rearrange Order: Card first, buttons below */
+    #q-card { order: 1; margin-bottom: 15px; width: 100%; height: auto; min-height: 50vh; }
+    #btn-prev { order: 2; width: 48%; float: left; }
+    #btn-next { order: 3; width: 48%; float: right; margin-left: 4%; }
+    
+    /* Fix Navigation Circle Size */
+    .nav-circle {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+        box-shadow: none;
+        border: 1px solid #eee;
+    }
+    .nav-text br { display: none; } /* One line text */
+
+    /* --- 4. Question Card Internals --- */
+    .q-card {
+        flex-direction: column; /* Stack sidebar and content */
+        overflow: visible; /* Allow scrolling page instead of inner div */
+        height: auto;
+    }
+
+    /* Top bar for question number */
+    .q-num-col {
+        width: 100%;
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+        background-color: #f1f3f5;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .q-number-big {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+    
+    .q-body {
+        padding: 20px;
+        height: auto;
+    }
+
+    /* --- 5. Split View (Type B Questions) --- */
+    .layout-split {
+        flex-direction: column; /* Paragraph on top, Question below */
+    }
+    .split-left-pane {
+        height: 250px; /* Fixed height for paragraph area */
+        border-right: none;
+        border-bottom: 4px solid #e9ecef;
+        padding: 15px;
+    }
+    .split-right-pane {
+        padding: 0;
+        flex: 1;
+        overflow: visible;
+    }
+    .split-right-pane .q-body {
+        padding: 20px;
+    }
+    /* Hide duplicate sidebar in split view (since we moved it) */
+    .split-right-pane .q-num-col {
+        display: none; 
+    }
+
+    /* --- 6. Modals & Settings --- */
+    .modal-window {
+        width: 95%;
+        height: 90%;
+        max-height: 90vh;
+    }
+    .rev-grid {
+        grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    }
+    .settings-panel {
+        width: 100%; /* Full screen settings on mobile */
+        right: -100%;
+    }
+    
+    /* Adjust Instructions */
+    .inst-container {
+        width: 95%;
+    }
+    .alert-green, .alert-yellow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn-tut-start {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
