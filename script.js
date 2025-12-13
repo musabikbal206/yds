@@ -238,6 +238,14 @@ function verifyAndFinishExam() {
         return;
     }
 
+    // --- FIX START ---
+    // If the system has "forgotten" the ID (is empty or default "ÖĞRENCİ"), 
+    // we trust the number the user is entering right now.
+    if (!currentUserTC || currentUserTC === "ÖĞRENCİ" || currentUserTC === "Misafir Aday" || currentUserTC === "") {
+        currentUserTC = inputTC; 
+    }
+    // --- FIX END ---
+
     if (inputTC !== currentUserTC) {
         alert("Hata: Girdiğiniz numara, giriş yaptığınız numara ile eşleşmiyor!");
         // Optionally clear the input
@@ -1120,3 +1128,4 @@ function startReview() {
     updateFinishButton(); // Updates the top-right button to say "Exit"
 
 }
+
