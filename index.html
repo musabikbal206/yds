@@ -103,7 +103,7 @@
                     </div>
 
                     <label class="form-label" data-key="enterIdLabel">T.C. Kimlik veya Y.U. numarası giriniz</label>
-                    <input type="text" id="tc-input" class="form-control" value="" maxlength="11">
+                    <input type="text" id="tc-input" class="form-control" value="" maxlength="11" onfocus="showKeyboard(this)">
                     
                     <label class="form-label" data-key="enterCaptchaLabel">Resimdeki kodu giriniz</label>
                     <div class="captcha-container">
@@ -192,6 +192,64 @@
             </div>
         </div>
     </div>
+   
+    <div id="view-results" style="display: none;">
+        <div class="res-container">
+            <div class="res-header-msg">
+                Sınav Tamamlanmıştır. Geçmiş olsun.
+            </div>
+
+            <div class="res-summ-box">
+                <div class="res-summ-title">Genel Sınav Sonucunuz</div>
+                <table class="res-summ-table">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left;">Test Adı</th>
+                            <th>Toplam</th>
+                            <th>Doğru</th>
+                            <th>Yanlış</th>
+                            <th>Boş</th>
+                            <th>Puan</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left; font-weight:bold;">İNGİLİZCE</td>
+                            <td class="res-num" id="res-total">80</td>
+                            <td class="res-num" id="res-correct" style="color:var(--green-btn);">0</td>
+                            <td class="res-num" id="res-wrong" style="color:var(--red-btn);">0</td>
+                            <td class="res-num" id="res-empty">80</td>
+                            <td class="res-num" id="res-score" style="color:var(--blue-link);">0.00</td>
+                            <td>
+                                <button class="btn-res-review" onclick="startReview()">Soruları ve Çözümleri İncele</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="res-summ-box" style="margin-top: 30px;">
+                <div class="res-summ-title">Cevap Anahtarı ve Yanıtlarınız</div>
+                <div class="res-detail-table-wrap">
+                    <table class="res-detail-table">
+                        <thead>
+                            <tr>
+                                <th>Soru No</th>
+                                <th>Yanıtınız</th>
+                                <th>Doğru Cevap</th>
+                                <th>Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody id="res-detail-body">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <button class="btn-login" style="background:#6c757d; margin-top:20px;" onclick="exitReview()">ÇIKIŞ YAP</button>
+        </div>
+    </div>
 
     <!-- === MODALS === -->
 
@@ -226,8 +284,12 @@
         <div class="modal-window">
             <div class="modal-top">
                 <div class="modal-h-title" data-key="review">GÖZDEN GEÇİR</div>
-                <button class="btn-close-red" onclick="closeModal('modal-review')" data-key="close">KAPAT</button>
-            </div>
+                
+                <div style="margin-left: auto; display: flex; gap: 10px;">
+                    <button id="btn-back-results" class="btn-blue-header hidden" onclick="backToResults()" data-key="backToResults">Sonuçlara Dön</button>
+                    <button class="btn-close-red" onclick="closeModal('modal-review')" data-key="close">KAPAT</button>
+                </div>
+                </div>
             <div class="modal-body">
                 <div style="margin-bottom:15px; font-weight:600;" data-key="selectTest">Test Seçiniz</div>
                 <select style="width:100%; padding:8px; border:1px solid #ced4da; border-radius:4px; margin-bottom:20px;">
@@ -265,8 +327,8 @@
                     <span class="finish-label" data-key="finish">Sınavı Sonlandır</span>
                     <p style="margin-bottom:15px; font-size:0.9rem;" data-key="finishPrompt">Sınavı tamamlamak için T.C. Kimlik No veya YU numarasını girip onaylayınız.</p>
                     <div style="display:flex; gap:10px;">
-                        <input type="text" class="form-control" style="margin:0;" placeholder="T.C. Kimlik veya Y.U. numarası giriniz">
-                        <button class="btn-login" style="width:auto; background:#17a2b8;" onclick="confirmFinishExam()" data-key="confirm">ONAYLA</button>
+                        <input type="text" id="finish-tc-input" class="form-control" style="margin:0;" placeholder="T.C. Kimlik veya Y.U. numarası giriniz" onfocus="showKeyboard(this)">
+                        <button class="btn-login" style="width:auto; background:#17a2b8;" onclick="verifyAndFinishExam()" data-key="confirm">ONAYLA</button>
                     </div>
                 </div>
             </div>
@@ -301,6 +363,31 @@
             <label class="st-label" data-key="changeMode">Görünüm modunu değiştir</label>
              <div class="lang-opt" style="border: 2px solid var(--green-btn); background:white;" data-key="lightMode" onclick="changeMode('light')">Aydınlık Mod</div>
              <div class="lang-opt" style="background:#212529; color:white;" data-key="darkMode" onclick="changeMode('dark')">Karanlık Mod</div>
+        </div>
+    </div>
+    <div id="virtual-keyboard">
+        <div class="vk-row">
+            <button class="vk-btn" onclick="vkType('1')">1</button>
+            <button class="vk-btn" onclick="vkType('2')">2</button>
+            <button class="vk-btn" onclick="vkType('3')">3</button>
+        </div>
+        <div class="vk-row">
+            <button class="vk-btn" onclick="vkType('4')">4</button>
+            <button class="vk-btn" onclick="vkType('5')">5</button>
+            <button class="vk-btn" onclick="vkType('6')">6</button>
+        </div>
+        <div class="vk-row">
+            <button class="vk-btn" onclick="vkType('7')">7</button>
+            <button class="vk-btn" onclick="vkType('8')">8</button>
+            <button class="vk-btn" onclick="vkType('9')">9</button>
+        </div>
+        <div class="vk-row">
+            <button class="vk-btn" onclick="vkType('0')">0</button>
+            <button class="vk-btn vk-act" onclick="vkClear()">Temizle</button>
+        </div>
+        <div class="vk-row">
+            <button class="vk-btn vk-act" onclick="vkBack()">Sil</button>
+            <button class="vk-btn vk-ok" onclick="hideKeyboard()">Tamam</button>
         </div>
     </div>
 
