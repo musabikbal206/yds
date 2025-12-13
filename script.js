@@ -873,7 +873,7 @@ function saveExamState() {
 
 // Load data when the page opens
 function loadExamState() {
-    "const savedJSON = localStorage.getItem('elt_exam_state');"
+    const savedJSON = localStorage.getItem('elt_exam_state');
     if (!savedJSON) return;
 
     const state = JSON.parse(savedJSON);
@@ -1128,4 +1128,5 @@ function startReview() {
     updateFinishButton(); // Updates the top-right button to say "Exit"
 
 }
+
 
