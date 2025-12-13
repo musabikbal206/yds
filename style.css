@@ -769,6 +769,169 @@ body.dark-mode .option-row.wrong { background-color: #5a1a1a; border-color: #411
     .rev-grid { grid-template-columns: repeat(5, 1fr); }
     .settings-panel { width: 100%; right: -100%; }
 }
+
+/* --- MOBILE RESULT VIEW OPTIMIZATION --- */
+@media (max-width: 992px) {
+    
+    /* 1. Container Spacing */
+    #view-results {
+        padding: 15px 10px; /* Reduce padding */
+    }
+    .res-container {
+        width: 100%;
+        margin-bottom: 60px; /* Space for scrolling */
+    }
+
+    /* 2. TRANSFORM SUMMARY TABLE INTO CARDS (Dashboard Style) */
+    /* This hides the header and turns rows into a flexible grid */
+    .res-summ-table, .res-summ-table tbody, .res-summ-table tr {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    
+    .res-summ-table thead {
+        display: none; /* Hide standard headers */
+    }
+
+    .res-summ-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        background: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    .res-summ-table td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 15px 5px;
+        margin: 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* --- REORDER CELLS FOR MOBILE DASHBOARD --- */
+    
+    /* 1. Test Name (Hide borders/bg, make it a header) */
+    .res-summ-table td:nth-child(1) { 
+        width: 100%; 
+        background: transparent; 
+        border: none; 
+        box-shadow: none;
+        font-size: 1.1rem; 
+        padding: 5px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+
+    /* 2. Score (Make it HUGE and at the top) */
+    .res-summ-table td:nth-child(6) { 
+        order: 2; 
+        width: 100%; 
+        background: #e3f2fd; /* Light blue bg */
+        border-color: #90caf9;
+        margin-bottom: 10px;
+    }
+    /* Label for Score */
+    .res-summ-table td:nth-child(6)::before { 
+        content: "PUANINIZ"; 
+        font-size: 0.8rem; color: #555; font-weight: 700; margin-bottom: 5px; 
+    }
+
+/* 3. Stats Grid (All 4 in One Line) */
+    
+    /* Reduce the gap so they fit */
+    .res-summ-table tr {
+        gap: 5px; 
+    }
+
+    /* Target all 4 stat boxes together */
+    .res-summ-table td:nth-child(2), /* Total */
+    .res-summ-table td:nth-child(3), /* Correct */
+    .res-summ-table td:nth-child(4), /* Wrong */
+    .res-summ-table td:nth-child(5)  /* Empty */ 
+    { 
+        order: 3;       /* Group them below the score */
+        flex: 1;        /* Force them to share space equally */
+        width: auto;    /* Override fixed percentage widths */
+        min-width: 0;   /* Allow them to shrink if needed */
+        padding: 10px 2px; /* Reduce side padding to save space */
+    }
+
+    /* Make the labels smaller so they don't break lines */
+    .res-summ-table td:nth-child(2)::before,
+    .res-summ-table td:nth-child(3)::before,
+    .res-summ-table td:nth-child(4)::before,
+    .res-summ-table td:nth-child(5)::before { 
+        font-size: 0.65rem; 
+        white-space: nowrap; /* Prevent label wrapping */
+    }
+    
+    /* Adjust the number size slightly for balance */
+    .res-num {
+        font-size: 1rem;
+    }
+
+    /* Add Labels to stats via CSS */
+    .res-summ-table td:nth-child(2)::before { content: "Toplam"; font-size: 0.7rem; color: #777; margin-bottom: 2px; }
+    .res-summ-table td:nth-child(3)::before { content: "Doğru";  font-size: 0.7rem; color: #777; margin-bottom: 2px; }
+    .res-summ-table td:nth-child(4)::before { content: "Yanlış"; font-size: 0.7rem; color: #777; margin-bottom: 2px; }
+    .res-summ-table td:nth-child(5)::before { content: "Boş";    font-size: 0.7rem; color: #777; margin-bottom: 2px; }
+
+    /* 4. Action Button (Review) */
+    .res-summ-table td:nth-child(7) { 
+        order: 7; 
+        width: 100%; 
+        background: transparent; 
+        border: none; 
+        box-shadow: none; 
+        padding: 0; 
+        margin-top: 10px;
+    }
+    .btn-res-review {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* 3. DETAILED RESULTS TABLE OPTIMIZATION */
+    .res-detail-table th, .res-detail-table td {
+        padding: 8px 4px;
+        font-size: 0.85rem; /* Smaller font */
+    }
+    /* Hide the "Durum" column text if it's too cramped, relying on color */
+    /* Optional: Uncomment below if needed */
+    /* .res-detail-table td:nth-child(4) { font-size: 0.75rem; } */
+
+    /* 4. BOTTOM ACTION BUTTONS */
+    #view-results .btn-login {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0 !important; /* Override inline styles */
+        margin-right: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* --- MOBILE DARK MODE ADJUSTMENTS --- */
+    body.dark-mode .res-summ-table td {
+        background: #2c2c2c;
+        border-color: #444;
+    }
+    body.dark-mode .res-summ-table td:nth-child(6) {
+        background: #0d2b42; /* Dark blue for score */
+        border-color: #1c4b6e;
+    }
+    body.dark-mode .res-summ-table td::before {
+        color: #bbb; /* Light text for labels */
+    }
+}
 /* --- UPDATED LOGIN SCREEN STYLES --- */
 
 /* 1. Test Selector (Radio Button Style) */
@@ -1213,4 +1376,64 @@ body.dark-mode .test-custom-option.selected {
 /* Subtext inside options */
 body.dark-mode .test-custom-option div {
     color: #888 !important; /* Dim the sub-text */
+}
+
+/* --- PDF GENERATION STYLES --- */
+
+/* Hide specific buttons when the 'is-printing' class is active */
+body.is-printing .btn-login, 
+body.is-printing .btn-res-review {
+    display: none !important;
+}
+
+/* Ensure background colors print correctly */
+body.is-printing .res-summ-title,
+body.is-printing .res-header-msg {
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact;
+}
+
+/* Force text color to black for PDF readability if in Dark Mode */
+body.is-printing .res-summ-box,
+body.is-printing .res-summ-table th,
+body.is-printing .res-summ-table td,
+body.is-printing .res-detail-table th,
+body.is-printing .res-detail-table td {
+    color: #000 !important;
+    border-color: #ccc !important;
+    background-color: #fff !important;
+}
+/* --- PDF GENERATION STYLES --- */
+
+/* 1. Hide the top "Success/Past Get" message and buttons */
+body.is-printing .res-header-msg,
+body.is-printing .btn-login, 
+body.is-printing .btn-res-review {
+    display: none !important;
+}
+
+/* 2. CRITICAL FIX: Expand the table to show ALL 80 questions */
+body.is-printing .res-detail-table-wrap {
+    max-height: none !important;   /* Remove the 500px limit */
+    height: auto !important;        /* Allow it to grow infinitely */
+    overflow: visible !important;   /* Remove the scrollbar */
+    display: block !important;
+}
+
+/* 3. Style adjustments for a cleaner PDF */
+body.is-printing .res-container {
+    max-width: 100% !important;     /* Use full A4 width */
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* 4. Force black text for readability (fixes Dark Mode printing) */
+body.is-printing .res-summ-box,
+body.is-printing .res-summ-table th,
+body.is-printing .res-summ-table td,
+body.is-printing .res-detail-table th,
+body.is-printing .res-detail-table td {
+    color: #000 !important;
+    border-color: #ccc !important;
+    background-color: #fff !important;
 }

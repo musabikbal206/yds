@@ -1129,4 +1129,39 @@ function startReview() {
 
 }
 
+function downloadPDF() {
+    // 1. Select the element
+    const element = document.querySelector('.res-container');
 
+    // 2. Generate filename
+    const dateStr = new Date().toISOString().slice(0,10);
+    const userId = currentUserTC || "Candidate";
+    const filename = `ExamResult_${userId}_${dateStr}.pdf`;
+
+    // 3. Configure options
+    const opt = {
+        margin:       [10, 10, 10, 10], // mm
+        filename:     filename,
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { 
+            scale: 2,       // High resolution
+            useCORS: true, 
+            scrollY: 0      // Important: Helps capture the top of the expanded table
+        },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        // NEW: Prevents cutting rows in half
+        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] } 
+    };
+
+    // 4. Activate CSS overrides
+    document.body.classList.add('is-printing');
+
+    // 5. Generate
+    html2pdf().set(opt).from(element).save().then(() => {
+        // 6. Restore original UI
+        document.body.classList.remove('is-printing');
+    }).catch(err => {
+        console.error(err);
+        document.body.classList.remove('is-printing');
+    });
+}

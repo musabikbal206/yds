@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elektronik Sınav Uygulaması</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
 
@@ -248,6 +249,10 @@
             </div>
             
             <button class="btn-login" style="background:#6c757d; margin-top:20px;" onclick="exitReview()">ÇIKIŞ YAP</button>
+            <button class="btn-login" style="background:#28a745; flex:1;" onclick="downloadPDF()">
+                <svg style="width:16px; height:16px; fill:white; margin-right:5px; vertical-align:middle;" viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12H20V2zm0 14H8v2h12v-2zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm12 6V9c0-.55-.45-1-1-1h-2v2h2v1h-2v2h2v1h-2v-6h3z"/></svg>
+                SONUÇLARI İNDİR
+            </button>
         </div>
     </div>
 
