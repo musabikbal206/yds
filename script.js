@@ -34,7 +34,27 @@ const translations = {
         darkMode: "Karanlık Mod",
         prevQ: "Önceki<br>soru",
         nextQ: "Sonraki<br>soru",
-        exitReview: "ÇIKIŞ / MENÜ"
+        exitReview: "ÇIKIŞ / MENÜ",
+        appTitle: "Elektronik Sınav Uygulaması",
+        loginSubtitle: "Geçmiş Sınavlar ve Deneme Sınavları",
+        selectTestType: "Sınav türü seçiniz",
+        test1Main: "1. Deneme Sınavı",
+        test2Main: "2. Deneme Sınavı",
+        test3Main: "3. Deneme Sınavı",
+        testOptionSub: "Sınava giriş yapmak için seçiniz",
+        enterIdLabel: "T.C. Kimlik veya Y.U. numarası giriniz",
+        enterCaptchaLabel: "Resimdeki kodu giriniz",
+        startExamBtn: "Sınava Başla",
+
+        // --- NEW: INSTRUCTIONS PAGE ---
+        tutModeInfo: "Dilerseniz tutorial modda sınavı hemen başlatabilirsiniz. Gerçek sınavda otomatik olarak başlayacaktır.",
+        startNowBtn: "Hemen Başlat",
+        loginSuccessMsg: "Sisteme başarıyla giriş yaptınız. Sınav otomatik olarak başlayacaktır. Beklerken aşağıdaki bilgilendirmeleri mutlaka okuyunuz. Sınav başlayana kadar Kullanım Kılavuzunu inceleyebilirsiniz.",
+        instItem1: "Toplam sınav süreniz <strong>180 dk</strong>dır. Sınavdan çıkabileceğiniz süre dolmadan sınavınızı sonlandırırsanız dahi salondan ayrılamazsınız.",
+        instItem2: "Eğer sınav sırasında sınava devam etmenizi engelleyecek bir durumla karşılaşırsanız (ekran donması, mouse çalışmaması, soruların işaretlenememesi vb.) el kaldırarak salondaki görevlilerden yardım isteyiniz.",
+        instItem3: "Sınav başladıktan sonra <strong>3 mola</strong> alma hakkınız bulunmaktadır. Sıranız geldiğinde ekranda size bilgi verilecektir. Her bir mola süresi en fazla 5 dakika ile sınırlıdır. Mola sürenizin kendi sınav sürenizden gittiğini unutmayın.",
+        instItem4: "Bu sınavda her soru için çoktan seçmeli 5 seçenek bulunmaktadır. Her sorunun yalnızca bir doğru cevabı vardır.",
+        englishLang: "İNGİLİZCE"
     },
     en: {
         status: "Status",
@@ -70,7 +90,27 @@ const translations = {
         darkMode: "Dark Mode",
         prevQ: "Previous<br>question",
         nextQ: "Next<br>question",
-        exitReview: "EXIT / MENU"
+        exitReview: "EXIT / MENU",
+        appTitle: "Electronic Exam Application",
+        loginSubtitle: "Previous Exams and Practice Tests",
+        selectTestType: "Choose an Exam Type",
+        test1Main: "1. Practice Exam",
+        test2Main: "2. Practice Exam",
+        test3Main: "3. Practice Exam",
+        testOptionSub: "Select to enter the exam",
+        enterIdLabel: "Enter Turkish or Foreigner Identification Number",
+        enterCaptchaLabel: "Enter the code shown in the image",
+        startExamBtn: "Start the Exam",
+
+        // --- NEW: INSTRUCTIONS PAGE ---
+        tutModeInfo: "If you wish, you can start the exam in tutorial mode right away. However, it will start automatically in the actual exam.",
+        startNowBtn: "Start Now",
+        loginSuccessMsg: "You have successfully logged in. The exam will start automatically. Please read the information below while waiting. You can study User Manual before the exam starts.",
+        instItem1: "Total exam duration is <strong>180 min</strong>. Before the scheduled leaving time, you cannot leave the room even if you finish the exam.",
+        instItem2: "If you experience any problem preventing you from taking the exam (frozen computer, non-functioning mouse, questions that cannot be marked for review, etc.) ask for help by raising hand.",
+        instItem3: "You are allowed to take <strong>3 breaks</strong> after the exam starts. You will be informed on screen when your turn comes. Every break is only of 5 minutes. Keep in mind that break time is included in exam duration.",
+        instItem4: "In this exam, every question has five multiple-choice options. Every question has only one correct answer.",
+        englishLang: "ENGLISH"
     },
     de: {
         status: "Status",
@@ -106,7 +146,27 @@ const translations = {
         darkMode: "Dunkler Modus",
         prevQ: "Vorherige<br>Frage",
         nextQ: "Nächste<br>Frage",
-        exitReview: "AUSGANG / MENÜ"
+        exitReview: "AUSGANG / MENÜ",
+        appTitle: "Elektronisches Prüfungssystem",
+        loginSubtitle: "Vergangene Prüfungen und Probeprüfungen",
+        selectTestType: "Wählen Sie die Prüfungsart aus",
+        test1Main: "1. Probeprüfung",
+        test2Main: "2. Probeprüfung",
+        test3Main: "3. Probeprüfung",
+        testOptionSub: "Wählen Sie aus, um die Prüfung zu beginnen",
+        enterIdLabel: "Geben Sie Ihre türkische oder ausländische Ausweisnummer an.",
+        enterCaptchaLabel: "Geben Sie den im Bild sichtbaren Code ein.",
+        startExamBtn: "Starten Sie den Test.",
+
+        // --- NEW: INSTRUCTIONS PAGE ---
+        tutModeInfo: "Im Tutorialmodus können Sie mit der Prüfung gleich anfangen. In der echte Prüfung wird sie automatisch gestartet.",
+        startNowBtn: "Los geht's",
+        loginSuccessMsg: "Sie haben sich erfolgreich in das System eingeloggt. Die Prüfung wird automatisch beginnen. Während Sie warten, lesen Sie auf jeden Fall die unten angegebenen Informationen. Bis die Prüfung beginnt, können Sie den Leitfaden lesen.",
+        instItem1: "Die Gesamtprüfungszeit beträgt <strong>180 Minuten</strong>. Auch wenn Sie die Prüfung vor der Zeit beenden, in der Sie frühestens rausgehen dürfen, verlassen Sie nicht den Raum.",
+        instItem2: "Falls Sie während der Prüfung mit einer Situation konfrontiert werden, die verhindert, dass Sie mit der Prüfung fortfahren können (Das Einfrieren des Bildschirms, Maus bewegt sich nicht, Fragen können nicht angekreuzt werden u.ä.), wenden Sie sich an die Beauftragten im Raum, indem Sie die Hand heben.",
+        instItem3: "Nach Beginn der Prüfung haben Sie das Recht <strong>3 rast</strong> Pause zu machen. Wenn Sie an der Reihe sind, wird man Sie auf dem Bildschirm informieren. Jede Pause ist auf höchstens 5 Minuten begrenzt. Vergessen Sie nicht, dass Ihre Pausenzeit von Ihrer eigenen Prüfungszeit abgezogen wird.",
+        instItem4: "Bei dieser Prüfung gibt es für jede Frage 5 Antwortmöglichkeiten nach dem Multiple-Choice-Verfahren. Jede Frage hat nur eine richtige Antwort.",
+        englishLang: "ENGLISCH"
     }
 };
 // --- STATE ---
@@ -770,3 +830,59 @@ function exitReview() {
         location.reload();
     }
 }
+
+// --- NEW LOCAL LANGUAGE MENU LOGIC ---
+
+function toggleLocalLangMenu() {
+    const menu = document.getElementById('lang-custom-menu');
+    menu.classList.toggle('show');
+}
+
+// Close menu if clicking outside
+document.addEventListener('click', function(e) {
+    const wrapper = document.querySelector('.lang-wrapper-relative');
+    if (wrapper && !wrapper.contains(e.target)) {
+        document.getElementById('lang-custom-menu').classList.remove('show');
+    }
+});
+
+function selectLocalLang(code, text, el) {
+    // 1. Update the button text
+    document.getElementById('lang-display-text').innerText = text;
+    
+    // 2. Update visual selection in the dropdown
+    document.querySelectorAll('.lang-custom-option').forEach(opt => opt.classList.remove('selected'));
+    el.classList.add('selected');
+    
+    // 3. Call the main logic (reuses your existing function)
+    // We pass a dummy element because your original function expects a button from the settings panel
+    const dummyBtn = document.querySelector(`.lang-opt[onclick*="'${code}'"]`); 
+    changeLang(code, dummyBtn || document.createElement('div'));
+    
+    // 4. Close menu
+    document.getElementById('lang-custom-menu').classList.remove('show');
+}
+
+// --- TEST SELECTION MENU LOGIC ---
+
+function toggleTestMenu() {
+    const menu = document.getElementById('test-custom-menu');
+    // Close language menu if open, to avoid clutter
+    document.getElementById('lang-custom-menu').classList.remove('show');
+    menu.classList.toggle('show');
+}
+
+// Update the global click listener to close BOTH menus if clicked outside
+document.addEventListener('click', function(e) {
+    // 1. Close Language Menu
+    const langWrapper = document.querySelector('.lang-wrapper-relative');
+    if (langWrapper && !langWrapper.contains(e.target)) {
+        document.getElementById('lang-custom-menu').classList.remove('show');
+    }
+
+    // 2. Close Test Menu
+    const testWrapper = document.querySelector('.test-dropdown-wrapper');
+    if (testWrapper && !testWrapper.contains(e.target)) {
+        document.getElementById('test-custom-menu').classList.remove('show');
+    }
+});

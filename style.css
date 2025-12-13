@@ -750,3 +750,129 @@ body.dark-mode .option-row.wrong { background-color: #5a1a1a; border-color: #411
     .rev-grid { grid-template-columns: repeat(5, 1fr); }
     .settings-panel { width: 100%; right: -100%; }
 }
+/* --- UPDATED LOGIN SCREEN STYLES --- */
+
+/* 1. Test Selector (Radio Button Style) */
+/* --- DROPDOWN STYLE TEST SELECTOR --- */
+
+.test-dropdown-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.test-btn-trigger {
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+.test-btn-trigger:hover {
+    border-color: #007bff;
+}
+
+/* The Hidden Menu */
+.test-custom-menu {
+    position: absolute;
+    top: 100%; /* Opens downwards */
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    z-index: 200; /* Higher than other elements */
+    margin-top: 5px;
+    max-height: 200px; /* Scrollable if too many tests */
+    overflow-y: auto;
+}
+
+.test-custom-menu.show {
+    display: flex;
+}
+
+.test-custom-option {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 0.95rem;
+    color: #333;
+    text-align: left;
+    transition: background 0.1s;
+}
+
+.test-custom-option:last-child { border-bottom: none; }
+.test-custom-option:hover { background-color: #f8f9fa; color: #007bff; }
+
+/* Highlight the current page's test */
+.test-custom-option.selected {
+    background-color: #e3f2fd;
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* 2. Custom Language Dropdown (Separate from Settings) */
+.lang-wrapper-relative {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lang-btn-trigger {
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    min-width: 160px;
+    justify-content: space-between;
+}
+
+.lang-custom-menu {
+    position: absolute;
+    top: 100%;       /* CHANGED: Opens downwards */
+    bottom: auto;    /* CHANGED: Reset bottom property */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    width: 160px;
+    display: none;
+    flex-direction: column;
+    margin-top: 5px; /* CHANGED: Add space at top instead of bottom */
+    z-index: 100;
+}
+.lang-custom-menu.show {
+    display: flex;
+}
+
+.lang-custom-option {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 0.9rem;
+    text-align: left;
+}
+.lang-custom-option:last-child { border-bottom: none; }
+.lang-custom-option:hover { background-color: #f8f9fa; color: #007bff; }
+.lang-custom-option.selected { font-weight: bold; color: #007bff; background-color: #e3f2fd; }
