@@ -56,6 +56,7 @@ const translations = {
         instItem4: "Bu sınavda her soru için çoktan seçmeli 5 seçenek bulunmaktadır. Her sorunun yalnızca bir doğru cevabı vardır.",
         englishLang: "İNGİLİZCE",
         backToResults: "Sonuçlara Dön",
+        downloadResults: "SONUÇLARI İNDİR",
     },
     en: {
         status: "Status",
@@ -113,6 +114,7 @@ const translations = {
         instItem4: "In this exam, every question has five multiple-choice options. Every question has only one correct answer.",
         englishLang: "ENGLISH",
         backToResults: "Back to Results",
+        downloadResults: "DOWNLOAD RESULTS",
     },
     de: {
         status: "Status",
@@ -170,6 +172,7 @@ const translations = {
         instItem4: "Bei dieser Prüfung gibt es für jede Frage 5 Antwortmöglichkeiten nach dem Multiple-Choice-Verfahren. Jede Frage hat nur eine richtige Antwort.",
         englishLang: "ENGLISCH",
         backToResults: "Zurück zu Ergebnissen",
+        downloadResults: "ERGEBNISSE HERUNTERLADEN",
     }
 };
 // --- STATE ---
