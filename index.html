@@ -43,10 +43,10 @@
                         <svg class="action-icon" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
                         <span data-key="review">Gözden Geçir</span>
                     </div>
-                    <div class="action-item" onclick="openModal('modal-finish')">
+                    <div class="action-item" id="action-finish" onclick="openModal('modal-finish')">
                         <svg class="action-icon" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
                         <span data-key="finish">Sınavı Sonlandır</span>
-                    </div>
+                    </div>                    
                 </div>
 
                 <!-- Timer -->
@@ -55,7 +55,7 @@
                         <span class="timer-text" data-key="timeLeft">Kalan Süre:</span>
                         <span class="timer-val" id="header-timer">180:00</span>
                         <span class="timer-text" style="margin-left:5px;" data-key="time">Saat:</span>
-                        <span class="timer-val" id="header-clock">22:41:46</span>
+                        <span class="timer-val" id="header-clock">00:00:00</span>
                     </div>
                     
                     <button class="btn-eye" onclick="toggleTimerVis()">
@@ -75,7 +75,7 @@
         <div class="login-card-container">
             <div class="login-card">
                 <label class="form-label">T.C. Kimlik veya Y.U. numarası giriniz</label>
-                <input type="text" id="tc-input" class="form-control" value="12345678901" maxlength="11">
+                <input type="text" id="tc-input" class="form-control" value="" maxlength="11">
                 
                 <label class="form-label">Resimdeki kodu giriniz</label>
                 <div class="captcha-container">

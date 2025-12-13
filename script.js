@@ -1,1 +1,772 @@
-const _0x10335d=_0x443c;(function(_0x21a39f,_0x31837a){const _0x3a3a84=_0x443c,_0x2520a9=_0x21a39f();while(!![]){try{const _0x5486a6=-parseInt(_0x3a3a84(0x3e7))/(-0x3be+0x1f0f+-0x1b50)*(-parseInt(_0x3a3a84(0x341))/(0x1*0x2031+0x4b4*-0x2+-0x16c7))+parseInt(_0x3a3a84(0x1c3))/(-0x7d3+0xfbf+-0x7e9)+parseInt(_0x3a3a84(0x275))/(0x111a+-0x5cc+-0xb4a)+parseInt(_0x3a3a84(0x3a6))/(-0x90d+-0x1*-0x26e5+-0x5f7*0x5)*(parseInt(_0x3a3a84(0x2ed))/(-0x372+-0x1*0x2132+-0x2d2*-0xd))+parseInt(_0x3a3a84(0x3fb))/(-0x1c0f+-0x60*-0x26+0xdd6)+-parseInt(_0x3a3a84(0x29b))/(0xdbb+0x1abe+-0x2871)*(-parseInt(_0x3a3a84(0x22c))/(-0x64a+-0x4e7*-0x2+-0x37b))+parseInt(_0x3a3a84(0x192))/(-0x8*-0x41b+0x2497+-0x1*0x4565)*(-parseInt(_0x3a3a84(0x2d1))/(0x6bc+-0x2b5+-0x3fc));if(_0x5486a6===_0x31837a)break;else _0x2520a9['push'](_0x2520a9['shift']());}catch(_0x1f962a){_0x2520a9['push'](_0x2520a9['shift']());}}}(_0x17fa,-0x45*0xb2d+-0x214f7+0xba81a));const translations={'tr':{'status':_0x10335d(0x333)+'m','review':_0x10335d(0x35d)+'ir','finish':_0x10335d(0x2e0)+_0x10335d(0x1f4),'timeLeft':_0x10335d(0x3f1)+':','time':_0x10335d(0x165),'settings':_0x10335d(0x287),'close':_0x10335d(0x19c),'testInfo':_0x10335d(0x31a)+_0x10335d(0x3b2),'testName':_0x10335d(0x235),'totalQ':_0x10335d(0x32d)+_0x10335d(0x38c),'answeredQ':_0x10335d(0x317)+_0x10335d(0x280)+'ı','remQ':_0x10335d(0x1cb)+_0x10335d(0x3cf),'timeInfo':_0x10335d(0x2d2)+_0x10335d(0x1f6),'startTime':_0x10335d(0x2d4)+_0x10335d(0x391),'endTime':_0x10335d(0x3f6)+'i','duration':_0x10335d(0x27c)+'si','elapsed':_0x10335d(0x36a),'avgTime':_0x10335d(0x415)+_0x10335d(0x160)+_0x10335d(0x3dc),'selectTest':_0x10335d(0x406)+'iz','allQ':_0x10335d(0x2a4)+'r','answered':_0x10335d(0x2eb)+_0x10335d(0x17f),'marked':_0x10335d(0x3f7)+_0x10335d(0x1f8),'empty':_0x10335d(0x29f)+_0x10335d(0x1c8),'finishWarning':_0x10335d(0x2a0)+_0x10335d(0x1b9)+_0x10335d(0x238)+_0x10335d(0x172)+_0x10335d(0x3b7)+_0x10335d(0x1e1)+_0x10335d(0x38f)+_0x10335d(0x38b)+_0x10335d(0x168)+_0x10335d(0x196)+_0x10335d(0x281)+_0x10335d(0x212)+_0x10335d(0x2d0)+_0x10335d(0x2bc)+_0x10335d(0x345)+_0x10335d(0x38d)+_0x10335d(0x215)+_0x10335d(0x315)+_0x10335d(0x18a)+_0x10335d(0x40b)+_0x10335d(0x412)+_0x10335d(0x382)+_0x10335d(0x17a)+_0x10335d(0x22e)+_0x10335d(0x424)+_0x10335d(0x2e1)+_0x10335d(0x3da)+_0x10335d(0x18e),'finishPrompt':_0x10335d(0x338)+_0x10335d(0x274)+_0x10335d(0x342)+_0x10335d(0x24b)+_0x10335d(0x31c)+_0x10335d(0x26a)+_0x10335d(0x243)+_0x10335d(0x3cd),'confirm':_0x10335d(0x3e9),'changeLang':_0x10335d(0x256)+_0x10335d(0x31e)+_0x10335d(0x385),'changeFont':_0x10335d(0x35b)+_0x10335d(0x161)+_0x10335d(0x2fc),'changeMode':_0x10335d(0x228)+_0x10335d(0x30b)+_0x10335d(0x1fd),'lightMode':_0x10335d(0x353)+'od','darkMode':_0x10335d(0x167)+'od','prevQ':_0x10335d(0x26c)+_0x10335d(0x3db),'nextQ':_0x10335d(0x205)+_0x10335d(0x18d)},'en':{'status':_0x10335d(0x37d),'review':_0x10335d(0x218),'finish':_0x10335d(0x3ed)+'m','timeLeft':_0x10335d(0x37e),'time':_0x10335d(0x2c8),'settings':_0x10335d(0x216),'close':_0x10335d(0x1d1),'testInfo':_0x10335d(0x2df)+_0x10335d(0x2a5),'testName':_0x10335d(0x2da),'totalQ':_0x10335d(0x19e)+_0x10335d(0x20e),'answeredQ':_0x10335d(0x39f),'remQ':_0x10335d(0x426),'timeInfo':_0x10335d(0x2f4)+_0x10335d(0x2a5),'startTime':_0x10335d(0x390),'endTime':_0x10335d(0x1cf),'duration':_0x10335d(0x1f1),'elapsed':_0x10335d(0x361),'avgTime':_0x10335d(0x31b)+_0x10335d(0x1a2),'selectTest':_0x10335d(0x23d)+'t','allQ':_0x10335d(0x300)+_0x10335d(0x277),'answered':_0x10335d(0x3ff),'marked':_0x10335d(0x219),'empty':_0x10335d(0x37c)+'ed','finishWarning':_0x10335d(0x3ea)+_0x10335d(0x34e)+_0x10335d(0x1ec)+_0x10335d(0x3ca)+_0x10335d(0x29a)+_0x10335d(0x3f8)+_0x10335d(0x32c)+_0x10335d(0x1f7)+_0x10335d(0x1f2)+_0x10335d(0x365)+_0x10335d(0x3d8)+_0x10335d(0x239)+_0x10335d(0x2e5)+_0x10335d(0x1b4)+_0x10335d(0x376)+_0x10335d(0x3b4)+_0x10335d(0x19b)+_0x10335d(0x3e6)+_0x10335d(0x245)+_0x10335d(0x1d8)+_0x10335d(0x1a1)+_0x10335d(0x38a)+_0x10335d(0x32e)+_0x10335d(0x380)+_0x10335d(0x3aa)+_0x10335d(0x2e3)+_0x10335d(0x223),'finishPrompt':_0x10335d(0x2d6)+_0x10335d(0x1eb)+_0x10335d(0x1af)+_0x10335d(0x326)+_0x10335d(0x39c)+_0x10335d(0x30c)+'m.','confirm':_0x10335d(0x367),'changeLang':_0x10335d(0x2a6)+_0x10335d(0x290)+_0x10335d(0x3d7),'changeFont':_0x10335d(0x301)+_0x10335d(0x1b1),'changeMode':_0x10335d(0x2c7)+_0x10335d(0x354),'lightMode':_0x10335d(0x3df),'darkMode':_0x10335d(0x1c2),'prevQ':_0x10335d(0x36f)+_0x10335d(0x195),'nextQ':_0x10335d(0x32f)+_0x10335d(0x38e)},'de':{'status':_0x10335d(0x37d),'review':_0x10335d(0x23f),'finish':_0x10335d(0x3be)+_0x10335d(0x181),'timeLeft':_0x10335d(0x2c1)+'d:','time':_0x10335d(0x2a8),'settings':_0x10335d(0x166)+_0x10335d(0x324),'close':_0x10335d(0x40d),'testInfo':_0x10335d(0x1a0)+_0x10335d(0x357),'testName':_0x10335d(0x16b),'totalQ':_0x10335d(0x2e2)+_0x10335d(0x224),'answeredQ':_0x10335d(0x28a)+'t','remQ':_0x10335d(0x2c1)+'d','timeInfo':_0x10335d(0x350)+_0x10335d(0x357),'startTime':_0x10335d(0x221),'endTime':_0x10335d(0x180),'duration':_0x10335d(0x3ce),'elapsed':_0x10335d(0x296)+'n','avgTime':_0x10335d(0x1da)+'ge','selectTest':_0x10335d(0x422)+_0x10335d(0x289),'allQ':_0x10335d(0x375)+'n','answered':_0x10335d(0x1fa)+_0x10335d(0x2b3),'marked':_0x10335d(0x3ad),'empty':_0x10335d(0x2a7)+_0x10335d(0x217),'finishWarning':_0x10335d(0x330)+_0x10335d(0x1be)+_0x10335d(0x1b0)+_0x10335d(0x2fd)+_0x10335d(0x2ea)+_0x10335d(0x3a8)+_0x10335d(0x369)+_0x10335d(0x1fb)+_0x10335d(0x40e)+_0x10335d(0x3b8)+_0x10335d(0x403)+_0x10335d(0x2cc)+_0x10335d(0x3bf)+_0x10335d(0x366)+_0x10335d(0x29d)+_0x10335d(0x2f0)+_0x10335d(0x186)+_0x10335d(0x3a5)+_0x10335d(0x314)+_0x10335d(0x39a)+_0x10335d(0x316)+_0x10335d(0x22b)+_0x10335d(0x2fb)+_0x10335d(0x3be)+_0x10335d(0x404)+_0x10335d(0x1bc)+_0x10335d(0x1e3)+_0x10335d(0x322)+_0x10335d(0x3f0)+_0x10335d(0x3bc)+_0x10335d(0x1a3),'finishPrompt':_0x10335d(0x3b9)+_0x10335d(0x170)+_0x10335d(0x171)+_0x10335d(0x373)+_0x10335d(0x394)+_0x10335d(0x3e2)+_0x10335d(0x389)+'n.','confirm':_0x10335d(0x2c3),'changeLang':_0x10335d(0x1d3)+_0x10335d(0x249),'changeFont':_0x10335d(0x1ba)+_0x10335d(0x1e4),'changeMode':_0x10335d(0x2ad)+_0x10335d(0x25a),'lightMode':_0x10335d(0x293)+'us','darkMode':_0x10335d(0x178)+_0x10335d(0x3b6),'prevQ':_0x10335d(0x349)+_0x10335d(0x417),'nextQ':_0x10335d(0x1a5)+_0x10335d(0x176)}};let currentQIndex=0x1c00+-0x710*-0x4+-0x3840,userAnswers={},bookmarks={},timeLeft=(-0xb6*-0x26+-0x13d8+0x8a*-0xc)*(-0x11*-0xe5+0x10c2+-0x1fbb),timerRunning=![],timerInt,fontSz=0x1*0x1535+-0x38e+-0x1197,timerVis=!![],currentLang='tr',isExamFinished=![];setInterval(()=>{const _0x2d7c89=_0x10335d,_0x2596cf={'NiuPW':_0x2d7c89(0x164),'TNnNV':_0x2d7c89(0x190)+'ck'},_0x95dd62=new Date(),_0x44f003=_0x95dd62[_0x2d7c89(0x253)+_0x2d7c89(0x234)](_0x2596cf[_0x2d7c89(0x378)],{'hour12':![]});document[_0x2d7c89(0x264)+_0x2d7c89(0x427)](_0x2596cf[_0x2d7c89(0x260)])[_0x2d7c89(0x16f)]=_0x44f003;},0x99c+0x1*-0x1ed6+-0x2*-0xc91);function goInstructions(){const _0x12fdfd=_0x10335d,_0xc522bc={'yTtGq':_0x12fdfd(0x3f2),'vWPCO':_0x12fdfd(0x1c7),'beTjc':_0x12fdfd(0x3a7)+_0x12fdfd(0x383),'GbYCO':_0x12fdfd(0x1cc),'wnZGT':_0x12fdfd(0x225)+_0x12fdfd(0x31f)};document[_0x12fdfd(0x264)+_0x12fdfd(0x427)](_0xc522bc[_0x12fdfd(0x1a7)])[_0x12fdfd(0x355)][_0x12fdfd(0x410)](_0xc522bc[_0x12fdfd(0x1e8)]),document[_0x12fdfd(0x264)+_0x12fdfd(0x427)](_0xc522bc[_0x12fdfd(0x336)])[_0x12fdfd(0x262)][_0x12fdfd(0x344)]=_0xc522bc[_0x12fdfd(0x222)],document[_0x12fdfd(0x264)+_0x12fdfd(0x427)](_0xc522bc[_0x12fdfd(0x203)])[_0x12fdfd(0x262)][_0x12fdfd(0x344)]=_0xc522bc[_0x12fdfd(0x222)];}function startExam(){const _0x1e94a8=_0x10335d,_0x5f1efc={'cvPuj':_0x1e94a8(0x225)+_0x1e94a8(0x31f),'AzIpH':_0x1e94a8(0x327),'cpGxn':_0x1e94a8(0x2cf),'leqQW':_0x1e94a8(0x1cc),'kdovT':function(_0x138043,_0x572d5c){return _0x138043+_0x572d5c;},'urppJ':function(_0x36d30e,_0x244f43){return _0x36d30e*_0x244f43;},'lihpB':_0x1e94a8(0x18b),'jfzHb':function(_0x30eb50,_0x2456b3){return _0x30eb50+_0x2456b3;},'eKXVR':function(_0x4916a3,_0x5861c6){return _0x4916a3(_0x5861c6);},'LfYfX':_0x1e94a8(0x2de),'kWmnI':function(_0x490ac8,_0x442b73){return _0x490ac8+_0x442b73;},'xLoBG':function(_0x4b9e08,_0x43e29d){return _0x4b9e08(_0x43e29d);},'KThYO':function(_0x14ded4,_0x50fe2e,_0x201a2c){return _0x14ded4(_0x50fe2e,_0x201a2c);},'qjjtL':function(_0x19f69d){return _0x19f69d();}};document[_0x1e94a8(0x264)+_0x1e94a8(0x427)](_0x5f1efc[_0x1e94a8(0x24a)])[_0x1e94a8(0x262)][_0x1e94a8(0x344)]=_0x5f1efc[_0x1e94a8(0x25d)],document[_0x1e94a8(0x264)+_0x1e94a8(0x427)](_0x5f1efc[_0x1e94a8(0x19a)])[_0x1e94a8(0x262)][_0x1e94a8(0x344)]=_0x5f1efc[_0x1e94a8(0x2e9)];const _0x113dc0=new Date(),_0x1e46e6=new Date(_0x5f1efc[_0x1e94a8(0x25b)](_0x113dc0[_0x1e94a8(0x3ec)](),_0x5f1efc[_0x1e94a8(0x34c)](-0x8f5*-0x1+0x23b+-0xa7c,0xd34e+0x34*0x3bc+0x7*-0x1872)));document[_0x1e94a8(0x264)+_0x1e94a8(0x427)](_0x5f1efc[_0x1e94a8(0x2fa)])[_0x1e94a8(0x16f)]=_0x5f1efc[_0x1e94a8(0x1a6)](_0x5f1efc[_0x1e94a8(0x25b)](_0x113dc0[_0x1e94a8(0x267)](),':'),_0x5f1efc[_0x1e94a8(0x21d)](String,_0x113dc0[_0x1e94a8(0x372)]())[_0x1e94a8(0x1ad)](-0x22d4+0x1bed+-0x6e9*-0x1,'0')),document[_0x1e94a8(0x264)+_0x1e94a8(0x427)](_0x5f1efc[_0x1e94a8(0x407)])[_0x1e94a8(0x16f)]=_0x5f1efc[_0x1e94a8(0x41f)](_0x5f1efc[_0x1e94a8(0x1a6)](_0x1e46e6[_0x1e94a8(0x267)](),':'),_0x5f1efc[_0x1e94a8(0x288)](String,_0x1e46e6[_0x1e94a8(0x372)]())[_0x1e94a8(0x1ad)](-0x41*0x16+-0xe51+0x6a3*0x3,'0')),!timerRunning&&(timerRunning=!![],timerInt=_0x5f1efc[_0x1e94a8(0x32a)](setInterval,tick,-0x2043+0x536+0x1ef5*0x1)),_0x5f1efc[_0x1e94a8(0x220)](renderQuestion);}function confirmFinishExam(){const _0x256f26=_0x10335d,_0x35c513={'WkLjK':function(_0x1265e5,_0x5315b9){return _0x1265e5(_0x5315b9);},'cbQwB':_0x256f26(0x305)+'sh','NZVou':function(_0x4d823a){return _0x4d823a();}};_0x35c513[_0x256f26(0x236)](closeModal,_0x35c513[_0x256f26(0x362)]),_0x35c513[_0x256f26(0x2c2)](finishExamProcess);}function finishExamProcess(){const _0x45f957=_0x10335d,_0x4d7307={'lknly':function(_0x2aabe5,_0x4ef636){return _0x2aabe5===_0x4ef636;},'HntbJ':function(_0x2fc8a2,_0x26cfa9){return _0x2fc8a2(_0x26cfa9);},'cUSaY':function(_0x4f7656,_0x6b21a2){return _0x4f7656*_0x6b21a2;},'kLEYz':function(_0x5d762b){return _0x5d762b();}};_0x4d7307[_0x45f957(0x3b1)](clearInterval,timerInt),isExamFinished=!![],timerRunning=![];let _0x21cf5c=0x1*-0x2335+-0x4*-0x23e+0x1a3d;questions[_0x45f957(0x400)]((_0x4add04,_0xcf83ef)=>{const _0x2cce90=_0x45f957;if(_0x4d7307[_0x2cce90(0x3de)](userAnswers[_0xcf83ef],_0x4add04[_0x2cce90(0x33e)]))_0x21cf5c++;});let _0x48e246=_0x4d7307[_0x45f957(0x41a)](_0x21cf5c,-0x238a+-0x2*0x714+0x1091*0x3+0.25)[_0x45f957(0x37a)](-0x2ed*-0x4+0xad1*-0x3+-0x21*-0xa1);_0x4d7307[_0x45f957(0x3b1)](alert,_0x45f957(0x28b)+_0x45f957(0x28e)+_0x45f957(0x374)+_0x21cf5c+'/'+questions[_0x45f957(0x240)]+_0x45f957(0x402)+_0x48e246),_0x4d7307[_0x45f957(0x346)](renderQuestion);}function renderQuestion(){const _0x3a86be=_0x10335d,_0x4d11a2={'xdzxU':_0x3a86be(0x21f),'UrNKp':_0x3a86be(0x2c0),'oATeZ':_0x3a86be(0x1dc),'xKOhn':function(_0x4f21bd,_0x2ad4c3){return _0x4f21bd===_0x2ad4c3;},'ZzpBW':_0x3a86be(0x279),'uTPSg':function(_0x49a12f,_0x56b1e0){return _0x49a12f===_0x56b1e0;},'hWjni':function(_0x5f08ef,_0x10a51f){return _0x5f08ef-_0x10a51f;},'bbVuT':function(_0x141f34,_0x3fbd0c){return _0x141f34+_0x3fbd0c;},'ltTlU':function(_0x24e689,_0x5a3a71){return _0x24e689+_0x5a3a71;},'zUlYX':_0x3a86be(0x40a),'SJwwK':function(_0xb9be20,_0x1fb64d,_0x185492){return _0xb9be20(_0x1fb64d,_0x185492);},'stWbj':function(_0xedf47a,_0x1ba69b,_0x3c3857){return _0xedf47a(_0x1ba69b,_0x3c3857);},'GAAna':function(_0xa1af00,_0x38d77b){return _0xa1af00(_0x38d77b);},'KDQYS':function(_0x2aca9f,_0x277a67,_0x59c7b0){return _0x2aca9f(_0x277a67,_0x59c7b0);}},_0x38797b=questions[currentQIndex],_0x35d306=document[_0x3a86be(0x264)+_0x3a86be(0x427)](_0x4d11a2[_0x3a86be(0x312)]);document[_0x3a86be(0x264)+_0x3a86be(0x427)](_0x4d11a2[_0x3a86be(0x36c)])[_0x3a86be(0x355)][_0x3a86be(0x276)](_0x4d11a2[_0x3a86be(0x2e6)],_0x4d11a2[_0x3a86be(0x20d)](currentQIndex,0x1615+0xcc0+0xf1*-0x25)),document[_0x3a86be(0x264)+_0x3a86be(0x427)](_0x4d11a2[_0x3a86be(0x352)])[_0x3a86be(0x355)][_0x3a86be(0x276)](_0x4d11a2[_0x3a86be(0x2e6)],_0x4d11a2[_0x3a86be(0x2d9)](currentQIndex,_0x4d11a2[_0x3a86be(0x286)](questions[_0x3a86be(0x240)],0xd8*-0x1+-0x1*-0x15c5+0x34*-0x67)));const _0x14c05f=_0x38797b['id']?_0x4d11a2[_0x3a86be(0x36b)](_0x38797b['id'],'.'):_0x4d11a2[_0x3a86be(0x36b)](_0x4d11a2[_0x3a86be(0x26b)](currentQIndex,-0x6bc*0x4+0x373*0x3+0x1098),'.'),_0x4754f0=bookmarks[currentQIndex],_0xf6e8e3=_0x3a86be(0x3f5)+_0x3a86be(0x254)+_0x3a86be(0x3d4)+_0x3a86be(0x35c)+_0x3a86be(0x2b9)+_0x3a86be(0x202)+_0x3a86be(0x2a1)+'>'+_0x14c05f+(_0x3a86be(0x2b6)+_0x3a86be(0x17d)+_0x3a86be(0x2ff)+_0x3a86be(0x2f8)+_0x3a86be(0x1e7))+(_0x4754f0?_0x4d11a2[_0x3a86be(0x3c9)]:'')+(_0x3a86be(0x1c0)+_0x3a86be(0x329)+_0x3a86be(0x3d0)+_0x3a86be(0x41c)+_0x3a86be(0x23c)+_0x3a86be(0x33d)+_0x3a86be(0x32b)+_0x3a86be(0x411)+_0x3a86be(0x1b2)+_0x3a86be(0x25c)+_0x3a86be(0x250)+_0x3a86be(0x3d1)+_0x3a86be(0x30f)+_0x3a86be(0x313)+_0x3a86be(0x33d)+_0x3a86be(0x1ab)+_0x3a86be(0x377)+_0x3a86be(0x387)),_0x363838=_0x4d11a2[_0x3a86be(0x21c)](processText,_0x38797b[_0x3a86be(0x1d0)],_0x38797b),_0x3df392=_0x38797b[_0x3a86be(0x26d)]?_0x4d11a2[_0x3a86be(0x175)](processText,_0x38797b[_0x3a86be(0x26d)],_0x38797b):'',_0x4d9bef=isExamFinished&&_0x38797b[_0x3a86be(0x28d)+'n']?_0x3a86be(0x3f5)+_0x3a86be(0x254)+_0x3a86be(0x304)+_0x3a86be(0x39e)+_0x3a86be(0x1a9)+_0x3a86be(0x33d)+_0x3a86be(0x1dd)+_0x3a86be(0x26f)+_0x3a86be(0x2ae)+_0x3a86be(0x3c6)+_0x3a86be(0x39b)+_0x3a86be(0x265)+_0x3a86be(0x3cc)+_0x3a86be(0x420)+_0x3a86be(0x335)+_0x3a86be(0x247)+_0x3a86be(0x3c4)+_0x3a86be(0x33d)+'\x20'+_0x38797b[_0x3a86be(0x28d)+'n']+(_0x3a86be(0x3f5)+_0x3a86be(0x2d5)):'';if(_0x4d11a2[_0x3a86be(0x2d9)](_0x38797b[_0x3a86be(0x303)],'A'))_0x35d306[_0x3a86be(0x213)]=_0x3a86be(0x193)+_0x3a86be(0x30a)+_0xf6e8e3+(_0x3a86be(0x193)+_0x3a86be(0x40c)+_0x3a86be(0x3ae)+_0x3a86be(0x1f9)+_0x3a86be(0x33d)+_0x3a86be(0x395)+_0x3a86be(0x1ff)+_0x3a86be(0x2bd))+_0x38797b[_0x3a86be(0x3fa)+'n']+(_0x3a86be(0x2b6)+_0x3a86be(0x33d)+_0x3a86be(0x40c)+_0x3a86be(0x2bb)+_0x3a86be(0x1b7)+'>')+_0x363838+(_0x3a86be(0x2b6)+_0x3a86be(0x33d)+_0x3a86be(0x40c)+_0x3a86be(0x2f5)+_0x3a86be(0x3e4)+_0x3a86be(0x3c3)+_0x3a86be(0x33d)+_0x3a86be(0x35a))+_0x4d11a2[_0x3a86be(0x1ef)](getOptionsHTML,_0x38797b)+(_0x3a86be(0x193)+_0x3a86be(0x2aa)+_0x3a86be(0x177)+_0x3a86be(0x33d))+_0x4d9bef+(_0x3a86be(0x193)+_0x3a86be(0x379)+_0x3a86be(0x20c));else _0x4d11a2[_0x3a86be(0x20d)](_0x38797b[_0x3a86be(0x303)],'B')&&(_0x35d306[_0x3a86be(0x213)]=_0x3a86be(0x193)+_0x3a86be(0x40c)+_0x3a86be(0x1c5)+_0x3a86be(0x28c)+_0x3a86be(0x33d)+_0x3a86be(0x252)+_0x3a86be(0x318)+_0x3a86be(0x21b)+_0x3a86be(0x3d6)+_0x3a86be(0x33d)+_0x3a86be(0x252)+_0x3a86be(0x30e)+_0x3a86be(0x3fa)+_0x3a86be(0x1f3)+_0x3a86be(0x41e)+_0x3a86be(0x20f)+'>'+_0x38797b[_0x3a86be(0x3fa)+'n']+(_0x3a86be(0x2b6)+_0x3a86be(0x33d)+_0x3a86be(0x397))+_0x4d11a2[_0x3a86be(0x23e)](highlightGap,_0x3df392,_0x38797b['id'])+(_0x3a86be(0x200)+_0x3a86be(0x33d)+_0x3a86be(0x328)+_0x3a86be(0x33d)+_0x3a86be(0x285)+_0x3a86be(0x3b5)+_0x3a86be(0x405)+_0x3a86be(0x319)+_0x3a86be(0x33d)+_0x3a86be(0x17d)+_0x3a86be(0x364)+_0x3a86be(0x271)+_0x3a86be(0x185)+_0x3a86be(0x388)+_0x3a86be(0x33d)+_0x3a86be(0x33d)+_0x3a86be(0x27f))+_0xf6e8e3+(_0x3a86be(0x193)+_0x3a86be(0x33d)+_0x3a86be(0x2b9)+_0x3a86be(0x25e)+_0x3a86be(0x1bd)+_0x3a86be(0x3a9)+_0x3a86be(0x3e0)+_0x3a86be(0x2ef)+_0x3a86be(0x33d)+_0x3a86be(0x33d)+_0x3a86be(0x40c)+_0x3a86be(0x2f5)+_0x3a86be(0x3e4)+_0x3a86be(0x3c3)+_0x3a86be(0x33d)+_0x3a86be(0x33d)+_0x3a86be(0x211))+_0x4d11a2[_0x3a86be(0x1ef)](getOptionsHTML,_0x38797b)+(_0x3a86be(0x193)+_0x3a86be(0x33d)+_0x3a86be(0x17d)+_0x3a86be(0x2d5)+_0x3a86be(0x33d)+_0x3a86be(0x33d)+_0x3a86be(0x27f))+_0x4d9bef+(_0x3a86be(0x193)+_0x3a86be(0x33d)+_0x3a86be(0x377)+_0x3a86be(0x255)+_0x3a86be(0x33d)+_0x3a86be(0x358)+_0x3a86be(0x1aa)+_0x3a86be(0x17d)+_0x3a86be(0x2d5)+_0x3a86be(0x24e)+_0x3a86be(0x251)+_0x3a86be(0x30a)));}function processText(_0x289f67,_0x4a749d){const _0x47ea85=_0x10335d;if(!_0x289f67)return'';if(!isExamFinished||!_0x4a749d[_0x47ea85(0x1fc)])return _0x289f67;let _0x176a7d=_0x289f67;return Object[_0x47ea85(0x1e5)](_0x4a749d[_0x47ea85(0x1fc)])[_0x47ea85(0x400)](_0x167f72=>{const _0x3aabf1=_0x47ea85,_0x2eccb8=_0x4a749d[_0x3aabf1(0x1fc)][_0x167f72],_0x112a2f=new RegExp(_0x3aabf1(0x21e)+_0x167f72+_0x3aabf1(0x1e0),'gi');_0x176a7d=_0x176a7d[_0x3aabf1(0x23b)](_0x112a2f,_0x3aabf1(0x1a4)+_0x3aabf1(0x3d5)+_0x3aabf1(0x2f3)+_0x3aabf1(0x2bf)+_0x2eccb8+(_0x3aabf1(0x3d9)+'>'));}),_0x176a7d;}function highlightGap(_0x258eb1,_0x428588){const _0x3c07f6=_0x10335d;return _0x258eb1[_0x3c07f6(0x23b)]('('+_0x428588+')',_0x3c07f6(0x2ac)+_0x3c07f6(0x2ee)+_0x3c07f6(0x27d)+_0x3c07f6(0x169)+_0x428588+_0x3c07f6(0x179));}function getOptionsHTML(_0x129c6f){const _0x3213b2=_0x10335d,_0x45b297={'QSjqB':function(_0x4c092d,_0x5b78ad){return _0x4c092d===_0x5b78ad;},'iAApz':_0x3213b2(0x1de),'UUjbJ':function(_0x342339,_0x35e1b5){return _0x342339===_0x35e1b5;},'JZigr':_0x3213b2(0x27b),'whbnc':_0x3213b2(0x3b3),'wphbn':_0x3213b2(0x2c6)};return Object[_0x3213b2(0x1e5)](_0x129c6f[_0x3213b2(0x241)])[_0x3213b2(0x292)](_0xd52236=>{const _0x40d3ce=_0x3213b2,_0x2f67bc=_0x45b297[_0x40d3ce(0x3ee)](userAnswers[currentQIndex],_0xd52236);let _0xf8050e=_0x45b297[_0x40d3ce(0x1f0)];if(isExamFinished){if(_0x45b297[_0x40d3ce(0x297)](_0xd52236,_0x129c6f[_0x40d3ce(0x33e)]))_0xf8050e+=_0x45b297[_0x40d3ce(0x231)];else _0x2f67bc&&(_0xf8050e+=_0x45b297[_0x40d3ce(0x257)]);}else{if(_0x2f67bc)_0xf8050e+=_0x45b297[_0x40d3ce(0x3ef)];}const _0x47a127=isExamFinished?'':_0x40d3ce(0x3d3)+_0x40d3ce(0x20a)+_0xd52236+_0x40d3ce(0x2d8);return _0x40d3ce(0x193)+_0x40d3ce(0x40c)+_0x40d3ce(0x371)+_0xf8050e+'\x22\x20'+_0x47a127+(_0x40d3ce(0x255)+_0x40d3ce(0x174)+_0x40d3ce(0x207)+_0x40d3ce(0x2a2)+_0x40d3ce(0x37b))+_0xd52236+(_0x40d3ce(0x2b6)+_0x40d3ce(0x33d)+_0x40d3ce(0x40c)+_0x40d3ce(0x2f6)+_0x40d3ce(0x425))+_0x129c6f[_0x40d3ce(0x241)][_0xd52236]+(_0x40d3ce(0x2b6)+_0x40d3ce(0x17d)+_0x40d3ce(0x2d5)+_0x40d3ce(0x27f));})[_0x3213b2(0x3e5)]('');}function answer(_0x5f241f){const _0x24981d=_0x10335d,_0x1aa546={'kDmSH':function(_0x56a741){return _0x56a741();}};if(isExamFinished)return;userAnswers[currentQIndex]=_0x5f241f,_0x1aa546[_0x24981d(0x2b2)](renderQuestion);}function toggleMark(){const _0x152510=_0x10335d,_0x54d847={'ZjswE':function(_0x3f56ef){return _0x3f56ef();}};bookmarks[currentQIndex]=!bookmarks[currentQIndex],_0x54d847[_0x152510(0x299)](renderQuestion);}function nextQuestion(){const _0x1f5144=_0x10335d,_0x1aebd5={'QStAT':function(_0x152610,_0x1cd173){return _0x152610<_0x1cd173;},'dLrKZ':function(_0x326447,_0x551128){return _0x326447-_0x551128;},'fkHxu':function(_0xfc0deb){return _0xfc0deb();}};_0x1aebd5[_0x1f5144(0x368)](currentQIndex,_0x1aebd5[_0x1f5144(0x419)](questions[_0x1f5144(0x240)],-0x1*0x2ab+0xe9f+-0xbf3))&&(currentQIndex++,_0x1aebd5[_0x1f5144(0x244)](renderQuestion));}function prevQuestion(){const _0x44abae=_0x10335d,_0x2a3c1d={'uXoGP':function(_0x5cfdf9,_0x5603ac){return _0x5cfdf9>_0x5603ac;},'jHxjh':function(_0xf69d5b){return _0xf69d5b();}};_0x2a3c1d[_0x44abae(0x27a)](currentQIndex,-0x1a4f+0x2316+0x8c7*-0x1)&&(currentQIndex--,_0x2a3c1d[_0x44abae(0x2b7)](renderQuestion));}function tick(){const _0x5b4c06=_0x10335d,_0x534fc7={'MLDwa':function(_0x57dd4a,_0xce4b67){return _0x57dd4a<_0xce4b67;},'IGZAf':function(_0x4f6303){return _0x4f6303();},'iymJf':function(_0x37aeca,_0x295aed){return _0x37aeca/_0x295aed;},'biUvB':function(_0x5900eb,_0x38495e){return _0x5900eb%_0x38495e;},'XsicD':_0x5b4c06(0x33a)+'er','rGSUR':function(_0x287ee9,_0x3831c9){return _0x287ee9-_0x3831c9;},'mLeSp':function(_0x140401,_0x5324fd){return _0x140401*_0x5324fd;},'JlgkH':_0x5b4c06(0x258)+'ed','iTnlG':function(_0x46a7cb,_0x41e7b6){return _0x46a7cb+_0x41e7b6;},'llEZb':function(_0x2fe0ff,_0x35c7d0){return _0x2fe0ff+_0x35c7d0;},'hYYWg':function(_0x51530e,_0x20b17a){return _0x51530e/_0x20b17a;},'UHIMY':_0x5b4c06(0x24c),'WecaS':_0x5b4c06(0x3c1),'vJiHq':_0x5b4c06(0x261),'CzaUP':function(_0x215693,_0x51f851){return _0x215693+_0x51f851;}};timeLeft--;_0x534fc7[_0x5b4c06(0x189)](timeLeft,0x24ff+0x1784+-0x3c83)&&(timeLeft=0x1*-0x829+0x1af8+0x9*-0x217,_0x534fc7[_0x5b4c06(0x1bf)](finishExamProcess));const _0x466156=Math[_0x5b4c06(0x392)](_0x534fc7[_0x5b4c06(0x302)](timeLeft,0x1033+-0x335*0x9+0xce6))[_0x5b4c06(0x16e)]()[_0x5b4c06(0x1ad)](-0x11cc*0x2+0xdb7+0x15e3,'0'),_0x5be53=_0x534fc7[_0x5b4c06(0x320)](timeLeft,0x14db*-0x1+0xc*-0x165+0x25d3)[_0x5b4c06(0x16e)]()[_0x5b4c06(0x1ad)](-0x34d+0xf*0x22+0x151*0x1,'0');document[_0x5b4c06(0x264)+_0x5b4c06(0x427)](_0x534fc7[_0x5b4c06(0x259)])[_0x5b4c06(0x16f)]=_0x466156+':'+_0x5be53;const _0x39f1ce=_0x534fc7[_0x5b4c06(0x2f9)](_0x534fc7[_0x5b4c06(0x272)](-0x4*-0x93e+-0x6e2+0x1d62*-0x1,0x16b8+-0x240c+0xd90),timeLeft);document[_0x5b4c06(0x264)+_0x5b4c06(0x427)](_0x534fc7[_0x5b4c06(0x418)])[_0x5b4c06(0x16f)]=_0x534fc7[_0x5b4c06(0x3fe)](_0x534fc7[_0x5b4c06(0x1ae)](_0x534fc7[_0x5b4c06(0x1ae)](Math[_0x5b4c06(0x392)](_0x534fc7[_0x5b4c06(0x33c)](_0x39f1ce,0x176a+0x23fd+0x11*-0x37b)),_0x534fc7[_0x5b4c06(0x34a)]),_0x534fc7[_0x5b4c06(0x320)](_0x39f1ce,0xc1*0x26+-0x1f9+-0x7*0x3c7)),_0x534fc7[_0x5b4c06(0x3c7)]),document[_0x5b4c06(0x264)+_0x5b4c06(0x427)](_0x534fc7[_0x5b4c06(0x1a8)])[_0x5b4c06(0x16f)]=_0x534fc7[_0x5b4c06(0x1ae)](_0x534fc7[_0x5b4c06(0x381)](_0x534fc7[_0x5b4c06(0x1ae)](_0x466156,_0x534fc7[_0x5b4c06(0x34a)]),_0x5be53),_0x534fc7[_0x5b4c06(0x3c7)]);}function toggleTimerVis(){const _0x45b23c=_0x10335d,_0x4479c8={'rObEq':_0x45b23c(0x226)+_0x45b23c(0x1fe),'GTkez':_0x45b23c(0x1ea),'UdXGd':_0x45b23c(0x1c7)};timerVis=!timerVis;const _0x19c16d=document[_0x45b23c(0x264)+_0x45b23c(0x427)](_0x4479c8[_0x45b23c(0x2c9)]);_0x19c16d&&(_0x19c16d[_0x45b23c(0x262)][_0x45b23c(0x1c4)]=timerVis?_0x4479c8[_0x45b23c(0x2c4)]:_0x4479c8[_0x45b23c(0x294)]);}function openModal(_0x4b078d){const _0x3008bb=_0x10335d,_0xe99fb7={'eVPKx':_0x3008bb(0x40a),'guOIt':function(_0x161790,_0x1fe0f5){return _0x161790===_0x1fe0f5;},'Gugdv':_0x3008bb(0x416)+'us','RLIjd':function(_0x30a2f5){return _0x30a2f5();}};document[_0x3008bb(0x264)+_0x3008bb(0x427)](_0x4b078d)[_0x3008bb(0x355)][_0x3008bb(0x410)](_0xe99fb7[_0x3008bb(0x1ee)]);if(_0xe99fb7[_0x3008bb(0x198)](_0x4b078d,_0xe99fb7[_0x3008bb(0x306)]))_0xe99fb7[_0x3008bb(0x311)](updateStatus);}function closeModal(_0x8ee096){const _0x36df81=_0x10335d,_0x3fa4a1={'plGJv':_0x36df81(0x40a)};document[_0x36df81(0x264)+_0x36df81(0x427)](_0x8ee096)[_0x36df81(0x355)][_0x36df81(0x22a)](_0x3fa4a1[_0x36df81(0x1db)]);}function toggleSettings(){const _0x3fc5a0=_0x10335d,_0x39f400={'oXUpM':_0x3fc5a0(0x1d6)+_0x3fc5a0(0x386),'IwpZp':_0x3fc5a0(0x18f)};document[_0x3fc5a0(0x264)+_0x3fc5a0(0x427)](_0x39f400[_0x3fc5a0(0x3c8)])[_0x3fc5a0(0x355)][_0x3fc5a0(0x276)](_0x39f400[_0x3fc5a0(0x2b8)]);}function updateStatus(){const _0x5c862b=_0x10335d,_0x59d50d={'ELZNd':_0x5c862b(0x1ed),'TXkWi':_0x5c862b(0x2ce),'ZpqcC':function(_0x515964,_0x3c7d29){return _0x515964-_0x3c7d29;}},_0x475a4c=Object[_0x5c862b(0x1e5)](userAnswers)[_0x5c862b(0x240)];document[_0x5c862b(0x264)+_0x5c862b(0x427)](_0x59d50d[_0x5c862b(0x209)])[_0x5c862b(0x16f)]=_0x475a4c,document[_0x5c862b(0x264)+_0x5c862b(0x427)](_0x59d50d[_0x5c862b(0x18c)])[_0x5c862b(0x16f)]=_0x59d50d[_0x5c862b(0x401)](0xeb8*-0x1+0x493*0x1+-0xa75*-0x1,_0x475a4c);}function openReviewModal(){const _0x34dfce=_0x10335d,_0x24ffdc={'EVlYc':function(_0x358ead,_0x37e6b9){return _0x358ead(_0x37e6b9);},'blLQr':_0x34dfce(0x184)+'ew','aUAIC':function(_0x260821,_0x33ebe7,_0x14676b){return _0x260821(_0x33ebe7,_0x14676b);},'uKzZt':_0x34dfce(0x15f),'xjbrC':_0x34dfce(0x163)+_0x34dfce(0x1d9)};_0x24ffdc[_0x34dfce(0x25f)](openModal,_0x24ffdc[_0x34dfce(0x307)]),_0x24ffdc[_0x34dfce(0x1c6)](filterReview,_0x24ffdc[_0x34dfce(0x3eb)],document[_0x34dfce(0x183)+_0x34dfce(0x1ce)](_0x24ffdc[_0x34dfce(0x278)]));}function filterReview(_0x2da088,_0x5e61f6){const _0x12d33c=_0x10335d,_0x5ef54b={'OwcaL':function(_0x37a220){return _0x37a220();},'DLiko':function(_0x33dd8d,_0x389679){return _0x33dd8d(_0x389679);},'eGOwP':_0x12d33c(0x184)+'ew','ZcRzs':_0x12d33c(0x3c5),'aASMj':_0x12d33c(0x40a),'vhWKu':_0x12d33c(0x421)+_0x12d33c(0x273),'fWoGT':function(_0x3aa6f2,_0x576a09){return _0x3aa6f2<_0x576a09;},'FeEGw':function(_0x4ec1b4,_0x55a6a3){return _0x4ec1b4+_0x55a6a3;},'NmqWo':function(_0xf505e7,_0x5d1182){return _0xf505e7!==_0x5d1182;},'IBTBN':function(_0x268efb,_0x55e67a){return _0x268efb&&_0x55e67a;},'lUQgL':function(_0x3e565a,_0x238ffd){return _0x3e565a===_0x238ffd;},'adMDB':_0x12d33c(0x15f),'ENhEW':function(_0x411e9c,_0x55456c){return _0x411e9c===_0x55456c;},'nLqoZ':_0x12d33c(0x19f),'rykiJ':_0x12d33c(0x359),'JPYSp':_0x12d33c(0x227),'OKLBk':_0x12d33c(0x2d3),'gfbbk':_0x12d33c(0x282),'MfXMb':function(_0x1f13e1,_0x9a8bfc){return _0x1f13e1===_0x9a8bfc;},'ulffX':_0x12d33c(0x3b0),'ezaob':_0x12d33c(0x409),'tgvsC':_0x12d33c(0x246)};document[_0x12d33c(0x183)+_0x12d33c(0x2ba)](_0x5ef54b[_0x12d33c(0x17b)])[_0x12d33c(0x400)](_0x585b2a=>_0x585b2a[_0x12d33c(0x355)][_0x12d33c(0x22a)](_0x12d33c(0x40a)));if(_0x5e61f6)_0x5e61f6[_0x12d33c(0x355)][_0x12d33c(0x410)](_0x5ef54b[_0x12d33c(0x2dd)]);const _0x113688=document[_0x12d33c(0x264)+_0x12d33c(0x427)](_0x5ef54b[_0x12d33c(0x1b6)]);_0x113688[_0x12d33c(0x213)]='';for(let _0x4fbaf1=-0x6*-0x419+-0x2233+0x6b*0x17;_0x5ef54b[_0x12d33c(0x199)](_0x4fbaf1,-0x1cf3+-0x8*0x3f1+0x3ccb);_0x4fbaf1++){const _0x112ddf=_0x5ef54b[_0x12d33c(0x3ac)](_0x4fbaf1,-0xb*-0xe3+0x9*0x235+0x15*-0x169),_0x38818d=questions[_0x12d33c(0x41b)](_0x504de6=>_0x504de6['id']===_0x112ddf),_0x433def=_0x5ef54b[_0x12d33c(0x1c9)](_0x38818d,-(-0x1*0x35d+-0x2*0x891+-0x10*-0x148)),_0x2b391e=userAnswers[_0x38818d],_0x376b29=_0x5ef54b[_0x12d33c(0x309)](_0x433def,_0x2b391e),_0x2d4a3c=_0x433def&&bookmarks[_0x38818d],_0x287ff9=_0x433def&&_0x5ef54b[_0x12d33c(0x3f4)](_0x38818d,currentQIndex);let _0x5ac08c=![];if(_0x5ef54b[_0x12d33c(0x3f4)](_0x2da088,_0x5ef54b[_0x12d33c(0x295)]))_0x5ac08c=!![];if(_0x5ef54b[_0x12d33c(0x269)](_0x2da088,_0x5ef54b[_0x12d33c(0x3ba)])&&_0x376b29)_0x5ac08c=!![];if(_0x5ef54b[_0x12d33c(0x3f4)](_0x2da088,_0x5ef54b[_0x12d33c(0x16a)])&&_0x2d4a3c)_0x5ac08c=!![];if(_0x5ef54b[_0x12d33c(0x269)](_0x2da088,_0x5ef54b[_0x12d33c(0x2b4)])&&!_0x376b29)_0x5ac08c=!![];if(_0x5ac08c){const _0x52cb61=document[_0x12d33c(0x2ab)+_0x12d33c(0x1d7)](_0x5ef54b[_0x12d33c(0x1e2)]);_0x52cb61[_0x12d33c(0x3cb)]=_0x5ef54b[_0x12d33c(0x1b5)],_0x52cb61[_0x12d33c(0x16f)]=_0x5ef54b[_0x12d33c(0x3ac)](_0x4fbaf1,-0x2e4+-0x1aab+0x1d90);if(_0x5ef54b[_0x12d33c(0x309)](isExamFinished,_0x433def)){if(_0x5ef54b[_0x12d33c(0x173)](_0x2b391e,questions[_0x38818d][_0x12d33c(0x33e)]))_0x52cb61[_0x12d33c(0x355)][_0x12d33c(0x410)](_0x5ef54b[_0x12d33c(0x414)]);else _0x2b391e&&_0x52cb61[_0x12d33c(0x355)][_0x12d33c(0x410)](_0x5ef54b[_0x12d33c(0x2af)]);}else{if(_0x376b29)_0x52cb61[_0x12d33c(0x355)][_0x12d33c(0x410)](_0x5ef54b[_0x12d33c(0x3ba)]);}if(_0x2d4a3c)_0x52cb61[_0x12d33c(0x355)][_0x12d33c(0x410)](_0x5ef54b[_0x12d33c(0x16a)]);if(_0x287ff9)_0x52cb61[_0x12d33c(0x355)][_0x12d33c(0x410)](_0x5ef54b[_0x12d33c(0x2dd)]);_0x433def?_0x52cb61[_0x12d33c(0x3dd)]=()=>{const _0x3cea0c=_0x12d33c;currentQIndex=_0x38818d,_0x5ef54b[_0x3cea0c(0x182)](renderQuestion),_0x5ef54b[_0x3cea0c(0x343)](closeModal,_0x5ef54b[_0x3cea0c(0x321)]);}:_0x52cb61[_0x12d33c(0x262)][_0x12d33c(0x27e)]=_0x5ef54b[_0x12d33c(0x413)],_0x113688[_0x12d33c(0x2e4)+'d'](_0x52cb61);}}}function resizeFont(_0x17bfdb){const _0xd0f90c=_0x10335d,_0x452c52={'sAurx':_0xd0f90c(0x33f),'BNWHx':_0xd0f90c(0x22f),'ADzjj':_0xd0f90c(0x3a1)+_0xd0f90c(0x34d),'XRzkU':function(_0x468f81,_0xa7d28c){return _0x468f81+_0xa7d28c;},'ipexl':function(_0x1bbeed,_0x1028c2){return _0x1bbeed<_0x1028c2;},'zPayB':function(_0x28d6e5,_0x451883){return _0x28d6e5>_0x451883;}},_0x2c674d=_0x452c52[_0xd0f90c(0x363)][_0xd0f90c(0x31d)]('|');let _0x47e7d9=-0x8fa*-0x1+0x1*0x269b+-0x2f95;while(!![]){switch(_0x2c674d[_0x47e7d9++]){case'0':document[_0xd0f90c(0x264)+_0xd0f90c(0x427)](_0x452c52[_0xd0f90c(0x3e8)])[_0xd0f90c(0x16f)]=fontSz;continue;case'1':document[_0xd0f90c(0x19d)+_0xd0f90c(0x22d)][_0xd0f90c(0x262)][_0xd0f90c(0x325)+'y'](_0x452c52[_0xd0f90c(0x1b3)],_0x452c52[_0xd0f90c(0x17e)](fontSz,'px'));continue;case'2':fontSz+=_0x17bfdb;continue;case'3':if(_0x452c52[_0xd0f90c(0x339)](fontSz,-0x55b+-0x4e8+-0x5b*-0x1d))fontSz=-0xfa3+-0x19b*-0xb+-0x2*0xfd;continue;case'4':if(_0x452c52[_0xd0f90c(0x2ec)](fontSz,-0x9*-0x14d+0xf7a+-0x1b07))fontSz=-0x1*0x1499+-0xda7*-0x1+0x71a;continue;}break;}}function changeLang(_0x2af000,_0x47a713){const _0x40a2a1=_0x10335d,_0x175661={'ABQVn':_0x40a2a1(0x3bd),'UYKxZ':_0x40a2a1(0x237),'jmRIA':_0x40a2a1(0x3c0),'QOJJl':_0x40a2a1(0x3a2)};currentLang=_0x2af000,document[_0x40a2a1(0x183)+_0x40a2a1(0x2ba)](_0x175661[_0x40a2a1(0x351)])[_0x40a2a1(0x400)](_0x4cb2aa=>_0x4cb2aa[_0x40a2a1(0x355)][_0x40a2a1(0x22a)](_0x40a2a1(0x3c0))),_0x47a713[_0x40a2a1(0x355)][_0x40a2a1(0x410)](_0x175661[_0x40a2a1(0x340)]),document[_0x40a2a1(0x183)+_0x40a2a1(0x2ba)](_0x175661[_0x40a2a1(0x33b)])[_0x40a2a1(0x400)](_0x3ac979=>{const _0x32d9d8=_0x40a2a1,_0x6d3e1b=_0x3ac979[_0x32d9d8(0x3bb)+'te'](_0x175661[_0x32d9d8(0x36d)]);translations[_0x2af000][_0x6d3e1b]&&(_0x3ac979[_0x32d9d8(0x213)]=translations[_0x2af000][_0x6d3e1b]);});}function _0x443c(_0x548c97,_0x534007){_0x548c97=_0x548c97-(-0x2403+-0x765*-0x4+0x7ce*0x1);const _0x3f1cff=_0x17fa();let _0x21deab=_0x3f1cff[_0x548c97];return _0x21deab;}function _0x17fa(){const _0x329923=['floor','hlight\x20acr','n,\x20um\x20das\x20','<div\x20class','target','\x20\x20\x20\x20\x20\x20\x20<p>','QDUux','oQGaP','ese\x20nicht\x20','28a745;\x20di','rm\x20finishi','sENjh','on-box\x20vis','Answered','Captcha\x20co','--question','[data-key]','gxozF','RLJcY','rüfung\x20kön','132145yPePoF','main-heade','ch\x20Eingabe','=\x22padding:','\x20the\x20permi','load','FeEGw','⚑\x20Markiert','ass=\x22q-bod','iVQON','is-correct','HntbJ','leri','\x20wrong','xam\x20after\x20','lass=\x22spli','dus','\x20T.C.\x20kiml','der\x20Y.U.\x20N','Geben\x20Sie\x20','nLqoZ','getAttribu','\x20Zeit\x20verl','data-key','Prüfung\x20be','den\x20Feld\x20a','selected','\x20sn','ent\x20blocks','er\x22>\x0a\x20\x20\x20\x20\x20','pan>\x0a\x20\x20\x20\x20\x20','.rev-btn','0;\x20color:#','WecaS','oXUpM','zUlYX','can\x20termin','className','k;\x20margin-','ınız.','Dauer','\x20Sayısı','\x22\x20onclick=','-3\x207\x203V5c0','Cannot\x20hig','onclick=\x22a','\x22q-num-col','s=\x22dict-wo','ane\x22>\x0a\x20\x20\x20\x20','anguage.','in\x20the\x20box','\x22>$1</span','an\x20ayrılam','soru','\x20süre','onclick','lknly','Light\x20Mode','\x2040px\x200\x200\x20','captcha-in','Beenden\x20zu','iz.','ns-contain','join','g\x20it.\x20Even','4GvcqzE','BNWHx','ONAYLA','When\x20you\x20f','uKzZt','getTime','Finish\x20Exa','QSjqB','wphbn','\x20erlaubten','Kalan\x20Süre','view-login','ight','lUQgL','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<','Bitiş\x20saat','⚑\x20İşaretle','entering\x20y','removeChil','instructio','473963WHupLl','span','YWrKC','iTnlG','●\x20Answered','forEach','ZpqcC','\x0aPuan:\x20','ummer\x20im\x20u','enden,\x20dür','t-right-pa','Test\x20Seçin','LfYfX','log','is-wrong','active','vı\x20sonland','\x20\x20\x20<div\x20cl','SCHLIESSEN','tsnummer\x20o','eZHOm','add','h\x20d=\x22M17\x203','ırırsanız\x20','tgvsC','ulffX','Soru\x20başın','modal-stat','br>Frage','JlgkH','dLrKZ','cUSaY','findIndex','\x22toggleMar','cawuz','margin-bot','kWmnI','bottom:10p','rev-grid-c','Test\x20auswä','addEventLi','süre\x20dolma','ext-val\x22>','Remaining','ById','all','a\x20ortalama','lüğünü\x20değ','ext','.rev-btn.a','en-GB','Saat:','Einstellun','Karanlık\x20M','\x20girerek\x20s',';\x22>(','rykiJ','Testname','splay','rsiz\x20T.C.\x20','toString','innerText','Ihre\x20T.C.\x20','ID\x20oder\x20YU','i\x20kutucuğa','MfXMb','\x20\x20\x20\x20\x20\x20\x20\x20<d','stWbj','>Frage','iv>\x0a\x20\x20\x20\x20\x20\x20','Dunkler\x20Mo',')</b>','dan\x20çıkabi','ZcRzs','firstChild','\x20\x20\x20\x20\x20\x20\x20\x20\x20<','XRzkU','ıklarım','Endzeit','enden','OwcaL','querySelec','modal-revi','lex;\x20heigh','gung\x20der\x20P','anges','oDlOv','MLDwa','iniz.\x20Sına','stat-start','TXkWi','>soru','azsınız.','open','header-clo','sCVYP','15353850duOkhj','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20','EjZGC','r>question','ınavı\x20sonl','dnPWf','guOIt','fWoGT','cpGxn','terminatin','KAPAT','documentEl','Total\x20Ques','answered','Testinform','e\x20exam,\x20yo','uestion','assen.','<span\x20clas','Nächste<br','jfzHb','yTtGq','vJiHq','ible\x22>\x0a\x20\x20\x20','v>\x0a\x20\x20\x20\x20\x20\x20\x20','</svg>\x0a\x20\x20\x20','iğiniz\x20güv','padStart','llEZb','r\x20YU\x20numbe','\x20beenden,\x20','t\x20size','H7c-1.1\x200-','ADzjj','annot\x20cont','gfbbk','vhWKu','t-content\x22','tHDrd','irdiğinizd','Schriftgrö','ieQeg','fen\x20Sie\x20de','ody\x22\x20style','ie\x20Prüfung','IGZAf','\x22\x20viewBox=','captcha-di','Dark\x20Mode','733707meypYH','visibility','ass=\x22layou','aUAIC','hidden','ktıklarım','NmqWo','preventDef','Kalan\x20Soru','flex','random','tor','End\x20Time','text','CLOSE','OPQRSTUVWX','Sprache\x20än','ntents','jNRnZ','settings-p','ent','rminate\x20th','ctive','Ø\x20Zeit/Fra','plGJv','disabled','\x20\x20\x20<span\x20s','option-row','-pane',')\x5cb','ik\x20numaras','OKLBk','n\x20Saal\x20nic','ße\x20ändern','keys','removeAllR','k-icon\x20','vWPCO','.user-id-t','visible','\x20T.C.\x20ID\x20o','exam,\x20you\x20','stat-ans','eVPKx','GAAna','iAApz','Duration','mber\x20or\x20Y.','n\x22\x20style=\x22','landır','test','\x20Bilgileri','dentity\x20Nu','diklerim','y\x22>\x0a\x20\x20\x20\x20\x20\x20','●\x20Beantwor','.\x20Identitä','dict','tir','per','=\x22q-instru','</p>\x0a\x20\x20\x20\x20\x20','dark','class=\x22q-n','wnZGT','UwxtO','Sonraki<br','pghOn','iv\x20class=\x22','insertBefo','ELZNd','nswer(\x27','enlik\x20kodu','\x20\x20\x20\x20\x20\x20\x20\x20','xKOhn','tions','tom:15px;\x22','jbpZs','\x20\x20\x20\x20\x20\x20\x20','rsiniz.<br','innerHTML','hAoJu','sınava\x20dev','Settings','ortet','Review','⚑\x20Marked','abcdefghij','lit-left-p','SJwwK','eKXVR','\x5cb(','q-card','qjjtL','Startzeit','GbYCO','time.','amt','view-instr','timer-wrap','empty','Görünüm\x20mo','q-body','remove','.\x20Auch\x20wen','15102sGvfYm','ement','leceğiniz\x20','font-disp','value','JZigr','yMpkI','MhpQT','meString','Test\x20Adı','WkLjK','.lang-opt','e\x20aşağıdak','\x20below.<br','ütfen\x20tekr','replace','k()\x22>\x0a\x20\x20\x20\x20','Select\x20Tes','KDQYS','Überprüfen','length','options','parentNode','ip\x20onaylay','fkHxu','\x20if\x20you\x20te','0.5','ANALİZİ</s','Hata:\x20Geçe','dern.','cvPuj','mlik\x20No\x20ve','\x20dk\x20','arası\x20gird','\x20\x20\x20\x20\x20\x20\x20\x20</','vDcRq','9\x202L5\x2021l7','div>\x0a\x20\x20\x20\x20\x20','\x20\x20\x20\x20\x20\x20<div','toLocaleTi','div\x20class=','>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','Uygulama\x20d','whbnc','stat-elaps','XsicD','dus\x20ändern','kdovT','1.99.9-1.9','AzIpH','class=\x22q-b','EVlYc','TNnNV','stat-left','style','ldGga','getElement','splay:bloc','jmeBD','getHours','storContai','ENhEW','rasını\x20gir','ltTlU','Önceki<br>','paragraph','NYCjx','tyle=\x22font','contains','\x22display:f','mLeSp','ontainer','amlamak\x20iç','2293388XcCVDp','toggle','ons','xjbrC','btn-next','uXoGP','\x20correct','Sınav\x20süre','--red-btn)','opacity','\x20\x20\x20\x20','ş\x20S.\x20Sayıs','andırabili','rev-cell','slJgX','SBTMk','\x20\x20\x20\x20<div\x20c','hWjni','Ayarlar','xLoBG','hlen','Beantworte','Sınav\x20Tama','t-split\x22>\x0a','explanatio','mlandı!\x0aDo','touchend','lication\x20l','ner','map','Heller\x20Mod','UdXGd','adMDB','Verstriche','UUjbJ','dark-mode','ZjswE','ate\x20it\x20by\x20','2264utsNqo','mouseup','.<br><br>N','anchorNode','○\x20Boş\x20Bıra','Sınavı\x20bit','umber-big\x22','opt-letter','put','Tüm\x20Sorula','mation','Change\x20app','○\x20Unbeantw','Zeit:','trim','\x20\x20\x20\x20\x20\x20\x20</d','createElem','<b\x20style=\x22','Ansichtsmo','-weight:70','ezaob','KzeIo','getSelecti','kDmSH','tet','JPYSp','YfXlZ','</div>\x0a\x20\x20\x20','jHxjh','IwpZp','\x20\x20\x20\x20\x20<div\x20','torAll','ass=\x22q-tex','\x20sonlandır','ction\x22>','user-highl','eaning=\x22','btn-prev','Verbleiben','NZVou','BESTÄTIGEN','GTkez','DkZZW','\x20selected','Change\x20vie','Time:','rObEq','getRangeAt','Hata:\x20Gird','ntenstehen','oss\x20differ','stat-rem','view-exam','><br>Sınav','11UaBsDi','Anlık\x20Süre','div','Başlama\x20sa','/div>\x0a\x20\x20\x20\x20','Enter\x20your','uvwxyzABCD','\x27)\x22','uTPSg','Test\x20Name','ault','joSqU','aASMj','stat-end','Test\x20Infor','Sınavı\x20Son','dan\x20salond','Fragen\x20ges','tted\x20exit\x20','appendChil','><br>You\x20c','oATeZ','surroundCo','ykSga','leqQW','\x20diese\x20dur','●\x20Cevaplad','zPayB','24OqLMqL','color:var(','0;\x22>\x0a\x20\x20\x20\x20\x20','ach\x20Beendi','vhNCq','eLkoP','rd\x22\x20data-m','Time\x20Infor','ass=\x22optio','ass=\x22opt-t','CCbLl','\x22q-bookmar','rGSUR','lihpB','n\x20Sie\x20die\x20','iştir','können\x20Sie','Kimlik\x20Num','svg\x20class=','All\x20Questi','Change\x20fon','iymJf','type','\x22explanati','modal-fini','Gugdv','blLQr','commonAnce','IBTBN','\x20\x20\x20','dunu\x20değiş','ng\x20the\x20exa','nodeType','\x20class=\x22q-','-1.1-.9-2-','stener','RLIjd','xdzxU','2-2z\x22/>\x0a\x20\x20','nen\x20Sie\x20di','am\x20edemezs','fortsetzen','Cevaplanmı','\x20class=\x22sp','ne\x22>\x0a\x20\x20\x20\x20\x20','Test\x20Bilgi','Avg\x20Time/Q','ya\x20YU\x20numa','split','ilini\x20deği','uctions','biUvB','eGOwP','ht\x20vor\x20der','jQMTI','gen','setPropert','r\x20to\x20confi','none','\x20</div>\x0a\x20\x20','\x220\x200\x2024\x2024','KThYO','\x20\x20\x20\x20\x20\x20<pat','our\x20T.C.\x20I','Toplam\x20sor','eave\x20the\x20h','Next<br>qu','Wenn\x20Sie\x20d','iniz.','split-left','Anlık\x20Duru','tnrRv','x;\x22>ÇÖZÜM\x20','beTjc','EFGHIJKLMN','Sınavı\x20tam','ipexl','header-tim','QOJJl','hYYWg','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','correct','2|3|4|1|0','jmRIA','249626qWzIhh','in\x20T.C.\x20Ki','DLiko','display','dıktan\x20son','kLEYz','ar\x20deneyin','klmnopqrst','Vorherige<','UHIMY','de:\x20','urppJ','-font-size','inish\x20the\x20','tc-input','Zeitinform','UYKxZ','ZzpBW','Aydınlık\x20M','w\x20mode','classList','\x20yanlış!\x20L','ationen','\x20\x20\x20\x20\x20\x20</di','marked','\x20\x20\x20\x20\x20','Yazı\x20büyük','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20','Gözden\x20Geç','0123456789','qiEvz','xpvhS','Elapsed','cbQwB','sAurx','div\x20style=','U.\x20number\x20','bschließen','CONFIRM','QStAT','\x20Ihrer\x20T.C','Geçen\x20süre','bbVuT','UrNKp','ABQVn','sPneC','Previous<b','body','ass=\x22','getMinutes','-Nummer\x20ei','ğru:\x20','Alle\x20Frage','inue\x20the\x20e','\x20\x20\x20\x20\x20</div','NiuPW','\x20\x20\x20</div>\x0a','toFixed','-circle\x22>','○\x20Unanswer','Status','Time\x20Left:','sqOfi','all\x20before','CzaUP','dahi\x20sınav','r-wrapper','contextmen','ştir.','anel','>\x0a\x20\x20\x20\x20','t:100%;\x22>\x0a','\x20bestätige','u\x20cannot\x20l','.\x20numarası','u\x20sayısı','ra\x20tekrar\x20','estion','ı\x20veya\x20Y.U','Start\x20Time','ati'];_0x17fa=function(){return _0x329923;};return _0x17fa();}function handleHighlight(){const _0x215eb8=_0x10335d,_0x3b8c26={'YfXlZ':function(_0x14cd49,_0x3f027d){return _0x14cd49>_0x3f027d;},'hAoJu':function(_0x4f744d,_0x3924a9){return _0x4f744d===_0x3924a9;},'eZHOm':_0x215eb8(0x229),'ykSga':_0x215eb8(0x332)+_0x215eb8(0x1df),'MhpQT':_0x215eb8(0x2be)+_0x215eb8(0x3f3),'EjZGC':_0x215eb8(0x3fc),'joSqU':_0x215eb8(0x3d2)+_0x215eb8(0x393)+_0x215eb8(0x2cd)+_0x215eb8(0x3c2)+'.'},_0x18277d=window[_0x215eb8(0x2b1)+'on'](),_0x1dde54=_0x18277d[_0x215eb8(0x16e)]();if(_0x3b8c26[_0x215eb8(0x2b5)](_0x1dde54[_0x215eb8(0x240)],-0x1939+0x125*-0x1+0x32*0x87)){let _0x3c75a9=_0x18277d[_0x215eb8(0x29e)],_0x357e4f=![];while(_0x3c75a9&&_0x3b8c26[_0x215eb8(0x214)](_0x3c75a9[_0x215eb8(0x30d)],0x171a+-0x12b*0x5+-0x1142)){if(_0x3c75a9[_0x215eb8(0x355)][_0x215eb8(0x270)](_0x3b8c26[_0x215eb8(0x40f)])||_0x3c75a9[_0x215eb8(0x355)][_0x215eb8(0x270)](_0x3b8c26[_0x215eb8(0x2e8)])){_0x357e4f=!![];break;}_0x3c75a9=_0x3c75a9[_0x215eb8(0x242)];}if(!_0x357e4f&&_0x18277d[_0x215eb8(0x29e)][_0x215eb8(0x242)]){let _0x1a749c=_0x18277d[_0x215eb8(0x29e)][_0x215eb8(0x242)];while(_0x1a749c){if(_0x1a749c[_0x215eb8(0x355)]&&(_0x1a749c[_0x215eb8(0x355)][_0x215eb8(0x270)](_0x3b8c26[_0x215eb8(0x40f)])||_0x1a749c[_0x215eb8(0x355)][_0x215eb8(0x270)](_0x3b8c26[_0x215eb8(0x2e8)]))){_0x357e4f=!![];break;}_0x1a749c=_0x1a749c[_0x215eb8(0x242)];}}if(_0x357e4f)try{const _0x3c7cdb=_0x18277d[_0x215eb8(0x2ca)](-0xc28+-0x15ce+-0x2*-0x10fb);if(_0x3c7cdb[_0x215eb8(0x308)+_0x215eb8(0x268)+_0x215eb8(0x291)][_0x215eb8(0x242)][_0x215eb8(0x355)][_0x215eb8(0x270)](_0x3b8c26[_0x215eb8(0x233)]))return;const _0x24b4e2=document[_0x215eb8(0x2ab)+_0x215eb8(0x1d7)](_0x3b8c26[_0x215eb8(0x194)]);_0x24b4e2[_0x215eb8(0x3cb)]=_0x3b8c26[_0x215eb8(0x233)],_0x3c7cdb[_0x215eb8(0x2e7)+_0x215eb8(0x1d4)](_0x24b4e2),_0x18277d[_0x215eb8(0x1e6)+_0x215eb8(0x187)]();}catch(_0x61cd80){console[_0x215eb8(0x408)](_0x3b8c26[_0x215eb8(0x2dc)]);}}}document[_0x10335d(0x423)+_0x10335d(0x310)](_0x10335d(0x29c),handleHighlight),document[_0x10335d(0x423)+_0x10335d(0x310)](_0x10335d(0x28f),function(){const _0x36373b=_0x10335d,_0x480d84={'dnPWf':function(_0x26e5c3,_0x3031e2,_0x3e78ad){return _0x26e5c3(_0x3031e2,_0x3e78ad);}};_0x480d84[_0x36373b(0x197)](setTimeout,handleHighlight,-0x16e*-0x14+0x1c0a+-0x12d*0x30);}),document[_0x10335d(0x423)+_0x10335d(0x310)](_0x10335d(0x384)+'u',function(_0x2bb058){const _0x55de4a=_0x10335d,_0x38341b={'ldGga':_0x55de4a(0x2be)+_0x55de4a(0x3f3)};if(_0x2bb058[_0x55de4a(0x396)][_0x55de4a(0x355)][_0x55de4a(0x270)](_0x38341b[_0x55de4a(0x263)])){_0x2bb058[_0x55de4a(0x1ca)+_0x55de4a(0x2db)]();const _0x1f1bcb=_0x2bb058[_0x55de4a(0x396)][_0x55de4a(0x242)];while(_0x2bb058[_0x55de4a(0x396)][_0x55de4a(0x17c)]){_0x1f1bcb[_0x55de4a(0x208)+'re'](_0x2bb058[_0x55de4a(0x396)][_0x55de4a(0x17c)],_0x2bb058[_0x55de4a(0x396)]);}return _0x1f1bcb[_0x55de4a(0x3f9)+'d'](_0x2bb058[_0x55de4a(0x396)]),![];}});function changeMode(_0xa75b62){const _0x30826b=_0x10335d,_0x5d1a57={'jmeBD':function(_0x3ed98e,_0x40c531){return _0x3ed98e===_0x40c531;},'YWrKC':_0x30826b(0x201),'sPneC':_0x30826b(0x298)};_0x5d1a57[_0x30826b(0x266)](_0xa75b62,_0x5d1a57[_0x30826b(0x3fd)])?document[_0x30826b(0x370)][_0x30826b(0x355)][_0x30826b(0x410)](_0x5d1a57[_0x30826b(0x36e)]):document[_0x30826b(0x370)][_0x30826b(0x355)][_0x30826b(0x22a)](_0x5d1a57[_0x30826b(0x36e)]);}let generatedCaptcha='';window[_0x10335d(0x423)+_0x10335d(0x310)](_0x10335d(0x3ab),()=>{const _0x12fec9=_0x10335d,_0x4db1c8={'tnrRv':function(_0x51e8d7){return _0x51e8d7();}};_0x4db1c8[_0x12fec9(0x334)](refreshCaptcha);});function refreshCaptcha(){const _0x2ceb5b=_0x10335d,_0x5c5299={'ieQeg':_0x2ceb5b(0x35e)+_0x2ceb5b(0x21a)+_0x2ceb5b(0x348)+_0x2ceb5b(0x2d7)+_0x2ceb5b(0x337)+_0x2ceb5b(0x1d2)+'YZ','yMpkI':function(_0x3832b9,_0x16c52e){return _0x3832b9<_0x16c52e;},'qiEvz':function(_0x4441a9,_0x174dcd){return _0x4441a9*_0x174dcd;},'pghOn':_0x2ceb5b(0x1c1)+_0x2ceb5b(0x16c),'SBTMk':_0x2ceb5b(0x3e1)+_0x2ceb5b(0x2a3)},_0x2b1dea=_0x5c5299[_0x2ceb5b(0x1bb)];let _0x520435='';for(let _0x5ac0ff=-0x2473+-0x1*0x18f8+-0x6d3*-0x9;_0x5c5299[_0x2ceb5b(0x232)](_0x5ac0ff,0x11a5*0x1+-0x1c*0xad+-0x1*-0x14c);_0x5ac0ff++){_0x520435+=_0x2b1dea[Math[_0x2ceb5b(0x392)](_0x5c5299[_0x2ceb5b(0x35f)](Math[_0x2ceb5b(0x1cd)](),_0x2b1dea[_0x2ceb5b(0x240)]))];}generatedCaptcha=_0x520435,document[_0x2ceb5b(0x264)+_0x2ceb5b(0x427)](_0x5c5299[_0x2ceb5b(0x206)])[_0x2ceb5b(0x16f)]=_0x520435,document[_0x2ceb5b(0x264)+_0x2ceb5b(0x427)](_0x5c5299[_0x2ceb5b(0x284)])[_0x2ceb5b(0x230)]='';}function playCaptchaSound(){const _0x176fc4=_0x10335d,_0x5a2b4c={'QDUux':function(_0x27379c,_0x56091a){return _0x27379c(_0x56091a);},'slJgX':function(_0x547776,_0x392cae){return _0x547776+_0x392cae;},'jbpZs':_0x176fc4(0x3a0)+_0x176fc4(0x34b)};_0x5a2b4c[_0x176fc4(0x398)](alert,_0x5a2b4c[_0x176fc4(0x283)](_0x5a2b4c[_0x176fc4(0x210)],generatedCaptcha[_0x176fc4(0x31d)]('')[_0x176fc4(0x3e5)]('\x20')));}function validateLogin(){const _0x4dcbe9=_0x10335d,_0x1118fa={'UwxtO':_0x4dcbe9(0x34f),'oQGaP':_0x4dcbe9(0x3e1)+_0x4dcbe9(0x2a3),'iVQON':function(_0x2a1892,_0x3d8199){return _0x2a1892!==_0x3d8199;},'jQMTI':function(_0x44dd89,_0x172d43){return _0x44dd89(_0x172d43);},'gxozF':_0x4dcbe9(0x2cb)+_0x4dcbe9(0x1ac)+_0x4dcbe9(0x20b)+_0x4dcbe9(0x356)+_0x4dcbe9(0x23a)+_0x4dcbe9(0x347)+_0x4dcbe9(0x3e3),'tHDrd':function(_0x3daa11){return _0x3daa11();},'eLkoP':function(_0xdf2a79,_0x4daf6f){return _0xdf2a79(_0x4daf6f);},'sCVYP':_0x4dcbe9(0x248)+_0x4dcbe9(0x16d)+_0x4dcbe9(0x2fe)+_0x4dcbe9(0x24d)+_0x4dcbe9(0x331),'RLJcY':_0x4dcbe9(0x1e9)+_0x4dcbe9(0x162)},_0x231b7c=document[_0x4dcbe9(0x264)+_0x4dcbe9(0x427)](_0x1118fa[_0x4dcbe9(0x204)])[_0x4dcbe9(0x230)][_0x4dcbe9(0x2a9)](),_0x5ba374=document[_0x4dcbe9(0x264)+_0x4dcbe9(0x427)](_0x1118fa[_0x4dcbe9(0x399)])[_0x4dcbe9(0x230)][_0x4dcbe9(0x2a9)]();if(_0x1118fa[_0x4dcbe9(0x3af)](_0x5ba374,generatedCaptcha)){_0x1118fa[_0x4dcbe9(0x323)](alert,_0x1118fa[_0x4dcbe9(0x3a3)]),_0x1118fa[_0x4dcbe9(0x1b8)](refreshCaptcha);return;}if(!_0x1118fa[_0x4dcbe9(0x323)](checkTC,_0x231b7c)){_0x1118fa[_0x4dcbe9(0x2f2)](alert,_0x1118fa[_0x4dcbe9(0x191)]);return;}document[_0x4dcbe9(0x183)+_0x4dcbe9(0x1ce)](_0x1118fa[_0x4dcbe9(0x3a4)])[_0x4dcbe9(0x16f)]=_0x231b7c,_0x1118fa[_0x4dcbe9(0x1b8)](goInstructions);}function checkTC(_0x544ce8){const _0x407769=_0x10335d,_0x47897e={'vhNCq':function(_0x1bd652,_0x4a8f80){return _0x1bd652+_0x4a8f80;},'KzeIo':function(_0x1c2436,_0x1109d1){return _0x1c2436+_0x1109d1;},'CCbLl':function(_0x2a39d8,_0x4196be){return _0x2a39d8+_0x4196be;},'NYCjx':function(_0x45a76c,_0x5b6ef7){return _0x45a76c+_0x5b6ef7;},'xpvhS':function(_0x5009cd,_0x37a8d4){return _0x5009cd%_0x37a8d4;},'oDlOv':function(_0x4dc254,_0x4732db){return _0x4dc254-_0x4732db;},'sqOfi':function(_0x202a4c,_0x5b1edf){return _0x202a4c*_0x5b1edf;},'sENjh':function(_0x1e6152,_0x5e68f3){return _0x1e6152<_0x5e68f3;},'cawuz':function(_0x1b5d59,_0x372a20){return _0x1b5d59!==_0x372a20;},'DkZZW':function(_0x594506,_0x51a370){return _0x594506<_0x51a370;},'vDcRq':function(_0x54aecb,_0x2d805d){return _0x54aecb!==_0x2d805d;},'jNRnZ':function(_0x472ad1,_0x486cdb){return _0x472ad1%_0x486cdb;}};_0x544ce8=_0x544ce8[_0x407769(0x16e)]();const _0x91344b=/^[1-9]{1}[0-9]{9}[02468]{1}$/[_0x407769(0x1f5)](_0x544ce8);if(!_0x91344b)return![];let _0x49d916=_0x544ce8[_0x407769(0x31d)]('')[_0x407769(0x292)](Number),_0xdfb385=_0x47897e[_0x407769(0x2f1)](_0x47897e[_0x407769(0x2f1)](_0x47897e[_0x407769(0x2b0)](_0x47897e[_0x407769(0x2f7)](_0x49d916[-0x18b*0xd+-0x1*0x12e3+-0x2*-0x1379],_0x49d916[-0xb12*0x2+-0x1*0x1f1b+0x3541]),_0x49d916[0xf75+0x739+-0x16aa]),_0x49d916[0x4f*0x2c+0x118b+-0x1f19]),_0x49d916[0x5f*-0x38+0x4*0x3ba+0x5e8]),_0xaf67d7=_0x47897e[_0x407769(0x26e)](_0x47897e[_0x407769(0x26e)](_0x47897e[_0x407769(0x2f7)](_0x49d916[0x1*-0x1dba+0x2*-0x833+0x2e21],_0x49d916[0x2365+-0xdb2+-0x15b0]),_0x49d916[0x2*0xc9b+-0x24cd*-0x1+-0x211*0x1e]),_0x49d916[-0xb5c*0x3+-0x75d+0x2978]),_0x518975=_0x47897e[_0x407769(0x360)](_0x47897e[_0x407769(0x188)](_0x47897e[_0x407769(0x37f)](_0xdfb385,-0xd9b+-0x1*-0x14cb+-0x27*0x2f),_0xaf67d7),0xf65+0x223a+-0x3195);if(_0x47897e[_0x407769(0x39d)](_0x518975,-0x1347*-0x1+-0x1b08+0x7c1))_0x518975+=0x14bf*-0x1+0x16*-0xe5+-0xd7d*-0x3;if(_0x47897e[_0x407769(0x41d)](_0x518975,_0x49d916[0x1ed*-0x1+-0xca2+0xe98]))return![];let _0x1bc59f=0x2d1*-0xd+-0x2*0x479+-0x1*-0x2d8f;for(let _0x38957e=0x493+-0x2f*0x1b+0x62;_0x47897e[_0x407769(0x2c5)](_0x38957e,-0x1857+0x20f2+-0x2b*0x33);_0x38957e++)_0x1bc59f+=_0x49d916[_0x38957e];if(_0x47897e[_0x407769(0x24f)](_0x47897e[_0x407769(0x1d5)](_0x1bc59f,-0xbe4*0x1+-0x24ef+-0x7*-0x6fb),_0x49d916[0x663+-0x7b8+0x15f]))return![];return!![];}
+// --- TRANSLATIONS ---
+const translations = {
+    tr: {
+        status: "Anlık Durum",
+        review: "Gözden Geçir",
+        finish: "Sınavı Sonlandır",
+        timeLeft: "Kalan Süre:",
+        time: "Saat:",
+        settings: "Ayarlar",
+        close: "KAPAT",
+        testInfo: "Test Bilgileri",
+        testName: "Test Adı",
+        totalQ: "Toplam soru sayısı",
+        answeredQ: "Cevaplanmış S. Sayısı",
+        remQ: "Kalan Soru Sayısı",
+        timeInfo: "Anlık Süre Bilgileri",
+        startTime: "Başlama saati",
+        endTime: "Bitiş saati",
+        duration: "Sınav süresi",
+        elapsed: "Geçen süre",
+        avgTime: "Soru başına ortalama süre",
+        selectTest: "Test Seçiniz",
+        allQ: "Tüm Sorular",
+        answered: "● Cevapladıklarım",
+        marked: "⚑ İşaretlediklerim",
+        empty: "○ Boş Bıraktıklarım",
+        finishWarning: "Sınavı bitirdiğinizde aşağıdaki kutucuğa T.C. kimlik numarası veya Y.U. numarası girerek sınavı sonlandırabilirsiniz.<br><br>Sınav sonlandırdıktan sonra tekrar sınava devam edemezsiniz. Sınavı sonlandırırsanız dahi sınavdan çıkabileceğiniz süre dolmadan salondan ayrılamazsınız.",
+        finishPrompt: "Sınavı tamamlamak için T.C. Kimlik No veya YU numarasını girip onaylayınız.",
+        confirm: "ONAYLA",
+        changeLang: "Uygulama dilini değiştir.",
+        changeFont: "Yazı büyüklüğünü değiştir",
+        changeMode: "Görünüm modunu değiştir",
+        lightMode: "Aydınlık Mod",
+        darkMode: "Karanlık Mod",
+        prevQ: "Önceki<br>soru",
+        nextQ: "Sonraki<br>soru",
+        exitReview: "ÇIKIŞ / MENÜ"
+    },
+    en: {
+        status: "Status",
+        review: "Review",
+        finish: "Finish Exam",
+        timeLeft: "Time Left:",
+        time: "Time:",
+        settings: "Settings",
+        close: "CLOSE",
+        testInfo: "Test Information",
+        testName: "Test Name",
+        totalQ: "Total Questions",
+        answeredQ: "Answered",
+        remQ: "Remaining",
+        timeInfo: "Time Information",
+        startTime: "Start Time",
+        endTime: "End Time",
+        duration: "Duration",
+        elapsed: "Elapsed",
+        avgTime: "Avg Time/Question",
+        selectTest: "Select Test",
+        allQ: "All Questions",
+        answered: "● Answered",
+        marked: "⚑ Marked",
+        empty: "○ Unanswered",
+        finishWarning: "When you finish the exam, you can terminate it by entering your T.C. Identity Number or Y.U. number in the box below.<br><br>You cannot continue the exam after terminating it. Even if you terminate the exam, you cannot leave the hall before the permitted exit time.",
+        finishPrompt: "Enter your T.C. ID or YU number to confirm finishing the exam.",
+        confirm: "CONFIRM",
+        changeLang: "Change application language.",
+        changeFont: "Change font size",
+        changeMode: "Change view mode",
+        lightMode: "Light Mode",
+        darkMode: "Dark Mode",
+        prevQ: "Previous<br>question",
+        nextQ: "Next<br>question",
+        exitReview: "EXIT / MENU"
+    },
+    de: {
+        status: "Status",
+        review: "Überprüfen",
+        finish: "Prüfung beenden",
+        timeLeft: "Verbleibend:",
+        time: "Zeit:",
+        settings: "Einstellungen",
+        close: "SCHLIESSEN",
+        testInfo: "Testinformationen",
+        testName: "Testname",
+        totalQ: "Fragen gesamt",
+        answeredQ: "Beantwortet",
+        remQ: "Verbleibend",
+        timeInfo: "Zeitinformationen",
+        startTime: "Startzeit",
+        endTime: "Endzeit",
+        duration: "Dauer",
+        elapsed: "Verstrichen",
+        avgTime: "Ø Zeit/Frage",
+        selectTest: "Test auswählen",
+        allQ: "Alle Fragen",
+        answered: "● Beantwortet",
+        marked: "⚑ Markiert",
+        empty: "○ Unbeantwortet",
+        finishWarning: "Wenn Sie die Prüfung beenden, können Sie diese durch Eingabe Ihrer T.C. Identitätsnummer oder Y.U. Nummer im untenstehenden Feld abschließen.<br><br>Nach Beendigung der Prüfung können Sie diese nicht fortsetzen. Auch wenn Sie die Prüfung beenden, dürfen Sie den Saal nicht vor der erlaubten Zeit verlassen.",
+        finishPrompt: "Geben Sie Ihre T.C. ID oder YU-Nummer ein, um das Beenden zu bestätigen.",
+        confirm: "BESTÄTIGEN",
+        changeLang: "Sprache ändern.",
+        changeFont: "Schriftgröße ändern",
+        changeMode: "Ansichtsmodus ändern",
+        lightMode: "Heller Modus",
+        darkMode: "Dunkler Modus",
+        prevQ: "Vorherige<br>Frage",
+        nextQ: "Nächste<br>Frage",
+        exitReview: "AUSGANG / MENÜ"
+    }
+};
+// --- STATE ---
+let currentQIndex = 0;
+let userAnswers = {};
+let bookmarks = {};
+let timeLeft = 180 * 60; 
+let timerRunning = false;
+let timerInt;
+let fontSz = 16;
+let timerVis = true;
+let currentLang = 'tr';
+let isExamFinished = false; // New State for Review Mode
+let examStartTime = null;
+
+// --- INIT ---
+setInterval(() => {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString('en-GB', { hour12: false });
+    document.getElementById('header-clock').innerText = timeStr;
+}, 1000);
+
+// --- NAVIGATION ---
+function goInstructions() {
+    document.getElementById('view-login').classList.add('hidden');
+    // Show Header only
+    document.getElementById('main-header-wrapper').style.display = 'flex';
+    document.getElementById('view-instructions').style.display = 'flex';
+}
+
+function startExam() {
+    document.getElementById('view-instructions').style.display = 'none';
+    document.getElementById('view-exam').style.display = 'flex';
+    
+    // 1. Set the absolute Start Time (New Logic)
+    if (!examStartTime) {
+        examStartTime = Date.now(); 
+    }
+
+    // 2. Set Visual Stat Times
+    const now = new Date(examStartTime);
+    const end = new Date(examStartTime + 180 * 60000); // 180 mins later
+    document.getElementById('stat-start').innerText = now.getHours() + ":" + String(now.getMinutes()).padStart(2,'0');
+    document.getElementById('stat-end').innerText = end.getHours() + ":" + String(end.getMinutes()).padStart(2,'0');
+
+    // 3. Start Timer & Save
+    if (!timerRunning) {
+        timerRunning = true;
+        timerInt = setInterval(tick, 1000);
+    }
+    
+    saveExamState(); // <--- Important: Save the start time immediately
+    renderQuestion();
+}
+
+// --- EXAM LOGIC ---
+function confirmFinishExam() {
+    closeModal('modal-finish');
+    finishExamProcess();
+}
+
+function finishExamProcess() {
+    clearInterval(timerInt);
+    isExamFinished = true;
+    timerRunning = false;
+    saveExamState();
+    
+    // Calculate Score
+    let correctCount = 0;
+    questions.forEach((q, idx) => {
+        if (userAnswers[idx] === q.correct) correctCount++;
+    });
+    let score = (correctCount * 1.25).toFixed(2);
+    
+    alert(`Sınav Tamamlandı!\nDoğru: ${correctCount}/${questions.length}\nPuan: ${score}`);
+
+    updateFinishButton();
+    // Re-render in Review Mode
+    renderQuestion();
+}
+
+// --- RENDER ---
+function renderQuestion() {
+    const q = questions[currentQIndex];
+    const card = document.getElementById('q-card');
+    
+    document.getElementById('btn-prev').classList.toggle('disabled', currentQIndex === 0);
+    document.getElementById('btn-next').classList.toggle('disabled', currentQIndex === questions.length - 1);
+
+    const displayNum = q.id ? q.id + "." : (currentQIndex + 1) + ".";
+    const isMarked = bookmarks[currentQIndex];
+
+    const sidebarHTML = `
+        <div class="q-num-col">
+            <div class="q-number-big">${displayNum}</div>
+            <svg class="q-bookmark-icon ${isMarked ? 'active' : ''}" viewBox="0 0 24 24" onclick="toggleMark()">
+                    <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+        </div>
+    `;
+
+    // Prepare content text (with dictionary if finished)
+    const processedText = processText(q.text, q);
+    const processedPara = q.paragraph ? processText(q.paragraph, q) : "";
+    const explanationHTML = isExamFinished && q.explanation ? `
+        <div class="explanation-box visible">
+                <span style="font-weight:700; color:#28a745; display:block; margin-bottom:10px;">ÇÖZÜM ANALİZİ</span>
+                ${q.explanation}
+        </div>
+    ` : '';
+
+    if (q.type === 'A') {
+        card.innerHTML = `
+            ${sidebarHTML}
+            <div class="q-body">
+                <div class="q-instruction">${q.instruction}</div>
+                <div class="q-text-content">${processedText}</div>
+                <div class="options-container">
+                    ${getOptionsHTML(q)}
+                </div>
+                ${explanationHTML}
+            </div>
+        `;
+    } else if (q.type === 'B') {
+        card.innerHTML = `
+            <div class="layout-split">
+                <div class="split-left-pane">
+                    <div class="q-instruction" style="margin-bottom:15px;">${q.instruction}</div>
+                    <p>${highlightGap(processedPara, q.id)}</p>
+                </div>
+                <div class="split-right-pane">
+                        <div style="display:flex; height:100%;">
+                        ${sidebarHTML}
+                        <div class="q-body" style="padding: 40px 0 0 0;">
+                            <div class="options-container">
+                                ${getOptionsHTML(q)}
+                            </div>
+                            ${explanationHTML}
+                        </div>
+                        </div>
+                </div>
+            </div>
+        `;
+    }
+}
+
+// Helper to add dictionary tooltips
+function processText(text, q) {
+    if (!text) return "";
+    if (!isExamFinished || !q.dict) return text;
+    let processed = text;
+    Object.keys(q.dict).forEach(word => {
+        const meaning = q.dict[word];
+        // Simple regex replacement (case insensitive)
+        const regex = new RegExp(`\\b(${word})\\b`, 'gi');
+        processed = processed.replace(regex, `<span class="dict-word" data-meaning="${meaning}">$1</span>`);
+    });
+    return processed;
+}
+
+function highlightGap(text, id) {
+        return text.replace(`(${id})`, `<b style="color:var(--red-btn);">(${id})</b>`);
+}
+
+function getOptionsHTML(q) {
+    return Object.keys(q.options).map(key => {
+        const isSelected = userAnswers[currentQIndex] === key;
+        let className = 'option-row';
+        
+        if (isExamFinished) {
+            if (key === q.correct) {
+                className += ' correct';
+            } else if (isSelected) {
+                className += ' wrong';
+            }
+        } else {
+            if (isSelected) className += ' selected';
+        }
+
+        // Disable clicking if finished
+        const clickAction = isExamFinished ? '' : `onclick="answer('${key}')"`;
+
+        return `
+            <div class="${className}" ${clickAction}>
+                <div class="opt-letter-circle">${key}</div>
+                <div class="opt-text-val">${q.options[key]}</div>
+            </div>
+        `;
+    }).join('');
+}
+
+function answer(key) {
+    if (isExamFinished) return;
+    userAnswers[currentQIndex] = key;
+    saveExamState();
+    renderQuestion();
+}
+
+function toggleMark() {
+    bookmarks[currentQIndex] = !bookmarks[currentQIndex];
+    saveExamState();
+    renderQuestion();
+}
+
+function nextQuestion() {
+    if (currentQIndex < questions.length - 1) {
+        currentQIndex++;
+        saveExamState();
+        renderQuestion();
+    }
+}
+
+function prevQuestion() {
+    if (currentQIndex > 0) {
+        currentQIndex--;
+        saveExamState();
+        renderQuestion();
+    }
+}
+
+// --- TIMER ---
+function tick() {
+    timeLeft--;
+    
+    // 1. Check if time is up
+    if (timeLeft < 0) { 
+        timeLeft = 0;
+        finishExamProcess(); // Auto finish
+        return; // Add return to stop the rest of the function running
+    } // <--- YOU WERE MISSING THIS CLOSING BRACKET
+    
+    // 2. Save every 5 seconds
+    if (timeLeft % 5 === 0) {
+        saveExamState();
+    }
+
+    // 3. Update UI
+    const m = Math.floor(timeLeft / 60).toString().padStart(2,'0');
+    const s = (timeLeft % 60).toString().padStart(2,'0');
+    
+    document.getElementById('header-timer').innerText = `${m}:${s}`;
+    
+    const elapsed = (180 * 60) - timeLeft;
+    document.getElementById('stat-elapsed').innerText = Math.floor(elapsed/60) + " dk " + (elapsed%60) + " sn";
+    document.getElementById('stat-left').innerText = m + " dk " + s + " sn";
+}
+
+function toggleTimerVis() {
+    timerVis = !timerVis;
+    // Toggle visibility of the wrapper
+    const wrapper = document.getElementById('timer-wrapper');
+    if (wrapper) {
+        wrapper.style.visibility = timerVis ? 'visible' : 'hidden';
+    }
+}
+
+// --- MODALS & SETTINGS ---
+function openModal(id) {
+    document.getElementById(id).classList.add('active');
+    if (id === 'modal-status') updateStatus();
+}
+function closeModal(id) {
+    document.getElementById(id).classList.remove('active');
+}
+function toggleSettings() {
+    document.getElementById('settings-panel').classList.toggle('open');
+}
+
+function updateStatus() {
+    const count = Object.keys(userAnswers).length;
+    document.getElementById('stat-ans').innerText = count;
+    document.getElementById('stat-rem').innerText = 80 - count;
+}
+
+function openReviewModal() {
+    openModal('modal-review');
+    filterReview('all', document.querySelector('.rev-btn.active'));
+}
+
+function filterReview(type, btn) {
+    document.querySelectorAll('.rev-btn').forEach(b => b.classList.remove('active'));
+    if(btn) btn.classList.add('active');
+
+    const grid = document.getElementById('rev-grid-container');
+    grid.innerHTML = '';
+
+    // ... inside filterReview function ...
+    for(let i=0; i<80; i++) {
+        // Calculate the actual Question ID (Grid starts at 0, Questions start at 1)
+        const targetId = i + 1;
+        
+        // Search your 'questions' array for the object that has this ID
+        const qIdx = questions.findIndex(q => q.id === targetId);
+
+        const hasData = qIdx !== -1; 
+        const userAnswer = userAnswers[qIdx];
+        const isAns = hasData && userAnswer;
+        const isMark = hasData && bookmarks[qIdx];
+        const isCurr = hasData && qIdx === currentQIndex;
+
+        let show = false;
+        if (type === 'all') show = true;
+        if (type === 'answered' && isAns) show = true;
+        if (type === 'marked' && isMark) show = true;
+        if (type === 'empty' && !isAns) show = true;
+
+        if (show) {
+            const cell = document.createElement('div');
+            cell.className = 'rev-cell';
+            cell.innerText = i + 1;
+            
+            if (isExamFinished && hasData) {
+                    if (userAnswer === questions[qIdx].correct) {
+                        cell.classList.add('is-correct');
+                    } else if (userAnswer) { // Only mark wrong if answered
+                        cell.classList.add('is-wrong');
+                    }
+            } else {
+                if (isAns) cell.classList.add('answered');
+            }
+
+            if (isMark) cell.classList.add('marked');
+            if (isCurr) cell.classList.add('active'); 
+
+            if (hasData) {
+                cell.onclick = () => {
+                    currentQIndex = qIdx;
+                    renderQuestion();
+                    closeModal('modal-review');
+                }
+            } else {
+                cell.style.opacity = '0.5';
+            }
+            grid.appendChild(cell);
+        }
+    }
+}
+
+// --- NEW FEATURES ---
+
+function resizeFont(dir) {
+    fontSz += dir;
+    if (fontSz < 12) fontSz = 12;
+    if (fontSz > 40) fontSz = 40; 
+    document.documentElement.style.setProperty('--question-font-size', fontSz + "px");
+    document.getElementById('font-disp').innerText = fontSz;
+}
+
+function changeLang(lang, btn) {
+    currentLang = lang;
+    document.querySelectorAll('.lang-opt').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+        }
+    });
+}
+// --- HIGHLIGHTER LOGIC (Mobile & Desktop) --- //
+
+function handleHighlight() {
+    const selection = window.getSelection();
+    const text = selection.toString();
+
+    // Only proceed if text is selected
+    if (text.length > 0) {
+        // Check if inside question area
+        let node = selection.anchorNode;
+        let isInsideQuestion = false;
+        
+        // Traverse up to find container
+        while (node && node.nodeType === 1) { 
+            if (node.classList.contains('q-body') || node.classList.contains('split-left-pane')) {
+                isInsideQuestion = true;
+                break;
+            }
+            node = node.parentNode;
+        }
+        // Fallback check for text nodes
+        if (!isInsideQuestion && selection.anchorNode.parentNode) {
+            let parent = selection.anchorNode.parentNode;
+            while (parent) {
+                if (parent.classList && (parent.classList.contains('q-body') || parent.classList.contains('split-left-pane'))) {
+                    isInsideQuestion = true;
+                    break;
+                }
+                parent = parent.parentNode;
+            }
+        }
+
+        if (isInsideQuestion) {
+            try {
+                const range = selection.getRangeAt(0);
+                
+                // Avoid highlighting existing highlights (nested spans)
+                if (range.commonAncestorContainer.parentNode.classList.contains('user-highlight')) {
+                    return;
+                }
+
+                const span = document.createElement('span');
+                span.className = 'user-highlight';
+                range.surroundContents(span);
+                selection.removeAllRanges(); // Clear selection
+            } catch (e) {
+                console.log("Cannot highlight across different blocks.");
+            }
+        }
+    }
+}
+
+// 1. Mouse Event (Desktop)
+document.addEventListener('mouseup', handleHighlight);
+
+// 2. Touch Event (Mobile)
+document.addEventListener('touchend', function() {
+    // Small delay to allow mobile selection to finalize
+    setTimeout(handleHighlight, 50);
+});
+
+// 3. Remove Highlight (Right Click / Long Press)
+document.addEventListener('contextmenu', function(e) {
+    if (e.target.classList.contains('user-highlight')) {
+        e.preventDefault(); // Stop right-click menu
+        
+        // Unwrap text
+        const parent = e.target.parentNode;
+        while (e.target.firstChild) {
+            parent.insertBefore(e.target.firstChild, e.target);
+        }
+        parent.removeChild(e.target);
+        return false;
+    }
+});
+
+function changeMode(mode) {
+    if (mode === 'dark') {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+}
+
+// --- LOGIN & VALIDATION LOGIC ---
+
+let generatedCaptcha = "";
+
+// 1. Initialize Captcha when script loads
+window.addEventListener('load', () => {
+    refreshCaptcha();
+    loadExamState();
+});
+
+// 2. Generate Random Captcha
+function refreshCaptcha() {
+    const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let result = "";
+    for (let i = 0; i < 5; i++) {
+        result += chars[Math.floor(Math.random() * chars.length)];
+    }
+    generatedCaptcha = result;
+    document.getElementById('captcha-display').innerText = result;
+    // Clear user input
+    document.getElementById('captcha-input').value = "";
+}
+
+// 3. Audio Placeholder (Optional)
+function playCaptchaSound() {
+    alert("Captcha code: " + generatedCaptcha.split('').join(' '));
+}
+
+// 4. Main Login Validation
+function validateLogin() {
+    const tcInput = document.getElementById('tc-input').value.trim();
+    const captchaInput = document.getElementById('captcha-input').value.trim();
+
+    // A. Validate Captcha
+    if (captchaInput !== generatedCaptcha) {
+        alert("Hata: Girdiğiniz güvenlik kodu yanlış! Lütfen tekrar deneyiniz.");
+        refreshCaptcha();
+        return;
+    }
+
+    // B. Validate TC ID Number
+    if (!checkTC(tcInput)) {
+        alert("Hata: Geçersiz T.C. Kimlik Numarası girdiniz.");
+        return;
+    }
+
+    // C. Success -> Proceed to Instructions
+    // Update Header Name with ID
+    document.querySelector('.user-id-text').innerText = tcInput;
+    goInstructions(); 
+}
+
+// 5. Official T.C. ID Validation Algorithm
+function checkTC(value) {
+    value = value.toString();
+    
+    // Rule 1: Must be 11 digits, cannot start with 0
+    const isEleven = /^[1-9]{1}[0-9]{9}[02468]{1}$/.test(value);
+    if (!isEleven) return false;
+
+    let digits = value.split('').map(Number);
+    
+    // Rule 2: 10th Digit Check
+    // ((1st+3rd+5th+7th+9th)*7 - (2nd+4th+6th+8th)) % 10 = 10th Digit
+    let oddSum = digits[0] + digits[2] + digits[4] + digits[6] + digits[8];
+    let evenSum = digits[1] + digits[3] + digits[5] + digits[7];
+    
+    let digit10 = ((oddSum * 7) - evenSum) % 10;
+    if (digit10 < 0) digit10 += 10; // Handle JS negative modulo behavior
+
+    if (digit10 !== digits[9]) return false;
+
+    // Rule 3: 11th Digit Check
+    // (Sum of first 10 digits) % 10 = 11th Digit
+    let sumFirst10 = 0;
+    for (let i = 0; i < 10; i++) sumFirst10 += digits[i];
+    
+    if ((sumFirst10 % 10) !== digits[10]) return false;
+
+    return true;
+}
+
+// --- LOCAL STORAGE LOGIC ---
+
+// Save all critical data to the browser
+function saveExamState() {
+    const state = {
+        currentQIndex: currentQIndex,
+        userAnswers: userAnswers,
+        bookmarks: bookmarks,
+        // Save the specific timestamp when the exam started
+        startTime: examStartTime, 
+        isExamFinished: isExamFinished,
+        currentLang: currentLang,
+        fontSz: fontSz,
+        isInExam: document.getElementById('view-exam').style.display === 'flex'
+    };
+    localStorage.setItem('elt_exam_state', JSON.stringify(state));
+}
+
+// Load data when the page opens
+function loadExamState() {
+    const savedJSON = localStorage.getItem('elt_exam_state');
+    if (!savedJSON) return;
+
+    const state = JSON.parse(savedJSON);
+
+    // Restore Basic Data
+    currentQIndex = state.currentQIndex || 0;
+    userAnswers = state.userAnswers || {};
+    bookmarks = state.bookmarks || {};
+    isExamFinished = state.isExamFinished || false;
+    currentLang = state.currentLang || 'tr';
+    fontSz = state.fontSz || 16;
+    examStartTime = state.startTime || null; // Restore Timestamp
+
+    // Restore Settings
+    const langBtn = document.querySelector(`.lang-opt[onclick*="'${currentLang}'"]`);
+    if (langBtn) changeLang(currentLang, langBtn);
+    document.documentElement.style.setProperty('--question-font-size', fontSz + "px");
+    document.getElementById('font-disp').innerText = fontSz;
+
+    // --- TIME CALCULATION LOGIC ---
+    if (state.isInExam && !isExamFinished && examStartTime) {
+        const totalDurationSeconds = 180 * 60; // 3 hours in seconds
+        const now = Date.now();
+        
+        // Calculate seconds passed since the exam started
+        const secondsPassed = Math.floor((now - examStartTime) / 1000);
+        
+        // Update global timeLeft based on real time
+        timeLeft = totalDurationSeconds - secondsPassed;
+
+        // CHECK: Has the time expired?
+        if (timeLeft <= 0) {
+            timeLeft = 0;
+            // Force finish immediately
+            document.getElementById('view-login').classList.add('hidden');
+            document.getElementById('main-header-wrapper').style.display = 'flex';
+            document.getElementById('view-exam').style.display = 'flex';
+            
+            alert("Süre Doldu! Sınav süresi siz yokken sona erdi."); // Alert user
+            finishExamProcess(); // End exam
+            return; // Stop loading
+        }
+    } else {
+        // Fallback if no start time existed (legacy data)
+        timeLeft = 180 * 60;
+    }
+
+    // Restore View if active
+    if (state.isInExam || isExamFinished) {
+        document.getElementById('view-login').classList.add('hidden');
+        document.getElementById('main-header-wrapper').style.display = 'flex';
+        document.getElementById('view-instructions').style.display = 'none';
+        document.getElementById('view-exam').style.display = 'flex';
+        document.querySelector('.user-id-text').innerText = "DEVAM EDİYOR"; 
+
+        // Update Stats Modal with original times
+        if (examStartTime) {
+            const startDate = new Date(examStartTime);
+            const endDate = new Date(examStartTime + 180 * 60000);
+            document.getElementById('stat-start').innerText = startDate.getHours() + ":" + String(startDate.getMinutes()).padStart(2,'0');
+            document.getElementById('stat-end').innerText = endDate.getHours() + ":" + String(endDate.getMinutes()).padStart(2,'0');
+        }
+
+        updateFinishButton();
+
+        renderQuestion();
+
+        // Resume Timer only if not finished and time remains
+        if (!isExamFinished && timeLeft > 0) {
+            timerRunning = true;
+            timerInt = setInterval(tick, 1000);
+        }
+    }
+}
+
+// Clear data (Use this when the user intentionally finishes the exam)
+function clearExamState() {
+    localStorage.removeItem('elt_exam_state');
+}
+
+// --- REVIEW EXIT LOGIC ---
+
+function updateFinishButton() {
+    const btn = document.getElementById('action-finish');
+    if (!btn) return;
+    
+    const span = btn.querySelector('span');
+
+    if (isExamFinished) {
+        // Switch to "Exit Review" mode
+        span.innerText = translations[currentLang].exitReview;
+        span.setAttribute('data-key', 'exitReview');
+        
+        // Override the click event to exit instead of opening the modal
+        btn.onclick = exitReview; 
+    } else {
+        // Restore "Finish Exam" mode
+        span.innerText = translations[currentLang].finish;
+        span.setAttribute('data-key', 'finish');
+        
+        // Restore original modal behavior
+        btn.onclick = () => openModal('modal-finish');
+    }
+}
+
+function exitReview() {
+    if (confirm("İncelemeyi bitirip ana menüye dönmek istediğinize emin misiniz?")) {
+        // Clear the saved exam state so we start fresh next time
+        if (typeof clearExamState === 'function') {
+            clearExamState(); 
+        } else {
+            localStorage.removeItem('elt_exam_state');
+        }
+        // Reload the page to go back to Login Screen
+        location.reload();
+    }
+}
