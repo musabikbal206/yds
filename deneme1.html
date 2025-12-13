@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektronik Sınav Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- === NEW HEADER LAYOUT === -->
+    <div id="main-header-wrapper">
+        <!-- Avatar Sidebar -->
+        <div class="header-avatar-section">
+            <svg class="avatar-img" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+        </div>
+        
+        <!-- Right Content -->
+        <div class="header-content-col">
+            <!-- Top Blue Bar -->
+            <div class="top-blue-bar">
+                <div class="app-title">Elektronik Sınav Uygulaması</div>
+                <button class="btn-settings" onclick="toggleSettings()" data-key="settings">Ayarlar</button>
+            </div>
+            
+            <!-- Bottom White Bar -->
+            <div class="bottom-white-bar">
+                <!-- User Info -->
+                <div class="user-info-group">
+                    <div class="user-id-text"></div>
+                    <div class="user-name-text">Misafir Aday</div>
+                </div>
+                
+                <!-- Actions -->
+                <div class="header-actions-group">
+                    <div class="action-item" onclick="openModal('modal-status')">
+                        <svg class="action-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        <span data-key="status">Anlık Durum</span>
+                    </div>
+                    <div class="action-item" onclick="openReviewModal()">
+                        <svg class="action-icon" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                        <span data-key="review">Gözden Geçir</span>
+                    </div>
+                    <div class="action-item" id="action-finish" onclick="openModal('modal-finish')">
+                        <svg class="action-icon" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                        <span data-key="finish">Sınavı Sonlandır</span>
+                    </div>                    
+                </div>
+
+                <!-- Timer -->
+                <div class="timer-group">
+                    <div id="timer-wrapper" style="display: flex; align-items: center; gap: 10px;">
+                        <span class="timer-text" data-key="timeLeft">Kalan Süre:</span>
+                        <span class="timer-val" id="header-timer">180:00</span>
+                        <span class="timer-text" style="margin-left:5px;" data-key="time">Saat:</span>
+                        <span class="timer-val" id="header-clock">00:00:00</span>
+                    </div>
+                    
+                    <button class="btn-eye" onclick="toggleTimerVis()">
+                        <svg style="width:20px; height:20px; fill:#333;" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === LOGIN SCREEN === -->
+    <div id="view-login">
+        <div class="login-hero">
+            <h1 data-key="appTitle">Elektronik Sınav Uygulaması</h1>
+            <h2 data-key="loginSubtitle">Geçmiş Sınavlar ve Deneme Sınavları</h2>
+        </div>
+        
+        <div class="login-card-container">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                
+                <div class="login-card">
+                    
+                    <label class="test-select-label" data-key="selectTestType">Sınav türü seçiniz</label>
+
+                    <div class="test-dropdown-wrapper">
+                        <div class="test-btn-trigger" onclick="toggleTestMenu()">
+                            <span id="test-display-text" data-key="test1Main">1. Deneme Sınavı</span>
+                            <svg style="width:12px; height:12px; fill:#333;" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+
+                        <div class="test-custom-menu" id="test-custom-menu">
+                            <div class="test-custom-option selected" onclick="location.href='/'">
+                                <span data-key="test1Main" style="font-weight:bold;">1. Deneme Sınavı</span>
+                                <div style="font-size:0.8rem; color:#666;" data-key="testOptionSub">Sınava giriş yapmak için seçiniz</div>
+                            </div>
+                            <div class="test-custom-option" onclick="location.href='deneme2.html'">
+                                <span data-key="test2Main" style="font-weight:bold;">2. Deneme Sınavı</span>
+                                <div style="font-size:0.8rem; color:#666;" data-key="testOptionSub">Sınava giriş yapmak için seçiniz</div>
+                            </div>
+                            <div class="test-custom-option" onclick="location.href='deneme3.html'">
+                                <span data-key="test3Main" style="font-weight:bold;">3. Deneme Sınavı</span>
+                                <div style="font-size:0.8rem; color:#666;" data-key="testOptionSub">Sınava giriş yapmak için seçiniz</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="form-label" data-key="enterIdLabel">T.C. Kimlik veya Y.U. numarası giriniz</label>
+                    <input type="text" id="tc-input" class="form-control" value="" maxlength="11">
+                    
+                    <label class="form-label" data-key="enterCaptchaLabel">Resimdeki kodu giriniz</label>
+                    <div class="captcha-container">
+                        <button class="captcha-btn" onclick="refreshCaptcha()">
+                            <svg class="icon-sm" viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                        </button>
+                        <button class="captcha-btn" onclick="playCaptchaSound()">
+                            <svg class="icon-sm" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        </button>
+                        <div class="captcha-display" id="captcha-display">nfkb2</div>
+                        <input type="text" id="captcha-input" class="form-control" style="width: 80px; margin-bottom:0;" value="">
+                    </div>
+                    
+                    <button class="btn-login" onclick="validateLogin()" data-key="startExamBtn">Sınava Başla</button>
+                </div>
+
+                <div class="lang-wrapper-relative">
+                    <div class="lang-btn-trigger" onclick="toggleLocalLangMenu()">
+                        <span id="lang-display-text">TR: Türkçe</span>
+                        <svg style="width:12px; height:12px; fill:#333;" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+                    </div>
+                    <div class="lang-custom-menu" id="lang-custom-menu">
+                        <div class="lang-custom-option selected" onclick="selectLocalLang('tr', 'TR: Türkçe', this)">TR: Türkçe</div>
+                        <div class="lang-custom-option" onclick="selectLocalLang('en', 'EN: English', this)">EN: English</div>
+                        <div class="lang-custom-option" onclick="selectLocalLang('de', 'DE: Deutsch', this)">DE: Deutsch</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- === INSTRUCTIONS SCREEN (Updated Layout) === -->
+    <div id="view-instructions">
+        <div class="inst-container">
+            <div class="alert-yellow">
+                <span data-key="tutModeInfo">Dilerseniz tutorial modda sınavı hemen başlatabilirsiniz. Gerçek sınavda otomatik olarak başlayacaktır.</span>
+                <button class="btn-tut-start" onclick="startExam()" data-key="startNowBtn">Hemen Başlat</button>
+            </div>
+            
+            <div class="alert-green">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <div style="font-weight:600; line-height:1.4;" data-key="loginSuccessMsg">Sisteme başarıyla giriş yaptınız. Sınav otomatik olarak başlayacaktır. Beklerken aşağıdaki bilgilendirmeleri mutlaka okuyunuz. Sınav başlayana kadar Kullanım Kılavuzunu inceleyebilirsiniz.</div>
+            </div>
+
+            <ul class="inst-list">
+                <li data-key="instItem1">Toplam sınav süreniz <strong>180 dk</strong>dır. Sınavdan çıkabileceğiniz süre dolmadan sınavınızı sonlandırırsanız dahi salondan ayrılamazsınız.</li>
+                <li data-key="instItem2">Eğer sınav sırasında sınava devam etmenizi engelleyecek bir durumla karşılaşırsanız (ekran donması, mouse çalışmaması, soruların işaretlenememesi vb.) el kaldırarak salondaki görevlilerden yardım isteyiniz.</li>
+                <li data-key="instItem3">Sınav başladıktan sonra <strong>3 mola</strong> alma hakkınız bulunmaktadır. Sıranız geldiğinde ekranda size bilgi verilecektir. Her bir mola süresi en fazla 5 dakika ile sınırlıdır. Mola sürenizin kendi sınav sürenizden gittiğini unutmayın.</li>
+                <li data-key="instItem4">Bu sınavda her soru için çoktan seçmeli 5 seçenek bulunmaktadır. Her sorunun yalnızca bir doğru cevabı vardır.</li>
+            </ul>
+
+            <table class="inst-table">
+                <thead>
+                    <tr><th style="width: 50%;">Test</th><th data-key="totalQ">Toplam soru sayısı</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td data-key="englishLang">İNGİLİZCE</td><td>80</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- === EXAM SCREEN === -->
+    <div id="view-exam">
+        <div class="exam-area">
+            <!-- Prev Button -->
+            <div class="nav-float" id="btn-prev" onclick="prevQuestion()">
+                <div class="nav-circle">
+                    <svg class="icon" style="width:32px; height:32px; fill:var(--header-bg);" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </div>
+                <div class="nav-text" data-key="prevQ">Önceki<br>soru</div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="q-card" id="q-card">
+                <!-- Content injected via JS -->
+            </div>
+
+            <!-- Next Button -->
+            <div class="nav-float" id="btn-next" onclick="nextQuestion()">
+                <div class="nav-circle">
+                    <svg class="icon" style="width:32px; height:32px; fill:var(--header-bg);" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </div>
+                <div class="nav-text" data-key="nextQ">Sonraki<br>soru</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === MODALS === -->
+
+    <!-- Status Modal -->
+    <div class="modal-backdrop" id="modal-status">
+        <div class="modal-window">
+            <div class="modal-top">
+                <div class="modal-h-title" data-key="status">ANLIK DURUM</div>
+                <button class="btn-close-red" onclick="closeModal('modal-status')" data-key="close">KAPAT</button>
+            </div>
+            <div class="modal-body">
+                <div class="status-header" data-key="testInfo">Test Bilgileri</div>
+                <table class="tbl-status">
+                    <thead><tr><th data-key="testName">Test Adı</th><th data-key="totalQ">Toplam soru sayısı</th><th data-key="answeredQ">Cevaplanmış S. Sayısı</th><th data-key="remQ">Kalan Soru Sayısı</th></tr></thead>
+                    <tbody><tr><td>İNGİLİZCE</td><td>80</td><td id="stat-ans">0</td><td id="stat-rem">80</td></tr></tbody>
+                </table>
+                <div class="status-header" data-key="timeInfo">Anlık Süre Bilgileri</div>
+                <table class="tbl-status">
+                    <thead><tr><th data-key="startTime">Başlama saati</th><th data-key="endTime">Bitiş saati</th><th data-key="duration">Sınav süresi</th></tr></thead>
+                    <tbody><tr><td id="stat-start">--:--</td><td id="stat-end">--:--</td><td>180 dk</td></tr></tbody>
+                </table>
+                 <table class="tbl-status">
+                    <thead><tr><th data-key="elapsed">Geçen süre</th><th data-key="timeLeft">Kalan süre</th><th data-key="avgTime">Soru başına ortalama süre</th></tr></thead>
+                    <tbody><tr><td id="stat-elapsed">0 sn</td><td id="stat-left">180 dk</td><td>0 dk</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div class="modal-backdrop" id="modal-review">
+        <div class="modal-window">
+            <div class="modal-top">
+                <div class="modal-h-title" data-key="review">GÖZDEN GEÇİR</div>
+                <button class="btn-close-red" onclick="closeModal('modal-review')" data-key="close">KAPAT</button>
+            </div>
+            <div class="modal-body">
+                <div style="margin-bottom:15px; font-weight:600;" data-key="selectTest">Test Seçiniz</div>
+                <select style="width:100%; padding:8px; border:1px solid #ced4da; border-radius:4px; margin-bottom:20px;">
+                    <option>İNGİLİZCE</option>
+                </select>
+                
+                <div class="rev-controls">
+                    <button class="rev-btn active" onclick="filterReview('all', this)" data-key="allQ">Tüm Sorular</button>
+                    <button class="rev-btn" onclick="filterReview('answered', this)" data-key="answered">● Cevapladıklarım</button>
+                    <button class="rev-btn" onclick="filterReview('marked', this)" data-key="marked">⚑ İşaretlediklerim</button>
+                    <button class="rev-btn" onclick="filterReview('empty', this)" data-key="empty">○ Boş Bıraktıklarım</button>
+                </div>
+                
+                <div class="rev-grid" id="rev-grid-container">
+                    <!-- Grid Items -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Finish Modal -->
+    <div class="modal-backdrop" id="modal-finish">
+        <div class="modal-window" style="max-width: 600px;">
+            <div class="modal-top">
+                <div class="modal-h-title" data-key="finish">SINAVI SONLANDIR</div>
+                <button class="btn-close-red" onclick="closeModal('modal-finish')" data-key="close">KAPAT</button>
+            </div>
+            <div class="modal-body">
+                <div class="finish-warning">
+                    <svg class="icon" style="fill:#721c24; min-width:24px;" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                    <div style="font-size:0.9rem; line-height:1.4;" data-key="finishWarning">Sınavı bitirdiğinizde aşağıdaki kutucuğa T.C. kimlik numarası veya Y.U. numarası girerek sınavı sonlandırabilirsiniz.<br><br>Sınav sonlandırdıktan sonra tekrar sınava devam edemezsiniz. Sınavı sonlandırırsanız dahi sınavdan çıkabileceğiniz süre dolmadan salondan ayrılamazsınız.</div>
+                </div>
+                
+                <div class="finish-box">
+                    <span class="finish-label" data-key="finish">Sınavı Sonlandır</span>
+                    <p style="margin-bottom:15px; font-size:0.9rem;" data-key="finishPrompt">Sınavı tamamlamak için T.C. Kimlik No veya YU numarasını girip onaylayınız.</p>
+                    <div style="display:flex; gap:10px;">
+                        <input type="text" class="form-control" style="margin:0;" placeholder="T.C. Kimlik veya Y.U. numarası giriniz">
+                        <button class="btn-login" style="width:auto; background:#17a2b8;" onclick="confirmFinishExam()" data-key="confirm">ONAYLA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Sidebar -->
+    <div class="settings-panel" id="settings-panel">
+        <div class="st-header">
+            <div class="st-title" data-key="settings">AYARLAR</div>
+            <button class="btn-close-red" onclick="toggleSettings()" data-key="close">KAPAT</button>
+        </div>
+        
+        <div class="st-group">
+            <label class="st-label" data-key="changeLang">Uygulama dilini değiştir.</label>
+            <div class="lang-opt selected" onclick="changeLang('tr', this)">TÜRKÇE</div>
+            <div class="lang-opt" onclick="changeLang('en', this)">ENGLISH</div>
+            <div class="lang-opt" onclick="changeLang('de', this)">DEUTSCH</div>
+        </div>
+        
+        <div class="st-group">
+            <label class="st-label" data-key="changeFont">Yazı büyüklüğünü değiştir</label>
+            <div class="font-resize">
+                <button class="font-btn" onclick="resizeFont(-1)">-</button>
+                <div class="font-val" id="font-disp">16</div>
+                <div style="display:flex; align-items:center; padding-right:10px; font-weight:bold; color:var(--blue-link);">px</div>
+                <button class="font-btn" onclick="resizeFont(1)">+</button>
+            </div>
+        </div>
+
+        <div class="st-group">
+            <label class="st-label" data-key="changeMode">Görünüm modunu değiştir</label>
+             <div class="lang-opt" style="border: 2px solid var(--green-btn); background:white;" data-key="lightMode" onclick="changeMode('light')">Aydınlık Mod</div>
+             <div class="lang-opt" style="background:#212529; color:white;" data-key="darkMode" onclick="changeMode('dark')">Karanlık Mod</div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
