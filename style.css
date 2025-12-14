@@ -1489,3 +1489,16 @@ body.is-printing .res-detail-table td {
 .split-left-pane::-webkit-scrollbar-thumb:hover {
   background: var(--header-bg); 
 }
+
+/* --- DYNAMIC BLANK FILLER STYLE --- */
+.filled-blank {
+    color: var(--red-btn); /* Red text */
+    font-weight: bold;
+    /* text-decoration: underline;  <-- REMOVED per your request */
+    padding: 0 4px;
+}
+
+/* Ensure it looks good in dark mode */
+body.dark-mode .filled-blank {
+    color: #ff6b6b; /* Lighter red for dark mode contrast */
+}

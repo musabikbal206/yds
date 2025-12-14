@@ -167,6 +167,10 @@ function populateResultsView(total, correct, wrong, empty, score) {
     });
 }
 
+// Helper: Decides what text to put in the blank (The placeholder or the answer)
+// Helper: Decides what text to put in the blank
+
+
 // --- RENDER ---
 function renderQuestion() {
     const q = questions[currentQIndex];
@@ -187,9 +191,18 @@ function renderQuestion() {
         </div>
     `;
 
-    // Prepare content text (with dictionary if finished)
-    const processedText = processText(q.text, q);
-    const processedPara = q.paragraph ? processText(q.paragraph, q) : "";
+    // 1. Process standard Question Text (Fills blanks for 1-16, 27-36, 43-62, etc.)
+    // We pass 'false' because this is NOT the paragraph section
+    let processedText = processText(q.text, q); 
+    processedText = processDynamicText(processedText, q, false); 
+
+    // 2. Process Paragraph Text (Fills blanks for Cloze 17-26)
+    // We pass 'true' because this IS the paragraph section
+    let processedPara = q.paragraph ? processText(q.paragraph, q) : "";
+    if (q.paragraph) {
+        processedPara = processDynamicText(processedPara, q, true);
+    }
+
     const explanationHTML = isExamFinished && q.explanation ? `
         <div class="explanation-box visible">
                 <span style="font-weight:700; color:#28a745; display:block; margin-bottom:10px;">ÇÖZÜM ANALİZİ</span>
@@ -214,13 +227,12 @@ function renderQuestion() {
             <div class="layout-split">
                 <div class="split-left-pane">
                     <div class="q-instruction" style="margin-bottom:15px;">${q.instruction}</div>
-                    <p>${highlightGap(processedPara, q.id)}</p>
+                    <p>${processedPara}</p>
                 </div>
                 <div class="split-right-pane">
                         <div style="display:flex; height:100%;">
                         ${sidebarHTML}
                         <div class="q-body" style="padding: 40px 0 0 0;">
-                            
                             <div class="q-text-content">${processedText}</div>
                             <div class="options-container">
                                 ${getOptionsHTML(q)}
@@ -246,6 +258,70 @@ function processText(text, q) {
         processed = processed.replace(regex, `<span class="dict-word" data-meaning="${meaning}">$1</span>`);
     });
     return processed;
+}
+
+function processDynamicText(text, q, isParagraph) {
+    if (!text) return "";
+    
+    // Determine the ID. 
+    // Note: In your system, q.id is 1-based (1, 2, 3...)
+    const qId = q.id || (currentQIndex + 1);
+    
+    // Get user's selected answer key (A, B, C...)
+    const userAnsKey = userAnswers[currentQIndex];
+
+    // If no answer selected yet, return text as is (with blanks)
+    if (!userAnsKey) return text;
+
+    // Get the text content of the answer (e.g., "possibility" or "confirmed / may have been involved")
+    const answerText = q.options[userAnsKey];
+
+    // --- CASE 1: Cloze Test (Questions 17-26) inside Paragraph ---
+    // Pattern in your JSON: "(17)----" or "(22)----"
+    // Requirement: Keep the number "(17)" and put the answer next to it in red.
+    if (isParagraph && qId >= 17 && qId <= 26) {
+        // Regex explanation:
+        // \\(${qId}\\)  -> Finds "(17)"
+        // (?:-*)        -> Non-capturing group for optional dashes following it
+        const regexCloze = new RegExp(`\\(${qId}\\)(?:-*)`);
+        
+        if (regexCloze.test(text)) {
+            return text.replace(regexCloze, `(${qId}) <span class="filled-blank">${answerText}</span>`);
+        }
+    }
+
+    // --- CASE 2: All Other Questions (Question Text Blanks) ---
+    // Targets: 1-16, 27-36, 43-62, 63-67, 72-75
+    // Pattern in your JSON: "----" (4 dashes)
+    if (!isParagraph) {
+        // Regex to find 3 or more dashes, underscores, or dots
+        // Added 'g' flag to find ALL blanks in the string (for multi-blank questions)
+        const regexBlank = /-{3,}|_{3,}|\.{3,}/g;
+        
+        // check if question has multiple blanks (e.g. "Word1 / Word2")
+        // and if the text actually has multiple "----" placeholders
+        const matches = text.match(regexBlank);
+        const isMultiBlank = answerText.includes(' / ') && matches && matches.length > 1;
+
+        if (isMultiBlank) {
+            // Split answer: "confirmed / involved" -> ["confirmed", "involved"]
+            const parts = answerText.split(' / ');
+            let partIndex = 0;
+            
+            // Replace each "----" sequentially with the corresponding part
+            return text.replace(regexBlank, () => {
+                const part = parts[partIndex] || ""; 
+                partIndex++;
+                return `<span class="filled-blank">${part}</span>`;
+            });
+        } else {
+            // Single blank -> Just replace the first "----" found
+            // Remove 'g' logic for single replace to ensure safety or just use replace() which does first only by default
+            return text.replace(/-{3,}|_{3,}|\.{3,}/, `<span class="filled-blank">${answerText}</span>`);
+        }
+    }
+
+    return text;
 }
 
 function highlightGap(text, id) {
@@ -280,19 +356,17 @@ function getOptionsHTML(q) {
 }
 
 function answer(key) {
-    if (isExamFinished) return; // Stop if exam is over
+    if (isExamFinished) return; 
 
-    // Check if the user clicked the option that is ALREADY selected
+    // Toggle logic: If clicking the same answer, unselect it.
     if (userAnswers[currentQIndex] === key) {
-        // If yes, DELETE the answer to leave it blank
         delete userAnswers[currentQIndex];
     } else {
-        // If no, SET the new answer normally
         userAnswers[currentQIndex] = key;
     }
 
     saveExamState();
-    renderQuestion();
+    renderQuestion(); // Re-render to show/hide the red text immediately
 }
 
 function toggleMark() {
