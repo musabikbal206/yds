@@ -772,7 +772,15 @@ body.dark-mode .option-row.wrong { background-color: #5a1a1a; border-color: #411
     .split-right-pane {
         padding: 0; flex: 1; height: auto !important; overflow: visible !important;
     }
-    .split-right-pane .q-num-col { display: none; } 
+    .split-right-pane .q-num-col { display: flex; }
+    
+    .split-right-pane > div {
+    flex-direction: column !important;
+    height: auto !important;}
+
+    .split-right-pane .q-body {
+    padding-top: 20px !important; /* Overrides the inline JS style */
+}
 
     /* Mobile Dark Mode Overrides */
     body.dark-mode .bottom-white-bar { background-color: #1a1a1a; border-color: #333; }
