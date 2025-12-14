@@ -191,17 +191,30 @@ function renderQuestion() {
         </div>
     `;
 
-    // 1. Process standard Question Text (Fills blanks for 1-16, 27-36, 43-62, etc.)
-    // We pass 'false' because this is NOT the paragraph section
+    // 1. Process standard Question Text
     let processedText = processText(q.text, q); 
     processedText = processDynamicText(processedText, q, false); 
 
-    // 2. Process Paragraph Text (Fills blanks for Cloze 17-26)
-    // We pass 'true' because this IS the paragraph section
+    // 2. Process Paragraph Text (Type B Questions)
     let processedPara = q.paragraph ? processText(q.paragraph, q) : "";
+    
+    // --- START OF FIX ---
     if (q.paragraph) {
+        // A. Fill in answers the user has already given (e.g. turning (17)--- into (17) Answer)
         processedPara = processDynamicText(processedPara, q, true);
+
+        // B. Highlight the CURRENT question number (e.g. "(17)" or "(17)----") in RED
+        const qId = q.id || (currentQIndex + 1);
+        
+        // This Regex matches "(17)" followed optionally by spaces and dashes
+        const regexHighlight = new RegExp(`\\(${qId}\\)(?:\\s*-*)`);
+        
+        // We use INLINE STYLES to force the color immediately
+        processedPara = processedPara.replace(regexHighlight, 
+            `<span style="color: #dc3545; font-weight: bold;">$&</span>`
+        );
     }
+    // --- END OF FIX ---
 
     const explanationHTML = isExamFinished && q.explanation ? `
         <div class="explanation-box visible">

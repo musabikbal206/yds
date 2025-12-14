@@ -1508,3 +1508,9 @@ body.is-printing .res-detail-table td {
 body.dark-mode .filled-blank {
     color: #ff6b6b; /* Lighter red for dark mode contrast */
 }
+
+/* --- Add this to the bottom of style.css --- */
+.active-cloze {
+    color: var(--red-btn) !important;
+    font-weight: bold;
+}
