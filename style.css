@@ -381,10 +381,12 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 
 .q-card {
     flex: 1; 
-    height: auto; /* Allow growth */
+    /* Change height from auto to 100% so it fits the screen exactly */
+    height: 100%; 
     background: white; border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; 
-    overflow: visible; /* No internal scroll */
+    /* Change overflow from visible to hidden. This stops the whole card from growing */
+    overflow: hidden; 
     position: relative; border: 1px solid #dee2e6;
 }
 .q-num-col {
@@ -395,9 +397,12 @@ body.dark-mode .btn-eye svg { fill: #fff !important; }
 .q-bookmark-icon.active { fill: var(--header-bg); stroke: var(--header-bg); }
 
 .q-body {
-    flex: 1; padding: 40px 40px 40px 0; 
-    overflow: visible; /* No internal scroll */
-    height: auto; 
+    flex: 1; 
+    padding: 40px 40px 40px 0; 
+    /* Change overflow to auto to add scrollbar when needed */
+    overflow-y: auto; 
+    /* Force it to take full height so scrollbar appears correctly */
+    height: 100%; 
     display: flex; flex-direction: column;
 }
 .q-instruction {
@@ -458,14 +463,29 @@ body.dark-mode .option-row.wrong { background-color: #5a1a1a; border-color: #411
 .explanation-box.visible { display: block; animation: fadeIn 0.3s; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-.layout-split { display: flex; flex-direction: row; height: auto; width: 100%; min-height: 500px; }
+.layout-split { 
+    display: flex; 
+    flex-direction: row; 
+    /* Change height to 100% to fill the card */
+    height: 100%; 
+    width: 100%; 
+    /* Remove min-height to prevent forcing overflow */
+    min-height: 0; 
+}
 .split-left-pane {
-    flex: 1; padding: 30px; background-color: #fcfcfc; border-right: 1px solid #dee2e6;
-    overflow: visible; color: #212529; height: auto;
+    flex: 1; padding: 30px; 
+    background-color: #fcfcfc; border-right: 1px solid #dee2e6;
+    /* Enable independent scrolling for the reading passage */
+    overflow-y: auto; 
+    color: #212529; 
+    /* Ensure height is constrained */
+    height: 100%;
 }
 .split-right-pane {
     flex: 1; padding: 30px; 
-    overflow: visible; height: auto;
+    /* Hide overflow here, because the .q-body inside it handles the scroll */
+    overflow: hidden; 
+    height: 100%;
     display: flex; flex-direction: column;
 }
 
@@ -1436,4 +1456,28 @@ body.is-printing .res-detail-table td {
     color: #000 !important;
     border-color: #ccc !important;
     background-color: #fff !important;
+}
+
+.q-body::-webkit-scrollbar,
+.split-left-pane::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.q-body::-webkit-scrollbar-track,
+.split-left-pane::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.q-body::-webkit-scrollbar-thumb,
+.split-left-pane::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.q-body::-webkit-scrollbar-thumb:hover,
+.split-left-pane::-webkit-scrollbar-thumb:hover {
+  background: var(--header-bg); 
 }
