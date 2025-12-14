@@ -1,0 +1,17 @@
+{
+  "name": "Elektronik Sınav Uygulaması",
+  "short_name": "E-Sınav",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#eef1f5",
+  "theme_color": "#002f55",
+  "description": "Online YDS ve İngilizce Deneme Sınavı Uygulaması",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
