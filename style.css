@@ -35,6 +35,70 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* --- NOTE TOOLBAR STYLES --- */
+.note-toolbar {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 99;
+    flex-shrink: 0;
+}
+.note-toolbar.hidden { display: none; }
+
+.nt-group { display: flex; align-items: center; gap: 8px; }
+.nt-sep { width: 1px; height: 24px; background: #ddd; margin: 0 5px; }
+
+.nt-btn {
+    width: 36px; height: 36px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+}
+.nt-btn:hover { background: #f0f0f0; }
+.nt-btn.active { background: #e3f2fd; border-color: var(--blue-link); }
+.nt-btn svg { width: 20px; height: 20px; fill: #555; }
+.nt-btn.active svg { fill: var(--blue-link); }
+
+.nt-color {
+    width: 24px; height: 24px; border-radius: 50%; cursor: pointer;
+    border: 2px solid transparent; transition: transform 0.2s;
+}
+.nt-color.selected { transform: scale(1.2); border-color: #fff; box-shadow: 0 0 0 1px #999; }
+
+.nt-btn-text {
+    background: #f8f9fa; border: 1px solid #ced4da;
+    color: #333; padding: 5px 10px; font-size: 0.85rem; font-weight: bold;
+    border-radius: 4px; cursor: pointer;
+}
+.nt-btn-close {
+    margin-left: auto; background: transparent; border: none; font-size: 1.2rem; cursor: pointer; color: #777;
+}
+.nt-btn-close:hover { color: red; }
+
+/* CANVAS STYLES */
+.note-canvas {
+    position: absolute; top: 0; left: 0;
+    z-index: 10;
+    /* pointer-events handled by JS */
+    cursor: crosshair;
+}
+
+/* Cursor change when active */
+body.note-mode-active .q-body, 
+body.note-mode-active .split-left-pane {
+    cursor: text; /* Fallback */
+}
+/* Highlight button when active */
+.active-action { color: var(--blue-link) !important; }
+.active-action svg { fill: var(--blue-link) !important; }
+
 /* --- DARK MODE STYLES --- */
 body.dark-mode {
     --header-bg: #000000;
@@ -74,6 +138,14 @@ body.dark-mode .q-instruction { background-color: #263238; border-color: #37474f
 body.dark-mode .nav-circle { background-color: #333; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
 body.dark-mode .nav-float:hover { color: #fff; }
 body.dark-mode .nav-text { color: #aaa; }
+
+/* Note Toolbar Dark Mode */
+body.dark-mode .note-toolbar { background: #2c2c2c; border-color: #444; }
+body.dark-mode .nt-btn svg { fill: #aaa; }
+body.dark-mode .nt-btn.active { background: #333; border-color: #555; }
+body.dark-mode .nt-btn.active svg { fill: #fff; }
+body.dark-mode .nt-btn-text { background: #333; border-color: #555; color: #ddd; }
+
 
 /* Dark Mode for Instructions */
 body.dark-mode #view-instructions { background-color: #121212; }
@@ -802,6 +874,75 @@ body.dark-mode .option-row.wrong { background-color: #5a1a1a; border-color: #411
     .modal-window { width: 95%; height: 90%; }
     .rev-grid { grid-template-columns: repeat(5, 1fr); }
     .settings-panel { width: 100%; right: -100%; }
+
+    /* 1. Make Toolbar Sticky & Horizontal Scrollable */
+    .note-toolbar {
+        position: sticky;       /* Stays at top of screen while scrolling */
+        top: 0;                 
+        z-index: 1000;          /* Ensure it sits above question text */
+        overflow-x: auto;       /* Enable horizontal scrolling for tools */
+        white-space: nowrap;    /* Keep buttons in one single row */
+        padding: 10px;
+        gap: 15px;              /* More space between groups */
+        justify-content: flex-start; /* Align left to allow scrolling */
+        background: #fff;
+        border-bottom: 2px solid #007bff; /* Visual indicator of active mode */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        
+        /* Hide scrollbar for cleaner look but keep functionality */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    
+    /* Hide scrollbar for Chrome/Safari/Opera */
+    .note-toolbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* 2. Prevent Groups from Shrinking */
+    .nt-group {
+        flex-shrink: 0; 
+    }
+
+    /* 3. Larger Touch Targets */
+    .nt-btn {
+        width: 44px;    /* Bigger buttons for fingers */
+        height: 44px;
+    }
+    .nt-btn svg {
+        width: 24px;    /* Bigger icons */
+        height: 24px;
+    }
+
+    /* 4. Color Swatches Optimization */
+    .nt-color {
+        width: 34px;    /* Bigger color dots */
+        height: 34px;
+        margin: 0 2px;
+    }
+
+    /* 5. Slider Adjustment */
+    .nt-slider {
+        width: 100px;   /* Wider slider for easier control */
+        height: 20px;   /* Taller touch area */
+    }
+
+    /* 6. Close Button Visibility */
+    .nt-btn-close {
+        padding: 0 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    /* 7. Hide the 'Text' label on the Close button to save space if needed */
+    /* Optional: Uncomment if you want to save more space */
+    /* .nt-btn-text { font-size: 0.8rem; padding: 8px; } */
+
+    /* 8. Ensure Canvas doesn't block scrolling when NOT drawing */
+    /* (This interacts with the JS touch logic) */
+    .note-canvas {
+        touch-action: none; /* Critical: tells browser the canvas handles touches, preventing page scroll while drawing */
+    }
 }
 
 /* --- MOBILE RESULT VIEW OPTIMIZATION --- */
@@ -1230,8 +1371,14 @@ body.dark-mode .option-row.wrong { background-color: #5a1a1a; border-color: #411
 
 /* Action buttons (Clear, Delete) */
 .vk-act { background: #555; font-size: 1rem; width: auto; flex: 1; }
+
 /* OK Button */
-.vk-ok { background: #28a745; border-color: #28a745; font-size: 1rem; flex: 1.5; }
+.vk-ok { 
+    background: #28a745; 
+    border: 1px solid #28a745; 
+    font-size: 1rem; 
+    flex: 1.5; 
+}
 .vk-ok:active { background: #1e7e34; }
 
 /* Mobile adjustment for Results view */
@@ -1437,7 +1584,7 @@ body.is-printing .res-detail-table td {
     border-color: #ccc !important;
     background-color: #fff !important;
 }
-/* --- PDF GENERATION STYLES --- */
+/* --- PDF GENERATION STYLES (Additional Fixes) --- */
 
 /* 1. Hide the top "Success/Past Get" message and buttons */
 body.is-printing .res-header-msg,
@@ -1461,16 +1608,7 @@ body.is-printing .res-container {
     margin: 0 !important;
 }
 
-/* 4. Force black text for readability (fixes Dark Mode printing) */
-body.is-printing .res-summ-box,
-body.is-printing .res-summ-table th,
-body.is-printing .res-summ-table td,
-body.is-printing .res-detail-table th,
-body.is-printing .res-detail-table td {
-    color: #000 !important;
-    border-color: #ccc !important;
-    background-color: #fff !important;
-}
+/* --- SCROLLBAR STYLING --- */
 
 .q-body::-webkit-scrollbar,
 .split-left-pane::-webkit-scrollbar {
@@ -1500,7 +1638,6 @@ body.is-printing .res-detail-table td {
 .filled-blank {
     color: var(--red-btn); /* Red text */
     font-weight: bold;
-    /* text-decoration: underline;  <-- REMOVED per your request */
     padding: 0 4px;
 }
 
@@ -1509,8 +1646,22 @@ body.dark-mode .filled-blank {
     color: #ff6b6b; /* Lighter red for dark mode contrast */
 }
 
-/* --- Add this to the bottom of style.css --- */
 .active-cloze {
     color: var(--red-btn) !important;
     font-weight: bold;
+}
+/* Slider Style */
+.nt-slider {
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Specific style for the White color button so it is visible on white background */
+.nt-color.white-btn {
+    border: 1px solid #ccc; /* Light grey border */
+}
+/* Ensure the selected ring is visible for white button */
+.nt-color.white-btn.selected {
+    box-shadow: 0 0 0 2px #333; /* Darker ring when selected */
+    border-color: transparent;
 }
