@@ -50,6 +50,22 @@ const questions = [
         explanation: `<b>✅ Doğru Cevap: C) pin down</b><br><b>📌 Sebep:</b> Ekvatoral iklimdeki öngörülemez dinamikler nedeniyle meteorologların ani tropikal fırtınalara yol açan mekanizmaları <i>tam olarak tespit etmekte / netleştirmekte</i> (pin down) zorlandıkları ifade edilmektedir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) make up for:</b> Telafi etmek - bağlam mekanizma tespiti üzerinedir.<br><b>B) call off:</b> İptal etmek - bilimsel araştırma sürecine uymaz.<br><b>D) stem from:</b> -den kaynaklanmak - nesne alışı ve anlam açısından cümle yapısına oturmaz.<br><b>E) bring down:</b> İndirmek/devirmek - bilimsel olguyu açıklamaz.`
     },
     {
+        id: 6,
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "Ever since Campylobacter bacteria ---- as a primary cause of acute bacterial gastroenteritis in the late 1970s, strict hygiene protocols ---- in poultry processing plants across the globe.",
+        options: {
+            A: "identified / had been implemented",
+            B: "were identified / have been implemented",
+            C: "had been identified / were implementing",
+            D: "are identified / are implemented",
+            E: "have been identified / would be implemented"
+        },
+        correct: "B",
+        dict: { "acute": "akut/şiddetli", "gastroenteritis": "mide-bağırsak iltihabı", "hygiene protocols": "hijyen kuralları/protokolleri", "poultry": "kümes hayvanları", "implement": "uygulamak/yürürlüğe koymak" },
+        explanation: `<b>✅ Doğru Cevap: B) were identified / have been implemented</b><br><b>📌 Sebep:</b> "Ever since" kuralı gereği, geçmişte belirli bir tarihe ("in the late 1970s") işaret eden yan cümlede Simple Past Passive ("were identified"), ana cümlede ise günümüze kadar devam eden süreci belirten Present Perfect Passive ("have been implemented") kullanılmalıdır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) identified / had been implemented:</b> İlk taraf etken (active) kullanılmış ve zaman uyumu hatalıdır.<br><b>C) had been identified / were implementing:</b> İkinci kısım etken ve zaman ilişkisi yanlıştır.<br><b>D) are identified / are implemented:</b> "In the late 1970s" geçmiş zaman ifadesiyle Present Tense uyuşmaz.<br><b>E) have been identified / would be implemented:</b> "Since" yapısında geçmiş zaman noktası için Present Perfect kullanılmaz.`
+    },
+    {
         id: 7,
         type: 'A',
         instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
