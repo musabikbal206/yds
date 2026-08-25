@@ -52,8 +52,8 @@ const questions = [
     {
         id: 6,
         type: 'A',
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
-        text: "Ever since Campylobacter bacteria ---- as a primary cause of acute bacterial gastroenteritis in the late 1970s, strict hygiene protocols ---- in poultry processing plants across the globe.",
+        instruction: "1-6. sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "Ever since Campylobacter species ---- as a primary cause of acute bacterial gastroenteritis in the late 1970s, strict hygiene protocols ---- in poultry processing plants across the globe.",
         options: {
             A: "identified / had been implemented",
             B: "were identified / have been implemented",
@@ -1289,7 +1289,7 @@ const questions = [
             B: "This structural shortfall in grain production is further compounded by export restrictions and soaring fertilizer costs that price low-income nations out of global markets.",
             C: "Nevertheless, traditional subsistence farming techniques remain completely impervious to sudden variations in precipitation patterns.",
             D: "Their nutritional value can be drastically improved by applying post-harvest genetic biofortification in commercial processing plants.",
-            E: "Because developed countries have largely eliminated domestic food waste through stringent supermarket distribution regulations."
+            E: "Developed countries have largely eliminated domestic food waste through stringent supermarket distribution regulations."
         },
         correct: "B",
         dict: {
