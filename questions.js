@@ -337,163 +337,290 @@ const questions = [
     },
     {
         id: 27,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "Although ten of the previously surveyed thirty collaborations have done away with the annual payments appropriated by the Legislature, ----.",
-        options: { A: "all corporations have taken their own responsibility for organizing staff's payments", B: "the government will probably form another working body dealing with foreign trade", C: "such old fashioned methods are welcomed by larger companies", D: "the others are still doubtful about what sort of action they must take", E: "they will eventually realize the positive aspect of having a good communication with the government" },
-        correct: "D",
-        dict: { "appropriated": "tahsis edilmiş", "collaborations": "işbirlikleri", "surveyed": "incelenmiş", "Legislature": "yasama organı" },
-        explanation: `<b>✅ Doğru Cevap: D) the others are still doubtful about what sort of action they must take</b><br><b>📌 Sebep:</b> Zıtlık bağlacı (Although). 10 tanesi ödemeyi kaldırdı, <i>diğerleri</i> (the others) hala şüpheli.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) all corporations...</b> - Tüm şirketlerden bahsediyor, sadece 10'u değil.<br><b>B) the government...</b> - Hükümet konusuyla ilgili değil.<br><b>C) such old fashioned methods...</b> - Eski yöntemlerden bahsetmiyor.<br><b>E) they will eventually...</b> - 'They' 10 işbirliğini kasteder, 'the others' değil.`
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Because the absorption of excess carbon dioxide by seawater significantly decreases oceanic pH levels, ----.",
+        options: {
+            A: "marine organisms with calcium carbonate shells struggle to build and maintain their protective structures",
+            B: "commercial fisheries have expanded their deep-sea harvesting operations across the globe",
+            C: "terrestrial ecosystems are largely insulated from atmospheric temperature shifts",
+            D: "phytoplankton populations increase the overall alkalinity of coastal surface waters",
+            E: "oceanographers have dismissed anthropogenic emissions as an ecological threat"
+        },
+        correct: "A",
+        dict: { "absorption": "emilim/soğurma", "calcium carbonate": "kalsiyum karbonat", "protective": "koruyucu", "alkalinity": "alkalilik/baziklik" },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> "Because" ile kurulan sebep-sonuç ilişkisinde, okyanus suyunun aşırı karbondioksit emmesi ve pH seviyesinin düşmesi (okyanus asitlenmesi), kabuklu deniz canlılarının kalsiyum karbonat kabuklarını oluşturmasını ve korumasını zorlaştırır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Balıkçılığın genişlemesi bir sonuç değildir.<br><b>C)</b> Karasal ekosistemlerle doğrudan neden-sonuç bağı kurulmaz.<br><b>D)</b> Asitlenme alkaliliği artırmaz, düşürür.<br><b>E)</b> Tehdidin göz ardı edilmesi mantıksal olarak çelişir.`
     },
     {
         id: 28,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "---- that have recently fostered the fires all over the world.",
-        options: { A: "Because the fires give dreadful damage not only to the neighborhood people live in and their properties but also their psychology", B: "Today most of the farmers who have large numbers of animals would rather settle in an area rich in fresh water rather than a place appropriate for only grazing", C: "Meteorologists blame a mammoth high-pressure system, centered over woody areas and bringing temperatures as high as 112 °F, for the weather conditions", D: "Being aware of the emergency of finding a way for these animals to survive, he often came together with activists", E: "People often need to check weather forecasts to prepare for the day or even such organizations as a vacation and wedding ceremony" },
-        correct: "C",
-        dict: { "fostered": "körüklemiş", "mammoth": "devasa", "woody": "ağaçlık", "forecasts": "tahminler" },
-        explanation: `<b>✅ Doğru Cevap: C) Meteorologists blame a mammoth high-pressure system...</b><br><b>📌 Sebep:</b> Relative clause 'that have recently fostered...' cümlesindeki 'weather conditions'ı veya 'system'i niteler.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Because the fires...</b> - Cümle 'that' ile başlamalı, relative clause yapısı yok.<br><b>B) Today most of the farmers...</b> - Yangınlarla ilgisi yok.<br><b>D) Being aware of...</b> - Hayvanlardan bahsediyor, yangınlardan değil.<br><b>E) People often need...</b> - Hava tahminleri genel konu.`
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Although fossil discoveries indicate that ancient penguins were massive creatures that stood over six feet tall, ----.",
+        options: {
+            A: "modern species evolved significantly smaller body sizes to thrive in sub-zero polar environments",
+            B: "their fossilised feathers were identical in colour to those of contemporary seabirds",
+            C: "they were completely unable to swim or hunt in the open prehistoric oceans",
+            D: "palaeontologists have deduced that early avian species never interacted with marine life",
+            E: "most flightless birds continue to maintain their immense prehistoric body proportions"
+        },
+        correct: "A",
+        dict: { "massive": "devasa/büyük", "contemporary": "günümüzdeki/çağdaş", "thrive": "gelişmek/başarıyla yaşamak", "proportions": "boyutlar/oranlar" },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> "Although" zıtlık bağlacı, fosil kayıtlarındaki antik penguenlerin devasa boyutlarda (1.8 metreden uzun) olması ile modern penguen türlerinin çok daha küçük boyutlara evrilmesi arasındaki boyutsal zıtlığı bağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Tüy rengi boyutsal zıtlığı tamamlamaz.<br><b>C)</b> Yüzemediklerine dair mantıksal bir çıkarım zıtlığı karşılamaz.<br><b>D)</b> Kuşların denizle etkileşime girmediği iddiası bağlama terstir.<br><b>E)</b> Zıtlık kurulmamıştır.`
     },
     {
         id: 29,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "---- but we never choose the life she gives us.",
-        options: { "A": "Mother nature has already provided us with a life span longer than that of almost any other animal", "B": "We can in fact tolerate the tyranny of aging and death", "C": "Biotechnological and computational means definitely expand their perceptual range", "D": "Through genetic alterations and synthetic organs, they may determine how long they will live", "E": "In the gorgeous shadow of mother nature, we may always find it easy to live our lives" },
-        correct: "E",
-        dict: { "life span": "yaşam süresi", "provided": "sağlamış", "choose": "seçmek", "gorgeous": "muhteşem", "shadow": "gölge" },
-        explanation: "<b> ✅  Doğru Cevap: E) In the gorgeous shadow of mother nature, we may always find it easy to live our lives</b><br><b> 📌  Sebep:</b> Cümledeki 'but' (fakat) bağlacı güçlü bir zıtlık oluşturur. İlk kısımda 'hayatımızı yaşamayı her zaman kolay bulabiliriz' (pozitif/kolaylık) denirken, ikinci kısımda 'fakat onun (mother nature) bize verdiği hayatı asla seçemeyiz' (kontrolsüzlük/kader) denilerek anlam bütünlüğü sağlanır. Ayrıca 'she' zamiri 'mother nature'a gönderme yapar.<br><br><b> ❌  Diğer Seçenekler:</b><br><b>A)</b> 'Provided us with a life span' ifadesi gramer olarak uysa da, 'ömür uzunluğu' ile 'hayatı seçememek' arasındaki zıtlık, E şıkkındaki 'yaşamanın kolaylığı' ile 'seçim yapamama' arasındaki zıtlık kadar bağlamsal değildir."
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "While dramatic advancements in sanitation and public healthcare have doubled human life expectancy over the past century, ----.",
+        options: {
+            A: "infant mortality rates have surged substantially in developed nations",
+            B: "age-related chronic ailments and neurodegenerative disorders have become far more prevalent",
+            C: "infectious diseases remain the leading cause of death across all modern societies",
+            D: "demographers anticipate a sudden decline in global healthcare expenditures",
+            E: "average lifespans continue to drop sharply despite modern medical interventions"
+        },
+        correct: "B",
+        dict: { "sanitation": "hıfzıssıhha/sağlık koruma", "life expectancy": "yaşam beklentisi", "prevalent": "yaygın", "ailment": "hastalık/rahatsızlık" },
+        explanation: `<b>✅ Doğru Cevap: B</b><br><b>📌 Sebep:</b> "While" zıtlık bağlacı, sağlık ve hijyen sayesinde insan ömrünün iki katına çıkması (olumlu) ile ömrün uzaması sonucu yaşa bağlı kronik ve nörodejeneratif hastalıkların yaygınlaşması (olumsuz/zorluk) arasındaki tezatlığı tamamlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Bebek ölüm oranları gelişmiş ülkelerde fırlamamıştır.<br><b>C)</b> Bulaşıcı hastalıklar modern dünyadaki tek baskın faktör değildir.<br><b>D)</b> Harcamaların düşmesi mantıksızdır.<br><b>E)</b> Yaşam süresinin düştüğünü söylemek ana cümledeki artışla çelişir.`
     },
     {
         id: 30,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "---- any multi-cellular animal, from a blue whale to a human being, poses a special difficulty for the theory of evolution.",
-        options: { "A": "Since many prominent scientists work on multi-cellular organisms", "B": "Although the latest information on living creatures delivered by some researchers has drawn attention from academicians", "C": "Even if they never make a comment as to the scientific evidence in relation to human anatomy", "D": "As a distinguished team of evolutionary biologists at a well-known university have recently stated", "E": "While Darwin's Theory of Evolution holds the notion that all life is related and has descended from a common ancestor" },
-        correct: "D",
-        dict: { "ancestor": "ata", "multi-cellular": "çok hücreli", "poses": "sunar/teşkil eder", "distinguished": "seçkin", "stated": "belirtti" },
-        explanation: "<b> ✅  Doğru Cevap: D) As a distinguished team of evolutionary biologists at a well-known university have recently stated</b><br><b> 📌  Sebep:</b> 'As ... stated' ( ...'nın belirttiği gibi) kalıbı, ana cümledeki yargıyı (çok hücreli canlıların evrim teorisi için zorluk teşkil etmesi) bir kaynağa dayandırır. Cümle akışı: 'Bir ekibin belirttiği gibi, herhangi bir çok hücreli hayvan... zorluk teşkil eder.' şeklindedir.<br><br><b> ❌  Diğer Seçenekler:</b><br><b>E)</b> 'While' (iken/rağmen) yapısı kullanılsa da, cümlenin devamında Darwin'in teorisiyle doğrudan çelişen bir durumdan ziyade, bu teorinin karşılaştığı spesifik bir zorluktan bahsedildiği için, bu durumun bir alıntı/referans (D şıkkı) olarak verilmesi akademik dile daha uygundur."
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "----; however, failure to implement robust cybersecurity protocols leaves corporate data vulnerable to breaches.",
+        options: {
+            A: "Integrating modern information technology streamlines internal communication and operational efficiency",
+            B: "Traditional paper-based record systems are far less susceptible to digital tampering",
+            C: "Most multinational corporations have completely eliminated their reliance on cloud infrastructure",
+            D: "Hardware maintenance costs have plummeted due to open-source software applications",
+            E: "Employees generally resist automated workflow platforms because of technical complexity"
+        },
+        correct: "A",
+        dict: { "streamline": "kolaylaştırmak/verimli kılmak", "susceptible": "duyarlı/savunmasız", "vulnerable": "kırılgan/korumasız", "tampering": "tahrifat/kurcalama" },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> Noktalı virgül ve "however" geçişi, bilgi teknolojilerini entegre etmenin operasyonel verimliliği ve iletişimi artırması (olumlu) ile siber güvenlik açığı riskini beraberinde getirmesi (olumsuz) arasındaki zıtlığı bağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Kağıt tabanlı sistemlerin güvenliği 'however' ile beklenen teknolojik avantajı vermez.<br><b>C)</b> Şirketler buluttan vazgeçmemiştir.<br><b>D)</b> Donanım maliyetleri veri güvenliği tezatlığını kurmaz.<br><b>E)</b> Çalışan direnci ana konuya uymamaktadır.`
     },
     {
         id: 31,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "----, Fish and Wildlife Service will have responsibilities under the Endangered Species Act to protect this species from extinction.",
-        options: { A: "If the polar bear is declared endangered", B: "When the profit of oil and gas trade rises to a great extent", C: "Provided that authorities are aware of this species' being too large in number", D: "Since it is possible to see polar bears in any zoo around the world", E: "Because such animals have been hunted excessively for their meat and fur in many parts of the planet" },
-        correct: "A",
-        dict: { "endangered": "tehlike altında", "extinction": "yok olma", "responsibilities": "sorumluluklar", "species": "tür" },
-        explanation: `<b>✅ Doğru Cevap: A) If the polar bear is declared endangered</b><br><b>📌 Sebep:</b> Eğer kutup ayısı tehlikede ilan edilirse, kurumun sorumluluğu doğacak.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) When the profit...</b> - Kar/ticaret konusu değil.<br><b>C) Provided that authorities...</b> - Sayılarının fazla olması koruma için neden değil.<br><b>D) Since it is possible...</b> - Hayvanat bahçeleri koruma sebebi değil.<br><b>E) Because such animals...</b> - Avlanma geçmişi verilmiş ama 'declared endangered' şartı yok.`
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Machine learning algorithms can extract invaluable patterns from massive datasets ----.",
+        options: {
+            A: "so that software engineers no longer need to verify algorithmic accuracy",
+            B: "as long as the underlying training data is free from inherent bias and noise",
+            C: "unless statistical modeling eliminates the necessity for computational power",
+            D: "because neural networks produce completely random outputs without guidance",
+            E: "although data storage technology has reached its definitive physical limit"
+        },
+        correct: "B",
+        dict: { "extract": "çıkarmak/elde etmek", "invaluable": "paha biçilmez", "inherent bias": "doğal/yapısal önyargı", "computational": "hesaplamalı" },
+        explanation: `<b>✅ Doğru Cevap: B</b><br><b>📌 Sebep:</b> "As long as" (koşuluyla) bağlacı, makine öğrenimi algoritmalarının büyük verilerden değerli sonuçlar çıkarabilmesinin temel şartını (eğitim verisinin tarafsız ve gürültüsüz olması) mantıksal olarak açıklar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Mühendislerin doğrulamayı bırakması mantıksızdır.<br><b>C)</b> Hesaplama gücü ihtiyacı ortadan kalkmaz.<br><b>D)</b> Rastgele çıktı ürettikleri gerekçesi çelişir.<br><b>E)</b> Depolama sınırı doğrudan koşulu nitelemez.`
     },
     {
         id: 32,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "Direct Cash is described as straight cash with no restrictions ----.",
-        options: { A: "so that it unavoidably causes greater budget constraints", B: "as to how it can be spent by the individual recipient", C: "if the recipients are in urgent need of cash money", D: "however the recipients can spend the cash subsidy on any goods they like", E: "though this type of credit would be much better to apply for" },
-        correct: "B",
-        dict: { "restrictions": "kısıtlamalar", "recipient": "alıcı", "subsidy": "sübvansiyon", "described": "tanımlanmış" },
-        explanation: `<b>✅ Doğru Cevap: B) as to how it can be spent by the individual recipient</b><br><b>📌 Sebep:</b> 'Restrictions as to...' (...ile ilgili kısıtlamalar) kalıbı. Paranın nasıl harcanacağına dair kısıtlama yok.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) so that it...</b> - Sonuç belirtiyor, kısıtlama açıklaması değil.<br><b>C) if the recipients...</b> - Koşul belirtiyor.<br><b>D) however the recipients...</b> - Zıtlık belirtiyor.<br><b>E) though this type...</b> - Zıtlık belirtiyor.`
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Whereas authoritative parenting fosters emotional independence by combining high warmth with reasonable boundaries, ----.",
+        options: {
+            A: "permissive parenting often leaves children lacking self-regulation due to an absence of structure",
+            B: "psychologists consistently advocate for stricter disciplinary measures in early childhood",
+            C: "children raised in democratic households struggle to achieve social competence in school",
+            D: "authoritarian parents allow their offspring complete freedom in academic decision-making",
+            E: "such balanced developmental approaches inevitably lead to severe behavioural difficulties"
+        },
+        correct: "A",
+        dict: { "authoritative": "demokratik/yetkin", "permissive": "müsamahakâr/izin verici", "foster": "geliştirmek/teşvik etmek", "self-regulation": "öz düzenleme" },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> "Whereas" (oysa/-e karşılık) bağlacı, hem sıcaklık hem sınır içeren yetkin/demokratik ebeveynlik tarzının bağımsızlık kazandırması ile sınır koymayan müsamahakâr tarzın öz düzenleme eksikliğine yol açması arasındaki ebeveynlik karşılaştırmasını sağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Genel uzman görüşü zıtlık kıyaslaması oluşturmaz.<br><b>C)</b> Demokratik yetiştirilen çocukların başarısız olması çelişir.<br><b>D)</b> Otoriter ebeveynler tam serbestlik tanımaz.<br><b>E)</b> Dengeli yaklaşımın davranış bozukluğuna yol açması mantığa aykırıdır.`
     },
     {
         id: 33,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "Before the vote for 'New 7 Wonders of the World' ended on Friday, ----.",
-        options: { A: "organizers said more than 90 million votes had been cast for 21 sites", B: "the act of voting for a political party was voluntary in some countries", C: "the leader of the conservative party got the highest numbers of votes", D: "immediate results were announced on the same day by all national channels", E: "undoubtedly the former president was a gifted person in all affairs" },
-        correct: "A",
-        dict: { "cast": "oy kullanmak", "organizers": "organizatörler", "sites": "yerler", "ended": "sona erdi" },
-        explanation: `<b>✅ Doğru Cevap: A) organizers said more than 90 million votes had been cast for 21 sites</b><br><b>📌 Sebep:</b> Zaman uyumu. Oylama bitmeden <i>önce</i>, organizatörler açıklama yaptı.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) the act of voting...</b> - Siyasi parti oyu konusu değil.<br><b>C) the leader of the conservative party...</b> - Siyasi lider konusu değil.<br><b>D) immediate results were announced...</b> - Hemen sonuç açıklanmadığı için uygun değil.<br><b>E) undoubtedly the former president...</b> - Eski başkan konusu değil.`
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Epidemiological research has found no conclusive evidence linking mobile phone radiofrequency fields to cancer; ----.",
+        options: {
+            A: "therefore, governments have banned wireless communications across metropolitan areas",
+            B: "instead, electromagnetic radiation from cellular devices alters DNA structures directly",
+            C: "nevertheless, public health agencies recommend ongoing monitoring as mobile technology evolves",
+            D: "in fact, ionizing radiation emitted by handsets is proven to induce brain tumours",
+            E: "for instance, early analog transmitters operated at entirely harmless power thresholds"
+        },
+        correct: "C",
+        dict: { "epidemiological": "epidemiyolojik/salgın bilimiyle ilgili", "conclusive": "kesin/ikna edici", "radiofrequency": "radyofrekans", "monitoring": "izleme/takip" },
+        explanation: `<b>✅ Doğru Cevap: C</b><br><b>📌 Sebep:</b> İlk cümlede telefon frekanslarının kansere yol açtığına dair kesin kanıt bulunmadığı (güven verici) söylenmiş, noktalı virgülden sonra "nevertheless" (yine de) ile sağlık kuruluşlarının teknolojinin gelişimini izlemeye devam etmesi gerektiği (temkinli yaklaşım) vurgulanmıştır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Yasaklama mantıksal bir sonuç değildir.<br><b>B)</b> "Instead" geçişi kanıt yokluğu ile çelişir.<br><b>D)</b> Telefonlar iyonlaştırıcı radyasyon yaymaz ve tümör oluşturduğu kanıtlanmamıştır.<br><b>E)</b> Örnekleme mantığı zıtlığı bağlamaz.`
     },
     {
         id: 34,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "Although forests are already viewed as water suppliers, ----.",
-        options: { A: "much remains to be learned and applied in order to maximize them", B: "forested catchments supply a high proportion of the water for domestic, agricultural, industrial and ecological needs in both upstream and downstream areas", C: "the relationship between forests and water is a critical issue that must be accorded high priority", D: "forest is the best land cover for maximizing water yield, regulating seasonal flows and ensuring high water quality", E: "forest hydrology research conducted during the 1980s and 1990s suggests a similar picture" },
-        correct: "A",
-        dict: { "maximize": "maksimize etmek", "viewed": "görülmek", "suppliers": "tedarikçiler", "forests": "ormanlar" },
-        explanation: `<b>✅ Doğru Cevap: A) much remains to be learned and applied in order to maximize them</b><br><b>📌 Sebep:</b> Zıtlık. Öyle görülmesine <i>rağmen</i>, hala öğrenilecek çok şey var.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) forested catchments...</b> - Zıtlık değil, olumlu devam.<br><b>C) the relationship between...</b> - Kritik konu olduğunu söylüyor ama zıtlık yok.<br><b>D) forest is the best...</b> - En iyi olduğunu söylüyor, zıtlık yok.<br><b>E) forest hydrology research...</b> - Araştırma sonuçları, zıtlık yok.`
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Since periodic river floods deposited fertile silt and provided predictable water supplies for agriculture, ----.",
+        options: {
+            A: "nomadic hunter-gatherer bands abandoned trade routes across the fertile plains",
+            B: "ancient civilizations first arose and flourished along the banks of major river valleys",
+            C: "early agrarian societies were perpetually vulnerable to catastrophic seasonal famines",
+            D: "irrigation engineering proved completely unnecessary for early urban settlements",
+            E: "continental empires deliberately built their capital cities far away from waterways"
+        },
+        correct: "B",
+        dict: { "periodic": "periyodik/dönemsel", "silt": "alüvyon/balçık", "flourish": "gelişmek/serpilmek", "agrarian": "tarımsal" },
+        explanation: `<b>✅ Doğru Cevap: B</b><br><b>📌 Sebep:</b> "Since" (çünkü / -den dolayı) sebep bağlacı, nehir taşkınlarının verimli alüvyonlar bırakarak tarımı ve su teminini desteklemesi nedenini, ilk büyük medeniyetlerin nehir vadilerinde doğup gelişmesi (Mezopotamya, Nil vb.) sonucu ile bağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Göçebelerin ticaret yollarını terk etmesi alakasızdır.<br><b>C)</b> Sürekli kıtlık çekmeleri değil zenginleşmeleri beklenir.<br><b>D)</b> Sulama sistemlerinin gereksizleşmesi tarihi olgulara aykırıdır.<br><b>E)</b> Başkentlerin sudan uzağa kurulması çelişir.`
     },
     {
         id: 35,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "Having such sophisticated hardware as helicopters and flame-fighting airplanes, and equipped with tools that range from axes to bulldozers, ----.",
-        options: { A: "generally forest fires give massive damage not only to nature or assets but also human lives", B: "what makes it much easier for firemen to get control over a large area burning", C: "this technological device is of great importance in extinguishing large fires", D: "today's fire fighters are able to create fireguards as wide as 100 feet to isolate the flames", E: "school course books contain invaluable information for teaching young learners how to fight a fire" },
-        correct: "D",
-        dict: { "sophisticated": "gelişmiş", "equipped": "donatılmış", "fireguards": "yangın bariyerleri", "isolate": "ayırmak" },
-        explanation: `<b>✅ Doğru Cevap: D) today's fire fighters are able to create fireguards as wide as 100 feet to isolate the flames</b><br><b>📌 Sebep:</b> Özne uyumu. Helikoptere ve araçlara 'sahip olan' (Having...) kimdir? İtfaiyeciler.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) generally forest...</b> - Orman yangınları özne olamaz.<br><b>B) what makes it...</b> - 'What' ile başlayan cümle özne olamaz.<br><b>C) this technological device...</b> - Cihaz özne olabilir ama 'equipped with tools' insanlarla ilgili.<br><b>E) school course books...</b> - Ders kitapları özne olamaz.`
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Although household dust is commonly assumed to consist almost entirely of shed human skin cells, ----.",
+        options: {
+            A: "chemical analyses reveal that it comprises a diverse mix of outdoor soil, textile fibres, and pollutants",
+            B: "microscopic mites feed exclusively on organic minerals blown in from rural atmospheres",
+            C: "dermatologists confirm that peeling epidermal tissues account for nearly all indoor debris",
+            D: "regular vacuuming completely eliminates all inorganic matter from interior residential areas",
+            E: "it contains virtually no synthetic compounds or microplastic fragments from consumer goods"
+        },
+        correct: "A",
+        dict: { "household dust": "ev tozu", "shed": "dökmek/dökülen", "debris": "kalıntı/döküntü", "epidermal": "deriyle ilgili" },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> "Although" zıtlık bağlacı, ev tozunun neredeyse tamamen insan ölü derisinden oluştuğu yönündeki yaygın varsayım ile kimyasal analizlerin tozun aslında dış ortam toprağı, lifler ve kirleticilerden oluşan karmaşık bir yapı olduğunu göstermesi arasındaki tezatı belirtir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Akarların neyle beslendiği toz bileşimi tezatını tamamlamaz.<br><b>C)</b> Deri olduğunu onaylaması "although" zıtlığını yok eder.<br><b>D)</b> Süpürme işlemi toz bileşimi gerçeğini açıklamaz.<br><b>E)</b> Sentetik madde içermediği iddiası yanlıştır.`
     },
     {
         id: 36,
-        type: "A",
-        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",                
-        text: "----, its sea ice melts, leaving the animals to drown as they are forced to swim long distances between the ice, or simply starve to death.",
-        options: { A: "Because the polar regions finally face the possibility of losing their all frozen icebergs", B: "As temperatures in the Arctic invariably get warmer day by day", C: "Since winter temperatures at the North Pole can range from about -43°C to -26°C", D: "Some parts of world are inevitably subjected to abnormally warm temperatures", E: "Even though recent dramatic changes in global warming negatively affect the life across the Arctic" },
+        type: 'A',
+        instruction: "27-36 sorularda, verilen cümleyi uygun şekilde tamamlayan ifadeyi bulunuz.",
+        text: "Because language is not merely a tool for communication but a primary vessel of cultural memory, ----.",
+        options: {
+            A: "linguistic globalisation has permanently eliminated regional dialectal variations",
+            B: "the loss of an indigenous language represents the erosion of an entire community's unique identity",
+            C: "multilingual individuals inevitably discard their heritage in favor of dominant lingua francas",
+            D: "grammatical rules develop independently of the socio-historical experiences of their speakers",
+            E: "preserving ancient texts requires minimal understanding of traditional folklore and customs"
+        },
         correct: "B",
-        dict: { "melts": "erir", "drown": "boğulmak", "starve": "açlıktan ölmek", "forced": "zorlanmak" },
-        explanation: `<b>✅ Doğru Cevap: B) As temperatures in the Arctic invariably get warmer day by day</b><br><b>📌 Sebep:</b> Sebep-sonuç. Sıcaklıklar arttıkça (As...), buzlar erir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Because the polar regions...</b> - Bölgelerin olasılıkla yüzleşmesi doğrudan sebep değil.<br><b>C) Since winter temperatures...</b> - Kış sıcaklık aralığı, erime için sebep değil.<br><b>D) Some parts of world...</b> - Dünyanın bazı bölgeleri genel, Arktik özel değil.<br><b>E) Even though recent dramatic changes...</b> - Zıtlık belirtir, sebep değil.`
+        dict: { "vessel": "araç/taşıyıcı", "indigenous": "yerli", "erosion": "aşınma/yok olma", "lingua franca": "ortak dil" },
+        explanation: `<b>✅ Doğru Cevap: B</b><br><b>📌 Sebep:</b> "Because" sebep-sonuç bağlacı, dilin yalnızca bir iletişim aracı değil aynı zamanda kültürel hafızanın taşıyıcısı olması sebebiyle, yerli bir dilin yok olmasının o topluluğun kimliğinin de aşınması/silinmesi anlamına geleceğini mantıksal olarak açıklar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Küresel dilin lehçeleri tamamen yok ettiği kesin yargısı doğrudan sonuç değildir.<br><b>C)</b> Çok dillilerin köklerini terk ettiği iddiası olumsuz ve tutarsızdır.<br><b>D)</b> Dilbilgisi kurallarının bağımsız gelişmesi nedenselliğe uymaz.<br><b>E)</b> Metinleri korumak için kültürü anlamanın gerekmediği iddiası çelişir.`
     },
     {
         id: 37,
-        type: "A",
-        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi, Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",                
-        text: "To battle the spreading catastrophe, 15,924 men and women, the largest group of fire fighters ever assembled in the nation's history, have come together from points as far away as Alaska and Massachusetts.",
-        options: { A: "Yayılan felaketle mücadele eden ve ülke tarihinde bugüne kadar en büyük itfaiyeci grubu olan 15,924 erkek ve kadın, Alaska ve Massachusetts kadar uzak yoldan geldiler.", B: "Ülke tarihindeki en büyük itfaiyeci grubu, 15,924 erkek ve kadın oluşturuldu ve yayılmakta olan felaketle mücadele için, Alaska ve Massachusetts gibi uzak yerlerden geldiler.", C: "15,924 erkek ve kadın, Massachusetts ve Alaska'da, ülkede şimdiye kadar toplanmış en büyük itfaiyeci grubunu oluşturup, uzak noktalara doğru hareket ettiler.", D: "Yayılan felaketle mücadele etmek için, ülke tarihinde bugüne kadar toplanmış en büyük itfaiyeci grubu, 15,924 erkek ve kadın, Alaska ve Massachusetts kadar uzak yerlerden bir araya geldiler.", E: "Yayılan felaketle mücadele için, ülke tarihinde bugüne kadar toplanmış en büyük itfaiyeci grubunu oluşturan yaklaşık 15,924 erkek ve kadın Alaska ve Massachusetts gibi uzak yerlerden geldiler." },
-        correct: "D",
-        dict: { "catastrophe": "felaket", "assembled": "toplanmış", "battle": "mücadele etmek", "spreading": "yayılan" },
-        explanation: `<b>✅ Doğru Cevap: D) Yayılan felaketle mücadele etmek için, ülke tarihinde bugüne kadar toplanmış en büyük itfaiyeci grubu, 15,924 erkek ve kadın, Alaska ve Massachusetts kadar uzak yerlerden bir araya geldiler.</b><br><b>📌 Sebep:</b> 'To battle' (mücadele etmek için) ve 'have come together' (bir araya geldiler) yüklemi tam karşılık buluyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Mücadele eden' yanlış çeviri, asıl anlam 'mücadele etmek için'.<br><b>B)</b> 'Oluşturuldu' yanlış, 'assembled' (toplanmış) pasif değil.<br><b>C)</b> 'Massachusetts ve Alaska'da' yanlış, 'from points as far away as' (Alaska ve Massachusetts kadar uzak yerlerden).<br><b>E)</b> 'Yaklaşık' kelimesi orijinal metinde yok.`
+        type: 'C',
+        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi bulunuz.",
+        text: "Although smart cities are designed to optimize urban resource management through advanced interconnected sensors, concerns regarding personal data privacy are frequently raised by cybersecurity experts who analyze vulnerabilities within municipal digital networks.",
+        options: {
+            A: "Akıllı şehirler gelişmiş birbirine bağlı sensörler aracılığıyla kentsel kaynak yönetimini optimize etmek için tasarlanmış olsalar da belediyelerin dijital ağlarındaki güvenlik açıklarını analiz eden siber güvenlik uzmanları tarafından kişisel veri gizliliğine ilişkin endişeler sıklıkla dile getirilmektedir.",
+            B: "Gelişmiş birbirine bağlı sensörler yoluyla kentsel kaynak yönetimini optimize etmeyi hedefleyen akıllı şehirlerde, belediyelerin dijital ağlarındaki açıkları inceleyen siber güvenlik uzmanlarının kişisel veri gizliliği hakkındaki endişeleri giderek artmaktadır.",
+            C: "Akıllı şehirlerin birbirine bağlı sensörlerle kentsel kaynakları daha verimli yönetmek amacıyla tasarlanmasına rağmen, siber güvenlik uzmanları belediyelerin dijital ağlarındaki zafiyetleri analiz ederek kişisel veri gizliliğine dair endişelerini paylaşmışlardır.",
+            D: "Belediyelerin dijital ağlarındaki açıkları inceleyen siber güvenlik uzmanları kişisel veri gizliliğine dair endişelerini sıklıkla dile getirmektedir çünkü akıllı şehirler kentsel kaynak yönetimini optimize eden gelişmiş sensörlerle donatılmıştır.",
+            E: "Kişisel veri gizliliğine ilişkin endişeler siber güvenlik uzmanları tarafından sıklıkla dile getirilse de akıllı şehirler, belediyelerin dijital ağlarındaki açıkları kapatmak ve kentsel kaynak yönetimini optimize etmek amacıyla tasarlanmaktadır."
+        },
+        correct: "A",
+        dict: {
+            "optimize": "en uygun hale getirmek/optimize etmek",
+            "interconnected": "birbirine bağlı",
+            "vulnerabilities": "güvenlik açıkları/zafiyetler",
+            "municipal": "belediyeye ait/kentsel"
+        },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> İngilizce cümledeki 'Although...' (zıtlık yan cümleciği), 'are designed' (geniş zaman edilgen çatı) ve ana cümledeki '...are frequently raised by cybersecurity experts who...' (özne ve sıfat cümleciği dizilimi) A seçeneğinde eksiksiz ve tam karşılık bulmuştur.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> '...endişeleri giderek artmaktadır' ifadesi orijinal cümlenin edilgen yapısını ('are frequently raised') ve zamanını karşılamaz.<br><b>C)</b> '...paylaşmışlardır' (Past Tense kayması) ve sıfat tamlaması hatalıdır.<br><b>D)</b> 'Because' (çünkü) sebep-sonuç ilişkisi kurulmuş, 'Although' zıtlık anlamı bozulmuştur.<br><b>E)</b> Ana cümle ile yan cümlenin vurgusu ve zıtlık konumu yer değiştirmiştir.`
     },
     {
         id: 38,
-        type: "A",
-        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi, Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",                
-        text: "Today most of the people who are over 20 can easily remember those outlandish and futile things this channel used to put on air in the evenings in the past.",
-        options: { A: "Bugün yirmi yaşın üstündeki çoğu insan geçmişte akşamları yayınlanan bu tuhaf ve işe yaramaz şeyleri kolaylıkla hatırlayabilir.", B: "Bugün yirmi yaşın üstündeki çoğu insan bu kanalın geçmişte akşamları yayınladığı bu tuhaf ve işe yaramaz şeyleri kolaylıkla hatırlayabilir.", C: "Bugün yirmi yaşındaki çoğu insan bu kanalın eskiden akşamları yayınladığı bu tuhaf ve işe yaramaz şeyleri kolayca hatırlayabilir.", D: "Bugün yirmi yaşın üstündeki insanların tümü bu kanalın geçmişte akşamları yayınladığı bu tuhaf ve işe yaramaz şeyleri kolaylıkla hatırlayabilir.", E: "Bugün yirmi yaşın üstündeki insanları bu kanalın geçmişte akşamları yayınladığı bu tuhaf ve işe yaramaz şeyleri kolaylıkla tanıyabilir." },
-        correct: "B",
-        dict: { "outlandish": "tuhaf", "futile": "işe yaramaz", "channel": "kanal", "remember": "hatırlamak" },
-        explanation: `<b>✅ Doğru Cevap: B) Bugün yirmi yaşın üstündeki çoğu insan bu kanalın geçmişte akşamları yayınladığı bu tuhaf ve işe yaramaz şeyleri kolaylıkla hatırlayabilir.</b><br><b>📌 Sebep:</b> Özne: 'Most of the people who are over 20' (20 yaş üstü çoğu insan). Yüklem: 'can remember' (hatırlayabilir). 'This channel used to put on air' (bu kanalın yayınladığı) doğru çevrilmiş.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Geçmişte akşamları yayınlanan' pasif yapı, orijinal aktif.<br><b>C)</b> 'Yirmi yaşındaki' yanlış, 'over 20' (20 yaş üstü).<br><b>D)</b> 'İnsanların tümü' yanlış, 'most' (çoğu).<br><b>E)</b> 'Tanıyabilir' yanlış, 'remember' (hatırlamak).`
+        type: 'C',
+        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi bulunuz.",
+        text: "While cognitive psychologists assert that intentional cheerfulness can effectively alleviate acute depressive symptoms, it is acknowledged by clinical practitioners that forced optimism may inadvertently exacerbate underlying emotional distress.",
+        options: {
+            A: "Bilişsel psikologlar kasıtlı neşenin akut depresif belirtileri etkili bir şekilde hafifletebileceğini öne sürerken, klinik pratisyenler tarafından zoraki iyimserliğin altta yatan duygusal sıkıntıyı istemeden şiddetlendirebileceği kabul edilmektedir.",
+            B: "Klinik pratisyenler zoraki iyimserliğin duygusal sıkıntıyı artırabileceğini kabul etse de bilişsel psikologlara göre kasıtlı neşeli olmak akut depresif belirtileri hafifletmede oldukça etkilidir.",
+            C: "Bilişsel psikologlar tarafından kasıtlı neşenin akut depresyonu tamamen ortadan kaldırabileceği iddia edilmektedir; ancak klinik uzmanlar zoraki iyimserliğin derin duygusal problemleri tetikleyebileceğini vurgulamaktadır.",
+            D: "Kasıtlı neşenin akut depresif belirtileri etkili bir biçimde hafifletebileceği bilişsel psikologlarca öne sürülmüştür fakat zoraki iyimserliğin altta yatan duygusal gerginliği artırabileceği klinik uzmanlarca kabul görmüştür.",
+            E: "Bilişsel psikologların kasıtlı neşe sayesinde akut depresif belirtilerin hafifleyeceğini savunmasına rağmen, klinik uygulayıcılar zoraki iyimserliğin duygusal sıkıntıları istemeden artırdığını fark etmişlerdir."
+        },
+        correct: "A",
+        dict: {
+            "intentional": "kasıtlı/bilinçli",
+            "alleviate": "hafifletmek/azaltmak",
+            "inadvertently": "istemeden/farkında olmadan",
+            "exacerbate": "şiddetlendirmek/kötüleştirmek"
+        },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> 'While cognitive psychologists assert...' (Bilişsel psikologlar ... öne sürerken) yan cümleciği ile 'it is acknowledged by clinical practitioners that...' (...klinik pratisyenler tarafından kabul edilmektedir) ana cümlesinin edilgen yapısı ve 'may inadvertently exacerbate' (istemeden şiddetlendirebilir) modal yapısı birebir A şıkkında verilmiştir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Ana cümle ile yan cümle zıtlık yerleri değiştirilmiş, edilgen çatı bozulmuştur.<br><b>C)</b> 'tamamen ortadan kaldırabileceği' (anlam fazlalığı) ve eksik zarf çevirisi mevcuttur.<br><b>D)</b> 'öne sürülmüştür / kabul görmüştür' (Present yerine Past Tense kullanımı).<br><b>E)</b> 'fark etmişlerdir' yüklem uyuşmazlığı ve modal kaybı içermektedir.`
     },
     {
         id: 39,
-        type: "A",
-        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi, Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",                
-        text: "Most people want to get married and have children not only because they like children but because they also want to leave a trace after them in order to become somehow 'immortal'.",
-        options: { A: "Çoğu insan, sadece çocukları sevdiğinden dolayı değil bir şekilde 'ölümsüz' olmak için geride bir iz bırakmak istediğinden dolayı da evlenip çocuk sahibi olmak ister.", B: "Çoğu insan, çocukları sevdiği için veya bir şekilde 'ölümsüz' olmak için evlenip çocuk sahibi olmayı arzu eder.", C: "Birçok kişi çocuk sahibi olmak için evlenmek ister ancak çoğunlukla geride bir iz bırakarak bir şekilde 'ölümsüz' olmaya çalışır.", D: "İnsanların çoğu, çocukları sevdiği için değil bir şekilde 'ölümsüz' olmak ve geride bir iz bırakmak istediği için evlenip çocuk sahibi olmak ister.", E: "İnsanlar, sadece çocukları sevdikleri için değil bir şekilde 'ölümsüz' olmak amacıyla geride bir iz bırakmak istediği için de evlenip çocuk sahibi olur." },
+        type: 'C',
+        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi bulunuz.",
+        text: "Because deceptive communication is strictly condemned in formal institutional settings, prosocial lies that are told to preserve interpersonal harmony are generally tolerated in daily social interactions.",
+        options: {
+            A: "Yanıltıcı iletişim resmi kurumsal ortamlarda kesinlikle kınandığı için, kişilerarası uyumu korumak amacıyla söylenen olumlu sosyal yalanlar günlük sosyal etkileşimlerde genellikle hoş görülmektedir.",
+            B: "Resmi kurumsal ortamlarda aldatıcı iletişimin kesin bir şekilde yasaklanması sebebiyle, insanlar arası uyumu devam ettirmek için başvurulan beyaz yalanlar gündelik yaşamda çoğunlukla kabul görmektedir.",
+            C: "Kişilerarası uyumu korumak için söylenen olumlu sosyal yalanlar günlük ilişkilerde hoş görülse de resmi kurumlardaki yanıltıcı iletişim biçimleri toplum tarafından kesinlikle kınanmaktadır.",
+            D: "Yanıltıcı iletişimin resmi kurumsal ortamlarda hoş karşılanmaması, kişisel ilişkileri korumak adına söylenen sosyal yalanların günlük iletişimde tamamen tolere edilmesine yol açmıştır.",
+            E: "Günlük sosyal etkileşimlerde kişilerarası uyumu sağlamak için söylenen prososyal yalanlar hoş görülür çünkü resmi kurumsal ortamlarda aldatıcı her türlü iletişim sert biçimde kınanır."
+        },
         correct: "A",
-        dict: { "immortal": "ölümsüz", "trace": "iz", "married": "evli", "children": "çocuklar" },
-        explanation: `<b>✅ Doğru Cevap: A) Çoğu insan, sadece çocukları sevdiğinden dolayı değil bir şekilde 'ölümsüz' olmak için geride bir iz bırakmak istediğinden dolayı da evlenip çocuk sahibi olmak ister.</b><br><b>📌 Sebep:</b> 'Not only because... but because also' (sadece ... değil ... dolayı da) kalıbını en iyi çeviren şık.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> 'Veya' yanlış, 'not only...but' (sadece değil, aynı zamanda).<br><b>C)</b> 'Ancak çoğunlukla' yanlış, sebep ilişkisi kopmuş.<br><b>D)</b> 'Çocukları sevdiği için değil' yanlış, aslında iki sebep var.<br><b>E)</b> 'İnsanlar' genel, 'most people' (çoğu insan) değil.`
+        dict: {
+            "strictly condemned": "kesinlikle/sertçe kınanan",
+            "prosocial lies": "olumlu sosyal/toplum yanlısı yalanlar",
+            "interpersonal harmony": "kişilerarası uyum",
+            "tolerated": "hoş görülen/tolere edilen"
+        },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> 'Because deceptive communication is strictly condemned...' (Yanıltıcı iletişim resmi kurumsal ortamlarda kesinlikle kınandığı için) sebep zarf cümleciği, relative clause içeren özne öbeği ('prosocial lies that are told...') ve 'are generally tolerated' geniş zaman edilgen yapısı eksiksiz olarak A seçeneğinde aktarılmıştır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> '...kesin bir şekilde yasaklanması' ('is strictly condemned' kınanmak fiilidir, yasaklanmak değil).<br><b>C)</b> 'Because' sebep bağı yerine '...hoş görülse de' zıtlık yapısı kurulmuştur.<br><b>D)</b> '...yol açmıştır' (Present Perfect etken sonuç yüklemi yapılmıştır, asıl metin 'are generally tolerated'dir).<br><b>E)</b> Cümle dizilimi ve neden-sonuç odak sırası tersine çevrilmiştir.`
     },
     {
         id: 40,
-        type: "A",
-        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi, Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",                
-        text: "Eski Roma'da, şarap herkes tarafından tüm yemeklerde ve özel günlerde tüketilen başlıca içecek olarak düşünülürdü ve oldukça ucuzdu.",
-        options: { A: "In ancient Rome, wine was a cheap drink, consumed at all meals and occasions by everybody and was sold everywhere.", B: "In ancient Rome, wine was thought to be a major drink to be consumed at all special meals and occasions and was quite inexpensive.", C: "Roman people considered wine to be a main drink, consumed at all dinners and occasions since it was so cheap.", D: "Cheap wine, being consumed at all meals and occasions was a special drink for all ancient Romans.", E: "In ancient Rome, wine was considered a staple drink, consumed at all meals and occasions by everybody and it was fairly cheap." },
-        correct: "E",
-        dict: { "staple": "temel", "consumed": "tüketilen", "fairly": "oldukça", "ancient": "eski" },
-        explanation: `<b>✅ Doğru Cevap: E) In ancient Rome, wine was considered a staple drink, consumed at all meals and occasions by everybody and it was fairly cheap.</b><br><b>📌 Sebep:</b> 'Considered a staple drink' (başlıca içecek olarak düşünülürdü) ve 'was fairly cheap' (oldukça ucuzdu). 'By everybody' (herkes tarafından) doğru çevrilmiş.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Was sold everywhere' (her yerde satılırdı) orijinalde yok.<br><b>B)</b> 'Special meals' (özel yemekler) yanlış, 'all meals' (tüm yemekler).<br><b>C)</b> 'Since it was so cheap' (çok ucuz olduğu için) sebep belirtiyor, orijinalde yok.<br><b>D)</b> 'Cheap wine' (ucuz şarap) vurgusu yanlış, 'wine was cheap' (şarap ucuzdu).`
+        type: 'D',
+        instruction: "37-42 sorularda, verilen Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",
+        text: "Tarih boyunca toplumları derinden sarsan büyük pandemiler, yalnızca sağlık sistemlerini çökertmekle kalmamış, aynı zamanda küresel ticaret ağları kısıtlandığı için benzeri görülmemiş ekonomik krizleri de tetiklemiştir.",
+        options: {
+            A: "Major pandemics that severely shook societies throughout history not only collapsed healthcare systems but also triggered unprecedented economic crises because global trade networks were restricted.",
+            B: "Although major pandemics that severely shake societies have collapsed healthcare systems throughout history, unprecedented economic crises are triggered as global trade networks are restricted.",
+            C: "Major pandemics, which severely shook societies throughout history, did not collapse healthcare systems, but they triggered unprecedented economic crises by restricting global trade networks.",
+            D: "Because global trade networks were restricted, major pandemics that severely shook societies throughout history collapsed healthcare systems and triggered unprecedented economic crises.",
+            E: "Major pandemics that have severely shaken societies throughout history have not only collapsed healthcare systems but also triggered unprecedented economic crises, which restricted global trade networks."
+        },
+        correct: "A",
+        dict: {
+            "severely": "derinden/şiddetle",
+            "unprecedented": "benzeri görülmemiş",
+            "collapse": "çökmek/çökertmek",
+            "restricted": "kısıtlanmış"
+        },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> Türkçe cümledeki 'Tarih boyunca toplumları derinden sarsan büyük pandemiler...' öznesi ('Major pandemics that severely shook societies throughout history'), 'yalnızca ... değil aynı zamanda ...' yapısı ('not only ... but also ...'), 'küresel ticaret ağları kısıtlandığı için' sebep-sonuç zarf cümleciği ('because global trade networks were restricted') ve geçmiş zaman kurgusu A seçeneğinde eksiksiz ve tam bir sözdizimiyle aktarılmıştır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> 'Although' (zıtlık) eklenerek cümle yapısı ve zaman kurgusu (Present Tense kayması) bozulmuştur.<br><b>C)</b> 'did not collapse' ifadesiyle ana cümlenin anlamı olumsuza çevrilmiştir.<br><b>D)</b> 'Not only ... but also' kalıbı atılmış, sebep-sonuç ilişkisinin ana vurgusu cümlenin başına kaydırılmıştır.<br><b>E)</b> 'Because' bağlacı yerine 'which restricted' relative yapısı getirilerek mantıksal gerekçe ilişkisi zayıflatılmıştır.`
     },
     {
         id: 41,
-        type: "A",
-        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi, Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",                
-        text: "Hibrid bir otomobil klasik bir otomobilden daha az petrol tüketmesine rağmen, yine de bataryasının çevreye verdiği zararla ilgili önemli bir sorun var.",
-        options: { A: "A hybrid car consumes less petroleum than a conventional car, but there are important issues concerning the environmental damage of its battery.", B: "Even if a conventional car always consumes more petroleum than a hybrid car, there are a lot of worries regarding its being harmful to the environment.", C: "Though a hybrid car consumes less petroleum than a conventional car, there is still an important issue regarding the environmental damage of its battery.", D: "As hybrid cars consume less petroleum than non-hybrid ones and also make less noise, there will be no objections to their frequent use.", E: "Everybody may think hybrid cars to be much better than fossil fuel generated cars, yet there is still an important issue regarding their damage of their batteries." },
-        correct: "C",
-        dict: { "conventional": "geleneksel", "petroleum": "petrol", "battery": "batarya", "environmental": "çevresel" },
-        explanation: `<b>✅ Doğru Cevap: C) Though a hybrid car consumes less petroleum than a conventional car, there is still an important issue regarding the environmental damage of its battery.</b><br><b>📌 Sebep:</b> '...mesine rağmen' (Though) ve 'önemli bir sorun var' (there is still an important issue). 'Regarding the environmental damage of its battery' (bataryasının çevreye verdiği zararla ilgili) doğru çevrilmiş.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'But there are important issues' (ama önemli sorunlar var) çoğul, tekil olmalı.<br><b>B)</b> 'Its being harmful' (onun zararlı olması) belirsiz, batarya spesifik değil.<br><b>D)</b> 'There will be no objections' (itiraz olmayacak) yanlış, sorun olduğu söyleniyor.<br><b>E)</b> 'Everybody may think' (herkes düşünebilir) genelleme, orijinalde yok.`
+        type: 'D',
+        instruction: "37-42 sorularda, verilen Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",
+        text: "Albert Einstein, ışığın hem dalga hem de parçacık gibi davrandığını öne süren devrim niteliğindeki fotoelektrik etki teorisini açıkladığında, klasik fizik kuralları altüst oldu çünkü bu yaklaşım dönemin yerleşik bilimsel kabullerine tamamen meydan okuyordu.",
+        options: {
+            A: "When Albert Einstein explained his revolutionary photoelectric effect theory, which suggested that light behaved as both a wave and a particle, the rules of classical physics were overturned because this approach completely challenged the established scientific assumptions of the era.",
+            B: "Albert Einstein explained his revolutionary photoelectric effect theory proposing that light behaves as both a wave and a particle, so the rules of classical physics were overturned, although it completely challenged the established scientific assumptions of the era.",
+            C: "Because the rules of classical physics were overturned when Albert Einstein explained his revolutionary photoelectric effect theory, this approach completely challenged the established scientific assumptions of the era by suggesting that light behaved as a wave and a particle.",
+            D: "While Albert Einstein was explaining his revolutionary photoelectric effect theory suggesting that light behaved as both a wave and a particle, the rules of classical physics had been overturned since this approach challenged the established scientific assumptions of the era.",
+            E: "When Albert Einstein explained his revolutionary photoelectric effect theory, which suggested that light behaves as both a wave and a particle, the rules of classical physics overturned the established scientific assumptions of the era because of this complete challenge."
+        },
+        correct: "A",
+        dict: {
+            "revolutionary": "devrim niteliğinde",
+            "photoelectric effect": "fotoelektrik etki",
+            "overturn": "altüst etmek/devirmek",
+            "established assumptions": "yerleşik kabuller"
+        },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> 'Albert Einstein ... açıkladığında' zaman yapısı ('When Albert Einstein explained...'), sıfat cümleciği ('...which suggested that light behaved as both a wave and a particle...'), ana cümledeki edilgen yapı ('the rules of classical physics were overturned') ve sebep bildiren yan cümle ('because this approach completely challenged...') tam ve doğru gramer ögeleriyle A şıkkında birleştirilmiştir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> 'Because' yerine 'although' zıtlık bağlacı kullanılarak nedensellik bozulmuştur.<br><b>C)</b> Neden-sonuç ve yan cümle dizilimi ters yüz edilmiştir.<br><b>D)</b> 'While ... was explaining' ve 'had been overturned' zaman uyumsuzluğu yaratmıştır.<br><b>E)</b> Ana cümlenin edilgen çatısı ('were overturned') aktif yapılarak özne-nesne ilişkisi çarpıtılmıştır.`
     },
     {
         id: 42,
-        type: "A",
-        instruction: "37-42 sorularda, verilen İngilizce cümleye anlamca en yakın Türkçe cümleyi, Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",                
-        text: "Nihayetinde günlük hayatın neredeyse her yönünü bir şekilde etkileyen Sanayi Devrimi insanlık tarihinde temel bir dönüm noktası oldu.",
-        options: { A: "The Industrial Revolution, which eventually influenced almost every aspect of daily life somehow, turned out to be a major turning point in human history.", B: "The Industrial Revolution eventually influenced almost every aspect of daily life somehow, and was a major turning point in history.", C: "The major turning point in human history was impacted every aspect of daily life somehow, undoubtedly the Industrial Revolution, which ultimately affected almost every aspect of life in some way.", D: "The Industrial Revolution was a turning point in human history, and it definitely had impact on every aspect of daily life.", E: "The Industrial Revolution that influenced almost every aspect of daily life was seen as a major turning point in human history." },
+        type: 'D',
+        instruction: "37-42 sorularda, verilen Türkçe cümleye anlamca en yakın İngilizce cümleyi bulunuz.",
+        text: "Son evre kalp yetmezliği çeken hastaların ömrünü uzatmak için tasarlanan yapay kalp cihazları, nakil bekleyen bireyler için hayati bir köprü görevi görse de enfeksiyon ve kan pıhtılaşması gibi riskler hala tam olarak ortadan kaldırılamamıştır.",
+        options: {
+            A: "Although artificial heart devices that are designed to prolong the lifespan of patients suffering from end-stage heart failure serve as a vital bridge for individuals awaiting a transplant, risks such as infection and blood clotting have still not been completely eliminated.",
+            B: "Artificial heart devices designed to prolong the lifespan of patients suffering from end-stage heart failure serve as a vital bridge for individuals awaiting a transplant; therefore, risks like infection and blood clotting could not be completely eliminated.",
+            C: "Even though artificial heart devices prolong the lifespan of patients who suffered from end-stage heart failure by serving as a vital bridge, risks such as infection and blood clotting are never eliminated for individuals awaiting a transplant.",
+            D: "Because artificial heart devices that are designed to prolong the lifespan of patients suffering from end-stage heart failure serve as a vital bridge for individuals awaiting a transplant, risks such as infection and blood clotting have still not been eliminated completely.",
+            E: "Although artificial heart devices were designed to prolong the lifespan of patients suffering from end-stage heart failure, they served as a vital bridge for individuals awaiting a transplant despite the fact that risks like infection and blood clotting cannot be eliminated."
+        },
         correct: "A",
-        dict: { "turning point": "dönüm noktası", "influenced": "etkiledi", "aspect": "yön", "eventually": "nihayetinde" },
-        explanation: `<b>✅ Doğru Cevap: A) The Industrial Revolution, which eventually influenced almost every aspect of daily life somehow, turned out to be a major turning point in human history.</b><br><b>📌 Sebep:</b> Özne 'Sanayi Devrimi' ve relative clause 'which...'. Yüklem 'turned out to be' (oldu). 'Eventually' (nihayetinde) ve 'somehow' (bir şekilde) doğru yerleştirilmiş.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> İki cümle 'and' ile bağlanmış, relative clause yapısı yok.<br><b>C)</b> Cümle yapısı karmaşık ve anlam kaymış.<br><b>D)</b> 'Definitely had impact' (kesinlikle etkisi oldu) vurgusu farklı.<br><b>E)</b> 'Was seen as' (olarak görüldü) pasif, orijinal aktif 'oldı'.`
+        dict: {
+            "prolong": "uzatmak",
+            "end-stage heart failure": "son evre kalp yetmezliği",
+            "vital bridge": "hayati köprü",
+            "blood clotting": "kan pıhtılaşması",
+            "eliminate": "ortadan kaldırmak/yok etmek"
+        },
+        explanation: `<b>✅ Doğru Cevap: A</b><br><b>📌 Sebep:</b> '...görevi görse de' zıtlık yan cümleciği ('Although artificial heart devices ... serve as a vital bridge...'), 'tasarlanan' nitelemesi ('that are designed to... / designed to...'), ve ana cümledeki present passive çatı ('risks ... have still not been completely eliminated') anlam ve vurgu kaybı olmadan A seçeneğinde tam olarak örtüşmektedir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> 'Although' zıtlığı yerine 'therefore' (bu yüzden) sebep-sonuç ilişkisi kurulmuştur.<br><b>C)</b> 'who suffered' ve 'are never eliminated' kısımlarında zaman ve anlam kayması vardır.<br><b>D)</b> 'Although' yerine 'Because' kullanılmıştır.<br><b>E)</b> 'were designed' ve 'served' kullanılarak genel-geçer tıbbi bir olgu geçmiş zamana (Past Tense) hapsedilmiştir.`
     },
     {
         id: 43,
