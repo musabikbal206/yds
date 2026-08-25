@@ -624,402 +624,751 @@ const questions = [
     },
     {
         id: 43,
-        type: "B",
-        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "University of Cambridge is an English autonomous institution of higher learning at Cambridge, England, on the River Cam 80 km north of London. The start of the university is generally taken as 1209, when scholars from Oxford migrated to Cambridge to escape Oxford's riots of 'town and gown' (town's people versus scholars). To avert possible troubles, the authorities in Cambridge allowed only scholars under the supervision of a master to remain in the town and the university grew out of the association of these scholars. It is, after the University of Oxford, the second-oldest university in the English-speaking world, and the seventh-oldest globally. In addition to cultural and practical associations as a historic part of British society, the two ancient universities have many common features and thereby are often jointly referred to as Oxbridge. On the other hand, they have a long history of rivalry with each other. Cambridge regularly contends with Oxford for first place in UK league tables. In the most recently published ranking of UK universities, published by The Guardian newspaper, Cambridge was ranked first.",
-        text: "It can be inferred from the passage that Oxford University ----.",
-        options: { "A": "was the only educational institution where riots of 'town and gown' took place", "B": "is the second-oldest university in Europe and the seventh-oldest in the world", "C": "was the home to riots between the residents of the town and the scholars", "D": "isn't essentially akin to the University of Cambridge and follows a better curriculum", "E": "has the longest history among the universities in both the United Kingdom and the English-speaking world" },
-        correct: "E",
-        dict: { "riots": "isyanlar", "scholars": "akademisyenler", "longest": "en uzun", "inferred": "çıkarım yapılmak" },
-        explanation: "<b> ✅  Doğru Cevap: E) has the longest history among the universities in both the United Kingdom and the English-speaking world</b><br><b> 📌  Sebep:</b> Parçada Cambridge Üniversitesi için 'Oxford Üniversitesi'nden sonra İngilizce konuşulan dünyadaki en eski ikinci üniversitedir' (after the University of Oxford, the second-oldest) ifadesi geçmektedir. Eğer Cambridge, Oxford'dan sonra ikinciyse, bu durum Oxford'un birinci (en eski/en uzun tarihe sahip) olduğu anlamına gelir.<br><br><b> ❌  Diğer Seçenekler:</b><br><b>C)</b> Oxford'da isyanlar olduğu doğru bir bilgi olsa da, E seçeneğindeki kıyaslama ve çıkarım (inference) parça geneline dayalı daha güçlü ve kapsayıcı bir yargıdır."
+        type: 'B',
+        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "In an era of relentless globalisation, contemporary corporate entities have increasingly structured their manufacturing processes around sprawling, transnational supply networks. Pioneered primarily by multinational automotive and technology conglomerates, the 'just-in-time' inventory paradigm was designed to minimise warehousing overheads and eliminate operational redundancies by coordinating component deliveries with precision schedules. Under this framework, raw materials and intermediate assemblies arrive at manufacturing facilities mere hours before they are incorporated into final consumer products. While this hyper-efficient logistical model drastically compressed operational expenditures and inflated short-term profit margins across several decades, it concurrently introduced unprecedented systemic vulnerabilities. The profound fragility inherent in such globally dispersed value chains became starkly apparent when recent geopolitical friction, regional conflicts, and international transport bottlenecks precipitated widespread industrial paralysis. With single-source suppliers unable to dispatch specialised parts across congested maritime routes, multinational assembly lines ground to an abrupt standstill worldwide. Consequently, corporate strategists and supply chain economists are now fundamentally re-evaluating the dogmatic pursuit of cost minimization. Many enterprises have begun pivoting toward 'just-in-case' resilience strategies, which prioritise localized component sourcing, regional warehousing redundancy, and supplier diversification over immediate cost efficiency, even if doing so marginally diminishes profit margins.",
+        text: "Which of the following could be the best title for the passage?",
+        options: {
+            A: "The Irreversible Collapse of Multinational Automotive Conglomerates",
+            B: "From Extreme Efficiency to Strategic Resilience: Rethinking Global Supply Chains",
+            C: "The Superiority of Just-in-Time Logistics in Eliminating Geopolitical Conflicts",
+            D: "How Maritime Route Congestion Permanently Ended International Trade",
+            E: "Technological Innovations in Contemporary Regional Warehousing Systems"
+        },
+        correct: "B",
+        dict: {
+            "sprawling": "geniş alana yayılan/düzensiz genişleyen",
+            "redundancy": "fazlalık/yedekleme",
+            "precipitate": "hızlandırmak/tetiklemek",
+            "resilience": "dayanıklılık/esneklik",
+            "bottleneck": "darboğaz/tıkanıklık"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) From Extreme Efficiency to Strategic Resilience: Rethinking Global Supply Chains</b><br><b>📌 Sebep:</b> Parçanın bütünü, maliyet odaklı aşırı verimli "just-in-time" tedarik zinciri modelinin krizler karşısında kırılgan kalmasını ve şirketlerin artık dayanıklılığı ("just-in-case" resilience) önceleyen yeni stratejilere yönelmesini ele almaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Otomotiv devlerinin geri dönülemez çöküşü parçanın ana fikri değildir, aşırı genellemedir.<br><b>C)</b> Modelin jeopolitik çatışmaları bitirdiğine dair bir iddia metinde yoktur.<br><b>D)</b> Uluslararası ticaretin kalıcı olarak bittiği söylenemez.<br><b>E)</b> Yalnızca depolama teknolojilerini anlatan dar kapsamlı bir başlıktır.`
     },
     {
         id: 44,
-        type: "B",
-        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "University of Cambridge is an English autonomous institution of higher learning at Cambridge, England, on the River Cam 80 km north of London. The start of the university is generally taken as 1209, when scholars from Oxford migrated to Cambridge to escape Oxford's riots of 'town and gown' (town's people versus scholars). To avert possible troubles, the authorities in Cambridge allowed only scholars under the supervision of a master to remain in the town and the university grew out of the association of these scholars. It is, after the University of Oxford, the second-oldest university in the English-speaking world, and the seventh-oldest globally. In addition to cultural and practical associations as a historic part of British society, the two ancient universities have many common features and thereby are often jointly referred to as Oxbridge. On the other hand, they have a long history of rivalry with each other. Cambridge regularly contends with Oxford for first place in UK league tables. In the most recently published ranking of UK universities, published by The Guardian newspaper, Cambridge was ranked first.",
-        text: "The main reason why these two ancient universities are often referred to as Oxbridge is that ----.",
-        options: { A: "there are cultural links between them and they exhibit a number of similar characteristics", B: "the aims of those who founded them were quite similar to each other", C: "British society takes them as the base of its cultural and practical life", D: "it was the scholars from Oxford who founded the University of Cambridge", E: "they have a long history of contention with each other" },
-        correct: "A",
-        dict: { "exhibit": "sergilemek", "characteristics": "özellikler", "jointly": "birlikte", "associations": "bağlantılar" },
-        explanation: `<b>✅ Doğru Cevap: A) there are cultural links between them and they exhibit a number of similar characteristics</b><br><b>📌 Sebep:</b> Ortak özellikler (common features / similar characteristics) ve kültürel bağlar (cultural associations).<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Kurucuların amaçlarından bahsedilmiyor.<br><b>C)</b> 'Base of its cultural and practical life' (kültürel ve pratik yaşamın temeli) abartılı.<br><b>D)</b> Oxford'dan gelen akademisyenler Cambridge'i kurdu ama bu Oxbridge teriminin tek sebebi değil.<br><b>E)</b> Rekabet (contention) bir sebep değil.`
+        type: 'B',
+        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "In an era of relentless globalisation, contemporary corporate entities have increasingly structured their manufacturing processes around sprawling, transnational supply networks. Pioneered primarily by multinational automotive and technology conglomerates, the 'just-in-time' inventory paradigm was designed to minimise warehousing overheads and eliminate operational redundancies by coordinating component deliveries with precision schedules. Under this framework, raw materials and intermediate assemblies arrive at manufacturing facilities mere hours before they are incorporated into final consumer products. While this hyper-efficient logistical model drastically compressed operational expenditures and inflated short-term profit margins across several decades, it concurrently introduced unprecedented systemic vulnerabilities. The profound fragility inherent in such globally dispersed value chains became starkly apparent when recent geopolitical friction, regional conflicts, and international transport bottlenecks precipitated widespread industrial paralysis. With single-source suppliers unable to dispatch specialised parts across congested maritime routes, multinational assembly lines ground to an abrupt standstill worldwide. Consequently, corporate strategists and supply chain economists are now fundamentally re-evaluating the dogmatic pursuit of cost minimization. Many enterprises have begun pivoting toward 'just-in-case' resilience strategies, which prioritise localized component sourcing, regional warehousing redundancy, and supplier diversification over immediate cost efficiency, even if doing so marginally diminishes profit margins.",
+        text: "According to the passage, the 'just-in-time' manufacturing model ----.",
+        options: {
+            A: "requires corporations to maintain expansive domestic warehouses to safeguard against shipping delays",
+            B: "relies on the scheduled delivery of parts shortly before their integration into finished goods",
+            C: "was initially formulated to combat international transport bottlenecks and maritime congestion",
+            D: "ensures that manufacturing operations remain completely immune to sudden regional disruptions",
+            E: "mandates the acquisition of identical components from multiple competing regional suppliers"
+        },
+        correct: "B",
+        dict: {
+            "overhead": "genel gider/işletme masrafı",
+            "incorporate": "dahil etmek/birleştirmek",
+            "vulnerability": "kırılganlık/zafiyet",
+            "standstill": "durma/kesinti"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) relies on the scheduled delivery of parts shortly before their integration into finished goods</b><br><b>📌 Sebep:</b> Parçada geçen "...raw materials and intermediate assemblies arrive at manufacturing facilities mere hours before they are incorporated into final consumer products" ifadesi doğrudan B seçeneğindeki ifadeyle eşanlamlı ve paraleldir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Model depolamayı artırmayı değil, tam tersine depo maliyetlerini en aza indirmeyi hedefler.<br><b>C)</b> Deniz darboğazlarını çözmek için değil, maliyetleri kısmak için geliştirilmiştir.<br><b>D)</b> Bölgesel aksamalara karşı bağışık (immune) değil, aksine son derece kırılgandır.<br><b>E)</b> Tek tedarikçiye bağımlılık yaratmıştır; çoklu tedarik "just-in-case" modeline aittir.`
     },
     {
         id: 45,
-        type: "B",
-        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "University of Cambridge is an English autonomous institution of higher learning at Cambridge, England, on the River Cam 80 km north of London. The start of the university is generally taken as 1209, when scholars from Oxford migrated to Cambridge to escape Oxford's riots of 'town and gown' (town's people versus scholars). To avert possible troubles, the authorities in Cambridge allowed only scholars under the supervision of a master to remain in the town and the university grew out of the association of these scholars. It is, after the University of Oxford, the second-oldest university in the English-speaking world, and the seventh-oldest globally. In addition to cultural and practical associations as a historic part of British society, the two ancient universities have many common features and thereby are often jointly referred to as Oxbridge. On the other hand, they have a long history of rivalry with each other. Cambridge regularly contends with Oxford for first place in UK league tables. In the most recently published ranking of UK universities, published by The Guardian newspaper, Cambridge was ranked first.",
-        text: "According to the passage, scholars from Oxford ----.",
-        options: { A: "shared many common characteristics with their counterparts in Cambridge", B: "left their town with the aim of keeping themselves away from the upheaval there", C: "moved to Cambridge to take part in rebellions spreading from Oxford", D: "took on the supervision of masters in the town", E: "made up the skeleton of the new university in Cambridge but they were still not mentioned in its history" },
+        type: 'B',
+        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "In an era of relentless globalisation, contemporary corporate entities have increasingly structured their manufacturing processes around sprawling, transnational supply networks. Pioneered primarily by multinational automotive and technology conglomerates, the 'just-in-time' inventory paradigm was designed to minimise warehousing overheads and eliminate operational redundancies by coordinating component deliveries with precision schedules. Under this framework, raw materials and intermediate assemblies arrive at manufacturing facilities mere hours before they are incorporated into final consumer products. While this hyper-efficient logistical model drastically compressed operational expenditures and inflated short-term profit margins across several decades, it concurrently introduced unprecedented systemic vulnerabilities. The profound fragility inherent in such globally dispersed value chains became starkly apparent when recent geopolitical friction, regional conflicts, and international transport bottlenecks precipitated widespread industrial paralysis. With single-source suppliers unable to dispatch specialised parts across congested maritime routes, multinational assembly lines ground to an abrupt standstill worldwide. Consequently, corporate strategists and supply chain economists are now fundamentally re-evaluating the dogmatic pursuit of cost minimization. Many enterprises have begun pivoting toward 'just-in-case' resilience strategies, which prioritise localized component sourcing, regional warehousing redundancy, and supplier diversification over immediate cost efficiency, even if doing so marginally diminishes profit margins.",
+        text: "It can be inferred from the passage that adopting 'just-in-case' resilience strategies ----.",
+        options: {
+            A: "will completely eliminate the necessity for domestic manufacturing and local labour forces",
+            B: "involves accepting slightly higher operational costs in exchange for enhanced supply security",
+            C: "forces multinational conglomerates to abandon advanced technological components entirely",
+            D: "has already proven to be far more profitable in the short term than any previous inventory model",
+            E: "guarantees that international shipping corridors will operate without future maritime delays"
+        },
         correct: "B",
-        dict: { "upheaval": "kargaşa", "migrated": "göç etti", "escape": "kaçmak", "riots": "isyanlar" },
-        explanation: `<b>✅ Doğru Cevap: B) left their town with the aim of keeping themselves away from the upheaval there</b><br><b>📌 Sebep:</b> İsyanlardan (riots/upheaval) uzak durmak için şehri terk ettiler.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Ortak özelliklerden bahsedilmiyor.<br><b>C)</b> İsyana katılmak için değil, kaçmak için gittiler.<br><b>D)</b> Üstatların denetimini üstlenmediler, denetim altında kaldılar.<br><b>E)</b> 'Not mentioned in its history' (tarihinde bahsedilmedi) yanlış, bahsediliyor.`
+        dict: {
+            "paralysis": "felç/hareketsizlik",
+            "conglomerate": "şirketler topluluğu/holding",
+            "diversification": "çeşitlendirme",
+            "dogmatic": "katı/sorgulanmaz"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) involves accepting slightly higher operational costs in exchange for enhanced supply security</b><br><b>📌 Sebep:</b> Metnin sonundaki "...prioritise localized component sourcing, regional warehousing redundancy, and supplier diversification over immediate cost efficiency, even if doing so marginally diminishes profit margins" ifadesinden, şirketlerin tedarik güvenliği uğruna kâr marjlarında hafif bir düşüşü (yani daha yüksek işletme maliyetini) göze aldıkları net bir şekilde çıkarılabilir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Yerel işgücünü ve üretimi gereksiz kılmaz; aksine yerelleşmeyi teşvik eder.<br><b>C)</b> İleri teknoloji parçalarının kullanımını terk ettirmez.<br><b>D)</b> Kısa vadede daha karlı olduğu söylenemez, kâr marjını azaltabileceği vurgulanmıştır.<br><b>E)</b> Küresel deniz trafiğindeki gecikmeleri tamamen ortadan kaldırma garantisi vermez.`
     },
     {
         id: 46,
-        type: "B",
-        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "University of Cambridge is an English autonomous institution of higher learning at Cambridge, England, on the River Cam 80 km north of London. The start of the university is generally taken as 1209, when scholars from Oxford migrated to Cambridge to escape Oxford's riots of 'town and gown' (town's people versus scholars). To avert possible troubles, the authorities in Cambridge allowed only scholars under the supervision of a master to remain in the town and the university grew out of the association of these scholars. It is, after the University of Oxford, the second-oldest university in the English-speaking world, and the seventh-oldest globally. In addition to cultural and practical associations as a historic part of British society, the two ancient universities have many common features and thereby are often jointly referred to as Oxbridge. On the other hand, they have a long history of rivalry with each other. Cambridge regularly contends with Oxford for first place in UK league tables. In the most recently published ranking of UK universities, published by The Guardian newspaper, Cambridge was ranked first.",
-        text: "As it is clearly stated in the passage, University of Cambridge ----.",
-        options: { A: "serves as the second biggest higher level education organization all over the world", B: "is an English-medium university but because it is international anybody from any country can take education there", C: "has a great history dating back to the foundation of its life-long rival, Oxford University", D: "is a self-governing body and offers higher education", E: "is located in a strategically important region but vulnerable to any outside effect, like riots in the neighbor towns" },
-        correct: "D",
-        dict: { "self-governing": "özerk", "higher education": "yüksek öğrenim", "located": "konumlanmış", "rival": "rakip" },
-        explanation: `<b>✅ Doğru Cevap: D) is a self-governing body and offers higher education</b><br><b>📌 Sebep:</b> Parçada 'English autonomous institution of higher learning' (özerk yüksek öğrenim kurumu) geçiyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Second biggest' (ikinci en büyük) denmiyor.<br><b>B)</b> 'International' ve 'anybody from any country' denmiyor.<br><b>C)</b> 'Dating back to the foundation of Oxford' (Oxford'un kuruluşuna dayanan) yanlış, 1209'da kurulmuş.<br><b>E)</b> 'Strategically important region' (stratejik önemli bölge) ve 'vulnerable' (savunmasız) denmiyor.`
+        type: 'B',
+        instruction: "43-46 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "In an era of relentless globalisation, contemporary corporate entities have increasingly structured their manufacturing processes around sprawling, transnational supply networks. Pioneered primarily by multinational automotive and technology conglomerates, the 'just-in-time' inventory paradigm was designed to minimise warehousing overheads and eliminate operational redundancies by coordinating component deliveries with precision schedules. Under this framework, raw materials and intermediate assemblies arrive at manufacturing facilities mere hours before they are incorporated into final consumer products. While this hyper-efficient logistical model drastically compressed operational expenditures and inflated short-term profit margins across several decades, it concurrently introduced unprecedented systemic vulnerabilities. The profound fragility inherent in such globally dispersed value chains became starkly apparent when recent geopolitical friction, regional conflicts, and international transport bottlenecks precipitated widespread industrial paralysis. With single-source suppliers unable to dispatch specialised parts across congested maritime routes, multinational assembly lines ground to an abrupt standstill worldwide. Consequently, corporate strategists and supply chain economists are now fundamentally re-evaluating the dogmatic pursuit of cost minimization. Many enterprises have begun pivoting toward 'just-in-case' resilience strategies, which prioritise localized component sourcing, regional warehousing redundancy, and supplier diversification over immediate cost efficiency, even if doing so marginally diminishes profit margins.",
+        text: "The author's primary objective in this passage is to ----.",
+        options: {
+            A: "criticise multinational firms for completely neglecting technological integration in manufacturing",
+            B: "explain how unexpected global disruptions prompted a shift from extreme efficiency to risk management in logistics",
+            C: "advocate for the immediate total prohibition of offshore manufacturing and international maritime transport",
+            D: "demonstrate that local suppliers are incapable of fulfilling the demands of automotive conglomerates",
+            E: "argue that warehousing overheads should remain the primary factor in determining retail prices"
+        },
+        correct: "B",
+        dict: {
+            "disruption": "aksama/kesinti",
+            "prohibition": "yasaklama",
+            "fulfil": "yerine getirmek/karşılamak",
+            "neglect": "ihmal etmek"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) explain how unexpected global disruptions prompted a shift from extreme efficiency to risk management in logistics</b><br><b>📌 Sebep:</b> Yazarın metindeki asıl amacı, ortaya çıkan küresel darboğazların ve krizlerin, şirketleri sadece maliyet odaklı verimlilikten ("just-in-time") risk yönetimi ve esnekliğe ("just-in-case") yönelttiği süreci açıklamaktır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Şirketleri teknoloji entegrasyonunu ihmal etmekle suçlamaz.<br><b>C)</b> Uluslararası deniz taşımacılığının tamamen yasaklanmasını savunmaz.<br><b>D)</b> Yerel tedarikçilerin yetersiz olduğunu kanıtlamaya çalışmaz.<br><b>E)</b> Depo masraflarının perakende fiyatlarını belirleyen ana faktör kalması gerektiğini savunmaz.`
     },
     {
         id: 47,
-        type: "B",
-        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Whole grain bread is strongly recommended as part of a healthy diet, but children and pre-teens don't always eat them. Researchers from the department of food science and nutrition conducted a study to monitor how much bread students threw away, and whether that amount increased as the percentage of whole-grain flour in the bread and rolls was gradually increased. The study included meals fed to kindergartners through sixth-graders at elementary schools over the course of a school year. Red and white whole-grain flour was added incrementally to products, but students showed no strong preference for either type of flour. Students didn't throw away more bread products until the percentage of whole-grain flour in the bread and rolls reached about 70 percent. The research is important because it shows that a gradual approach to improving children's overall diets can sometimes be successful and beneficial both for parents and school food-service workers, said Len Marquart, one of the study's authors and an associate professor.",
-        text: "According to the passage, despite the strong recommendation of whole grain bread for a healthy diet, ----.",
-        options: { A: "all parents, aware of the benefits of a healthy diet for their kids, must include such bread into their diet", B: "no matter what type of bread they were given, school children always threw away bread", C: "it seems that children and pre-teens do not care much about such an advice and as a result they prefer not to consume it as part of their diet", D: "few researchers have been able to manage to make students consume whole-grain bread as a major part of their diet", E: "students did not eat more bread products till the percentage of whole-grain flour in the bread got to seventy percent" },
-        correct: "C",
-        dict: { "recommended": "önerilen", "pre-teens": "ergenlik öncesi", "diet": "diyet", "consumed": "tüketmek" },
-        explanation: `<b>✅ Doğru Cevap: C) it seems that children and pre-teens do not care much about such an advice and as a result they prefer not to consume it as part of their diet</b><br><b>📌 Sebep:</b> Çocuklar bu tavsiyeyi pek umursamıyor ve yemiyorlar. Parçanın ilk cümlesi bunu söylüyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'All parents must include' (tüm ebeveynler eklemeli) zorunluluk belirtiyor, parçada yok.<br><b>B)</b> 'Always threw away bread' (her zaman ekmek attı) yanlış, %70'e kadar atmadılar.<br><b>D)</b> 'Few researchers' (birkaç araştırmacı) başarısızlıktan bahsetmiyor.<br><b>E)</b> 'Did not eat more' (daha fazla yemedi) yanlış, 'did not throw away more' (daha fazla atmadı).`
+        type: 'B',
+        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Hypertension, clinically defined as a persistent elevation of systemic arterial pressure above established physiological thresholds, represents one of the most insidious contributors to global cardiovascular morbidity. Frequently termed the 'silent killer' due to its asymptomatic progression over decades, chronic elevated pressure exerts relentless shear stress on arterial walls. This mechanical strain initiates endothelial dysfunction, precipitating a cascade of vascular remodelling characterised by arterial stiffening, luminal narrowing, and atheromatous plaque accumulation. Consequently, critical target organs—most notably the heart, kidneys, and brain—suffer progressive microvascular and macrovascular damage. Epidemiological investigations demonstrate that long-standing hypertension substantially multiplies the relative risk of myocardial infarction, chronic renal insufficiency, and cerebrovascular accidents. Primary prevention and therapeutic strategies have historically centred on sodium reduction, weight management, and aerobic exercise. However, contemporary clinical pharmacotherapy increasingly relies on multi-drug regimens that target distinct physiological pathways simultaneously, such as renin-angiotensin-aldosterone axis inhibition and calcium channel blockade. Dr. Eleanor Vance, a leading researcher at the Global Cardiovascular Consortium, notes that despite the widespread availability of efficacious anti-hypertensive agents, therapeutic inertia among clinicians and poor patient adherence remain formidable barriers to achieving optimal blood pressure control worldwide.",
+        text: "As it is clearly stated in the passage, hypertension is referred to as the 'silent killer' because ----.",
+        options: {
+            A: "it directly eliminates cardiac muscle cells without triggering an immune response",
+            B: "its pathological development advances over many years without exhibiting noticeable symptoms",
+            C: "it cannot be detected by standard systemic arterial pressure measurements",
+            D: "the damage it causes is exclusively confined to cerebral microvascular structures",
+            E: "it develops exclusively in individuals who completely lack genetic risk factors"
+        },
+        correct: "B",
+        dict: {
+            "elevation": "yükselme/artış",
+            "insidious": "sinsi/fark ettirmeden ilerleyen",
+            "asymptomatic": "belirti göstermeyen",
+            "shear stress": "kayma gerilmesi/damar içi basınç stresi",
+            "precipitating": "tetikleyen/hızlandıran"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) its pathological development advances over many years without exhibiting noticeable symptoms</b><br><b>📌 Sebep:</b> Metinde geçen "Frequently termed the 'silent killer' due to its asymptomatic progression over decades..." ifadesi, hipertansiyonun belirti vermeksizin on yıllarca ilerlemesi nedeniyle 'sessiz katil' olarak adlandırıldığını açıkça ortaya koymaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Kalp kası hücrelerini doğrudan yok ettiği bilgisi metinde yer almaz.<br><b>C)</b> Standart ölçümlerle tespit edilemediği iddiası yanlıştır.<br><b>D)</b> Hasarın sadece beyin damarlarıyla sınırlı olduğu ('exclusively confined') çarpıtmadır; kalp ve böbrekler de etkilenir.<br><b>E)</b> Sadece genetik yatkınlığı olmayanlarda görüldüğü ifadesi metinle çelişir.`
     },
     {
         id: 48,
-        type: "B",
-        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Whole grain bread is strongly recommended as part of a healthy diet, but children and pre-teens don't always eat them. Researchers from the department of food science and nutrition conducted a study to monitor how much bread students threw away, and whether that amount increased as the percentage of whole-grain flour in the bread and rolls was gradually increased. The study included meals fed to kindergartners through sixth-graders at elementary schools over the course of a school year. Red and white whole-grain flour was added incrementally to products, but students showed no strong preference for either type of flour. Students didn't throw away more bread products until the percentage of whole-grain flour in the bread and rolls reached about 70 percent. The research is important because it shows that a gradual approach to improving children's overall diets can sometimes be successful and beneficial both for parents and school food-service workers, said Len Marquart, one of the study's authors and an associate professor.",
-        text: "One of the main aims of the study was to determine ----.",
-        options: { A: "which grade, from kindergarteners to sixth-graders, was the best for school kids to be nourished with whole grain bread", B: "whether elementary schools were appropriate for carrying such crucial studies on young learners' diet habits", C: "the most appropriate age at which whole grain bread should be included in children and pre-teens' daily meals", D: "how often parents and school food-service workers should include red and white whole-grain flour into their bread to improve their overall diets", E: "how the gradual increase in the amount of whole-grain flour in the bread and rolls affected students' attitudes towards the bread" },
-        correct: "E",
-        dict: { "gradual": "kademeli", "attitudes": "tutumlar", "determine": "belirlemek", "increase": "artış" },
-        explanation: `<b>✅ Doğru Cevap: E) how the gradual increase in the amount of whole-grain flour in the bread and rolls affected students' attitudes towards the bread</b><br><b>📌 Sebep:</b> Un oranı kademeli artınca öğrencilerin tutumunun (atılan ekmek miktarının) değişip değişmediğini görmek.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Hangi sınıfın en iyi olduğu araştırılmamış.<br><b>B)</b> Okulların uygunluğu test edilmemiş.<br><b>C)</b> En uygun yaş araştırılmamış.<br><b>D)</b> Ne sıklıkla eklenmesi gerektiği araştırılmamış.`
+        type: 'B',
+        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Hypertension, clinically defined as a persistent elevation of systemic arterial pressure above established physiological thresholds, represents one of the most insidious contributors to global cardiovascular morbidity. Frequently termed the 'silent killer' due to its asymptomatic progression over decades, chronic elevated pressure exerts relentless shear stress on arterial walls. This mechanical strain initiates endothelial dysfunction, precipitating a cascade of vascular remodelling characterised by arterial stiffening, luminal narrowing, and atheromatous plaque accumulation. Consequently, critical target organs—most notably the heart, kidneys, and brain—suffer progressive microvascular and macrovascular damage. Epidemiological investigations demonstrate that long-standing hypertension substantially multiplies the relative risk of myocardial infarction, chronic renal insufficiency, and cerebrovascular accidents. Primary prevention and therapeutic strategies have historically centred on sodium reduction, weight management, and aerobic exercise. However, contemporary clinical pharmacotherapy increasingly relies on multi-drug regimens that target distinct physiological pathways simultaneously, such as renin-angiotensin-aldosterone axis inhibition and calcium channel blockade. Dr. Eleanor Vance, a leading researcher at the Global Cardiovascular Consortium, notes that despite the widespread availability of efficacious anti-hypertensive agents, therapeutic inertia among clinicians and poor patient adherence remain formidable barriers to achieving optimal blood pressure control worldwide.",
+        text: "One of the main aims of contemporary clinical pharmacotherapy in managing hypertension is to ----.",
+        options: {
+            A: "replace lifestyle modifications completely with single-dose synthetic remedies",
+            B: "address multiple physiological mechanisms concurrently through combination drug strategies",
+            C: "eliminate the necessity of monitoring renal function in chronic hypertensive patients",
+            D: "ensure that blood pressure falls below normal resting physiological thresholds immediately",
+            E: "reverse atheromatous plaques without intervening in arterial wall tension"
+        },
+        correct: "B",
+        dict: {
+            "remodelling": "yeniden şekillenme/yapısal bozulma",
+            "luminal narrowing": "damar içi kanal daralması",
+            "concurrently": "eş zamanlı olarak",
+            "pharmacotherapy": "ilaçla tedavi"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) address multiple physiological mechanisms concurrently through combination drug strategies</b><br><b>📌 Sebep:</b> Metindeki "...contemporary clinical pharmacotherapy increasingly relies on multi-drug regimens that target distinct physiological pathways simultaneously..." cümlesi, modern ilaç tedavisinin temel amacının birden fazla mekanizmayı eş zamanlı hedefleyen kombinasyon tedavileri uygulamak olduğunu belirtir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Yaşam tarzı değişikliklerini tamamen terk ettirmeyi hedeflemez.<br><b>C)</b> Böbrek fonksiyon takibini gereksiz kılmak gibi bir hedefi yoktur.<br><b>D)</b> Basıncı aniden fizyolojik sınırların altına düşürmek doğru bir klinik yaklaşım değildir.<br><b>E)</b> Damar duvar gerilimine müdahale etmeden plakları yok etmek metin bağlamına uymaz.`
     },
     {
         id: 49,
-        type: "B",
-        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Whole grain bread is strongly recommended as part of a healthy diet, but children and pre-teens don't always eat them. Researchers from the department of food science and nutrition conducted a study to monitor how much bread students threw away, and whether that amount increased as the percentage of whole-grain flour in the bread and rolls was gradually increased. The study included meals fed to kindergartners through sixth-graders at elementary schools over the course of a school year. Red and white whole-grain flour was added incrementally to products, but students showed no strong preference for either type of flour. Students didn't throw away more bread products until the percentage of whole-grain flour in the bread and rolls reached about 70 percent. The research is important because it shows that a gradual approach to improving children's overall diets can sometimes be successful and beneficial both for parents and school food-service workers, said Len Marquart, one of the study's authors and an associate professor.",
-        text: "According to Len Marquart, ----.",
-        options: { A: "children's overall diets constantly need to be improved through meals full of bread made from red and white whole-grain flour", B: "it was right to conduct study with kindergartners through sixth-graders of two elementary schools during a whole year of education", C: "school food-service staff and parents alike may at times benefit from a progressive approach for making children's diets better", D: "the study was conducted by experienced and qualified researchers from the department of food science and nutrition", E: "not only parents but also school cooks should be included in the research for improving children's overall diets" },
-        correct: "C",
-        dict: { "progressive": "ilerici", "beneficial": "faydalı", "approach": "yaklaşım", "improving": "iyileştirmek" },
-        explanation: `<b>✅ Doğru Cevap: C) school food-service staff and parents alike may at times benefit from a progressive approach for making children's diets better</b><br><b>📌 Sebep:</b> Kademeli yaklaşımın (progressive approach) ebeveyn ve personel için faydalı (benefit) olabileceği.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Constantly need to be improved' (sürekli iyileştirilmeli) ve 'meals full of bread' (ekmek dolu yemekler) abartı.<br><b>B)</b> 'It was right' (doğruydu) yargısı verilmemiş.<br><b>D)</b> Araştırmacıların niteliklerinden bahsedilmemiş.<br><b>E)</b> Okul aşçılarının araştırmaya dahil edilmesinden bahsedilmemiş.`
+        type: 'B',
+        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Hypertension, clinically defined as a persistent elevation of systemic arterial pressure above established physiological thresholds, represents one of the most insidious contributors to global cardiovascular morbidity. Frequently termed the 'silent killer' due to its asymptomatic progression over decades, chronic elevated pressure exerts relentless shear stress on arterial walls. This mechanical strain initiates endothelial dysfunction, precipitating a cascade of vascular remodelling characterised by arterial stiffening, luminal narrowing, and atheromatous plaque accumulation. Consequently, critical target organs—most notably the heart, kidneys, and brain—suffer progressive microvascular and macrovascular damage. Epidemiological investigations demonstrate that long-standing hypertension substantially multiplies the relative risk of myocardial infarction, chronic renal insufficiency, and cerebrovascular accidents. Primary prevention and therapeutic strategies have historically centred on sodium reduction, weight management, and aerobic exercise. However, contemporary clinical pharmacotherapy increasingly relies on multi-drug regimens that target distinct physiological pathways simultaneously, such as renin-angiotensin-aldosterone axis inhibition and calcium channel blockade. Dr. Eleanor Vance, a leading researcher at the Global Cardiovascular Consortium, notes that despite the widespread availability of efficacious anti-hypertensive agents, therapeutic inertia among clinicians and poor patient adherence remain formidable barriers to achieving optimal blood pressure control worldwide.",
+        text: "It can be inferred from the passage that untreated long-term hypertension ----.",
+        options: {
+            A: "inevitably triggers irreversible structural changes throughout the vascular network and vital organs",
+            B: "causes immediate acute failure of the central nervous system within a few weeks",
+            C: "renders patient lifestyle interventions such as sodium restriction completely useless",
+            D: "is less threatening to individuals with pre-existing chronic renal conditions",
+            E: "primarily damages skeletal muscle tissue rather than the major organ systems"
+        },
+        correct: "A",
+        dict: {
+            "insufficiency": "yetersizlik",
+            "endothelial": "damar iç zarı ile ilgili",
+            "adherence": "uyum/bağlılık (tedaviye uyum)",
+            "formidable": "zorlu/aşılması güç"
+        },
+        explanation: `<b>✅ Doğru Cevap: A) inevitably triggers irreversible structural changes throughout the vascular network and vital organs</b><br><b>📌 Sebep:</b> Metinde sürekli yüksek basıncın damar duvarlarında sertleşmeye, lümen daralmasına ve kalp, böbrek, beyin gibi hayati organlarda kalıcı mikro/makrovasküler hasara yol açtığı vurgulanmaktadır; dolayısıyla tedavi edilmeyen uzun süreli hipertansiyonun damar ağında ve organlarda yapısal bozulmalara yol açtığı çıkarılabilir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Birkaç hafta içinde ani merkezi sinir sistemi çöküşü yaratmaz (süreç on yıllara yayılır).<br><b>C)</b> Yaşam tarzı müdahalelerini tamamen etkisiz kılmaz.<br><b>D)</b> Böbrek hastaları için daha az tehdit edici olduğu çıkarımı yanlıştır.<br><b>E)</b> Asıl hasar iskelet kaslarında değil hayati organlardadır.`
     },
     {
         id: 50,
-        type: "B",
-        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Whole grain bread is strongly recommended as part of a healthy diet, but children and pre-teens don't always eat them. Researchers from the department of food science and nutrition conducted a study to monitor how much bread students threw away, and whether that amount increased as the percentage of whole-grain flour in the bread and rolls was gradually increased. The study included meals fed to kindergartners through sixth-graders at elementary schools over the course of a school year. Red and white whole-grain flour was added incrementally to products, but students showed no strong preference for either type of flour. Students didn't throw away more bread products until the percentage of whole-grain flour in the bread and rolls reached about 70 percent. The research is important because it shows that a gradual approach to improving children's overall diets can sometimes be successful and beneficial both for parents and school food-service workers, said Len Marquart, one of the study's authors and an associate professor.",
-        text: "The result of the study stated in the passage shows that ----.",
-        options: { A: "an addition of red and white whole-grain flour to products, as long as kept below 70 percent, doesn't result in more bread thrown away by students", B: "quite a long period of research is required for a functional outcome to come to an ultimate decision on the reason why teenagers throw less or more bread products", C: "parents rather than school food-service workers are successful in improving children's diets through whole-grain bread", D: "elementary school children are not good subjects for such studies in terms of getting reliable results", E: "parents should always keep in touch with the school food-service staff to decide whether red or white whole-grain flour must be included in children's diets" },
-        correct: "A",
-        dict: { "thrown away": "atılmış", "addition": "ekleme", "result": "sonuç", "products": "ürünler" },
-        explanation: `<b>✅ Doğru Cevap: A) an addition of red and white whole-grain flour to products, as long as kept below 70 percent, doesn't result in more bread thrown away by students</b><br><b>📌 Sebep:</b> %70'in altında kaldığı sürece daha fazla ekmek atılmadığı sonucu çıkıyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Uzun süreli araştırma gerektiği söylenmiyor.<br><b>C)</b> Ebeveynlerin daha başarılı olduğu söylenmiyor.<br><b>D)</b> İlkokul çocuklarının uygun olmadığı söylenmiyor.<br><b>E)</b> Ebeveynlerin personelle iletişim kurması gerektiği söylenmiyor.`
+        type: 'B',
+        instruction: "47-50 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Hypertension, clinically defined as a persistent elevation of systemic arterial pressure above established physiological thresholds, represents one of the most insidious contributors to global cardiovascular morbidity. Frequently termed the 'silent killer' due to its asymptomatic progression over decades, chronic elevated pressure exerts relentless shear stress on arterial walls. This mechanical strain initiates endothelial dysfunction, precipitating a cascade of vascular remodelling characterised by arterial stiffening, luminal narrowing, and atheromatous plaque accumulation. Consequently, critical target organs—most notably the heart, kidneys, and brain—suffer progressive microvascular and macrovascular damage. Epidemiological investigations demonstrate that long-standing hypertension substantially multiplies the relative risk of myocardial infarction, chronic renal insufficiency, and cerebrovascular accidents. Primary prevention and therapeutic strategies have historically centred on sodium reduction, weight management, and aerobic exercise. However, contemporary clinical pharmacotherapy increasingly relies on multi-drug regimens that target distinct physiological pathways simultaneously, such as renin-angiotensin-aldosterone axis inhibition and calcium channel blockade. Dr. Eleanor Vance, a leading researcher at the Global Cardiovascular Consortium, notes that despite the widespread availability of efficacious anti-hypertensive agents, therapeutic inertia among clinicians and poor patient adherence remain formidable barriers to achieving optimal blood pressure control worldwide.",
+        text: "According to Dr. Eleanor Vance, the primary obstacle to controlling blood pressure globally is ----.",
+        options: {
+            A: "the total absence of potent and effective pharmacological medications in the market",
+            B: "a combination of medical practitioner hesitancy and patients failing to follow prescribed treatments",
+            C: "the severe side-effects caused by modern calcium channel blocking compounds",
+            D: "the refusal of international healthcare agencies to fund dietary intervention programmes",
+            E: "an incomplete scientific understanding of how shear stress damages endothelial cells"
+        },
+        correct: "B",
+        dict: {
+            "therapeutic inertia": "tedavi eylemsizliği/tedaviyi güncellememe",
+            "efficacious": "etkili/yararlı",
+            "hesitancy": "tereddüt/kararsızlık",
+            "prescribed": "reçete edilmiş"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) a combination of medical practitioner hesitancy and patients failing to follow prescribed treatments</b><br><b>📌 Sebep:</b> Metnin sonunda Dr. Vance'in belirttiği "...therapeutic inertia among clinicians and poor patient adherence remain formidable barriers..." ifadesi, hekimlerin tedavi konusundaki eylemsizliği/tereddütü ile hastaların tedaviye uyumsuzluğunu (adherence) doğrudan B şıkkı ile açıklar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> İlaç eksikliği değil, aksine mevcut etkili ilaçların olduğu ('widespread availability') belirtilmiştir.<br><b>C)</b> Kalsiyum kanal blokörlerinin yan etkileri ana engel olarak sunulmamıştır.<br><b>D)</b> Sağlık kurumlarının fon desteği sağlamadığı iddiası metinde yer almaz.<br><b>E)</b> Bilimsel anlama eksikliğinden bahsedilmemiştir.`
     },
     {
         id: 51,
-        type: "B",
-        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Sunbathing is a popular leisure activity in which a person sits or lies in direct sunshine. Many people with pale or brownish skin sunbathe to darken their skin color (get a sun tan) as this is considered in some cultures to be good-looking, associated with outdoor activities, vacations and health. Some people prefer naked sunbathing so that an 'all-over' or 'even' tan can be obtained, sometimes as part of a specific lifestyle. For people suffering from some diseases like psoriasis, sunbathing may be an effective and possibly cheaper way of healing the symptoms. People often sunbathe in comfortable places where there is plenty of sunlight. Some common places for sunbathing include beaches, open air swimming pools, parks, gardens, and sidewalk cafés. Sunbathers typically wear limited amounts of clothing or some simply go nude. For some, an alternative to sunbathing is the use of a sun bed that generates ultraviolet light and can be used indoors regardless of outdoor weather conditions and amount of sunlight. However, the tan gradually disappears with time, when one is no longer exposed to these sources.",
-        text: "According to the passage, ----.",
-        options: { A: "a lot of people with a pale or brownish skin sunbathe only in direct sun light to darken their skin color", B: "it is considered better for those who don't have a pale or brownish skin to sit inside instead of in direct sunshine", C: "the best place for people to sunbathe and darken their skin colour is a beach rich in long days of sun lights", D: "sunbathing might be an inexpensive but successful way to cure some disorders", E: "people who want to get beauty through sunbathing always get dressed in a limited quantity or simply go nude during the day" },
-        correct: "D",
-        dict: { "inexpensive": "ucuz", "disorders": "bozukluklar", "psoriasis": "sedef hastalığı", "symptoms": "belirtiler" },
-        explanation: `<b>✅ Doğru Cevap: D) sunbathing might be an inexpensive but successful way to cure some disorders</b><br><b>📌 Sebep:</b> Psoriasis için 'cheaper way of healing' (daha ucuz iyileştirme yolu) = inexpensive cure.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Only in direct sun light' (sadece doğrudan güneş ışığında) yanlış, sun bed alternatifi var.<br><b>b) it is considered better...</b> - Açık tenliler için daha iyi olduğu söylenmiyor.<br><b>C) the best place...</b> - En iyi yer belirtilmemiş.<br><b>E) always get dressed...</b> - 'Always' (her zaman) kesinlik ifadesi yanlış.`
+        type: 'B',
+        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Water scarcity is increasingly emerging as one of the most perilous socio-ecological crises of the twenty-first century, driven by an unsustainable convergence of rapid population growth, climate-induced hydrological variability, and extensive industrial contamination. Nowhere is this vulnerability more pronounced than in arid and semi-arid regions, where ancient subterranean aquifers—depleted at rates far exceeding their natural recharge capacities—are being relentlessly drained to sustain commercial agriculture. Historically perceived as an inexhaustible open-access resource, groundwater has suffered from systemic over-abstraction, precipitating irreversible land subsidence and saline intrusion into critical freshwater reserves. According to recent hydrological assessments, conventional supply-side interventions, such as large-scale dam construction and deep-well drilling, merely provide transient relief while fundamentally exacerbating long-term ecological degradation. Dr. Julian Morales, a senior researcher at the International Hydrological Institute, stresses that modern engineering efforts must transition from archaic supply-expansion paradigms toward comprehensive demand-side stewardship. This strategic shift necessitates implementing dynamic water pricing mechanisms, adopting precision drip irrigation systems, and enforcing strict regulatory caps on industrial effluents. Unless policymakers prioritize integrated water resources management that reconciles agricultural imperatives with ecological boundaries, persistent freshwater deficits will inevitably trigger widespread geopolitical friction and cross-border resource conflicts across hydrologically vulnerable river basins.",
+        text: "As stated in the passage, subterranean aquifers in arid and semi-arid regions ----.",
+        options: {
+            A: "have been completely replenished through the rapid implementation of dynamic water pricing mechanisms",
+            B: "are being extracted at speeds that significantly surpass their natural capacity to regenerate",
+            C: "were historically managed through strict regulatory caps imposed on agricultural activities",
+            D: "provide an inexhaustible supply of freshwater that effectively prevents land subsidence",
+            E: "have become immune to saline intrusion due to modern deep-well drilling techniques"
+        },
+        correct: "B",
+        dict: {
+            "subterranean": "yeraltı",
+            "aquifer": "su taşıyan katman/akifer",
+            "depleted": "tüketilmiş/azaltılmış",
+            "recharge": "yeniden dolma/beslenme",
+            "land subsidence": "arazi çökmesi"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) are being extracted at speeds that significantly surpass their natural capacity to regenerate</b><br><b>📌 Sebep:</b> Parçada geçen "...where ancient subterranean aquifers—depleted at rates far exceeding their natural recharge capacities—are being relentlessly drained..." ifadesi, yeraltı su kaynaklarının doğal yenilenme hızından çok daha yüksek bir hızla tüketildiğini doğrudan ifade eder.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Fiyatlandırma mekanizmalarıyla tamamen yenilendiği bilgisi yanlıştır.<br><b>C)</b> Tarihsel olarak katı kotalarla değil, açık/sınırsız bir kaynak ('open-access resource') olarak görülmüştür.<br><b>D)</b> Akiferler tükenmez değildir ve aşırı çekim arazi çökmesine ('land subsidence') yol açmaktadır.<br><b>E)</b> Derin kuyu sondajları tuzlanmayı önlemez; aksine sorunları artırır.`
     },
     {
         id: 52,
-        type: "B",
-        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Sunbathing is a popular leisure activity in which a person sits or lies in direct sunshine. Many people with pale or brownish skin sunbathe to darken their skin color (get a sun tan) as this is considered in some cultures to be good-looking, associated with outdoor activities, vacations and health. Some people prefer naked sunbathing so that an 'all-over' or 'even' tan can be obtained, sometimes as part of a specific lifestyle. For people suffering from some diseases like psoriasis, sunbathing may be an effective and possibly cheaper way of healing the symptoms. People often sunbathe in comfortable places where there is plenty of sunlight. Some common places for sunbathing include beaches, open air swimming pools, parks, gardens, and sidewalk cafés. Sunbathers typically wear limited amounts of clothing or some simply go nude. For some, an alternative to sunbathing is the use of a sun bed that generates ultraviolet light and can be used indoors regardless of outdoor weather conditions and amount of sunlight. However, the tan gradually disappears with time, when one is no longer exposed to these sources.",
-        text: "As stated in the passage, a good few people sunbathe to darken their skin color, ----.",
-        options: { A: "since it is a good and also cheap way for someone to be beautiful and thus draw others' attention", B: "though they have other better free-time activities to do on a sunny day", C: "but most women feel more beautiful when they have a tanned skin through direct sun light", D: "as in some countries people with sun tan are considered to be far more healthier than others", E: "because it is sometimes thought to make people look beautiful" },
-        correct: "E",
-        dict: { "good-looking": "güzel", "tanned": "bronzlaşmış", "cultures": "kültürler", "considered": "düşünülmek" },
-        explanation: `<b>✅ Doğru Cevap: E) because it is sometimes thought to make people look beautiful</b><br><b>📌 Sebep:</b> Güzel görünmek (look beautiful) için bronzlaşırlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Cheap way' (ucuz yol) ve 'draw others' attention' (dikkat çekmek) ekstra.<br><b>B)</b> 'Better free-time activities' (daha iyi boş zaman aktiviteleri) bahsedilmiyor.<br><b>C)</b> 'Most women' (çoğu kadın) cinsiyet ayrımı yapılmamış.<br><b>D)</b> 'Far more healthier' (çok daha sağlıklı) abartı, 'associated with health' (sağlıkla ilişkilendirilir) deniyor.`
+        type: 'B',
+        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Water scarcity is increasingly emerging as one of the most perilous socio-ecological crises of the twenty-first century, driven by an unsustainable convergence of rapid population growth, climate-induced hydrological variability, and extensive industrial contamination. Nowhere is this vulnerability more pronounced than in arid and semi-arid regions, where ancient subterranean aquifers—depleted at rates far exceeding their natural recharge capacities—are being relentlessly drained to sustain commercial agriculture. Historically perceived as an inexhaustible open-access resource, groundwater has suffered from systemic over-abstraction, precipitating irreversible land subsidence and saline intrusion into critical freshwater reserves. According to recent hydrological assessments, conventional supply-side interventions, such as large-scale dam construction and deep-well drilling, merely provide transient relief while fundamentally exacerbating long-term ecological degradation. Dr. Julian Morales, a senior researcher at the International Hydrological Institute, stresses that modern engineering efforts must transition from archaic supply-expansion paradigms toward comprehensive demand-side stewardship. This strategic shift necessitates implementing dynamic water pricing mechanisms, adopting precision drip irrigation systems, and enforcing strict regulatory caps on industrial effluents. Unless policymakers prioritize integrated water resources management that reconciles agricultural imperatives with ecological boundaries, persistent freshwater deficits will inevitably trigger widespread geopolitical friction and cross-border resource conflicts across hydrologically vulnerable river basins.",
+        text: "As it is clear in the passage, traditional supply-side solutions like large-scale dam construction ----.",
+        options: {
+            A: "permanently resolve the structural imbalances between agricultural demand and water availability",
+            B: "offer only temporary solutions while worsening long-term environmental deterioration",
+            C: "eliminate the necessity for modern precision drip irrigation in arid river basins",
+            D: "prevent international resource disputes from emerging among neighbouring countries",
+            E: "have been completely replaced worldwide by dynamic water pricing frameworks"
+        },
+        correct: "B",
+        dict: {
+            "transient": "geçici/kısa süreli",
+            "exacerbate": "şiddetlendirmek/kötüleştirmek",
+            "degradation": "bozulma/tahribat",
+            "stewardship": "sorumlu yönetim/idaresi"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) offer only temporary solutions while worsening long-term environmental deterioration</b><br><b>📌 Sebep:</b> Metinde yer alan "...conventional supply-side interventions, such as large-scale dam construction and deep-well drilling, merely provide transient relief while fundamentally exacerbating long-term ecological degradation" cümlesi, geleneksel baraj gibi çözümlerin yalnızca geçici rahatlama sağladığını ve uzun vadeli ekolojik yıkımı artırdığını açıkça belirtir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Dengesizlikleri kalıcı olarak çözmez.<br><b>C)</b> Damla sulama ihtiyacını ortadan kaldırmaz.<br><b>D)</b> Uluslararası kaynak çatışmalarını engellemez.<br><b>E)</b> Dünya genelinde tamamen kullanımdan kalktığı söylenemez.`
     },
     {
         id: 53,
-        type: "B",
-        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Sunbathing is a popular leisure activity in which a person sits or lies in direct sunshine. Many people with pale or brownish skin sunbathe to darken their skin color (get a sun tan) as this is considered in some cultures to be good-looking, associated with outdoor activities, vacations and health. Some people prefer naked sunbathing so that an 'all-over' or 'even' tan can be obtained, sometimes as part of a specific lifestyle. For people suffering from some diseases like psoriasis, sunbathing may be an effective and possibly cheaper way of healing the symptoms. People often sunbathe in comfortable places where there is plenty of sunlight. Some common places for sunbathing include beaches, open air swimming pools, parks, gardens, and sidewalk cafés. Sunbathers typically wear limited amounts of clothing or some simply go nude. For some, an alternative to sunbathing is the use of a sun bed that generates ultraviolet light and can be used indoors regardless of outdoor weather conditions and amount of sunlight. However, the tan gradually disappears with time, when one is no longer exposed to these sources.",
-        text: "As it is clear in the passage, the advantage of sun bed is that ----.",
-        options: { A: "those who want to get a great sun tan but don't like to be outdoor can get one for free", B: "you can get a sun tan through it whenever you want no matter how the weather is outside", C: "it is quite affordable for those who cannot meet the expense of a holiday by the sea but want to sunbathe and have a tanned skin", D: "direct sun lights are not always healthy and carry the possibility of causing such health problems as skin cancer", E: "it provides the users with the opportunity of getting a sun tan which does not easily fade away while the time passes" },
+        type: 'B',
+        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Water scarcity is increasingly emerging as one of the most perilous socio-ecological crises of the twenty-first century, driven by an unsustainable convergence of rapid population growth, climate-induced hydrological variability, and extensive industrial contamination. Nowhere is this vulnerability more pronounced than in arid and semi-arid regions, where ancient subterranean aquifers—depleted at rates far exceeding their natural recharge capacities—are being relentlessly drained to sustain commercial agriculture. Historically perceived as an inexhaustible open-access resource, groundwater has suffered from systemic over-abstraction, precipitating irreversible land subsidence and saline intrusion into critical freshwater reserves. According to recent hydrological assessments, conventional supply-side interventions, such as large-scale dam construction and deep-well drilling, merely provide transient relief while fundamentally exacerbating long-term ecological degradation. Dr. Julian Morales, a senior researcher at the International Hydrological Institute, stresses that modern engineering efforts must transition from archaic supply-expansion paradigms toward comprehensive demand-side stewardship. This strategic shift necessitates implementing dynamic water pricing mechanisms, adopting precision drip irrigation systems, and enforcing strict regulatory caps on industrial effluents. Unless policymakers prioritize integrated water resources management that reconciles agricultural imperatives with ecological boundaries, persistent freshwater deficits will inevitably trigger widespread geopolitical friction and cross-border resource conflicts across hydrologically vulnerable river basins.",
+        text: "It is emphasized in the passage that failure to implement integrated water management ----.",
+        options: {
+            A: "will directly encourage agricultural sectors to abandon groundwater reliance entirely",
+            B: "is likely to result in international tensions and disputes over shared water resources",
+            C: "prompts developing countries to build deeper subterranean wells without regulation",
+            D: "will instantly stabilize freshwater reserves in hydrologically vulnerable river basins",
+            E: "renders modern drip irrigation techniques financially unattainable for farmers"
+        },
         correct: "B",
-        dict: { "regardless": "bakılmaksızın", "advantage": "avantaj", "whenever": "ne zaman istersen", "affordable": "karşılanabilir" },
-        explanation: `<b>✅ Doğru Cevap: B) you can get a sun tan through it whenever you want no matter how the weather is outside</b><br><b>📌 Sebep:</b> Hava durumuna bakılmaksızın (no matter how the weather is) kullanılabilmesi.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'For free' (ücretsiz) denmiyor.<br><b>C)</b> 'Quite affordable' (oldukça karşılanabilir) denmiyor, sadece 'cheaper' denebilir.<br><b>D)</b> Güneş ışığının sağlıksız olması avantaj değil.<br><b>E)</b> 'Does not easily fade away' (kolayca solmaz) yanlış, bronzluk zamanla kaybolur.`
+        dict: {
+            "reconcile": "uzlaştırmak/bağdaştırmak",
+            "friction": "sürtüşme/anlaşmazlık",
+            "effluent": "atık su/sanayi atığı",
+            "imperative": "zorunluluk/ihtiyaç"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) is likely to result in international tensions and disputes over shared water resources</b><br><b>📌 Sebep:</b> Parçanın son cümlesindeki "Unless policymakers prioritize integrated water resources management... persistent freshwater deficits will inevitably trigger widespread geopolitical friction and cross-border resource conflicts..." ifadesi, entegre su yönetimi uygulanmadığı takdirde ülkeler arası jeopolitik gerilim ve sınır ötesi çatışmaların kaçınılmaz olacağını vurgular.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Tarım sektörünün yeraltı suyu bağımlılığını bırakmasını sağlamaz.<br><b>C)</b> Derin kuyu açmaya teşvik etmesi ana vurgu değildir.<br><b>D)</b> Su rezervlerini dengeli kılmaz, aksine açık yaratır.<br><b>E)</b> Damla sulama tekniklerinin maliyetiyle ilgili bir çıkarım değildir.`
     },
     {
         id: 54,
-        type: "B",
-        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Sunbathing is a popular leisure activity in which a person sits or lies in direct sunshine. Many people with pale or brownish skin sunbathe to darken their skin color (get a sun tan) as this is considered in some cultures to be good-looking, associated with outdoor activities, vacations and health. Some people prefer naked sunbathing so that an 'all-over' or 'even' tan can be obtained, sometimes as part of a specific lifestyle. For people suffering from some diseases like psoriasis, sunbathing may be an effective and possibly cheaper way of healing the symptoms. People often sunbathe in comfortable places where there is plenty of sunlight. Some common places for sunbathing include beaches, open air swimming pools, parks, gardens, and sidewalk cafés. Sunbathers typically wear limited amounts of clothing or some simply go nude. For some, an alternative to sunbathing is the use of a sun bed that generates ultraviolet light and can be used indoors regardless of outdoor weather conditions and amount of sunlight. However, the tan gradually disappears with time, when one is no longer exposed to these sources.",
-        text: "It is emphasized in the passage that the tan step by step vanishes ----.",
-        options: { A: "since sunbathers lie or sit under direct sun lights nude or don't wear enough amount of clothing", B: "when the sun bed as an alternative way of sunbathing is used outdoor with sun light", C: "as people prefer naked sunbathing as part of a lifestyle for an 'all-over' or 'even' tan", D: "right after people get over their health problems and find other leisure activities", E: "as a consequence of lack of resources essential for getting a proper sun tan" },
-        correct: "E",
-        dict: { "vanishes": "yok olur", "exposed": "maruz kalmak", "resources": "kaynaklar", "gradually": "yavaş yavaş" },
-        explanation: `<b>✅ Doğru Cevap: E) as a consequence of lack of resources essential for getting a proper sun tan</b><br><b>📌 Sebep:</b> Kaynaklara maruz kalınmadığında (lack of resources/sources) yok olur.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Çıplaklık veya kıyafet miktarı ile ilgisi yok.<br><b>B)</b> Sun bed'in dışarıda kullanılması değil.<br><b>C)</b> Çıplak güneşlenme tercihi ile ilgisi yok.<br><b>D)</b> Sağlık problemleri atlatıldıktan sonra değil.`
+        type: 'B',
+        instruction: "51-54 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Water scarcity is increasingly emerging as one of the most perilous socio-ecological crises of the twenty-first century, driven by an unsustainable convergence of rapid population growth, climate-induced hydrological variability, and extensive industrial contamination. Nowhere is this vulnerability more pronounced than in arid and semi-arid regions, where ancient subterranean aquifers—depleted at rates far exceeding their natural recharge capacities—are being relentlessly drained to sustain commercial agriculture. Historically perceived as an inexhaustible open-access resource, groundwater has suffered from systemic over-abstraction, precipitating irreversible land subsidence and saline intrusion into critical freshwater reserves. According to recent hydrological assessments, conventional supply-side interventions, such as large-scale dam construction and deep-well drilling, merely provide transient relief while fundamentally exacerbating long-term ecological degradation. Dr. Julian Morales, a senior researcher at the International Hydrological Institute, stresses that modern engineering efforts must transition from archaic supply-expansion paradigms toward comprehensive demand-side stewardship. This strategic shift necessitates implementing dynamic water pricing mechanisms, adopting precision drip irrigation systems, and enforcing strict regulatory caps on industrial effluents. Unless policymakers prioritize integrated water resources management that reconciles agricultural imperatives with ecological boundaries, persistent freshwater deficits will inevitably trigger widespread geopolitical friction and cross-border resource conflicts across hydrologically vulnerable river basins.",
+        text: "One understands from the passage that the main purpose of the author is to ----.",
+        options: {
+            A: "criticize the agricultural sector for its total refusal to adopt mechanical irrigation tools",
+            B: "highlight the severity of water scarcity and advocate for a shift toward sustainable demand management",
+            C: "demonstrate that subterranean aquifers are completely beyond the scope of scientific restoration",
+            D: "argue that cross-border water conflicts can only be prevented by constructing larger dams",
+            E: "prove that industrial contamination is the sole factor driving global freshwater depletion"
+        },
+        correct: "B",
+        dict: {
+            "scarcity": "kıtlık/yetersizlik",
+            "advocate": "savunmak/desteklemek",
+            "over-abstraction": "aşırı su çekimi",
+            "perilous": "tehlikeli/vahim"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) highlight the severity of water scarcity and advocate for a shift toward sustainable demand management</b><br><b>📌 Sebep:</b> Metnin bütününde su kıtlığının boyutları, yeraltı sularının aşırı çekilmesi ve geleneksel tedarik yöntemlerinin yetersizliği ortaya konularak, su yönetiminin talep odaklı ve sürdürülebilir politikalara kaydırılması gerektiği savunulmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Tarım sektörünü sulama aletlerini tamamen reddetmekle suçlamaz.<br><b>C)</b> Akiferlerin bilimsel olarak asla kurtarılamayacağını kanıtlama amacı taşımaz.<br><b>D)</b> Çatışmaların daha büyük barajlar yaparak önleneceğini iddia etmez (tam tersi barajların geçici olduğunu söyler).<br><b>E)</b> Kirliliğin su kıtlığındaki tek faktör ('sole factor') olduğunu öne sürmez.`
     },
     {
         id: 55,
-        type: "B",
-        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Socialized medical systems are primarily designed to eliminate the insurance industry while providing health care for all. According to many recent studies, socialized systems outperform free-market profit-driven systems in terms of availability, quality and cost of health care. For example, a report from the Johns Hopkins University - Bloomberg School of Public Health stated that the United Kingdom's socialized medical system outperforms the U.S. free-market system in patient-reported perceptions. In other words, the people with direct experiences report greater satisfaction with their health services under a socialized system than they do in a free-market system. These results must be considered along with the fact that the U.S. per capita health care expenditures ($4,887) are nearly triple those in the United Kingdom ($1,992). In the year 2000 the United States spent 44 percent more on health care than Switzerland, the nation with the next highest per capita health care costs. Nevertheless, Americans had fewer physician visits, and hospital stays were shorter compared with those in most other industrialized nations. The study suggests that the difference in spending is caused mostly by higher prices for health care goods and services in the United States.",
-        text: "One understands from the passage that the main purpose of socialized medical systems is to ----.",
-        options: { A: "make some profit from the insurance policies by which one's life or property is guaranteed against any damage or loss", B: "indiscriminately help insurance companies cope with the expensive burden of providing health care for all", C: "do away with the insurance industry and make it possible for everyone to get health care", D: "make clear the differences between private insurance companies and state-owned medical systems", E: "prove that insurance policies are all profit-driven" },
-        correct: "C",
-        dict: { "do away with": "kaldırmak", "insurance": "sigorta", "provide": "sağlamak", "eliminate": "ortadan kaldırmak" },
-        explanation: `<b>✅ Doğru Cevap: C) do away with the insurance industry and make it possible for everyone to get health care</b><br><b>📌 Sebep:</b> Sigorta endüstrisini kaldırmak (eliminate/do away with) ve herkese sağlık sağlamak.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Kar elde etmek değil, aksine sigortayı kaldırmak.<br><b>B)</b> Sigorta şirketlerine yardım etmek değil, ortadan kaldırmak.<br><b>D)</b> Farkları açıklamak değil, sosyalize sistemi tanıtmak.<br><b>E)</b> Sigorta politikalarının kar odaklı olduğunu kanıtlamak değil.`
+        type: 'B',
+        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Distance learning, once relegated to supplementary correspondence courses, has evolved into a cornerstone of contemporary higher education, accelerated primarily by advances in telecommunications and cloud computing. The integration of asynchronous digital platforms has democratized access to university curricula, allowing geographically dispersed non-traditional learners to balance professional commitments with tertiary education. However, the pedagogical efficacy of remote instruction remains a subject of intense academic scrutiny. Longitudinal educational assessments reveal that while cognitive gains in digital settings frequently match those in traditional lecture halls, attrition rates among remote cohorts remain disproportionately elevated. Educational psychologists attribute this persistent disparity to a deficit in spontaneous interpersonal interaction, which often induces transactional distance and acute feelings of isolation among students. In an attempt to mitigate these psychosocial barriers, institutional designers have increasingly embraced blended instructional paradigms. These hybrid formats combine interactive digital modules with synchronized collaborative seminars, thereby fostering sustained epistemic engagement. Dr. Miriam Sterling, an authority on instructional design, contends that the ultimate sustainability of virtual pedagogy hinges not on the sophistication of software interfaces, but on the ability of educators to scaffold collaborative communities of inquiry that cultivate high levels of intrinsic academic motivation.",
+        text: "It is emphasized in the passage that the long-term success of virtual pedagogy ----.",
+        options: {
+            A: "is completely dependent on the deployment of advanced software algorithms rather than instructor presence",
+            B: "relies fundamentally on creating collaborative learning communities that sustain student motivation",
+            C: "has permanently eliminated the necessity for synchronous seminars in tertiary education",
+            D: "requires higher education institutions to return exclusively to traditional face-to-face lecture methods",
+            E: "guarantees identical student retention rates regardless of the level of peer-to-peer engagement"
+        },
+        correct: "B",
+        dict: {
+            "relegated": "geri plana atılmış/düşürülmüş",
+            "cornerstone": "temel taşı/köşe taşı",
+            "attrition": "okulu bırakma/fire verme",
+            "scaffold": "yapılandırmak/desteklemek",
+            "intrinsic": "içsel/öze ait"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) relies fundamentally on creating collaborative learning communities that sustain student motivation</b><br><b>📌 Sebep:</b> Parçanın son cümlesindeki "...sustainability of virtual pedagogy hinges not on the sophistication of software interfaces, but on the ability of educators to scaffold collaborative communities of inquiry that cultivate high levels of intrinsic academic motivation" ifadesi, başarının temelinin yazılım gelişmişliğinden ziyade öğrenci motivasyonunu besleyen işbirlikçi topluluklar kurmaya dayandığını açıkça vurgular.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Yazılım algoritmalarına dayandığı iddiası metnin tam tersidir ('not on the sophistication of software').<br><b>C)</b> Eş zamanlı seminerleri gereksiz kıldığı söylenemez.<br><b>D)</b> Geleneksel yüz yüze eğitime tamamen dönülmesi gerektiğini savunmaz.<br><b>E)</b> Öğrenci etkileşiminden bağımsız olarak terk oranlarını eşitlediği çıkarımı yanlıştır.`
     },
     {
         id: 56,
-        type: "B",
-        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Socialized medical systems are primarily designed to eliminate the insurance industry while providing health care for all. According to many recent studies, socialized systems outperform free-market profit-driven systems in terms of availability, quality and cost of health care. For example, a report from the Johns Hopkins University - Bloomberg School of Public Health stated that the United Kingdom's socialized medical system outperforms the U.S. free-market system in patient-reported perceptions. In other words, the people with direct experiences report greater satisfaction with their health services under a socialized system than they do in a free-market system. These results must be considered along with the fact that the U.S. per capita health care expenditures ($4,887) are nearly triple those in the United Kingdom ($1,992). In the year 2000 the United States spent 44 percent more on health care than Switzerland, the nation with the next highest per capita health care costs. Nevertheless, Americans had fewer physician visits, and hospital stays were shorter compared with those in most other industrialized nations. The study suggests that the difference in spending is caused mostly by higher prices for health care goods and services in the United States.",
-        text: "According to the report from the Johns Hopkins University, ----.",
-        options: { A: "people in the UK are content with what they receive from a socialized health system", B: "those who are pleased with socialized health systems are mostly living in the United Kingdom", C: "in the U.S., per capita health care costs are between $4,887 and $1,992", D: "socialized medical systems are aimed to provide health care for everybody", E: "the U.S. health system, compared to the United Kingdom's, turns out to do much better" },
-        correct: "A",
-        dict: { "content": "memnun", "perceptions": "algılar", "outperforms": "daha iyi performans gösterir", "satisfaction": "memnuniyet" },
-        explanation: `<b>✅ Doğru Cevap: A) people in the UK are content with what they receive from a socialized health system</b><br><b>📌 Sebep:</b> UK halkı sistemden daha memnun (outperforms in perceptions/satisfaction).<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> 'Mostly living in the United Kingdom' (çoğunlukla UK'de yaşayan) genelleme yanlış.<br><b>C)</b> ABD'de $4,887, UK'de $1,992, arasında değil.<br><b>D)</b> Sosyalize sistemlerin amacı doğru ama bu raporun sonucu değil.<br><b>E)</b> ABD sistemi daha iyi değil, daha kötü.`
+        type: 'B',
+        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Distance learning, once relegated to supplementary correspondence courses, has evolved into a cornerstone of contemporary higher education, accelerated primarily by advances in telecommunications and cloud computing. The integration of asynchronous digital platforms has democratized access to university curricula, allowing geographically dispersed non-traditional learners to balance professional commitments with tertiary education. However, the pedagogical efficacy of remote instruction remains a subject of intense academic scrutiny. Longitudinal educational assessments reveal that while cognitive gains in digital settings frequently match those in traditional lecture halls, attrition rates among remote cohorts remain disproportionately elevated. Educational psychologists attribute this persistent disparity to a deficit in spontaneous interpersonal interaction, which often induces transactional distance and acute feelings of isolation among students. In an attempt to mitigate these psychosocial barriers, institutional designers have increasingly embraced blended instructional paradigms. These hybrid formats combine interactive digital modules with synchronized collaborative seminars, thereby fostering sustained epistemic engagement. Dr. Miriam Sterling, an authority on instructional design, contends that the ultimate sustainability of virtual pedagogy hinges not on the sophistication of software interfaces, but on the ability of educators to scaffold collaborative communities of inquiry that cultivate high levels of intrinsic academic motivation.",
+        text: "According to the passage, the primary factor responsible for higher attrition rates in online education is ----.",
+        options: {
+            A: "the intellectual inferiority of curriculum materials provided via digital platforms",
+            B: "a lack of spontaneous interpersonal engagement that leads to emotional and social isolation",
+            C: "the complete inability of adult learners to manage their professional and personal schedules",
+            D: "the high financial costs associated with installing complex cloud computing infrastructure",
+            E: "the total absence of interactive digital modules in asynchronous tertiary programmes"
+        },
+        correct: "B",
+        dict: {
+            "disparity": "farklılık/uçurum",
+            "spontaneous": "kendiliğinden olan/doğal",
+            "transactional distance": "işlemsel/iletişimsel uzaklık",
+            "isolation": "yalnızlık/izolasyon"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) a lack of spontaneous interpersonal engagement that leads to emotional and social isolation</b><br><b>📌 Sebep:</b> Metinde geçen "...attribute this persistent disparity to a deficit in spontaneous interpersonal interaction, which often induces transactional distance and acute feelings of isolation..." ifadesi, terk oranlarının yüksekliğini doğrudan doğal etkileşim eksikliğine ve yalnızlık hissine bağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Ders materyallerinin entelektüel açıdan yetersiz olduğu bilgisi metinde yoktur (bilişsel kazanımlar benzerdir).<br><b>C)</b> Yetişkin öğrencilerin zaman yönetimi yapamadığı iddiası metinde yer almaz.<br><b>D)</b> Bulut altyapısının maliyetleriyle ilgili bir gerekçe sunulmamıştır.<br><b>E)</b> Dijital modüllerin hiç bulunmadığı iddiası yanlıştır.`
     },
     {
         id: 57,
-        type: "B",
-        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Socialized medical systems are primarily designed to eliminate the insurance industry while providing health care for all. According to many recent studies, socialized systems outperform free-market profit-driven systems in terms of availability, quality and cost of health care. For example, a report from the Johns Hopkins University - Bloomberg School of Public Health stated that the United Kingdom's socialized medical system outperforms the U.S. free-market system in patient-reported perceptions. In other words, the people with direct experiences report greater satisfaction with their health services under a socialized system than they do in a free-market system. These results must be considered along with the fact that the U.S. per capita health care expenditures ($4,887) are nearly triple those in the United Kingdom ($1,992). In the year 2000 the United States spent 44 percent more on health care than Switzerland, the nation with the next highest per capita health care costs. Nevertheless, Americans had fewer physician visits, and hospital stays were shorter compared with those in most other industrialized nations. The study suggests that the difference in spending is caused mostly by higher prices for health care goods and services in the United States.",
-        text: "As stated in the text, although America's per capita health care expenditures were much more than other developed countries', ----.",
-        options: { "A": "better health care standards can be achieved through larger budgets", "B": "Switzerland had higher per capita health costs", "C": "it doesn't necessarily mean that America offers better health service than the UK", "D": "doctors are few in numbers and hence people stay at hospitals for lengthened periods", "E": "it had fewer physicians to be visited at hospitals that provides shorter stays" },
-        correct: "C",
-        dict: { "expenditures": "harcamalar", "necessarily": "muhakkak/ille de", "offers": "sunar", "outperforms": "daha iyi performans gösterir" },
-        explanation: "<b> ✅  Doğru Cevap: C) it doesn't necessarily mean that America offers better health service than the UK</b><br><b> 📌  Sebep:</b> Soru kökü 'Amerika'nın harcamaları çok daha fazla olmasına rağmen...' (although) şeklinde başlıyor. Parçada, ABD'nin daha fazla harcama yapmasına karşın, İngiltere'deki sistemin hasta memnuniyeti açısından ABD'den daha iyi performans gösterdiği belirtiliyor. Bu zıtlık, C şıkkındaki 'daha fazla para harcanması, ABD'nin İngiltere'den daha iyi hizmet sunduğu anlamına gelmez' yargısını doğrular.<br><br><b> ❌  Diğer Seçenekler:</b><br><b>E)</b> Parçada 'Americans had fewer physician visits' (daha az doktor ziyareti) ifadesi geçse de, C şıkkı 'although' (rağmen) bağlacının gerektirdiği 'harcama vs. kalite' zıtlığını ana fikir olarak daha iyi tamamlar."
+        type: 'B',
+        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Distance learning, once relegated to supplementary correspondence courses, has evolved into a cornerstone of contemporary higher education, accelerated primarily by advances in telecommunications and cloud computing. The integration of asynchronous digital platforms has democratized access to university curricula, allowing geographically dispersed non-traditional learners to balance professional commitments with tertiary education. However, the pedagogical efficacy of remote instruction remains a subject of intense academic scrutiny. Longitudinal educational assessments reveal that while cognitive gains in digital settings frequently match those in traditional lecture halls, attrition rates among remote cohorts remain disproportionately elevated. Educational psychologists attribute this persistent disparity to a deficit in spontaneous interpersonal interaction, which often induces transactional distance and acute feelings of isolation among students. In an attempt to mitigate these psychosocial barriers, institutional designers have increasingly embraced blended instructional paradigms. These hybrid formats combine interactive digital modules with synchronized collaborative seminars, thereby fostering sustained epistemic engagement. Dr. Miriam Sterling, an authority on instructional design, contends that the ultimate sustainability of virtual pedagogy hinges not on the sophistication of software interfaces, but on the ability of educators to scaffold collaborative communities of inquiry that cultivate high levels of intrinsic academic motivation.",
+        text: "We understand from the passage that blended learning models have been adopted primarily to ----.",
+        options: {
+            A: "counteract the psychosocial barriers and feelings of disconnection experienced by distance learners",
+            B: "shift all instructional responsibilities from human educators to automated assessment systems",
+            C: "reduce the overall duration required to complete undergraduate degree programmes",
+            D: "prove that asynchronous instruction is pedagogically superior to traditional classroom lectures",
+            E: "restrict higher education access exclusively to students residing in remote geographical zones"
+        },
+        correct: "A",
+        dict: {
+            "mitigate": "hafifletmek/azaltmak",
+            "blended": "harmanlanmış/karma",
+            "epistemic": "bilgisel/bilişsel",
+            "pedagogy": "eğitim bilimi/öğretim yöntemi"
+        },
+        explanation: `<b>✅ Doğru Cevap: A) counteract the psychosocial barriers and feelings of disconnection experienced by distance learners</b><br><b>📌 Sebep:</b> Parçada geçen "In an attempt to mitigate these psychosocial barriers, institutional designers have increasingly embraced blended instructional paradigms" ifadesi, karma modellerin öğrencilerin yaşadığı psikososyal engelleri ve kopukluk hissini hafifletmek amacıyla benimsendiğini açıklar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Eğitimi tamamen otomatik sistemlere devretmek gibi bir amacı yoktur.<br><b>C)</b> Mezuniyet süresini kısaltmayı hedeflemez.<br><b>D)</b> Asenkron eğitimin gelenekselden üstün olduğunu kanıtlama çabası taşımaz.<br><b>E)</b> Eğitimi sadece uzaktaki öğrencilerle sınırlandırmaz.`
     },
     {
         id: 58,
-        type: "B",
-        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "Socialized medical systems are primarily designed to eliminate the insurance industry while providing health care for all. According to many recent studies, socialized systems outperform free-market profit-driven systems in terms of availability, quality and cost of health care. For example, a report from the Johns Hopkins University - Bloomberg School of Public Health stated that the United Kingdom's socialized medical system outperforms the U.S. free-market system in patient-reported perceptions. In other words, the people with direct experiences report greater satisfaction with their health services under a socialized system than they do in a free-market system. These results must be considered along with the fact that the U.S. per capita health care expenditures ($4,887) are nearly triple those in the United Kingdom ($1,992). In the year 2000 the United States spent 44 percent more on health care than Switzerland, the nation with the next highest per capita health care costs. Nevertheless, Americans had fewer physician visits, and hospital stays were shorter compared with those in most other industrialized nations. The study suggests that the difference in spending is caused mostly by higher prices for health care goods and services in the United States.",
-        text: "We understand from the passage that ----.",
-        options: { A: "to be effective and satisfactory, a medical system doesn't have to be costly", B: "the more you pay for a health care service the better results you get", C: "people residing in the United Kingdom are healthier and happier than Americans", D: "Americans' health insurance policies are more expensive but better", E: "socialized medical systems aren't so effective as free-market profit-driven ones" },
-        correct: "A",
-        dict: { "costly": "pahalı", "effective": "etkili", "satisfactory": "tatmin edici", "outperform": "daha iyi performans göstermek" },
-        explanation: `<b>✅ Doğru Cevap: A) to be effective and satisfactory, a medical system doesn't have to be costly</b><br><b>📌 Sebep:</b> Pahalı sistem (ABD) daha kötü sonuç veriyor, demek ki iyi olmak için pahalı olmak şart değil.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Daha fazla ödeme daha iyi sonuç anlamına gelmiyor, aksine.<br><b>C)</b> UK sakinlerinin daha sağlıklı ve mutlu olduğu söylenmiyor, sadece sağlık sisteminden memnunlar.<br><b>D)</b> ABD sigorta politikalarının daha iyi olduğu söylenmiyor.<br><b>E)</b> Sosyalize sistemler daha etkili.`
+        type: 'B',
+        instruction: "55-58 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Distance learning, once relegated to supplementary correspondence courses, has evolved into a cornerstone of contemporary higher education, accelerated primarily by advances in telecommunications and cloud computing. The integration of asynchronous digital platforms has democratized access to university curricula, allowing geographically dispersed non-traditional learners to balance professional commitments with tertiary education. However, the pedagogical efficacy of remote instruction remains a subject of intense academic scrutiny. Longitudinal educational assessments reveal that while cognitive gains in digital settings frequently match those in traditional lecture halls, attrition rates among remote cohorts remain disproportionately elevated. Educational psychologists attribute this persistent disparity to a deficit in spontaneous interpersonal interaction, which often induces transactional distance and acute feelings of isolation among students. In an attempt to mitigate these psychosocial barriers, institutional designers have increasingly embraced blended instructional paradigms. These hybrid formats combine interactive digital modules with synchronized collaborative seminars, thereby fostering sustained epistemic engagement. Dr. Miriam Sterling, an authority on instructional design, contends that the ultimate sustainability of virtual pedagogy hinges not on the sophistication of software interfaces, but on the ability of educators to scaffold collaborative communities of inquiry that cultivate high levels of intrinsic academic motivation.",
+        text: "We understand from the passage that regarding cognitive achievements, students in virtual environments ----.",
+        options: {
+            A: "perform significantly worse than those attending traditional lecture halls due to poor software",
+            B: "often attain levels of academic comprehension comparable to their peers in conventional classrooms",
+            C: "experience complete academic failure unless they participate in daily physical lab sessions",
+            D: "demonstrate far higher intellectual mastery than students enrolled in on-campus courses",
+            E: "consistently outperform blended learning cohorts across all standardized scientific evaluations"
+        },
+        correct: "B",
+        dict: {
+            "cognitive gains": "bilişsel kazanımlar",
+            "cohort": "öğrenci grubu/küme",
+            "elevated": "yüksek/artmış",
+            "scrutiny": "derinlemesine inceleme"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) often attain levels of academic comprehension comparable to their peers in conventional classrooms</b><br><b>📌 Sebep:</b> Metinde yer alan "...cognitive gains in digital settings frequently match those in traditional lecture halls..." ifadesi, online öğrencilerin bilişsel kazanımlarının geleneksel amfilerdeki akranlarıyla eşdeğer / karşılaştırılabilir düzeyde olduğunu doğrudan gösterir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Bilişsel kazanım açısından daha başarısız oldukları iddiası metinle çelişir ('frequently match').<br><b>C)</b> Fiziksel laboratuvara katılmazlarsa tamamen başarısız olacakları iddia edilmemiştir.<br><b>D)</b> Geleneksel öğrencilerden çok daha üstün başarı gösterdikleri söylenemez (aşırı genelleme).<br><b>E)</b> Karma modeldeki öğrencilerden sürekli daha iyi performans sergiledikleri metinde yer almaz.`
     },
     {
         id: 59,
-        type: "B",
-        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "The Young Ottomans were a secret organization of Ottoman nationalist intellectuals formed in 1865, influenced by such Western thinkers as Montesquieu and Rousseau and necessarily the French Revolution. A forerunner of other Turkish nationalist groups, the Young Ottomans favored converting the Turkish-dominated multinational Ottoman Empire into a more purely Turkish state and called for the creation of a constitutional government. By 1867 the Young Ottomans had expanded from the original 6 members to 245, including the noted poets Namık Kemal and Ziya Paşa. They were further supported financially and materially by the Egyptian prince Mustafa Fazıl and had attracted the attention of the Ottoman princes Murad and Abdülhamid.",
-        text: "We understand from the passage that French Revolution ----.",
-        options: { A: "had in fact almost nothing to do with such an organization developed within Ottoman Empire", B: "undoubtedly brought equality, citizenship and inalienable rights all over the world", C: "played an important role in the creation of the Young Ottomans", D: "was primarily performed by Western thinkers living within Ottoman Empire", E: "was a period of radical, social and political upheavals in France" },
-        correct: "C",
-        dict: { "creation": "yaratılış", "influenced": "etkilenmiş", "thinkers": "düşünürler", "organization": "örgüt" },
-        explanation: `<b>✅ Doğru Cevap: C) played an important role in the creation of the Young Ottomans</b><br><b>📌 Sebep:</b> Genç Osmanlılar, Fransız Devrimi'nden etkilenmiştir (influenced by).<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Hiçbir ilgisi yok deniyor, yanlış.<br><b>B)</b> Dünyanın her yerine eşitlik getirdiği söylenmiyor.<br><b>D)</b> Osmanlı'da yaşayan Batılı düşünürler tarafından gerçekleştirildiği söylenmiyor.<br><b>E)</b> Fransız Devrimi'nin tanımı doğru ama parçadaki bilgi değil.`
+        type: 'B',
+        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Probiotics, broadly defined as live microorganisms that confer physiological benefits upon the host when administered in adequate quantities, have garnered immense attention within biomedical research and nutritional science. Historically integrated into human diets through fermented foodstuffs such as yogurt and kefir, these commensal microbes—predominantly belonging to the Lactobacillus and Bifidobacterium genera—exert multifaceted influences on the gastrointestinal tract. Upon surviving transit through the harsh, acidic environment of the stomach, viable strains adhere to the intestinal mucosa, where they actively outcompete pathogenic taxa for limited metabolic substrates and cellular binding sites. Furthermore, they fortify epithelial barrier integrity by stimulating the synthesis of tight-junction proteins and modulating mucin secretion, thereby impeding systemic bacterial translocation. Recent advances in metagenomic sequencing have illuminated the role of probiotics in orchestrating the production of short-chain fatty acids (SCFAs), such as butyrate and acetate, which serve as crucial energetic substrates for colonocytes and potent mediators of systemic immune homeostasis. However, despite compelling pre-clinical evidence, clinical translational efficacy remains notably heterogeneous. Variations in host genetic background, baseline mucosal microbiota composition, and lifestyle factors often dictate whether supplemented strains successfully colonise the gut or are rapidly shed in faeces. Dr. Karen Lindqvist, an immunologist specializing in microbiome therapeutics, emphasizes that the commercial proliferation of generic over-the-counter formulations often outpaces empirical validation, necessitating a transition toward personalized probiotic regimens tailored to an individual's unique microbial and genetic profile.",
+        text: "Which of the following is the main focus of the passage?",
+        options: {
+            A: "The historical origins and traditional fermentation methods of prebiotic dairy products",
+            B: "The biochemical mechanisms and varying clinical efficacy of probiotics, alongside the need for personalized approaches",
+            C: "The insurmountable physiological barriers that prevent beneficial bacteria from surviving gastric acidity",
+            D: "The absolute superiority of over-the-counter dietary supplements over natural dietary sources of bacteria",
+            E: "The exclusive role of short-chain fatty acids in treating chronic gastrointestinal pathologies"
+        },
+        correct: "B",
+        dict: {
+            "confer": "sağlamak/bahşetmek",
+            "commensal": "birlikte yaşayan/ortak yaşam süren",
+            "translocation": "yer değiştirme/organlar arası geçiş",
+            "heterogeneous": "farklılık gösteren/çeşitli",
+            "tailored": "özel olarak uyarlanmış"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) The biochemical mechanisms and varying clinical efficacy of probiotics, alongside the need for personalized approaches</b><br><b>📌 Sebep:</b> Parçanın tamamı, probiyotiklerin bağırsak duvarını güçlendirme ve patojenlerle yarışma gibi etki mekanizmalarını, klinik etkinliğin kişiden kişiye neden değiştiğini ve genel takviyeler yerine kişiye özel (personalized) yaklaşımlara duyulan ihtiyacı ele almaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Fermantasyonun tarihsel kökenleri yalnızca bir arka plan cümlesidir; ana odak değildir.<br><b>C)</b> Mide asidinin aşılamaz bir engel olduğu iddia edilmez; bakterilerin bu asidi geçip tutunduğu belirtilir.<br><b>D)</b> Ticari takviyelerin doğal gıdalardan üstün olduğu savunulmaz; tam aksine ticari ürünlerin bilimsel temeli sorgulanır.<br><b>E)</b> Parçada kısa zincirli yağ asitleri tek bir mekanizma örneğidir, parçanın ana temasını kapsamaz.`
     },
     {
         id: 60,
-        type: "B",
-        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "The Young Ottomans were a secret organization of Ottoman nationalist intellectuals formed in 1865, influenced by such Western thinkers as Montesquieu and Rousseau and necessarily the French Revolution. A forerunner of other Turkish nationalist groups, the Young Ottomans favored converting the Turkish-dominated multinational Ottoman Empire into a more purely Turkish state and called for the creation of a constitutional government. By 1867 the Young Ottomans had expanded from the original 6 members to 245, including the noted poets Namık Kemal and Ziya Paşa. They were further supported financially and materially by the Egyptian prince Mustafa Fazıl and had attracted the attention of the Ottoman princes Murad and Abdülhamid.",
-        text: "As it is clearly stated in the passage, only two years after the Young Ottomans were formed, ----.",
-        options: { A: "the Turkish-dominated multinational Ottoman Empire was successfully converted into a pure Turkish state", B: "the Young Ottomans constituted 245 other Turkish nationalist organizations", C: "two Ottoman princes, Murad and Abdülhamid, started to provide money they need to make their dreams come true", D: "the number of the Young Ottomans increased more than forty times", E: "Western thinkers like Montesquieu and Rousseau reluctantly took part in their activities" },
-        correct: "D",
-        dict: { "expanded": "genişledi", "original": "orijinal", "members": "üyeler", "formed": "kuruldu" },
-        explanation: `<b>✅ Doğru Cevap: D) the number of the Young Ottomans increased more than forty times</b><br><b>📌 Sebep:</b> 6'dan 245'e çıkması, 40 kattan fazla (6x40=240) artış demektir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> İmparatorluk dönüştürülmedi, sadece fikir olarak desteklendi.<br><b>B)</b> 245 diğer örgüt değil, üye sayısı.<br><b>C)</b> Osmanlı prensleri para sağlamadı, Mısır prensi sağladı.<br><b>E)</b> Batılı düşünürler etkiledi ama katılmadı.`
+        type: 'B',
+        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Probiotics, broadly defined as live microorganisms that confer physiological benefits upon the host when administered in adequate quantities, have garnered immense attention within biomedical research and nutritional science. Historically integrated into human diets through fermented foodstuffs such as yogurt and kefir, these commensal microbes—predominantly belonging to the Lactobacillus and Bifidobacterium genera—exert multifaceted influences on the gastrointestinal tract. Upon surviving transit through the harsh, acidic environment of the stomach, viable strains adhere to the intestinal mucosa, where they actively outcompete pathogenic taxa for limited metabolic substrates and cellular binding sites. Furthermore, they fortify epithelial barrier integrity by stimulating the synthesis of tight-junction proteins and modulating mucin secretion, thereby impeding systemic bacterial translocation. Recent advances in metagenomic sequencing have illuminated the role of probiotics in orchestrating the production of short-chain fatty acids (SCFAs), such as butyrate and acetate, which serve as crucial energetic substrates for colonocytes and potent mediators of systemic immune homeostasis. However, despite compelling pre-clinical evidence, clinical translational efficacy remains notably heterogeneous. Variations in host genetic background, baseline mucosal microbiota composition, and lifestyle factors often dictate whether supplemented strains successfully colonise the gut or are rapidly shed in faeces. Dr. Karen Lindqvist, an immunologist specializing in microbiome therapeutics, emphasizes that the commercial proliferation of generic over-the-counter formulations often outpaces empirical validation, necessitating a transition toward personalized probiotic regimens tailored to an individual's unique microbial and genetic profile.",
+        text: "According to the passage, probiotics strengthen the intestinal barrier by ----.",
+        options: {
+            A: "eliminating the necessity for colonocytes to consume short-chain fatty acids",
+            B: "promoting the production of tight-junction proteins and regulating the secretion of mucus",
+            C: "neutralizing all acidic gastric juices before they reach the gastrointestinal mucosa",
+            D: "transforming pathogenic bacteria directly into beneficial symbiotic strains",
+            E: "preventing the immune system from identifying foreign pathogens in the bloodstream"
+        },
+        correct: "B",
+        dict: {
+            "adhere": "yapışmak/tutunmak",
+            "fortify": "güçlendirmek/tahkim etmek",
+            "integrity": "bütünlük/sağlamlık",
+            "impede": "engellemek/önüne geçmek"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) promoting the production of tight-junction proteins and regulating the secretion of mucus</b><br><b>📌 Sebep:</b> Metinde açıkça geçen "...they fortify epithelial barrier integrity by stimulating the synthesis of tight-junction proteins and modulating mucin secretion..." ifadesi, probiyotiklerin sıkı bağlantı proteinlerinin sentezini artırıp mukus salgısını düzenleyerek bağırsak bariyerini güçlendirdiğini belirtir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Kolonositlerin yağ asitlerine olan ihtiyacını ortadan kaldırmazlar; aksine bu asitler kolonositler için temel enerji kaynağıdır.<br><b>C)</b> Mide asidini tamamen nötralize etmezler.<br><b>D)</b> Patojenleri iyi huylu bakteriye dönüştürmezler; onlarla kaynaklar için rekabet ederler.<br><b>E)</b> Bağışıklık sisteminin patojenleri tanımasını engellemezler.`
     },
     {
         id: 61,
-        type: "B",
-        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "The Young Ottomans were a secret organization of Ottoman nationalist intellectuals formed in 1865, influenced by such Western thinkers as Montesquieu and Rousseau and necessarily the French Revolution. A forerunner of other Turkish nationalist groups, the Young Ottomans favored converting the Turkish-dominated multinational Ottoman Empire into a more purely Turkish state and called for the creation of a constitutional government. By 1867 the Young Ottomans had expanded from the original 6 members to 245, including the noted poets Namık Kemal and Ziya Paşa. They were further supported financially and materially by the Egyptian prince Mustafa Fazıl and had attracted the attention of the Ottoman princes Murad and Abdülhamid.",
-        text: "According to the passage, the Young Ottomans ----.",
-        options: { A: "were young Ottoman nationalist intellectuals who had contributed to French Revolution", B: "were a confidential union created by Ottoman nationalist scholars under the influence of the Western intellectuals and the French Revolution", C: "were a secret organization formed in 1865 by Ottoman intellectuals together with western thinkers like Montesquieu and Rousseau", D: "were young Ottoman nationalist scholars who actually formed the group in 1867", E: "were a powerful and legal organization of Ottoman nationalist intellectuals subsidized by Ottoman Empire" },
+        type: 'B',
+        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Probiotics, broadly defined as live microorganisms that confer physiological benefits upon the host when administered in adequate quantities, have garnered immense attention within biomedical research and nutritional science. Historically integrated into human diets through fermented foodstuffs such as yogurt and kefir, these commensal microbes—predominantly belonging to the Lactobacillus and Bifidobacterium genera—exert multifaceted influences on the gastrointestinal tract. Upon surviving transit through the harsh, acidic environment of the stomach, viable strains adhere to the intestinal mucosa, where they actively outcompete pathogenic taxa for limited metabolic substrates and cellular binding sites. Furthermore, they fortify epithelial barrier integrity by stimulating the synthesis of tight-junction proteins and modulating mucin secretion, thereby impeding systemic bacterial translocation. Recent advances in metagenomic sequencing have illuminated the role of probiotics in orchestrating the production of short-chain fatty acids (SCFAs), such as butyrate and acetate, which serve as crucial energetic substrates for colonocytes and potent mediators of systemic immune homeostasis. However, despite compelling pre-clinical evidence, clinical translational efficacy remains notably heterogeneous. Variations in host genetic background, baseline mucosal microbiota composition, and lifestyle factors often dictate whether supplemented strains successfully colonise the gut or are rapidly shed in faeces. Dr. Karen Lindqvist, an immunologist specializing in microbiome therapeutics, emphasizes that the commercial proliferation of generic over-the-counter formulations often outpaces empirical validation, necessitating a transition toward personalized probiotic regimens tailored to an individual's unique microbial and genetic profile.",
+        text: "It can be inferred from the passage that the therapeutic outcome of taking probiotic supplements ----.",
+        options: {
+            A: "is largely consistent and produces identical physiological benefits in every patient",
+            B: "depends significantly on an individual's unique biological and genetic characteristics",
+            C: "is completely ineffective if the bacteria belong to the Bifidobacterium genus",
+            D: "yields immediate curative results regardless of the recipient's preexisting microbiota",
+            E: "remains unaffected by whether the bacteria successfully colonise the digestive tract"
+        },
         correct: "B",
-        dict: { "confidential": "gizli", "scholars": "alimler", "influence": "etki", "subsidized": "sübvanse edilmiş" },
-        explanation: `<b>✅ Doğru Cevap: B) were a confidential union created by Ottoman nationalist scholars under the influence of the Western intellectuals and the French Revolution</b><br><b>📌 Sebep:</b> Gizli birlik (secret organization/confidential union) ve Batı etkisi vurgulanıyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Fransız Devrimi'ne katkıda bulundular denmiyor.<br><b>C)</b> Batılı düşünürlerle birlikte kurulmadı, onlardan etkilendi.<br><b>D)</b> 1867'de değil, 1865'te kuruldu.<br><b>E)</b> Güçlü ve yasal örgüt değil, gizli örgüt. Osmanlı tarafından sübvanse edilmedi.`
+        dict: {
+            "compelling": "ikna edici/güçlü",
+            "efficacy": "etkinlik/yararlılık",
+            "baseline": "başlangıç/temel düzey",
+            "shed": "atılmak/dökmek"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) depends significantly on an individual's unique biological and genetic characteristics</b><br><b>📌 Sebep:</b> Parçada yer alan "Variations in host genetic background, baseline mucosal microbiota composition, and lifestyle factors often dictate whether supplemented strains successfully colonise the gut..." cümlesi, probiyotiklerin klinik etkisinin kişinin genetik ve mikrobiyal özelliklerine bağlı olduğunu açıkça ortaya koyar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Her bireyde aynı sonucu verdiği ('identical benefits') iddiası metindeki 'heterogeneous' tespitiyle çelişir.<br><b>C)</b> Bifidobacterium türünün etkisiz olduğu öne sürülmez; en yaygın yararlı türlerden biri olarak verilir.<br><b>D)</b> Mevcut mikrobiyotadan bağımsız olarak hemen sonuç verdiği çıkarımı yanlıştır.<br><b>E)</b> Bakterinin tutunup kolonileşmesinin sonucu etkilemediği iddiası metne terstir.`
     },
     {
         id: 62,
-        type: "B",
-        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",                
-        paragraph: "The Young Ottomans were a secret organization of Ottoman nationalist intellectuals formed in 1865, influenced by such Western thinkers as Montesquieu and Rousseau and necessarily the French Revolution. A forerunner of other Turkish nationalist groups, the Young Ottomans favored converting the Turkish-dominated multinational Ottoman Empire into a more purely Turkish state and called for the creation of a constitutional government. By 1867 the Young Ottomans had expanded from the original 6 members to 245, including the noted poets Namık Kemal and Ziya Paşa. They were further supported financially and materially by the Egyptian prince Mustafa Fazıl and had attracted the attention of the Ottoman princes Murad and Abdülhamid.",
-        text: "It can be inferred from the passage that ----.",
-        options: { A: "Namık Kemal and Ziya Paşa, two well-known poets, were the founders of the Young Ottomans", B: "the Young Ottomans courageously voiced their desire to takeover Turkish-dominated multinational Ottoman Empire and maintain it safely", C: "the Young Ottomans were the group of intellectuals, which was the successor of other Turkish nationalist associations", D: "the Young Ottomans initially got financial and material support from Namık Kemal and Ziya Paşa as well as the Egyptian prince Mustafa Fazıl", E: "within their first years, the Young Ottomans were provided with subsidy by a non-Ottoman ruler" },
-        correct: "E",
-        dict: { "subsidy": "destek", "ruler": "yönetici", "financially": "finansal olarak", "materially": "maddi olarak" },
-        explanation: `<b>✅ Doğru Cevap: E) within their first years, the Young Ottomans were provided with subsidy by a non-Ottoman ruler</b><br><b>📌 Sebep:</b> Mısır Prensi Mustafa Fazıl (teknik olarak Osmanlı valisi olsa da özerk ve dış güç gibi hareket eden) tarafından desteklenmiştir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Kurucuları olduğu söylenmiyor, sadece üyeler.<br><b>B)</b> Devralmak ve güvenle sürdürmek değil, anayasal hükümet istiyorlar.<br><b>C)</b> Halefi değil, öncüsü (forerunner).<br><b>D)</b> Namık Kemal ve Ziya Paşa'dan maddi destek alındığı söylenmiyor.`
+        type: 'B',
+        instruction: "59-62 soruları aşağıdaki parçaya göre cevaplayınız.",
+        paragraph: "Probiotics, broadly defined as live microorganisms that confer physiological benefits upon the host when administered in adequate quantities, have garnered immense attention within biomedical research and nutritional science. Historically integrated into human diets through fermented foodstuffs such as yogurt and kefir, these commensal microbes—predominantly belonging to the Lactobacillus and Bifidobacterium genera—exert multifaceted influences on the gastrointestinal tract. Upon surviving transit through the harsh, acidic environment of the stomach, viable strains adhere to the intestinal mucosa, where they actively outcompete pathogenic taxa for limited metabolic substrates and cellular binding sites. Furthermore, they fortify epithelial barrier integrity by stimulating the synthesis of tight-junction proteins and modulating mucin secretion, thereby impeding systemic bacterial translocation. Recent advances in metagenomic sequencing have illuminated the role of probiotics in orchestrating the production of short-chain fatty acids (SCFAs), such as butyrate and acetate, which serve as crucial energetic substrates for colonocytes and potent mediators of systemic immune homeostasis. However, despite compelling pre-clinical evidence, clinical translational efficacy remains notably heterogeneous. Variations in host genetic background, baseline mucosal microbiota composition, and lifestyle factors often dictate whether supplemented strains successfully colonise the gut or are rapidly shed in faeces. Dr. Karen Lindqvist, an immunologist specializing in microbiome therapeutics, emphasizes that the commercial proliferation of generic over-the-counter formulations often outpaces empirical validation, necessitating a transition toward personalized probiotic regimens tailored to an individual's unique microbial and genetic profile.",
+        text: "According to Dr. Karen Lindqvist, the widespread commercial availability of probiotics ----.",
+        options: {
+            A: "has successfully eradicated gastrointestinal infections across diverse patient groups",
+            B: "has advanced faster than the scientific and clinical evidence required to prove their universal efficacy",
+            C: "proves that standard generic formulas are ideal for treating every microbial deficiency",
+            D: "renders personalized genetic and microbiome sequencing clinically redundant",
+            E: "guarantees that all over-the-counter supplements adhere permanently to the gut wall"
+        },
+        correct: "B",
+        dict: {
+            "proliferation": "hızlı artış/yayılma",
+            "generic": "jenerik/genel",
+            "outpace": "geride bırakmak/daha hızlı ilerlemek",
+            "empirical": "deneysel/gözlemsel"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) has advanced faster than the scientific and clinical evidence required to prove their universal efficacy</b><br><b>📌 Sebep:</b> Dr. Lindqvist'in metin sonundaki "...the commercial proliferation of generic over-the-counter formulations often outpaces empirical validation..." uyarısı, ticari ürünlerin piyasaya sürülme hızının deneysel ve bilimsel kanıtlama sürecini aştığını ('outpaces empirical validation') doğrudan doğrular.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Mide-bağırsak enfeksiyonlarını tamamen yok ettiği iddiası gerçeği yansıtmaz.<br><b>C)</b> Standart jenerik ürünlerin herkes için ideal olduğunu değil, kişiye özel reçetelerin gerektiğini savunur.<br><b>D)</b> Kişiselleştirilmiş analizleri gereksiz kılmadığı, tam tersine gerekli kıldığı ifade edilmektedir.<br><b>E)</b> Raftaki tüm ürünlerin bağırsak duvarına kalıcı olarak tutunacağını garanti etmez.`
     },
     {
         id: 63,
-        type: "A",
-        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",                
-        text: "Jessie: These days, everybody says the climate is gradually changing.\nLaura: What do you think makes those people say such things?\nJessie: ----\nLaura: You're completely right and got a point, because my father also repeats the same saying about this season all the time.",
-        options: { A: "Actually they are not aware of what they are talking about.", B: "My grandparents in an accustomed manner complained about climate change whenever family members gathered.", C: "Well, I think the primary cause is that it doesn't snow in winter as much as in the past.", D: "I really wonder whether other experienced people share the same thought or not.", E: "Why do you ask me such rubbish things? You know the reason quite well, don't you?" },
-        correct: "C",
-        dict: { "gradually": "yavaşça", "climate": "iklim", "season": "mevsim", "primary": "birincil" },
-        explanation: `<b>✅ Doğru Cevap: C) Well, I think the primary cause is that it doesn't snow in winter as much as in the past.</b><br><b>📌 Sebep:</b> Laura'nın 'haklısın, babam da bu mevsim için aynısını söyler' demesi için Jessie'nin somut bir mevsimsel gözlem (kar yağmıyor) yapması gerekir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> İnsanların farkında olmadığını söylemek, Laura'nın yorumuyla uyumsuz.<br><b>B)</b> Büyükanne/büyükbabanın şikayetleri genel, mevsimsel örnek değil.<br><b>D)</b> Başka deneyimli insanları merak etmek, Laura'nın babası örneğiyle tam uyumlu değil.<br><b>E)</b> Kaba bir cevap, diyaloğa uygun değil.`
+        type: 'A',
+        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",
+        text: "Evelyn: I was reading an environmental report arguing that tropical deforestation is not solely an ecological disaster, but also an immediate economic catastrophe for local communities.\nMark: ----\nEvelyn: That's true, but we must also consider that once the topsoil is completely depleted and washed away, those agricultural gains vanish, leaving rural populations in far deeper poverty.",
+        options: {
+            A: "How can that be? Cleared forest land is routinely converted into lucrative cattle ranches and commercial crop fields that provide immediate revenue.",
+            B: "Do international timber conglomerates share the responsibility of providing alternative employment for displaced indigenous tribes?",
+            C: "I've heard that reforestation projects in sub-tropical zones take decades before they can generate any harvestable timber.",
+            D: "Why don't national environmental ministries impose heavier taxation on multi-national pulp and paper manufacturing companies?",
+            E: "Are local communities actively participating in tree-planting campaigns to restore the natural hydrological cycle in arid basins?"
+        },
+        correct: "A",
+        correctReason: "Mark'ın sorusu ormansızlaşmanın ekonomik kazanç sağladığı tezine dayanmalıdır ki Evelyn 'Doğru, ancak üst toprak aşındığında o tarımsal kazançlar yok olur' diyerek karşı sav öne sürsün.",
+        dict: { "deforestation": "ormansızlaşma", "topsoil": "üst toprak tabakası", "depleted": "tükenmiş/fakirleşmiş", "lucrative": "kazançlı/kârlı" },
+        explanation: `<b>✅ Doğru Cevap: A) How can that be? Cleared forest land is routinely converted into lucrative cattle ranches and commercial crop fields that provide immediate revenue.</b><br><b>📌 Sebep:</b> Evelyn'in son konuşmasında "That's true, but we must also consider that once the topsoil is completely depleted..." diyerek tarımsal kazanımların kısa ömürlü olduğunu vurgulaması, Mark'ın orman arazilerinin tarım veya hayvancılıkla kısa vadede gelir sağladığını savunmuş olmasını gerektirir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Kereste şirketlerinin istihdam sorumluluğu Evelyn'in toprak verimliliği cevabıyla uyuşmaz.<br><b>C)</b> Yeniden ağaçlandırma projelerinin süresi bağlam dışıdır.<br><b>D)</b> Hükümet vergileri odak noktası değildir.<br><b>E)</b> Yerel halkın ağaç dikme kampanyaları diyalog akışına oturmaz.`
     },
     {
         id: 64,
-        type: "A",
-        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",                
-        text: "Jackson: How do you find living in a big metropolitan city like İstanbul?\nHelen: Well, to be honest, there are lots of things making it much better than living in the country!\nJackson: Can you give me any examples?\nHelen: ----",
-        options: { A: "Sure! People living in the countryside are usually more open and friendly than those in the city.", B: "Certainly! For one thing, you can go to a concert, or see a new movie at the cinema. So you never get bored.", C: "Of course! Many people may think the opposite, but I always find big cities like İstanbul very horrific and too expensive to live.", D: "No, I haven't had enough time to think about some alternatives to overcome the problems of big cities.", E: "And how about your personal point of view regarding living in the big city or the country?" },
-        correct: "B",
-        dict: { "metropolitan": "metropol", "countryside": "kırsal", "bored": "sıkılmak", "examples": "örnekler" },
-        explanation: `<b>✅ Doğru Cevap: B) Certainly! For one thing, you can go to a concert, or see a new movie at the cinema. So you never get bored.</b><br><b>📌 Sebep:</b> Şehrin avantajlarına örnek istendiği için 'Konser, sinema' örneği uygundur.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Kırsal kesim insanlarının daha açık olması şehri övmez.<br><b>C)</b> Şehri kötülüyor, oysa Helen şehri daha iyi bulduğunu söyledi.<br><b>D)</b> Soruya cevap vermiyor, örnek vermiyor.<br><b>E)</b> Soruyu karşı tarafa yönlendiriyor, örnek vermiyor.`
+        type: 'A',
+        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",
+        text: "Professor: Recent biomedical studies indicate that the trillions of microbes residing in our gut do much more than simply assist digestion; they actively synthesize neurotransmitters that influence brain chemistry.\nStudent: ----\nProfessor: Exactly. In fact, clinical trials have shown that systemic microbial imbalances, or dysbiosis, are frequently correlated with chronic depression and elevated anxiety levels.",
+        options: {
+            A: "So our mental and emotional health might be directly regulated by the diversity of our intestinal flora?",
+            B: "Does this mean that broad-spectrum antibiotics have no discernible impact on the nervous system?",
+            C: "Are gastrointestinal disorders exclusively caused by genetic mutations rather than environmental factors?",
+            D: "Should patients with autoimmune diseases eliminate all probiotic and fermented foodstuffs from their diets?",
+            E: "Is it true that the human stomach contains a higher bacterial population than the lower digestive tract?"
+        },
+        correct: "A",
+        correctReason: "Profesörün 'Exactly...' diyerek depresyon ve kaygı ile bağırsak dengesizliği arasındaki bağlantıyı açıklaması, öğrencinin zihinsel sağlığın bağırsak florasıyla ilişkili olup olmadığını sormuş olduğunu gösterir.",
+        dict: { "gut microbiome": "bağırsak mikrobiyotası", "synthesize": "sentezlemek", "dysbiosis": "mikrobiyal dengesizlik", "correlated": "ilişkili" },
+        explanation: `<b>✅ Doğru Cevap: A) So our mental and emotional health might be directly regulated by the diversity of our intestinal flora?</b><br><b>📌 Sebep:</b> Profesörün "Exactly" (Kesinlikle) diyerek bağırsak florasındaki dengesizliklerin kronik depresyon ve kaygı ile ilişkili olduğunu belirtmesi, öğrencinin bağırsak bakterileri ile zihinsel/duygusal sağlık arasındaki bağı sorguladığını gösterir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Antibiyotiklerin sinir sistemine etkisi profesörün açıklamasıyla doğrudan örtüşmez.<br><b>C)</b> Genetik mutasyonlar konusu odak noktasını saptırır.<br><b>D)</b> Probiyotiklerin diyetten çıkarılması tavsiyesine dair bir bağlam yoktur.<br><b>E)</b> Mide ve alt sindirim sistemi bakteri yoğunluğu kıyaslaması konuşmanın odağı değildir.`
     },
     {
         id: 65,
-        type: "A",
-        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",                
-        text: "Kevin: Have you ever made a comparison between today's life and the life in the old days?\nGeorge: Of course, yes. Today's life is certainly much more expensive than that of past.\nKevin: ----\nGeorge: In terms of developments in medical applications and opportunity to see a doctor, yes; but as for polluted air, environment and water, unfortunately no.",
-        options: { A: "But today's conditions are, nevertheless, rather harder than those in the past.", B: "As well as this, modern people are also spending a lot of money buying unnecessary things.", C: "Could you please support your point of view with some strong examples?", D: "True. But today it is much healthier than it was in the past, isn't it?", E: "As a result, more people feel nostalgic about their happy old days." },
-        correct: "D",
-        dict: { "comparison": "karşılaştırma", "polluted": "kirli", "developments": "gelişmeler", "applications": "uygulamalar" },
-        explanation: `<b>✅ Doğru Cevap: D) True. But today it is much healthier than it was in the past, isn't it?</b><br><b>📌 Sebep:</b> George'un cevabı ('tıbbi olarak evet, hava kirliliği olarak hayır') Kevin'in 'daha sağlıklı değil mi?' sorusuna verilmiş bir yanıttır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> George sağlık konusuna değil, pahalılığa değindi.<br><b>B)</b> Gereksiz şeylere para harcama konusu değil.<br><b>C)</b> George zaten örnek verecek, tekrar istemeye gerek yok.<br><b>E)</b> Nostalji konusu gündeme gelmedi.`
+        type: 'A',
+        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",
+        text: "Liam: Geneticists have made significant progress using cellular reprogramming and telomere extension to reverse biological aging in laboratory trials.\nSophia: ----\nLiam: That is a legitimate ethical concern, but researchers argue that the primary goal is not extreme longevity, but rather extending our 'healthspan'—the period of life spent free from debilitating disease.",
+        options: {
+            A: "How do telomeres maintain chromosomal stability during repeated cycles of cellular mitosis?",
+            B: "Won't therapies that drastically prolong human lifespan cause severe demographic strain and worsen socio-economic inequalities?",
+            C: "Has the medical community developed standard pharmaceutical protocols to suppress cellular senescence yet?",
+            D: "I assume these genetic interventions will only be tested on laboratory mice rather than human subjects.",
+            E: "Why do cellular mechanisms naturally deteriorate over time despite high intake of dietary antioxidants?"
+        },
+        correct: "B",
+        correctReason: "Liam'ın 'That is a legitimate ethical concern...' ifadesi ve yaşam süresini uzatmak yerine sağlıklı yaşam süresini hedeflediklerini belirtmesi, Sophia'nın aşırı uzayan yaşamın yaratacağı demografik ve etik sorunlara değindiğini gösterir.",
+        dict: { "cellular reprogramming": "hücresel yeniden programlama", "longevity": "uzun ömürlülük", "healthspan": "sağlıklı yaşam süresi", "debilitating": "güçten düşürücü" },
+        explanation: `<b>✅ Doğru Cevap: B) Won't therapies that drastically prolong human lifespan cause severe demographic strain and worsen socio-economic inequalities?</b><br><b>📌 Sebep:</b> Liam'ın bir sonraki cümlesinde "That is a legitimate ethical concern..." (Bu haklı bir etik endişe...) diyerek asıl hedefin sadece ömrü uzatmak değil, hastalıkların olmadığı dönemi artırmak olduğunu söylemesi, Sophia'nın uzun ömrün getireceği toplumsal ve etik sorunları sorguladığını kanıtlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Telomerlerin mitoz bölünmedeki teknik işleyişi etik bir kaygı değildir.<br><b>C)</b> Standart protokollerin varlığı etik endişe bağlamını karşılamaz.<br><b>D)</b> Deneylerin sadece farelerde yapılması varsayımı etik/demografik kaygıyla ilgili değildir.<br><b>E)</b> Hücresel bozulmanın biyolojik nedenleri diyalog akışına uymaz.`
     },
     {
         id: 66,
-        type: "A",
-        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",                
-        text: "Jessica: ----\nAdam: Well, I am not certain, but I think not more than a couple.\nJessica: And does he have any furniture in his office? I mean other than the chair at his desk.\nAdam: Oh yes, he's got a sofa and two comfortable armchairs.",
-        options: { A: "Every office worker needs a comfortable couch in the office to take a rest. Don't you agree with me?", B: "We are looking for a rental apartment that we will use as an office. How much do you pay for the rent of yours?", C: "I'll need a wooden desk and some medium cabinets to use in my office. How many cabinets does your director have in his office?", D: "What sort of furniture does your father generally prefers for his company?", E: "You've worked with one of the most popular architects in the country. How does he manage to get so much appeal?" },
-        correct: "C",
-        dict: { "cabinets": "dolaplar", "furniture": "mobilya", "director": "müdür", "office": "ofis" },
-        explanation: `<b>✅ Doğru Cevap: C) I'll need a wooden desk and some medium cabinets to use in my office. How many cabinets does your director have in his office?</b><br><b>📌 Sebep:</b> Adam sayı veriyor ('bir iki taneden fazla değil'). Jessica 'Ofisinde kaç dolap var?' diye sormuş olmalı.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Rahat kanepe ihtiyacından bahsediyor, dolap sorusuyla ilgisi yok.<br><b>B)</b> Kiralık daireden bahsediyor, ofis mobilyası değil.<br><b>D)</b> Babasının şirketi için mobilya tercihi, ofis mobilyası değil.<br><b>E)</b> Mimardan bahsediyor, ofis mobilyası değil.`
+        type: 'A',
+        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",
+        text: "Nathan: It's astounding how hyperpolyglots can attain near-native fluency in upwards of ten distinct languages with seemingly minimal effort.\nChloe: ----\nNathan: I suppose you're right. When you look closely, they treat language learning like an intense daily workout rather than relying purely on some innate genetic gift.",
+        options: {
+            A: "Do you think childhood multilingualism guarantees superior cognitive flexibility in old age?",
+            B: "It only looks effortless from the outside; most of them dedicate thousands of hours to rigorous mnemonic techniques and deliberate practice.",
+            C: "Which linguistic family do you find the most challenging when attempting to learn complex grammatical rules?",
+            D: "I believe traditional classroom methods are far more effective for acquiring grammatical accuracy than immersive software.",
+            E: "Have neuroscientists identified the specific brain regions that enlarge when polyglots acquire a new vocabulary set?"
+        },
+        correct: "B",
+        correctReason: "Nathan'ın 'Haklısın, yakından bakınca bunu doğuştan gelen bir yetenekten ziyade yoğun bir günlük egzersiz gibi ele alıyorlar' demesi, Chloe'nin çok çalışmaya ve sistematik pratik yapmaya vurgu yaptığını gösterir.",
+        dict: { "hyperpolyglot": "çok sayıda dil bilen kimse", "near-native": "anadile yakın", "mnemonic": "bellek destekleyici/hafıza güçlendirici", "deliberate practice": "bilinçli/planlı pratik" },
+        explanation: `<b>✅ Doğru Cevap: B) It only looks effortless from the outside; most of them dedicate thousands of hours to rigorous mnemonic techniques and deliberate practice.</b><br><b>📌 Sebep:</b> Nathan'ın konuşmasında "I suppose you're right..." diyerek poligloların genetik bir yetenekten çok yoğun bir egzersiz temposuyla çalıştıklarını onaylaması, Chloe'nin bu sürecin dışarıdan kolay görünse de aslında binlerce saatlik disiplinli bir çaba gerektirdiğini belirtmiş olmasını gerektirir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Çocukluktaki çokdillilik ve yaşlılık ilişkisi Nathan'ın cevabıyla örtüşmez.<br><b>C)</b> Belirli bir dil ailesinin zorluğu konudan uzaktır.<br><b>D)</b> Sınıf yöntemleri ile yazılımların kıyaslanması diyalog akışını bozar.<br><b>E)</b> Beyin bölgelerinin nörolojik analizi genel çaba/çalışma vurgusunu içermez.`
     },
     {
         id: 67,
-        type: "A",
-        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",                
-        text: "Smith: I have just learnt from this report that triglycerides are becoming increasingly important in heart health matters.\nBale: Yes, triglyceride testing is now recommended as part of a complete cholesterol profile.\nSmith: ----\nBale: Quite simple. Doctors evaluate high cholesterol treatments in respect to a patient's triglyceride levels.",
-        options: { A: "To tell the truth, I don't know what kind of a use it has.", B: "If high triglycerides are really a serious health concern, then we are wise to be concerned if ours are high.", C: "Isn't your doctor the one to isolate the particular cause or causes of your elevated triglyceride levels?", D: "Why a diet high in fat is a bad idea? Just because triglycerides are fats?", E: "Could you please tell me some of the things that influence triglyceride levels?" },
-        correct: "A",
-        dict: { "recommended": "önerilen", "triglycerides": "trigliseritler", "cholesterol": "kolesterol", "evaluate": "değerlendirmek" },
-        explanation: `<b>✅ Doğru Cevap: A) To tell the truth, I don't know what kind of a use it has.</b><br><b>📌 Sebep:</b> Smith 'Ne işe yaradığını bilmiyorum' diyor, Bale de 'Çok basit' diyerek açıklıyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Ciddi bir sağlık sorunu olup olmadığı konusu değil, kullanım amacı.<br><b>C)</b> Doktorun nedenleri izole etmesi değil, tedaviyi değerlendirmesi.<br><b>D)</b> Yağlı diyet konusu değil.<br><b>E)</b> Trigliserit seviyelerini etkileyen şeyler değil, kullanım amacı.`
+        type: 'A',
+        instruction: "63-67 sorularda, karşılıklı konuşmanın boş bırakılan kısmını tamamlayabilecek ifadeyi bulunuz.",
+        text: "Arthur: Most people believe procrastination is simply a failure of time management or sheer laziness, but psychologists view it as an emotional coping mechanism.\nBeatrice: ----\nArthur: Precisely. We avoid the task not because we don't have the time, but because starting it triggers feelings of inadequacy, boredom, or fear of failure.",
+        options: {
+            A: "Do you think digital tools like scheduling apps can permanently solve procrastination habits?",
+            B: "Are individuals with high intrinsic motivation completely immune to chronic task avoidance?",
+            C: "So you mean that putting off a demanding assignment is actually a way to escape the immediate negative emotions associated with it?",
+            D: "Why do university students tend to experience higher stress levels when deadlines approach?",
+            E: "Is it true that perfectionist tendencies always lead to higher academic performance in competitive environments?"
+        },
+        correct: "C",
+        correctReason: "Arthur'un 'Precisely...' diyerek göreve başlamanın yetersizlik, sıkıntı veya başarısızlık korkusunu tetiklediğini açıklaması, Beatrice'in ertelemenin olumsuz duygulardan kaçış yolu olup olmadığını özetlediğini kanıtlar.",
+        dict: { "procrastination": "erteleme alışkanlığı", "inadequacy": "yetersizlik", "coping mechanism": "başa çıkma mekanizması", "putting off": "ertelemek" },
+        explanation: `<b>✅ Doğru Cevap: C) So you mean that putting off a demanding assignment is actually a way to escape the immediate negative emotions associated with it?</b><br><b>📌 Sebep:</b> Arthur'un "Precisely" (Tam olarak öyle) diyerek ertelemenin zaman yetersizliğinden değil, başarısızlık korkusu veya sıkıntı gibi olumsuz duygulardan kaynaklandığını açıklaması, Beatrice'in ertelemeyi olumsuz duygulardan kaçınma mekanizması olarak doğru yorumladığını gösterir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Zaman yönetimi uygulamaları ertelemenin psikolojik kökenini açıklamaz.<br><b>B)</b> İçsel motivasyon sahibi kişilerin bağışıklığı Arthur'un cevabını tetiklemez.<br><b>D)</b> Üniversite öğrencilerinin yaklaşan teslim tarihleri stresi konunun özeti değildir.<br><b>E)</b> Mükemmeliyetçiliğin akademik başarıya etkisi soruyla doğrudan ilgili değildir.`
     },
     {
         id: 68,
-        type: "A",
-        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",                
-        text: "Thanks to its friendly people, beautiful scenery, and great food, most tourists regard Australia as a good place for a vacation.",
-        options: { A: "Its sincere people, great cuisine and outstanding view makes the difficult task of planning a vacation to Australia an easy decision for tourists.", B: "A great many tourists see Australia as a nice place for a holiday since they can eat marvelous things, enjoy breathtaking landscape, and are welcomed by people there.", C: "For many tourists, Australia is both a continent and a good place to search for pleasant people, nice panorama and tasty food during a vacation.", D: "Unlike many other places, Australia is a good holiday place that provides its tourists with beautiful scenery and perfect eats, along with warm people.", E: "Most tourists prefer Australia as a favorable place for a long vacation because of its hearty people, lovely panorama and perfect food." },
+        type: 'A',
+        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",
+        text: "Because eating disorders cannot be classified as purely physical or psychological illnesses, successful long-term rehabilitation requires that clinical medical care be integrated with psychotherapy.",
+        options: {
+            A: "Eating disorders are distinct from other medical conditions since they originate from psychological trauma; therefore, psychotherapy must always precede medical intervention in clinical treatment.",
+            B: "Given that eating disorders stem from an intricate blend of both somatic and mental factors, an effective recovery process depends on combining medical management with psychological therapy.",
+            C: "Although eating disorders are mostly regarded as psychological dysfunctions rather than physical ailments, clinical practitioners suggest that neither medical nor psychological therapy alone is sufficient.",
+            D: "If eating disorders were strictly physiological or psychological conditions, combining clinical healthcare with psychotherapeutic sessions would have been completely unnecessary.",
+            E: "Unless patients suffering from eating disorders receive intensive psychotherapy, standard medical treatments will fail to alleviate the physical complications caused by the illness."
+        },
         correct: "B",
-        dict: { "regard": "görmek", "scenery": "manzara", "vacation": "tatil", "friendly": "dostane" },
-        explanation: `<b>✅ Doğru Cevap: B) A great many tourists see Australia as a nice place for a holiday since they can eat marvelous things, enjoy breathtaking landscape, and are welcomed by people there.</b><br><b>📌 Sebep:</b> Eşleşmeler: Friendly people = welcomed by people, Scenery = landscape, Food = marvelous things. 'Most tourists' = 'A great many tourists'.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Makes the difficult task... an easy decision' (zor görevi kolay karar haline getirir) ekstra yorum.<br><b>C)</b> 'Both a continent and a good place' (hem kıta hem iyi yer) gereksiz ekleme.<br><b>D)</b> 'Unlike many other places' (diğer birçok yerin aksine) karşılaştırma yok orijinalde.<br><b>E)</b> 'Long vacation' (uzun tatil) orijinalde yok.`
+        dict: {
+            "somatic": "bedensel/fiziksel",
+            "rehabilitation": "iyileştirme/rehabilitasyon",
+            "integrate": "bütünleştirmek/birleştirmek",
+            "intricate": "karmaşık/girift"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) Given that eating disorders stem from an intricate blend of both somatic and mental factors, an effective recovery process depends on combining medical management with psychological therapy.</b><br><b>📌 Sebep:</b> Orijinal cümledeki "Because eating disorders cannot be classified as purely physical or psychological..." ifadesi B seçeneğindeki "Given that eating disorders stem from an intricate blend of both somatic and mental factors..." ile; "...requires that clinical medical care be integrated with psychotherapy" yapısı ise "...depends on combining medical management with psychological therapy" ile anlam, vurgu ve bağlaç bütünlüğü açısından birebir örtüşür.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Psikoterapinin mutlaka tıbbi müdahaleden önce gelmesi gerektiği ('must always precede') iddiası metinde yoktur.<br><b>C)</b> Yeme bozukluklarının 'çoğunlukla psikolojik' olarak görüldüğü iddiası orijinal cümlenin 'safça fiziksel ya da psikolojik değildir' ifadesiyle çelişir.<br><b>D)</b> Gerçek dışı koşul kurgusu (Type 3 / Mixed conditional) yapılarak cümlenin orijinal anlam akışı ve vurgusu bozulmuştur.<br><b>E)</b> Tıbbi tedavinin fiziksel komplikasyonları hafifletemeyeceği gibi tek taraflı bir şart koşulmuştur.`
     },
     {
         id: 69,
-        type: "A",
-        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",                
-        text: "The West usually goes through a fire season in the last weeks of summer, but violent blazes sometimes start this earlier.",
-        options: { A: "The fire season of the West always makes itself appear in the last weeks of summer, yet forceful flames are likely to start it earlier.", B: "The last weeks of summer are the fire season for the West, but merciless flames often make this come into being earlier.", C: "The West rarely experiences this fire season before the last weeks of summer, yet from time to time strong winds and blazes start this earlier.", D: "Although the last weeks of summer generally constitute a fire season for the West, violent flames make this happen earlier at times.", E: "The West always suffers from fires in the first weeks of summer, but awful blazes sometimes start this earlier than usual." },
-        correct: "D",
-        dict: { "constitute": "oluşturmak", "violent": "şiddetli", "blazes": "alevler", "usually": "genellikle" },
-        explanation: `<b>✅ Doğru Cevap: D) Although the last weeks of summer generally constitute a fire season for the West, violent flames make this happen earlier at times.</b><br><b>📌 Sebep:</b> Eşleşmeler: Usually = Generally, Sometimes = At times. 'Goes through a fire season' = 'constitute a fire season'.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Always makes itself appear' (kendini her zaman gösterir) kesinlik ifadesi.<br><b>B)</b> 'Merciless flames' (acımasız alevler) duygusal ifade.<br><b>C)</b> 'Rarely experiences' (nadiren yaşar) yanlış, 'usually' (genellikle).<br><b>E)</b> 'First weeks of summer' (yazın ilk haftaları) yanlış, 'last weeks' (son haftalar).`
+        type: 'A',
+        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",
+        text: "Although modern humans exhibit remarkable phenotypic diversity across different geographic regions, genomic studies reveal that our overall genetic variation is surprisingly low compared to that of other primates.",
+        options: {
+            A: "Even though people living in various parts of the world display noticeable physical differences, genetic research demonstrates that human genetic diversity is unexpectedly limited when compared with that of other primates.",
+            B: "Despite the fact that other primates possess much less genetic variation than humans do, genomic studies show that people across diverse geographical zones have evolved distinct physical features.",
+            C: "While geographic separation has led to considerable genomic differentiation between humans and other primates, our external physical traits remain largely uniform worldwide.",
+            D: "Genomic research suggests that the extraordinary physical variation observed in modern human populations is directly proportional to the high genetic diversity found in non-human primates.",
+            E: "Since human beings share nearly identical phenotypic characteristics across continents, it is not surprising that our genomic variation is far less than that of any other primate species."
+        },
+        correct: "A",
+        dict: {
+            "phenotypic": "dış görünüşe ait/fenotipik",
+            "genomic": "genomik/gene ait",
+            "primates": "primatlar",
+            "noticeable": "fark edilir/belirgin"
+        },
+        explanation: `<b>✅ Doğru Cevap: A) Even though people living in various parts of the world display noticeable physical differences, genetic research demonstrates that human genetic diversity is unexpectedly limited when compared with that of other primates.</b><br><b>📌 Sebep:</b> Orijinal cümledeki "Although modern humans exhibit remarkable phenotypic diversity..." kısmı "Even though people... display noticeable physical differences..." ile; "genomic studies reveal..." kısmı "genetic research demonstrates..." ile; "...surprisingly low compared to that of other primates" ifadesi ise "...unexpectedly limited when compared with that of other primates" ile tam bir eş anlamlılık ve mantıksal uyum gösterir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Primatların insanlardan daha az genetik varyasyona sahip olduğunu söyleyerek anlamı tersine çevirmiştir.<br><b>C)</b> İnsanların dış fiziksel özelliklerinin dünya çapında 'büyük ölçüde tekdüze' olduğunu iddia eder ki bu 'remarkable phenotypic diversity' ifadesine terstir.<br><b>D)</b> İnsanlardaki fiziksel çeşitliliğin primatların çeşitliliğiyle 'doğru orantılı' olduğunu söyleyerek yanlış bir nedensellik kurar.<br><b>E)</b> İnsanların neredeyse aynı fenotipik özelliklere sahip olduğunu ('nearly identical') öne sürerek zıtlık bağlamını sebep-sonuca ('Since') dönüştürür.`
     },
     {
         id: 70,
-        type: "A",
-        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",                
-        text: "A newly manufactured car in India has some joints connected with super strong glue rather than welds.",
-        options: { A: "A lately produced car in India uses extraordinary strong glue instead of welds as a new way of connecting most parts.", B: "The final production of automotive industry in India has several parts which are interconnected through super strong welds in place of glue.", C: "Some joints of a recently produced car in India are connected through not welds but extra powerful glue.", D: "Nearly all the joints of a newly manufactured car in India are connected with a kind of powerful glue, but welds could also have been used.", E: "A novel car made in India has a few joints brought together by using both super strong glue and welds." },
-        correct: "C",
-        dict: { "glue": "yapıştırıcı", "welds": "kaynaklar", "joints": "ek yerleri", "manufactured": "üretilmiş" },
-        explanation: `<b>✅ Doğru Cevap: C) Some joints of a recently produced car in India are connected through not welds but extra powerful glue.</b><br><b>📌 Sebep:</b> Eşleşmeler: Glue rather than welds = Not welds but glue. 'Newly manufactured' = 'recently produced'.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'Most parts' (çoğu parça) yanlış, 'some joints' (bazı ek yerleri).<br><b>B)</b> Welds yerine glue değil, tam tersi söylenmiş.<br><b>D)</b> 'Nearly all the joints' (neredeyse tüm ek yerleri) yanlış, 'some joints' (bazı ek yerleri).<br><b>E)</b> 'Both... and' (hem... hem) yanlış, 'rather than' (yerine).`
+        type: 'A',
+        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",
+        text: "By replacing mythological narratives with rational inquiry, early Greek philosophers laid the foundations of empirical science, though they seldom conducted systematic experiments to substantiate their theoretical claims.",
+        options: {
+            A: "Early Greek thinkers developed empirical science through systematic experimentation, which enabled them to completely abandon mythological explanations of natural phenomena.",
+            B: "Although early Greek philosophers rarely carried out structured experiments to prove their theories, they established the basis of empirical science by shifting from mythological tales to rational examination.",
+            C: "Despite relying heavily on mythological stories to explain the cosmos, ancient Greek philosophers managed to lay the groundwork for modern scientific thought through extensive physical trials.",
+            D: "Because early Greek philosophers were unable to perform methodical laboratory tests, their rational theories about the natural world remained largely influenced by traditional mythologies.",
+            E: "Early Greek thinkers' reluctance to formulate abstract hypotheses prevented them from establishing empirical science, even though they actively discarded mythological interpretations."
+        },
+        correct: "B",
+        dict: {
+            "substantiate": "kanıtlamak/doğrulamak",
+            "rational inquiry": "akılcı araştırma/sorgulama",
+            "empirical": "deneysel/gözleme dayalı",
+            "seldom": "nadiren"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) Although early Greek philosophers rarely carried out structured experiments to prove their theories, they established the basis of empirical science by shifting from mythological tales to rational examination.</b><br><b>📌 Sebep:</b> "By replacing mythological narratives with rational inquiry" ifadesi "...by shifting from mythological tales to rational examination" olarak aktarılmış; "laid the foundations of empirical science" kısmı "...established the basis of empirical science" ile eşleşmiş; "though they seldom conducted systematic experiments to substantiate their theoretical claims" zıtlık cümleciği ise "Although early Greek philosophers rarely carried out structured experiments to prove their theories..." olarak eksiksiz yeniden ifade edilmiştir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Bilimi sistematik deneyler yoluyla geliştirdiklerini ('through systematic experimentation') söyleyerek asıl cümledeki eksikliği tersine çevirmiştir.<br><b>C)</b> Evreni açıklamak için mitolojik hikâyelere yoğun şekilde dayandıklarını iddia eder (orijinalde mitolojinin yerine akılcılık getirilmiştir).<br><b>D)</b> 'Because' sebep-sonuç bağlacı ile fikirlerin mitolojiden etkilendiğini savunarak ana düşünceyi bozar.<br><b>E)</b> Soyut hipotezler kurmaktaki isteksizliklerinin bilimin temellerini atmalarını engellediğini ('prevented them') söyler, bu tamamen zıt bir yargıdır.`
     },
     {
         id: 71,
-        type: "A",
-        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",                
-        text: "The head scarf ban in Turkey is one of the most crucial issues that has been under discussion for ages.",
-        options: { A: "In Turkey, the head scarf ban is a rather important issue that has been discussed from the middle ages onwards.", B: "Ban of the head scarf is the most crucial issue in Turkey, and it has long been discussed deservedly in the country.", C: "A ban on the head scarf may possibly draw a great deal of attention in Turkey for a long time.", D: "The most significant issues being discussed for long in Turkey include the ban on head scarf.", E: "The head scarf ban means a lot to people with a head scarf who are not allowed to enter public places in Turkey." },
-        correct: "D",
-        dict: { "crucial": "hayati", "ban": "yasak", "discussion": "tartışma", "ages": "uzun süre" },
-        explanation: `<b>✅ Doğru Cevap: D) The most significant issues being discussed for long in Turkey include the ban on head scarf.</b><br><b>📌 Sebep:</b> Eşleşmeler: One of the most crucial = Include, For ages = For long.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> 'From the middle ages onwards' (Orta Çağ'dan beri) yanlış, 'for ages' (uzun süredir).<br><b>B)</b> 'The most crucial issue' (en hayati mesele) yanlış, 'one of the most crucial' (en hayati meselelerden biri).<br><b>C)</b> 'May possibly draw attention' (dikkat çekebilir) olasılık belirtiyor, kesinlik yok.<br><b>E)</b> 'People with a head scarf who are not allowed to enter public places' (kamusal alanlara giremeyen başörtülü insanlar) spesifik detay.`
+        type: 'A',
+        instruction: "68-71 sorularda, verilen cümleye anlamca en yakın cümleyi bulunuz.",
+        text: "While pharmacological treatments provide immediate symptomatic relief for chronic insomnia, non-pharmacological interventions, such as cognitive behavioural therapy, are increasingly recommended by clinicians because they yield more sustainable long-term outcomes.",
+        options: {
+            A: "Even though medications offer rapid relief from the symptoms of chronic insomnia, medical practitioners favor non-drug therapies like cognitive behavioural therapy owing to their ability to produce longer-lasting benefits.",
+            B: "Because cognitive behavioural therapy fails to offer immediate symptomatic relief to patients with insomnia, clinicians frequently advise combining it with strong sedative pharmaceuticals.",
+            C: "Although non-pharmacological methods have proven to be the only permanent cure for chronic sleep disorders, healthcare providers continue to prescribe medications due to their immediate availability.",
+            D: "If cognitive behavioural therapy were capable of relieving chronic insomnia symptoms as swiftly as pharmaceuticals, doctors would never prescribe sleep medications to their patients.",
+            E: "Clinicians generally prefer prescribing pharmacological drugs over behavioral therapies because the long-term effectiveness of non-drug interventions remains largely unverified in clinical trials."
+        },
+        correct: "A",
+        dict: {
+            "symptomatic": "semptomatik/belirtiyle ilgili",
+            "sustainable": "sürdürülebilir/kalıcı",
+            "interventions": "müdahaleler",
+            "clinicians": "klinisyenler/uzman hekimler"
+        },
+        explanation: `<b>✅ Doğru Cevap: A) Even though medications offer rapid relief from the symptoms of chronic insomnia, medical practitioners favor non-drug therapies like cognitive behavioural therapy owing to their ability to produce longer-lasting benefits.</b><br><b>📌 Sebep:</b> "While pharmacological treatments provide immediate symptomatic relief..." ifadesi "Even though medications offer rapid relief from the symptoms..." ile; "...non-pharmacological interventions, such as cognitive behavioural therapy, are increasingly recommended..." yapısı "...medical practitioners favor non-drug therapies like cognitive behavioural therapy..." ile; "...because they yield more sustainable long-term outcomes" gerekçesi ise "...owing to their ability to produce longer-lasting benefits" ile tam ve eksiksiz bir yakın anlam oluşturmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> BDT'nin semptomları hafifletememesi sebebiyle sakinleştirici ilaçlarla birleştirilmesi gerektiği iddiası orijinal metinde yer almaz.<br><b>C)</b> İlaçsız yöntemlerin 'tek kalıcı tedavi' olduğu ve hekimlerin sadece ilaç yazmaya devam ettiği yönündeki çıkarım yanlıştır.<br><b>D)</b> 'If' yapısıyla kurgulanan varsayımsal cümle ('doctors would never prescribe') ana cümlenin karşılaştırmalı onay yapısını yansıtmaz.<br><b>E)</b> Hekimlerin ilaçları bilişsel terapilere tercih ettiğini ve alternatif yöntemlerin kanıtlanmadığını iddia ederek metnin tam zıddını savunur.`
     },
     {
         id: 72,
-        type: "A",
-        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",                
-        text: "Alfred Bernhard Nobel was the fourth son of Immanuel and Caroline Nobel. The couple had eight children. ---- The others died of diseases while they were little. Alfred was also prone to an illness as a child, which left serious negative effects on him, but he was able to overcome it and thus live through adulthood.",
-        options: { A: "In the will he drafted in 1895, Nobel instructed that most of his fortune be set aside as a fund for the awarding of five annual prizes.", B: "Among them, however, only Alfred and his three brothers managed to reach adulthood.", C: "He is a Swedish chemist, engineer, and industrialist who invented dynamite and some other more powerful explosives.", D: "Thanks to Alfred Bernhard Nobel, the Nobel Prizes are widely regarded as the most prestigious awards given for intellectual achievement in the world.", E: "When Alfred was 18, he decided to go to the United States where he studied chemistry for four years." },
+        type: 'A',
+        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",
+        text: "Loggerhead sea turtles (Caretta caretta) are renowned for their extensive oceanic migrations, traversing thousands of kilometres between open pelagic waters and coastal foraging grounds. Throughout these distinct developmental phases, their nutritional requirements undergo a substantial transformation. While hatchlings and oceanic juveniles drift with surface currents feeding largely on macro-plankton and jellyfish, mature adults develop exceptionally powerful jaw musculature that allows them to crush hard-shelled benthic organisms. ---- As a consequence of this specialized feeding habit, mature loggerheads play a pivotal ecological role as bioturbators, modifying seabed topography and recycling nutrient deposits across benthic marine ecosystems.",
+        options: {
+            A: "Their gastrointestinal tracts are uniquely adapted to extract moisture directly from seawater during transoceanic crossings.",
+            B: "This robust cranial morphology enables them to consume substantial quantities of crabs, conchs, and bivalves from the sea floor.",
+            C: "Coastal urbanization and artificial lighting frequently disorient newly hatched turtles as they attempt to locate the sea.",
+            D: "Satellite telemetry has conclusively demonstrated that adult male loggerheads never return to their original natal beaches.",
+            E: "Conversely, other marine turtle species rely exclusively on continuous pelagic foraging throughout their entire lifespans."
+        },
         correct: "B",
-        dict: { "prone": "yatkın", "adulthood": "yetişkinlik", "diseases": "hastalıklar", "overcome": "üstesinden gelmek" },
-        explanation: `<b>✅ Doğru Cevap: B) Among them, however, only Alfred and his three brothers managed to reach adulthood.</b><br><b>📌 Sebep:</b> Boşluktan sonra 'Diğerleri öldü' deniyor. Demek ki boşlukta yaşayanlardan (Alfred ve 3 kardeşi) bahsetmeli.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Vasiyet konusu, çocuklukla ilgili değil.<br><b>C)</b> Meslekleri ve icatları, çocuklukla ilgili değil.<br><b>D)</b> Nobel Ödülleri, konuyla ilgili değil.<br><b>E)</b> ABD'ye gitmesi, çocukluktan sonraki dönem.`
+        dict: {
+            "foraging": "besin arama/otlama",
+            "benthic": "deniz tabanına ait",
+            "bioturbator": "deniz tabanını havalandıran/kazan canlı",
+            "cranial morphology": "kafatası/çene yapısı",
+            "bivalves": "çift kabuklu yumuşakçalar"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) This robust cranial morphology enables them to consume substantial quantities of crabs, conchs, and bivalves from the sea floor.</b><br><b>📌 Sebep:</b> Boşluktan önceki cümlede yetişkinlerin sert kabuklu canlıları kırmaya yarayan güçlü çene kasları ("exceptionally powerful jaw musculature that allows them to crush hard-shelled benthic organisms") geliştirdiği belirtilmiştir. B şıkkındaki "This robust cranial morphology" ifadesi bu çene yapısına doğrudan atıfta bulunur ve deniz tabanındaki kabuklu canlıları (yengeç, deniz salyangozu, midye) tükettiklerini açıklar. Boşluktan sonraki "As a consequence of this specialized feeding habit..." (Bu özelleşmiş beslenme alışkanlığının bir sonucu olarak) ifadesi de B seçeneğini mantıksal olarak tamamlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Su emilimi ve sindirim adaptasyonu, çene kasları ve dip canlılarıyla beslenme konusundan sapmaktadır.<br><b>C)</b> Işık kirliliği ve yavru kaplumbağaların yön kaybı beslenme ekolojisiyle ilgisizdir (Topical drift).<br><b>D)</b> Uydu takibi ve üreme kumsalları konusu çene anatomisi ve beslenme akışını bozar.<br><b>E)</b> "Conversely" zıtlığıyla diğer türlerin beslenmesine geçmek, boşluktan sonraki "this specialized feeding habit" özne ve konu bağını koparır.`
     },
     {
         id: 73,
-        type: "A",
-        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",                
-        text: "---- It was proclaimed in 1582 by Pope Gregory XIII as a reform of the Julian Calendar. By the Julian calculation, the solar year comprised 365 1/4 days. A slight inaccuracy in the measurement, the solar year comprising more precisely 365 days, 5 hours, 48 minutes, 45.25 seconds, caused the calendar dates of the seasons to regress almost one day per century.",
-        options: { A: "The fundamental unit of solar time is the day that is a reckoning of the passage of time based on the Sun's position in the sky.", B: "A calendar is a system of organizing days for purposes like social, religious, commercial, or administrative.", C: "Nearly all calendar systems group consecutive days into 'weeks', 'months' and 'years'.", D: "Gregorian calendar, also called New Style Calendar, is the solar dating system which is now in general use.", E: "A complete calendar provides an absolute way of naming each successive day, while incomplete calendars do not." },
-        correct: "D",
-        dict: { "proclaimed": "ilan edildi", "reform": "reform", "inaccuracy": "yanlışlık", "comprising": "içermek" },
-        explanation: `<b>✅ Doğru Cevap: D) Gregorian calendar, also called New Style Calendar, is the solar dating system which is now in general use.</b><br><b>📌 Sebep:</b> 'It' zamiri Gregoryen takvimine referans veriyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Güneş zamanı birimi, takvimle ilgili değil.<br><b>B)</b> Takvimin genel tanımı, spesifik değil.<br><b>C)</b> Takvim sistemlerinin gruplandırması, Gregoryen takvimine özel değil.<br><b>E)</b> Tam ve eksik takvimler, konuyla ilgili değil.`
+        type: 'A',
+        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",
+        text: "The catastrophic Cretaceous-Paleogene (K-Pg) extinction event approximately 66 million years ago abruptly terminated the reign of non-avian dinosaurs. While scientists historically debated whether gradual climate fluctuations or intense volcanic activity in the Deccan Traps initiated this biotic collapse, overwhelming geological evidence now points to a colossal bolide impact. The collision of a massive asteroid in the Yucatán Peninsula released immense shockwaves and ignited global wildfires. ---- Deprived of essential sunlight, photosynthetic primary producers perished en masse, precipitating the catastrophic unraveling of both terrestrial and marine food webs worldwide.",
+        options: {
+            A: "Furthermore, the resulting atmospheric debris and dense sulfur aerosols blocked solar radiation for years, creating an impact winter.",
+            B: "Consequently, mammalian species immediately diversified into all available ecological niches across every continent.",
+            C: "In contrast, paleontologists have failed to detect elevated levels of iridium in the boundary sedimentary layers.",
+            D: "Pterosaurs and large marine reptiles managed to survive prolonged environmental disruption in deep subterranean shelters.",
+            E: "Modern avian species descended directly from small theropod lineages that flourished during the earlier Jurassic Period."
+        },
+        correct: "A",
+        dict: {
+            "bolide impact": "büyük göktaşı/meteorit çarpması",
+            "unraveling": "çözülme/çöküş",
+            "aerosols": "aerosoller/asılı parçacıklar",
+            "perish": "yok olmak/ölmek"
+        },
+        explanation: `<b>✅ Doğru Cevap: A) Furthermore, the resulting atmospheric debris and dense sulfur aerosols blocked solar radiation for years, creating an impact winter.</b><br><b>📌 Sebep:</b> Boşluktan önceki cümlede asteroit çarpması ve küresel yangınlar anlatılmıştır. A şıkkı "Furthermore" (Dahası) eklemesiyle atmosfere yayılan toz ve kükürt parçacıklarının güneş ışığını yıllarca engellediğini ("blocked solar radiation") açıklar. Bu durum, hemen ardından gelen "Deprived of essential sunlight, photosynthetic primary producers perished..." (Gerekli güneş ışığından mahrum kalan fotosentetik üreticiler yok oldu) cümlesindeki neden-sonuç bağını kusursuz şekilde kurar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Memelilerin çeşitlenmesi yok oluştan sonraki döneme aittir; boşluk sonrasındaki fotosentetik çöküşle bağlantı kurmaz.<br><b>C)</b> "In contrast" ile iridyum seviyesinin bulunamadığını söylemek bilimsel olguya ve parçanın akışına zıttır.<br><b>D)</b> Uçan sürüngenlerin sığınaklarda hayatta kaldığı iddiası tarihsel gerçeğe ve metnin yok oluş konusuna uymaz.<br><b>E)</b> Kuşların Jura dönemindeki evrimi K-Pg çarpışma kışı anlatısını böler.`
     },
     {
         id: 74,
-        type: "A",
-        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",                
-        text: "Long an object of veneration and conflict, the holy city of Jerusalem, the ancient city of the Middle East, has been governed, both as a provincial town and a national capital, by an extended series of dynasties and states. ---- This struggle often erupted in violence. The United Nations (UN) attempted to declare the city a corpus separatum (separate entity) with the aim of averting further conflict but the first Arab-Israeli war, in 1948, left Jerusalem divided into Israeli (west Jerusalem) and Jordanian (east Jerusalem) sectors.",
-        options: { A: "In the early 20th century the city, along with all of historic Palestine, became the focus of the competing national aspirations of Zionists and Palestinian Arabs.", B: "Jerusalem is the capital city of Israel, though internationally it is not recognized as such.", C: "During its long history, Jerusalem has been destroyed twice, encompassed 23 times, attacked 52 times, and captured and recaptured 44 times.", D: "Today Costa Rica and El Salvador are the only two countries, which have embassies in this ancient city.", E: "After the war, Israel abolished all the discriminatory laws officially declared by Jordan and adopted its own tough standard for safeguarding access to religious shrines." },
-        correct: "A",
-        dict: { "struggle": "mücadele", "veneration": "hürmet", "conflict": "çatışma", "dynasties": "hanedanlar" },
-        explanation: `<b>✅ Doğru Cevap: A) In the early 20th century the city, along with all of historic Palestine, became the focus of the competing national aspirations of Zionists and Palestinian Arabs.</b><br><b>📌 Sebep:</b> Boşluktan sonra 'This struggle' (bu mücadele) deniyor. A şıkkındaki 'competing national aspirations' (çatışan ulusal emeller) bu mücadeleyi tanımlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> İsrail'in başkenti konusu, mücadeleyle doğrudan ilgili değil.<br><b>C)</b> Tarihsel istatistikler, mücadele tanımı değil.<br><b>D)</b> Büyükelçilikler konusu, mücadeleyle ilgili değil.<br><b>E)</b> Savaş sonrası durum, mücadele tanımı değil.`
+        type: 'A',
+        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",
+        text: "Global food security is coming under acute strain as climate-driven weather extremes, regional conflicts, and international supply chain disruptions converge. Escalating temperatures and prolonged droughts severely depress crop yields across vital agricultural breadbaskets. ---- To avert catastrophic regional famines and geopolitical volatility, multilateral institutions must urgently invest in resilient infrastructure and climate-smart agricultural technologies.",
+        options: {
+            A: "Similarly, consumer demand for organic and non-genetically modified foodstuffs continues to rise steadily in affluent Western markets.",
+            B: "This structural shortfall in grain production is further compounded by export restrictions and soaring fertilizer costs that price low-income nations out of global markets.",
+            C: "Nevertheless, traditional subsistence farming techniques remain completely impervious to sudden variations in precipitation patterns.",
+            D: "Their nutritional value can be drastically improved by applying post-harvest genetic biofortification in commercial processing plants.",
+            E: "Because developed countries have largely eliminated domestic food waste through stringent supermarket distribution regulations."
+        },
+        correct: "B",
+        dict: {
+            "breadbaskets": "tahıl ambarı bölgeler",
+            "compounded": "katmerleşmiş/daha da ağırlaşmış",
+            "soaring": "hızla yükselen",
+            "impervious": "etkilenmez/geçirimsiz"
+        },
+        explanation: `<b>✅ Doğru Cevap: B) This structural shortfall in grain production is further compounded by export restrictions and soaring fertilizer costs that price low-income nations out of global markets.</b><br><b>📌 Sebep:</b> Boşluk öncesinde aşırı sıcakların ve kuraklığın tahıl ambarlarında ürün verimini ciddi biçimde düşürdüğü ("severely depress crop yields") belirtilmiştir. B şıkkındaki "This structural shortfall in grain production" (Tahıl üretimindeki bu yapısal açık) tamlaması önceki cümleyi doğrudan referans alır ve gübre maliyetleriyle durumun daha da ağırlaştığını açıklar. Sonraki cümlede yer alan kıtlıkları önleme çağrısı ("To avert catastrophic regional famines...") bu karanlık tabloyu doğrudan sonuçlandırır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Batı pazarlarındaki organik gıda tercihi küresel gıda krizi ve kıtlık bağlamından uzaktır.<br><b>C)</b> Geleneksel tarımın yağış değişimlerinden etkilenmediği ("impervious") iddiası metindeki kuraklık tespitiyle çelişir.<br><b>D)</b> "Their" zamiri önceki cümlede atıfta bulunabileceği çoğul bir nesneye tam oturmaz ve genetik zenginleştirme metin akışını bozar.<br><b>E)</b> Yarım bırakılmış ve bağlaç yapısı bozuk ("Because...") bir yan cümledir.`
     },
     {
         id: 75,
-        type: "A",
-        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",                
-        text: "The English term Christmas is of fairly recent origin. ---- Moreover, there are suitably other corresponding terms in many other languages like Navidad in Spanish, Natale in Italian, Noël in French. All these terms probably stand for the same thing, nativity.",
-        options: { A: "In this unspiritual Christmas celebration, a mythical figure named Santa Claus plays the fundamental role and expected to give people gifts.", B: "'Nativity', meaning 'birth', is from Latin nātīvitās, and it was first represented in the 4th century.", C: "Thus, this term has several closely related and often interchangeable figures, known as Santa Claus, Father Christmas, Saint Nicholas and Kris Kringle.", D: "Since the early 20th century, Christmas has also been a secular family holiday, observed by Christians and non-Christians alike.", E: "The earlier term equated with the Christmas festival is Yule, possibly derived from the Germanic jōl or the Anglo-Saxon geōl." },
-        correct: "E",
-        dict: { "origin": "köken", "corresponding": "karşılık gelen", "nativity": "doğum", "derived": "türemiş" },
-        explanation: `<b>✅ Doğru Cevap: E) The earlier term equated with the Christmas festival is Yule, possibly derived from the Germanic jōl or the Anglo-Saxon geōl.</b><br><b>📌 Sebep:</b> Köken (origin) anlatılıyor. 'Daha önceki terim Yule idi' diyerek tarihçeye devam ediyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A)</b> Noel kutlamaları, terimin kökeni değil.<br><b>B)</b> 'Nativity' kelimesinin açıklaması, İngilizce terim 'Christmas' değil.<br><b>C)</b> Noel figürleri, terimin kökeni değil.<br><b>D)</b> Noel'in seküler bir tatil olması, terimin kökeni değil.`
+        type: 'A',
+        instruction: "72-75 sorularda, boş bırakılan yere, parçada anlam bütünlüğünü sağlamak için getirilebilecek cümleyi bulunuz.",
+        text: "When Hernán Cortés and his Spanish conquistadors marched into the Valley of Mexico in 1519, they encountered the formidable Aztec Empire, centered at the island metropolis of Tenochtitlan. Despite being vastly outnumbered by indigenous warriors, the Spaniards succeeded in toppling this powerful Mesoamerican civilization within a mere two years. Historical analysis demonstrates that this conquest was not achieved solely through European steel and gunpowder. ---- Foremost among these was the inadvertent introduction of infectious pathogens like smallpox, which decimated the immunologically naive native populace and paralyzed their military leadership.",
+        options: {
+            A: "Instead, a decisive convergence of biological devastation and strategic alliances with subjugated indigenous city-states fundamentally undermined the Aztec defense.",
+            B: "Consequently, Aztec religious ceremonies continued to flourish completely undisturbed throughout the colonial encomienda system.",
+            C: "Moreover, the Spanish crown strictly prohibited its military expeditions from entering into diplomatic negotiations with local caciques.",
+            D: "Their intricate chinampa agricultural islands were immediately dismantled to make room for European pastoral livestock grazing.",
+            E: "On the contrary, archaeological excavations in Mexico City reveal that the Aztec defensive structures were impervious to artillery strikes."
+        },
+        correct: "A",
+        dict: {
+            "topple": "devirmek/çökertmek",
+            "subjugated": "boyunduruk altına alınmış",
+            "decimate": "kırmak/büyük kısmını yok etmek",
+            "inadvertent": "kasıtsız/istem dışı"
+        },
+        explanation: `<b>✅ Doğru Cevap: A) Instead, a decisive convergence of biological devastation and strategic alliances with subjugated indigenous city-states fundamentally undermined the Aztec defense.</b><br><b>📌 Sebep:</b> Boşluktan önceki cümlede fethin *yalnızca* Avrupa çeliği ve barutu sayesinde kazanılmadığı ("...not achieved solely through European steel and gunpowder") vurgulanmıştır. A seçeneği "Instead" (Bunun yerine) geçişi ile fethin biyolojik yıkım ve yerli ittifaklar sayesinde gerçekleştiğini açıklar. Boşluktan hemen sonra gelen "Foremost among these was the inadvertent introduction of infectious pathogens..." (Bunların en başında çiçek hastalığı gibi bulaşıcı patojenlerin getirilmesi vardı) ifadesindeki "these", A şıkkında sıralanan etkenlere ("biological devastation and strategic alliances") doğrudan ve eksiksiz gönderme yapar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B)</b> Aztek dini törenlerinin bozulmadan devam ettiği iddiası tarihsel gerçeğe ve fethin yıkıcılığına aykırıdır.<br><b>C)</b> İspanyol krallığının ittifakları yasakladığı iddiası metnin seyrine uymaz.<br><b>D)</b> Tarım adacıklarının sökülmesi fetih sürecindeki askeri ve biyolojik çöküş mekanizmasını açıklamaz.<br><b>E)</b> Savunma yapılarının top atışlarına dayanıklı olduğu iddiası fethin kolaylaşması gerekçesiyle çelişir.`
     },
     {
         id: 76,
-        type: "A",
-        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",                
-        text: "(I) Newton left a mass of manuscripts on the subjects of alchemy and chemistry, then closely related topics. (II) He, for example, worked out the fundamentals of calculus, though this work went unpublished for more than 30 years. (III) Most of these were extracts from books, bibliographies, dictionaries, and so on, but a few are original. (IV) He began intensive experimentation in 1669, continuing till he left Cambridge, seeking to unravel the meaning that he hoped was hidden in alchemical obscurity and mysticism. (V) Most importantly in the 'Queries' appended to 'Opticks' and in the essay 'On the Nature of Acids' (1710), Newton published an incomplete theory of chemical force, concealing his exploration of the alchemists, which became known a century after his death.",
+        type: 'A',
+        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",
+        text: "(I) Bipolar disorder is a chronic psychiatric condition characterized by extreme fluctuations in mood, oscillating between debilitating depressive episodes and hyperactive manic states. (II) During manic phases, individuals frequently exhibit grandiose delusions, decreased need for sleep, and impulsive decision-making that can impair daily functioning. (III) Major depressive episodes, by contrast, plunge patients into persistent apathy, emotional fatigue, and feelings of worthlessness. (IV) Schizophrenia, which is often misdiagnosed as bipolar disorder in early clinical assessments, primarily impairs a person's perception of reality rather than their primary mood regulation. (V) Effective therapeutic management therefore requires lifelong pharmacological stabilization, such as mood stabilizers, combined with structured psychoeducation to prevent relapse.",
         options: { A: "I", B: "II", C: "III", D: "IV", E: "V" },
-        correct: "B",
-        dict: { "manuscripts": "el yazmaları", "alchemy": "simya", "calculus": "kalkülüs", "experimentation": "deney" },
-        explanation: `<b>✅ Doğru Cevap: B) (II)</b><br><b>📌 Sebep:</b> Parça Newton'un simya/kimya çalışmaları hakkındadır. II. cümle matematik (calculus) hakkındadır, akışı bozar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I)</b> Simya ve kimya konusunu tanıtıyor, uyumlu.<br><b>C) (III)</b> El yazmalarının içeriğini açıklıyor, uyumlu.<br><b>D) (IV)</b> Deneysel çalışmalarını anlatıyor, uyumlu.<br><b>E) (V)</b> Kimyasal kuvvet teorisini anlatıyor, uyumlu.`
+        correct: "D",
+        dict: { "oscillating": "dalgalanan/salınan", "debilitating": "güçten düşüren", "grandiose": "büyüklük/azamet bildiren", "apathy": "duygusuzluk/ilgisizlik", "relapse": "nüksetme" },
+        explanation: `<b>✅ Doğru Cevap: D) IV</b><br><b>📌 Sebep:</b> Paragrafın bütünü Bipolar Bozukluğun doğasını (I), mani evresini (II), depresif evresini (III) ve bu iki uçlu duygu durumunun farmakolojik tedavisini (V) anlatmaktadır. IV. cümle ise odağı bipolar bozukluktan saptırıp şizofreninin temel tanımına ve gerçeklik algısına kaydırarak akışı bozmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I):</b> Bipolar bozukluğun iki uçlu yapısını tanıtan ana cümledir.<br><b>B) (II):</b> Manik fazın özelliklerini açıklar.<br><b>C) (III):</b> Depresif fazın zıtlığını ve özelliklerini vererek II. cümleyi dengeler.<br><b>E) (V):</b> İki ucu dengede tutmak için gereken tedavi sürecini özetler.`
     },
     {
         id: 77,
-        type: "A",
-        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",                
-        text: "(I) Albert Einstein was a great physicist who received honorary doctorate degrees in science, medicine and philosophy from many European and American universities. (II) During the 1920s, he gave lectures on these subjects in Europe, America and even the Far East. (III) He continued to work on the probabilistic interpretation of quantum theory, and he persevered with this work in America. (IV) Thus, he was awarded Fellowships or Memberships of all the leading scientific academies throughout these regions. (V) He also gained numerous awards in recognition of his work, including the Copley Medal of the Royal Society of London in 1925, and the Franklin Medal of the Franklin Institute in 1935.",
+        type: 'A',
+        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",
+        text: "(I) Sustaining academic motivation among students is a multifaceted psychological process that directly influences academic attainment and lifelong learning habits. (II) Educational researchers consistently distinguish between intrinsic motivation, where learning is driven by inherent curiosity, and extrinsic motivation, which relies on external incentives like grades. (III) Students who cultivate strong intrinsic motivation demonstrate greater resilience when confronting cognitively demanding tasks and unfamiliar subject matter. (IV) Standardized testing formats have undergone extensive structural revisions over the last decade to better align with international university admissions criteria. (V) Educators can foster this internal drive by designing autonomous learning environments that encourage critical inquiry rather than mere rote memorization.",
         options: { A: "I", B: "II", C: "III", D: "IV", E: "V" },
-        correct: "C",
-        dict: { "honorary": "fahri", "probabilistic": "olasılıksal", "quantum": "kuantum", "academies": "akademiler" },
-        explanation: `<b>✅ Doğru Cevap: C) (III)</b><br><b>📌 Sebep:</b> Parça Einstein'ın aldığı ödül ve unvanlarla ilgilidir. III. cümle spesifik bilimsel çalışmasından bahsederek konuyu dağıtır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I)</b> Fahri doktoraları tanıtıyor, uyumlu.<br><b>B) (II)</b> Konferansları anlatıyor, uyumlu.<br><b>D) (IV)</b> Akademi üyeliklerinden bahsediyor, uyumlu.<br><b>E) (V)</b> Ödüllerden bahsediyor, uyumlu.`
+        correct: "D",
+        dict: { "attainment": "kazanım/başarı", "intrinsic": "içsel", "extrinsic": "dışsal", "resilience": "dayanıklılık", "rote memorization": "ezberci öğrenme" },
+        explanation: `<b>✅ Doğru Cevap: D) IV</b><br><b>📌 Sebep:</b> Metin boyunca öğrencilerin öğrenme motivasyonu, içsel ve dışsal motivasyon farkı (II), içsel motivasyonun faydaları (III) ve öğretmenlerin bunu nasıl geliştirebileceği (V) işlenmektedir. IV. cümle ise konuyu pedagojik/psikolojik motivasyondan koparıp standart testlerin uluslararası üniversite kabul kriterlerine uyarlanmasına kaydırmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I):</b> Öğrenci motivasyonunun önemini belirten giriş cümlesidir.<br><b>B) (II):</b> İçsel ve dışsal motivasyon ayrımını kurar.<br><b>C) (III):</b> İçsel motivasyonun zorlu görevlerdeki katkısını açıklar.<br><b>E) (V):</b> 'this internal drive' (bu içsel dürtü) ifadesiyle III. cümleye doğrudan bağlanır.`
     },
     {
         id: 78,
-        type: "A",
-        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",                
-        text: "(I) It is important to protect against the sun's UVA and UVB rays year round. (II) Sun exposure in childhood can dramatically increase a person's chance of getting skin cancer. (III) One blistering sunburn in childhood can as much as double the risk of melanoma, the most deadly type of skin cancer, later in life. (IV) Childhood is also the part of life which holds the greatest sun exposure for most people. (V) Most parents protect their children from the sun during the summer, or on a trip to the beach, but for children especially, every day is an opportunity to experience the damaging rays of the sun.",
+        type: 'A',
+        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",
+        text: "(I) Venturing into culinary novelties and consuming exotic foods is increasingly viewed as a gateway to cultural immersion and open-mindedness. (II) Psychological studies suggest that individuals with high openness to experience exhibit lower levels of 'food neophobia'—the irrational fear or reluctance to ingest unfamiliar dishes. (III) Culinary traditions in medieval Europe were heavily dependent on the preservation of meats using coarse salt and vinegar solutions. (IV) For these adventurous eaters, tasting atypical ingredients like edible insects or pungent fermented pastes stimulates novel sensory pathways and broadens cognitive flexibility. (V) Consequently, gastronomy tourism has flourished worldwide as travellers actively seek authentic local delicacies to enrich their cross-cultural appreciation.",
         options: { A: "I", B: "II", C: "III", D: "IV", E: "V" },
-        correct: "A",
-        dict: { "exposure": "maruz kalma", "blistering": "kabarcıklı", "melanoma": "melanom", "damaging": "zarar veren" },
-        explanation: `<b>✅ Doğru Cevap: A) (I)</b><br><b>📌 Sebep:</b> Parça çocuklukta güneşten korunmayı anlatır. I. cümle genel (yıl boyu) korumadan bahseder, çocuk öznesi yoktur.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) (II)</b> Çocuklukta güneşe maruz kalmayı anlatıyor, uyumlu.<br><b>C) (III)</b> Çocuklukta güneş yanığının riskini anlatıyor, uyumlu.<br><b>D) (IV)</b> Çocukluğun en fazla güneşe maruz kalınan dönem olduğunu söylüyor, uyumlu.<br><b>E) (V)</b> Ebeveynlerin koruması ve her gün risk olduğunu anlatıyor, uyumlu.`
+        correct: "C",
+        dict: { "culinary": "mutfağa ait/yemekle ilgili", "food neophobia": "yeni yemek korkusu", "ingest": "tüketmek/yutmak", "pungent": "keskin kokulu/tatlı", "delicacies": "lezzetler/özel yiyecekler" },
+        explanation: `<b>✅ Doğru Cevap: C) III</b><br><b>📌 Sebep:</b> Paragraf yeni ve egzotik lezzetleri denemenin psikolojisi (I, II), açık fikirli insanların yemek seçiciliğini aşması (IV) ve bunun gastronomi turizmine etkisi (V) üzerinedir. III. cümle ise aniden Ortaçağ Avrupa'sındaki et saklama yöntemlerine geçerek tarihsel ve anlamsal bir sapma yaratmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I):</b> Egzotik yiyecekler denemenin kültürel etkisini tanıtır.<br><b>B) (II):</b> Yeni yiyecek deneme korkusu (neofobi) ile kişilik ilişkisini kurar.<br><b>D) (IV):</b> 'these adventurous eaters' ifadesiyle II. cümledeki açık fikirli bireylere atıf yapar.<br><b>E) (V):</b> Egzotik yiyecekleri deneme arzusunun turizmdeki sonucunu özetler.`
     },
     {
         id: 79,
-        type: "A",
-        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",                
-        text: "(I) St. Pierre Church is located on the west side of Asi River and by the west foot of Hac Mountain. (II) The area where the church was constructed is the antique city of Antiokheia. (III) As the Antiokheia got bigger between II. and IV. Centuries, the church turned to be in the middle of the city, near the Agora. (IV) This means the building was important in the social life of people in that era. (V) Oral tradition, historical events and development process of the city suggest that Antiokheia region where St. Pierre Church was constructed was one of the oldest Anatolian and Near Eastern settlements.",
+        type: 'A',
+        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",
+        text: "(I) Albert Einstein first postulated the existence of gravitational waves in 1916 as a natural consequence of his general theory of relativity. (II) The discovery of other galaxies beyond the Milky Way had radically expanded the human perception of the observable universe during the early 20th century. (III) Einstein theorized that violent cosmic events, such as colliding black holes or exploding supernovae, would produce ripples in the fabric of space-time traveling at the speed of light. (IV) For nearly a century, however, these subtle cosmic disturbances eluded direct detection due to their unimaginably faint interaction with physical matter. (V) This elusive quest finally culminated in 2015 when the advanced LIGO interferometers successfully sensed the fleeting spatial distortions produced by two merging black holes.",
         options: { A: "I", B: "II", C: "III", D: "IV", E: "V" },
-        correct: "E",
-        dict: { "constructed": "inşa edilmiş", "antique": "antik", "settlements": "yerleşimler", "oral": "sözlü" },
-        explanation: `<b>✅ Doğru Cevap: E) (V)</b><br><b>📌 Sebep:</b> Parça St. Pierre kilisesinin konumu ve tarihi hakkındadır. V. cümle genel Antiokheia bölgesinin tarihinden bahseder, kilise odağını kaybeder.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I)</b> Kilisenin konumunu anlatıyor, uyumlu.<br><b>B) (II)</b> Kilisenin bulunduğu alanı tanıtıyor, uyumlu.<br><b>C) (III)</b> Kilisenin şehir içindeki konum değişikliğini anlatıyor, uyumlu.<br><b>D) (IV)</b> Kilisenin sosyal hayattaki önemini açıklıyor, uyumlu.`
+        correct: "B",
+        dict: { "postulate": "ileri sürmek/varsaymak", "gravitational waves": "kütleçekim dalgaları", "ripples": "dalgalanmalar/halkalar", "eluded": "kaçmak/tespit edilememek", "culminated": "zirveye ulaşmak/sonuçlanmak" },
+        explanation: `<b>✅ Doğru Cevap: B) II</b><br><b>📌 Sebep:</b> Paragraf kütleçekim dalgalarının teorik olarak ortaya atılışı (I, III), tespit edilmesinin uzun yıllar süren zorluğu (IV) ve 2015'teki LIGO keşfi (V) etrafında kuruludur. II. cümle ise Samanyolu dışındaki galaksilerin keşfi ve evren algısının genişlemesi gibi farklı bir astronomik gelişmeye değinerek akışı kırmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I):</b> Einstein'ın kütleçekim dalgaları teorisini ortaya atışını verir.<br><b>C) (III):</b> 'Einstein theorized that...' diyerek I. cümlenin teorik içeriğini detaylandırır.<br><b>D) (IV):</b> Teori ile gözlem arasındaki 100 yıllık kanıt bulma zorluğunu açıklar.<br><b>E) (V):</b> 'This elusive quest' ifadesiyle IV. cümledeki 100 yıllık arayışın başarıyla bittiğini duyurur.`
     },
     {
         id: 80,
-        type: "A",
-        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",                
-        text: "(I) As of the 2011 census, 7,096 people resided in the town of Asbestos. (II) Asbestos mining began more than 4,000 years ago, but did not start large-scale until the end of the 19th century. (III) The town covers an area of 29.67 square kilometers. (IV) It is situated in the centre of a square formed by the cities of Drummondville, Sherbrooke and Victoriaville, and the Nicolet River to the north. (V) It is the site of the Jeffrey mine, which was, until recently, the world's largest asbestos mine.",
+        type: 'A',
+        instruction: "76-80 sorularda, cümleler sırasıyla okunduğunda parçanın anlam bütünlüğünü bozan cümleyi bulunuz.",
+        text: "(I) Social phobia, or social anxiety disorder, is defined by an overwhelming and irrational fear of being scrutinized, judged, or humiliated in social and performance contexts. (II) Sufferers frequently experience acute autonomic symptoms, such as rapid heartbeat, trembling, and profuse sweating, whenever exposure to public attention becomes unavoidable. (III) Consequently, individuals often resort to extensive avoidance behaviours, severely restricting their career advancement and personal relationships to escape potential embarrassment. (IV) Generalized anxiety disorder, however, tends to involve persistent and diffuse worrying about everyday life events rather than specific social evaluative threats. (V) Fortunately, clinical interventions combining cognitive-behavioural therapy with gradual exposure paradigms have proven highly effective in enabling patients to overcome these debilitating social fears.",
         options: { A: "I", B: "II", C: "III", D: "IV", E: "V" },
-        correct: "B",
-        dict: { "census": "nüfus sayımı", "asbestos": "asbest", "mining": "madencilik", "square": "kare" },
-        explanation: `<b>✅ Doğru Cevap: B) (II)</b><br><b>📌 Sebep:</b> Parça Asbestos kasabası (nüfus, alan, konum) hakkındadır. II. cümle Asbest madenciliğinin tarihidir, kasaba ile doğrudan ilgili değildir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I)</b> Kasabanın nüfusunu veriyor, uyumlu.<br><b>C) (III)</b> Kasabanın alanını veriyor, uyumlu.<br><b>D) (IV)</b> Kasabanın konumunu anlatıyor, uyumlu.<br><b>E) (V)</b> Kasabadaki madeni anlatıyor, uyumlu.`
+        correct: "D",
+        dict: { "scrutinized": "dikkatle incelenen/eleştirilen", "humiliated": "küçük düşürülmüş", "autonomic": "otonom/istemsiz", "diffuse": "yaygın/belirsiz", "exposure": "maruz bırakma" },
+        explanation: `<b>✅ Doğru Cevap: D) IV</b><br><b>📌 Sebep:</b> Metin bütünüyle Sosyal Fobinin tanımı (I), fizyolojik belirtileri (II), kaçınma davranışları (III) ve BDT ile tedavisini (V) konu almaktadır. IV. cümle ise odak noktasını yaygın anksiyete bozukluğunun (GAD) farklı doğasına kaydırarak sosyal fobi zincirini koparmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) (I):</b> Sosyal fobinin klinik tanımını yapar.<br><b>B) (II):</b> Sosyal durumlarda ortaya çıkan fiziksel tepkileri listeler.<br><b>C) (III):</b> 'Consequently' ile bu korkuların yarattığı kaçınma davranışlarını bağlar.<br><b>E) (V):</b> 'these debilitating social fears' diyerek önceki sosyal kaygı ve kaçınmaların tedavisine geçer.`
     }
 ];
