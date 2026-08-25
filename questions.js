@@ -50,224 +50,274 @@ const questions = [
         explanation: `<b>✅ Doğru Cevap: C) pin down</b><br><b>📌 Sebep:</b> Ekvatoral iklimdeki öngörülemez dinamikler nedeniyle meteorologların ani tropikal fırtınalara yol açan mekanizmaları <i>tam olarak tespit etmekte / netleştirmekte</i> (pin down) zorlandıkları ifade edilmektedir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) make up for:</b> Telafi etmek - bağlam mekanizma tespiti üzerinedir.<br><b>B) call off:</b> İptal etmek - bilimsel araştırma sürecine uymaz.<br><b>D) stem from:</b> -den kaynaklanmak - nesne alışı ve anlam açısından cümle yapısına oturmaz.<br><b>E) bring down:</b> İndirmek/devirmek - bilimsel olguyu açıklamaz.`
     },
     {
-        id: 6,
-        type: "A",
-        instruction: "1-6 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "Interior Secretary ---- the arrest of two people in the city center during a regular patrolling, one of whom ---- in the last month's attack.",
-        options: { A: "was confirming / was involved", B: "confirmed / may have been involved", C: "would confirm / had to be involved", D: "confirms / should have been involved", E: "has confirmed / must be involved" },
-        correct: "B",
-        dict: { "arrest": "tutuklama", "patrolling": "devriye", "involved": "karışmış", "attack": "saldırı" },
-        explanation: `<b>✅ Doğru Cevap: B) confirmed / may have been involved</b><br><b>📌 Sebep:</b> Geçmişte doğrulama (Simple Past) ve geçmişteki olaya karışmış olma ihtimali (May have V3).<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) was confirming / was involved:</b> Onaylıyordu / karışmıştı - sürekli geçmiş zaman uygun değil, kesinlik ifadesi var.<br><b>C) would confirm / had to be involved:</b> Onaylardı / karışmak zorundaydı - geçmiş alışkanlık veya zorunluluk anlamı uygun değil.<br><b>D) confirms / should have been involved:</b> Onaylar / karışmış olmalıydı - geniş zaman uygun değil, 'olmalıydı' anlamı farklı.<br><b>E) has confirmed / must be involved:</b> Onayladı / karışmış olmalı - Present Perfect uygun olabilir ama ikinci boşlukta 'şu anda karışmış olmalı' anlamı çıkar.`
-    },
-    {
         id: 7,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "It ---- wrong to say this month of recessions has been shaping up to be the worst January on record for the well-tracked index since 1970, when blue chips ---- 7.65 percent.",
-        options: { A: "shouldn't be / had fallen", B: "wasn't / would fall", C: "hasn't been / are falling", D: "may not be / have fallen", E: "wouldn't be / fell" },
-        correct: "E",
-        dict: { "recessions": "durgunluk", "shaping up": "şekillenmek", "blue chips": "büyük şirket hisseleri", "index": "endeks" },
-        explanation: `<b>✅ Doğru Cevap: E) wouldn't be / fell</b><br><b>📌 Sebep:</b> Hypothetical bir durum (yanlış olmazdı) ve kesin tarihli geçmiş zaman (1970 -> fell).<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) shouldn't be / had fallen:</b> Olması gerekmezdi / düşmüştü - anlam uygun değil, zaman uyumsuz.<br><b>B) wasn't / would fall:</b> Değildi / düşerdi - geçmişte gerçekleşen bir olay için 'would fall' kullanılmaz.<br><b>C) hasn't been / are falling:</b> Olmadı / düşüyorlar - şimdiki zaman, geçmiş bir tarihle uyumsuz.<br><b>D) may not be / have fallen:</b> Olmayabilir / düştüler - olasılık ifadesi burada uygun değil, ikinci boşlukta Present Perfect kullanımı yanlış.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "Recent clinical trials indicate that specialized action video games ---- spatial cognitive skills far more effectively than traditional methods, which suggests that immersive simulation ---- as a standard training tool in aviation.",
+        options: {
+            A: "must have enhanced / would adopt",
+            B: "can enhance / could be adopted",
+            C: "had enhanced / might adopt",
+            D: "would enhance / has to adopt",
+            E: "should enhance / had been adopted"
+        },
+        correct: "B",
+        dict: { "clinical trials": "klinik deneyler", "spatial": "uzamsal/mekânsal", "immersive": "sürükleyici/kapsayıcı", "aviation": "havacılık", "adopt": "benimsemek/kabul etmek" },
+        explanation: `<b>✅ Doğru Cevap: B) can enhance / could be adopted</b><br><b>📌 Sebep:</b> Genel-geçer bilimsel bir gerçeği ve yeteneği ifade etmek için ilk boşlukta "can enhance", devamında pasif bir öneri/olasılık belirtmek için "could be adopted" (benimsenebilir) modalları bağlama tam oturmaktadır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) must have enhanced / would adopt:</b> İlk taraf geçmişe dönük çıkarım içerir; ikinci taraf etkendir (pasif olmalıdır).<br><b>C) had enhanced / might adopt:</b> Zaman uyumu bozuktur ve ikinci taraf etkendir.<br><b>D) would enhance / has to adopt:</b> İkinci taraftaki özne ("immersive simulation") eylemi yapan değil uygulanan konumdadır (passive gereklidir).<br><b>E) should enhance / had been adopted:</b> İkinci taraf Past Perfect olup ana cümlenin zaman yapısıyla uyuşmaz.`
     },
     {
         id: 8,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "Major global banks and brokerages wrote down about $90 billion worth ---- bad debt ---- the fourth quarter because of exposure to risky mortgage securities.",
-        options: { A: "into / in", B: "with / at", C: "of / during", D: "by / through", E: "up to / over" },
-        correct: "C",
-        dict: { "brokerages": "aracı kurumlar", "debt": "borç", "exposure": "maruz kalma", "securities": "menkul kıymetler" },
-        explanation: `<b>✅ Doğru Cevap: C) of / during</b><br><b>📌 Sebep:</b> 'Worth of' (değerinde) kalıbı ve zaman dilimi belirten 'during' (boyunca).<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) into / in:</b> Into (içine) uygun değil.<br><b>B) with / at:</b> With ile 'worth' kullanılmaz, at (belirli bir noktada) zaman için uygun değil.<br><b>D) by / through:</b> By (tarafından) ve through (aracılığıyla) uygun değil.<br><b>E) up to / over:</b> Up to (kadar) ve over (üzerinde) uygun değil.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "In order to gain deeper insights ---- the mechanisms of neural processing, cognitive neuroscientists routinely expose subjects ---- geometrically ambiguous visual illusions.",
+        options: {
+            A: "into / to",
+            B: "for / at",
+            C: "about / with",
+            D: "on / through",
+            E: "towards / in"
+        },
+        correct: "A",
+        dict: { "insights": "içgörü/anlayış", "neural": "sinirsel", "expose": "maruz bırakmak", "ambiguous": "belirsiz/muğlak", "illusion": "yanılsama/illüzyon" },
+        explanation: `<b>✅ Doğru Cevap: A) into / to</b><br><b>📌 Sebep:</b> "Insight" ismi yaygın olarak "into" edatıyla (insight into sth - bir şeyi derinlemesine anlama), "expose" fiili ise "to" edatıyla (expose someone to sth - birini bir şeye maruz bırakmak) birlikte kullanılır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) for / at:</b> "Expose at" hatalı bir kullanımdır.<br><b>C) about / with:</b> "Expose with" yapısı kalıplaşmış nesne alımına uymaz.<br><b>D) on / through:</b> İkinci boşluktaki maruz kalma anlamını vermez.<br><b>E) towards / in:</b> Edat tamlamaları bağlama uygun değildir.`
     },
     {
         id: 9,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "The bad news is that cancer is ---- the rise after having declined ---- a bit early in the 21st century.",
-        options: { A: "in / in", B: "toward / over", C: "against / to", D: "on / for", E: "around / into" },
-        correct: "D",
-        dict: { "declined": "düşmüş", "rise": "yükseliş", "century": "yüzyıl" },
-        explanation: `<b>✅ Doğru Cevap: D) on / for</b><br><b>📌 Sebep:</b> 'On the rise' (yükselişte) kalıplaşmış bir ifadedir. 'For' ise bir süre için kullanılır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) in / in:</b> 'In the rise' doğru değil.<br><b>B) toward / over:</b> Toward (doğru) ve over (üzerinde) uygun değil.<br><b>C) against / to:</b> Against (karşı) ve to (e doğru) uygun değil.<br><b>E) around / into:</b> Around (etrafında) ve into (içine) uygun değil.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "Health literacy is fundamentally defined as the degree ---- which individuals possess the cognitive capacity to obtain, process, and act ---- basic medical information.",
+        options: {
+            A: "at / about",
+            B: "to / upon",
+            C: "with / over",
+            D: "for / into",
+            E: "in / against"
+        },
+        correct: "B",
+        dict: { "health literacy": "sağlık okuryazarlığı", "degree": "derece/düzey", "possess": "sahip olmak", "capacity": "kapasite", "act upon": "gereğince hareket etmek/uygulamak" },
+        explanation: `<b>✅ Doğru Cevap: B) to / upon</b><br><b>📌 Sebep:</b> "The degree to which" (bir şeyin gerçekleştiği derece/düzey) kalıplaşmış bir yapıdır. İkinci boşlukta ise "act upon/on information" (bilgiye dayanarak harekete geçmek/uygulamak) edatlı fiili doğru kullanımı tamamlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) at / about:</b> "Degree" ile "at" relative yapıda bu işlevi görmez.<br><b>C) with / over:</b> Anlam bütünlüğünü bozmaktadır.<br><b>D) for / into:</b> "The degree for which" gramer olarak yanlıştır.<br><b>E) in / against:</b> Bilgiye karşı değil, bilgiye göre hareket etme anlamı vardır.`
     },
     {
         id: 10,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "Death ---- laughter refers to a rare instance of death, usually resulting from cardiac arrest or asphyxiation, caused by a fit ---- laughter.",
-        options: { A: "from / of", B: "of / into", C: "through / over", D: "at / under", E: "in / with" },
-        correct: "A",
-        dict: { "asphyxiation": "boğulma", "fit": "kriz", "cardiac": "kalp", "arrest": "durdurma" },
-        explanation: `<b>✅ Doğru Cevap: A) from / of</b><br><b>📌 Sebep:</b> Ölüm sebebi belirtirken 'Death from', gülme krizi derken 'Fit of laughter' kullanılır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) of / into:</b> 'Death of' (birinin ölümü) ve 'into laughter' (gülmeye) uygun değil.<br><b>C) through / over:</b> Through (aracılığıyla) ve over (üzerinde) uygun değil.<br><b>D) at / under:</b> At (-de) ve under (altında) uygun değil.<br><b>E) in / with:</b> In (içinde) ve with (ile) uygun değil.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "During the late 19th century, European imperial powers partitioned the African continent ---- several distinct spheres of influence, often drawing borders with total disregard ---- indigenous ethnic territories.",
+        options: {
+            A: "between / in",
+            B: "from / about",
+            C: "into / for",
+            D: "along / over",
+            E: "through / with"
+        },
+        correct: "C",
+        dict: { "partition": "bölmek/paylaştırmak", "imperial": "emperyal/imparatorlukla ilgili", "sphere of influence": "etki alanı", "disregard": "hiçe sayma/aldırmama", "indigenous": "yerli" },
+        explanation: `<b>✅ Doğru Cevap: C) into / for</b><br><b>📌 Sebep:</b> Bir bütünü parçalara ayırmak/bölmek anlamında "partition into" kullanılır. "Disregard" ismi ise kendisinden sonra "for" edatını alır (disregard for sth - bir şeyi hiçe sayma/umursamama).<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) between / in:</b> Birden fazla sınır ve parça için "between" uygun değildir.<br><b>B) from / about:</b> "Partition from" bölerek parçalara ayırma bağlamını karşılamaz.<br><b>D) along / over:</b> Bölünme sonucunu belirten "into" yerini tutmaz.<br><b>E) through / with:</b> Kalıp yapılarla örtüşmez.`
     },
     {
         id: 11,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "---- its name suggests, the genre of Analytic Cubism, despite its almost abstract appearance, is not the result of a disregard for the composition of subject matter, but ---- the opposite.",
-        options: { A: "While / still", B: "As / rather", C: "Although / actually", D: "Before / just", E: "Given that / instead" },
-        correct: "B",
-        dict: { "disregard": "göz ardı", "genre": "tür", "abstract": "soyut", "composition": "kompozisyon" },
-        explanation: `<b>✅ Doğru Cevap: B) As / rather</b><br><b>📌 Sebep:</b> 'As its name suggests' (adının önerdiği gibi) ve 'but rather' (aksine) kalıbı.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) While / still:</b> While (iken) ve still (hala) uygun değil.<br><b>C) Although / actually:</b> Although (rağmen) ve actually (aslında) anlam uyumsuz.<br><b>D) Before / just:</b> Before (önce) ve just (sadece) uygun değil.<br><b>E) Given that / instead:</b> Given that (göz önünde bulundurulursa) ve instead (yerine) uygun değil.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "When Dan Shechtman first discovered quasicrystals in 1982, the scientific community found the results ---- controversial ---- his initial research papers were outright rejected by leading physics journals.",
+        options: {
+            A: "so / that",
+            B: "neither / nor",
+            C: "as / as",
+            D: "either / or",
+            E: "not only / but also"
+        },
+        correct: "A",
+        dict: { "quasicrystal": "yarı kristal", "controversial": "tartışmalı", "outright": "tamamen/doğrudan", "reject": "reddetmek", "leading": "önde gelen" },
+        explanation: `<b>✅ Doğru Cevap: A) so / that</b><br><b>📌 Sebep:</b> Cümlede bir sıfat ("controversial") ve ardından gelen tam bir sonuç cümlesi yer almaktadır. "Öyle tartışmalı bulundu ki makaleleri reddedildi" anlamını veren "so + sıfat + that" yapısı doğrudur.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) neither / nor:</b> İki ayrı ögeyi olumsuzlamaz, bir sonuç bildirir.<br><b>C) as / as:</b> Eşitlik karşılaştırması kurulmamaktadır.<br><b>D) either / or:</b> Seçenek sunan bir yapı yoktur.<br><b>E) not only / but also:</b> İkinci boşluktan sonra tam bir sonuç cümlesi geldiği için paralel bağlaç yapısına uymaz.`
     },
     {
         id: 12,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "Analysts will be examining contributions from overseas operations, ---- they expect to be the biggest contributor to earnings during the next decade.",
-        options: { A: "what", B: "but", C: "because", D: "which", E: "thus" },
-        correct: "D",
-        dict: { "contributor": "katkı sağlayan", "overseas": "yurtdışı", "earnings": "kazanç", "decade": "on yıl" },
-        explanation: `<b>✅ Doğru Cevap: D) which</b><br><b>📌 Sebep:</b> Relative clause, virgül sonrası cansız varlığı (overseas operations) nitelemek için 'which' kullanılır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) what:</b> What (ne) relative clause bağlacı değil.<br><b>B) but:</b> But (ama) zıtlık bağlacı, uygun değil.<br><b>C) because:</b> Because (çünkü) sebep bildirir, uygun değil.<br><b>E) thus:</b> Thus (bu yüzden) sonuç bildirir, uygun değil.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "---- Edwin Hubble observed that distant galaxies are continually moving away from our own, cosmologists concluded that the entire universe must have expanded outward from an extremely hot, dense point in the distant past.",
+        options: {
+            A: "Even though",
+            B: "Since",
+            C: "Unless",
+            D: "Although",
+            E: "While"
+        },
+        correct: "B",
+        dict: { "distant": "uzak", "galaxy": "galaksi/gökada", "conclude": "sonucuna varmak", "expand": "genişlemek", "dense": "yoğun" },
+        explanation: `<b>✅ Doğru Cevap: B) Since</b><br><b>📌 Sebep:</b> Cümlede sebep-sonuç ilişkisi (cause-effect) bulunmaktadır. Hubble'ın uzak galaksilerin uzaklaştığını gözlemlemesi bir neden, evrenin genişlediği sonucuna varılması ise sonuçtur. "Since / Because / As" anlamı sağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Even though:</b> Zıtlık bildirir, mantıksal nedenselliğe uymaz.<br><b>C) Unless:</b> -medikçe/-madıkça şartı taşır, olguyu açıklamaz.<br><b>D) Although:</b> Zıtlık bağlacıdır.<br><b>E) While:</b> Zaman veya zıtlık bildirir, doğrudan sebep ilişkisini vermez.`
     },
     {
         id: 13,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "---- stealing people's wallets, the boy arrested last Thursday was also involved in some other illegal activities like attacking people during the festival on Sunday.",
-        options: { A: "Because of", B: "Rather than", C: "In addition to", D: "In case of", E: "As far as" },
-        correct: "C",
-        dict: { "arrested": "tutuklu", "involved": "karışmış", "illegal": "yasa dışı", "activities": "faaliyetler" },
-        explanation: `<b>✅ Doğru Cevap: C) In addition to</b><br><b>📌 Sebep:</b> Cüzdan çalmaya <i>ek olarak</i> başka suçlara da karıştı.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Because of:</b> Nedeniyle - sebep-sonuç ilişkisi yok.<br><b>B) Rather than:</b> Yerine - alternatif belirtir, ekleme değil.<br><b>D) In case of:</b> Durumunda - olasılık belirtir.<br><b>E) As far as:</b> Kadarıyla - sınırlama belirtir.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "Extrinsic rewards such as high grades may boost short-term academic performance; ----, they often undermine students' intrinsic motivation to pursue learning for its own sake.",
+        options: {
+            A: "furthermore",
+            B: "however",
+            C: "therefore",
+            D: "similarly",
+            E: "in other words"
+        },
+        correct: "B",
+        dict: { "extrinsic": "dışsal", "reward": "ödül", "boost": "artırmak/yükseltmek", "undermine": "baltalamak/zayıflatmak", "intrinsic": "içsel" },
+        explanation: `<b>✅ Doğru Cevap: B) however</b><br><b>📌 Sebep:</b> İki bağımsız cümle arasında zıtlık ilişkisi vardır. İlk cümlede dışsal ödüllerin kısa vadeli başarıyı artırması (olumlu), noktalı virgülden sonra ise içsel motivasyonu baltalaması (olumsuz) karşılaştırılmıştır. Bu geçişi "however / nevertheless" sağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) furthermore:</b> Ek bilgi verir, zıtlığı bağlamaz.<br><b>C) therefore:</b> Sebep-sonuç bağlar.<br><b>D) similarly:</b> Benzerlik bildirir.<br><b>E) in other words:</b> Açıklama/başka bir deyişle anlamı katar.`
     },
     {
         id: 14,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "Susceptibility of human societies to the changes in climate systems mainly lies in the effects of extreme weather conditions ---- gradual climate change.",
-        options: { A: "also", B: "whereby", C: "while", D: "in addition", E: "rather than" },
-        correct: "E",
-        dict: { "Susceptibility": "hassasiyet", "gradual": "kademeli", "extreme": "aşırı", "conditions": "koşullar" },
-        explanation: `<b>✅ Doğru Cevap: E) rather than</b><br><b>📌 Sebep:</b> Yavaş değişimden <i>ziyade</i> ekstrem koşullar. Bir tercih/karşılaştırma var.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) also:</b> Ayrıca - ekleme yapar, karşılaştırma değil.<br><b>B) whereby:</b> Böylece - sonuç bildirir.<br><b>C) while:</b> İken - zıtlık belirtir ama 'yerine' anlamı vermez.<br><b>D) in addition:</b> Ek olarak - ekleme yapar.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "---- ancient Greek natural philosophers formulated groundbreaking theoretical concepts about the cosmos, their overall scientific methodology was severely limited by a general reluctance to conduct systematic physical experiments.",
+        options: {
+            A: "Although",
+            B: "Because",
+            C: "Given that",
+            D: "Just as",
+            E: "As long as"
+        },
+        correct: "A",
+        dict: { "philosopher": "filozof", "groundbreaking": "çığır açan", "methodology": "metodoloji/yöntembilim", "reluctance": "isteksizlik/gönülsüzlük", "systematic": "sistemli" },
+        explanation: `<b>✅ Doğru Cevap: A) Although</b><br><b>📌 Sebep:</b> Cümlede zıtlık (concession) söz konusudur. Yunan filozoflarının evren hakkında çığır açan teoriler üretmesi (olumlu) ile deney yapmaktan kaçındıkları için yöntemlerinin sınırlı kalması (olumsuz) "Although / Even though / While" ile bağlanır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) Because:</b> Sebep bağlacıdır, olumlu-olumsuz zıtlığını açıklamaz.<br><b>C) Given that:</b> -dığı düşünülürse/nedeniyle anlamındadır.<br><b>D) Just as:</b> Tıpkı ... gibi anlamında benzerlik bildirir.<br><b>E) As long as:</b> Şart bağlacıdır (-dığı sürece).`
     },
     {
         id: 15,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "---- the new ideas of community were formed after the upheaval of the Industrial Revolution, communities in our Post-Industrial age will have new shapes defined by the circumstances of their own time.",
-        options: { A: "Even though", B: "Inasmuch as", C: "Just as", D: "So that", E: "In that" },
-        correct: "C",
-        dict: { "upheaval": "kargaşa", "circumstances": "koşullar", "defined": "tanımlanmış", "age": "çağ" },
-        explanation: `<b>✅ Doğru Cevap: C) Just as</b><br><b>📌 Sebep:</b> Tıpkı Sanayi Devriminde olduğu gibi... Benzetme yapılıyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Even though:</b> Rağmen - zıtlık bildirir.<br><b>B) Inasmuch as:</b> Olduğu kadarıyla - derece/sınırlama belirtir.<br><b>D) So that:</b> Öyle ki - amaç/sonuç bildirir.<br><b>E) In that:</b> Şu sebeple - neden belirtir.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "During the 1522 Siege of Rhodes, Suleiman the Magnificent deployed advanced artillery and extensive subterranean mining techniques ---- the formidable medieval fortifications of the Knights Hospitaller could be breached.",
+        options: {
+            A: "so that",
+            B: "even if",
+            C: "in case",
+            D: "as though",
+            E: "unless"
+        },
+        correct: "A",
+        dict: { "siege": "kuşatma", "artillery": "topçu birliği/top", "subterranean": "yeraltı", "fortification": "tahkimat/kale duvarları", "breach": "gedik açmak/yarmak" },
+        explanation: `<b>✅ Doğru Cevap: A) so that</b><br><b>📌 Sebep:</b> Cümlede bir eylemin yapılma amacı (purpose) belirtilmektedir. Kanuni Sultan Süleyman'ın gelişmiş topçu ve lağım tekniklerini kullanmasının amacı Şövalyelerin kale duvarlarında gedik açabilmektir ("so that + could").<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) even if:</b> -se bile anlamında zıtlık katar.<br><b>C) in case:</b> -olur diye / ihtimaline karşı önlem bildirir.<br><b>D) as though:</b> -mış gibi anlamı verir.<br><b>E) unless:</b> -medikçe koşulunu belirtir.`
     },
     {
         id: 16,
-        type: "A",
-        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        text: "Things that are not significant for us may be very significant for the children; ---- we should not ignore the fears of a child.",
-        options: { A: "therefore", B: "besides", C: "as a result of", D: "by no means", E: "instead" },
-        correct: "A",
-        dict: { "significant": "önemli", "ignore": "göz ardı etmek", "fears": "korkular", "children": "çocuklar" },
-        explanation: `<b>✅ Doğru Cevap: A) therefore</b><br><b>📌 Sebep:</b> Sebep-sonuç ilişkisi. Önemli olabilir, <i>bu yüzden</i> görmezden gelmemeliyiz.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) besides:</b> Ayrıca - ekleme yapar.<br><b>C) as a result of:</b> Sonucu olarak - edat grubu, bağlaç değil.<br><b>D) by no means:</b> Hiçbir şekilde - olumsuzluk vurgular.<br><b>E) instead:</b> Yerine - alternatif belirtir.`
+        type: 'A',
+        instruction: "7-16 sorularda, cümlede boş bırakılan yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        text: "Asian American households consistently prioritize substantial financial investment in supplementary education and foster high cultural expectations for academic rigor; ----, their children display remarkably high rates of university enrollment and professional attainment.",
+        options: {
+            A: "on the contrary",
+            B: "nevertheless",
+            C: "consequently",
+            D: "instead",
+            E: "otherwise"
+        },
+        correct: "C",
+        dict: { "prioritize": "öncelik vermek", "supplementary": "ek/takviye edici", "rigor": "titizlik/disiplin", "enrollment": "kayıt/katılım", "attainment": "başarı/kazanım" },
+        explanation: `<b>✅ Doğru Cevap: C) consequently</b><br><b>📌 Sebep:</b> Cümlede bir eylemin mantıksal sonucu (conclusive / result) anlatılmaktadır. Ailelerin ek eğitime yatırım yapması ve akademik disipline önem vermesi bir sebep, çocuklarının yüksek üniversiteye yerleşme oranı yakalaması ise bunun doğal sonucudur ("consequently / therefore / as a result").<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) on the contrary:</b> Aksine/bilakis zıtlığı belirtir.<br><b>B) nevertheless:</b> Yine de/buna rağmen anlamında zıtlık bağlar.<br><b>D) instead:</b> Bunun yerine anlamındadır.<br><b>E) otherwise:</b> Aksi takdirde koşul-sonuç ilişkisini verir.`
     },
     {
         id: 17,
-        type: "B",
-        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "There is no clear heading on the paper (17)---- justification or motivation. (18)----, it is easy to be depicted by reading it. Some previous research were quite (19)---- for this research so we can comprehend that this research might open the door for upcoming research, which certainly (20)---- to the existing literature of ABC. The researchers haven't mentioned clearly if their motivation is to supersede previous studies or (21)---- their validity.",
+        type: 'B',
+        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Caffeine is widely consumed across the globe primarily (17)---- its well-known stimulant properties on the central nervous system. Upon entering the bloodstream, it readily crosses the blood-brain barrier and binds to adenosine receptors, temporarily blocking the neuromodulator that induces drowsiness. This biochemical mechanism triggers an increase in alertness and enhances overall cognitive (18)---- during complex tasks. (19)----, excessive or ill-timed intake can disrupt circadian rhythms and impair deep restorative sleep. Scientific studies indicate that individuals who consume high doses late in the evening (20)---- from chronic sleep fragmentation and increased daytime fatigue over time. To avoid these adverse physiological outcomes, health experts advise individuals to (21)---- their daily intake and abstain from caffeinated beverages in the hours leading up to bedtime.",
         text: "",
-        options: { A: "either", B: "through", C: "for", D: "along with", E: "within" },
-        correct: "C",
-        dict: { "justification": "gerekçe", "heading": "başlık", "paper": "makale" },
-        explanation: `<b>✅ Doğru Cevap: C) for</b><br><b>📌 Sebep:</b> Heading for justification (Gerekçelendirme için başlık).<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) either:</b> Ya da - seçenek belirtir.<br><b>B) through:</b> Aracılığıyla - yöntem belirtir.<br><b>D) along with:</b> Birlikte - eşlik etme belirtir.<br><b>E) within:</b> İçinde - konum belirtir.`
+        options: { A: "contrary to", B: "due to", C: "regardless of", D: "in place of", E: "by means of" },
+        correct: "B",
+        dict: { "stimulant": "uyarıcı", "central nervous system": "merkezi sinir sistemi", "drowsiness": "uyku hali/uyuşukluk", "cognitive": "bilişsel" },
+        explanation: `<b>✅ Doğru Cevap: B) due to</b><br><b>📌 Sebep:</b> Cümlede kafeinin dünya çapında yaygın tüketilme nedeni anlatılmaktadır. "Merkezi sinir sistemi üzerindeki uyarıcı özellikleri <i>sayesinde / nedeniyle</i>" anlamını en iyi <b>due to / owing to / because of</b> edat grubu sağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) contrary to:</b> Aksine - zıtlık bildirir.<br><b>C) regardless of:</b> -e bakılmaksızın - sebep-sonuç ilişkisini bozar.<br><b>D) in place of:</b> -in yerine - anlama uymaz.<br><b>E) by means of:</b> Aracılığıyla/yoluyla - isim öbeğiyle doğrudan neden bildirmek için "due to" kadar uygun değildir.`
     },
     {
         id: 18,
-        type: "B",
-        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "There is no clear heading on the paper (17)---- justification or motivation. (18)----, it is easy to be depicted by reading it. Some previous research were quite (19)---- for this research so we can comprehend that this research might open the door for upcoming research, which certainly (20)---- to the existing literature of ABC. The researchers haven't mentioned clearly if their motivation is to supersede previous studies or (21)---- their validity.",
+        type: 'B',
+        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Caffeine is widely consumed across the globe primarily (17)---- its well-known stimulant properties on the central nervous system. Upon entering the bloodstream, it readily crosses the blood-brain barrier and binds to adenosine receptors, temporarily blocking the neuromodulator that induces drowsiness. This biochemical mechanism triggers an increase in alertness and enhances overall cognitive (18)---- during complex tasks. (19)----, excessive or ill-timed intake can disrupt circadian rhythms and impair deep restorative sleep. Scientific studies indicate that individuals who consume high doses late in the evening (20)---- from chronic sleep fragmentation and increased daytime fatigue over time. To avoid these adverse physiological outcomes, health experts advise individuals to (21)---- their daily intake and abstain from caffeinated beverages in the hours leading up to bedtime.",
         text: "",
-        options: { A: "Despite", B: "Further", C: "Nevertheless", D: "As well as", E: "On the contrary" },
-        correct: "C",
-        dict: { "depicted": "tasvir edilmiş", "clear": "açık", "reading": "okuma" },
-        explanation: `<b>✅ Doğru Cevap: C) Nevertheless</b><br><b>📌 Sebep:</b> Zıtlık. Başlık yok, <i>buna rağmen</i> anlaşılması kolay.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Despite:</b> Rağmen - edat, cümle başlamaz.<br><b>B) Further:</b> Ayrıca - ekleme yapar.<br><b>D) As well as:</b> Yanı sıra - ekleme yapar.<br><b>E) On the contrary:</b> Aksine - tam zıtlık, 'başlık yok' ile 'anlaşılır' tam zıt değil.`
+        options: { A: "deterioration", B: "performance", C: "reluctance", D: "precaution", E: "deficiency" },
+        correct: "B",
+        dict: { "alertness": "uyanıklık/tetikte olma", "enhance": "artırmak/geliştirmek", "complex": "karmaşık", "performance": "performans/başarım" },
+        explanation: `<b>✅ Doğru Cevap: B) performance</b><br><b>📌 Sebep:</b> "Enhances overall cognitive ----" tamlamasında, uyanıklık artışına paralel olarak <i>bilişsel performansın</i> (cognitive performance) artırıldığı ifade edilmektedir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) deterioration:</b> Kötüleşme/bozulma - "enhances" fiili ile anlamsal olarak çelişir.<br><b>C) reluctance:</b> İsteksizlik - bağlama uymaz.<br><b>D) precaution:</b> Önlem - bilişsel bir beceriyi ifade etmez.<br><b>E) deficiency:</b> Eksiklik/yetersizlik - olumlu etkiyi nitelemez.`
     },
     {
         id: 19,
-        type: "B",
-        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "There is no clear heading on the paper (17)---- justification or motivation. (18)----, it is easy to be depicted by reading it. Some previous research were quite (19)---- for this research so we can comprehend that this research might open the door for upcoming research, which certainly (20)---- to the existing literature of ABC. The researchers haven't mentioned clearly if their motivation is to supersede previous studies or (21)---- their validity.",
+        type: 'B',
+        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Caffeine is widely consumed across the globe primarily (17)---- its well-known stimulant properties on the central nervous system. Upon entering the bloodstream, it readily crosses the blood-brain barrier and binds to adenosine receptors, temporarily blocking the neuromodulator that induces drowsiness. This biochemical mechanism triggers an increase in alertness and enhances overall cognitive (18)---- during complex tasks. (19)----, excessive or ill-timed intake can disrupt circadian rhythms and impair deep restorative sleep. Scientific studies indicate that individuals who consume high doses late in the evening (20)---- from chronic sleep fragmentation and increased daytime fatigue over time. To avoid these adverse physiological outcomes, health experts advise individuals to (21)---- their daily intake and abstain from caffeinated beverages in the hours leading up to bedtime.",
         text: "",
-        options: { A: "arduous", B: "remote", C: "distinctive", D: "beneficial", E: "seductive" },
-        correct: "D",
-        dict: { "comprehend": "kavramak", "previous": "önceki", "research": "araştırma" },
-        explanation: `<b>✅ Doğru Cevap: D) beneficial</b><br><b>📌 Sebep:</b> Faydalı. Önceki araştırmalar bu çalışma için oldukça <i>faydalıydı</i>.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) arduous:</b> Zahmetli - olumsuz anlam.<br><b>B) remote:</b> Uzak - fiziksel/soyut uzaklık.<br><b>C) distinctive:</b> Ayırt edici - farklılık belirtir.<br><b>E) seductive:</b> Baştan çıkarıcı - olumsuz anlam.`
+        options: { A: "Therefore", B: "However", C: "Furthermore", D: "Similarly", E: "That is" },
+        correct: "B",
+        dict: { "excessive": "aşırı", "disrupt": "bozmak/aksatmak", "circadian rhythm": "biyolojik ritim/24 saatlik döngü", "impair": "zarar vermek/zayıflatmak" },
+        explanation: `<b>✅ Doğru Cevap: B) However</b><br><b>📌 Sebep:</b> Önceki cümlede kafeinin odaklanma ve performansı artırması (olumlu) anlatılırken, bu cümlede aşırı kullanımın uykuyu ve biyolojik ritmi bozması (olumsuz) ele alınmıştır. İki bağımsız fikir arasındaki zıtlığı <b>However</b> sağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Therefore:</b> Bu nedenle - sebep-sonuç bağlar.<br><b>C) Furthermore:</b> Dahası/ayrıca - aynı yönde ek bilgi verir.<br><b>D) Similarly:</b> Benzer şekilde - benzerlik kurar.<br><b>E) That is:</b> Yani/başka bir deyişle - açıklama yapar.`
     },
     {
         id: 20,
-        type: "B",
-        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "There is no clear heading on the paper (17)---- justification or motivation. (18)----, it is easy to be depicted by reading it. Some previous research were quite (19)---- for this research so we can comprehend that this research might open the door for upcoming research, which certainly (20)---- to the existing literature of ABC. The researchers haven't mentioned clearly if their motivation is to supersede previous studies or (21)---- their validity.",
+        type: 'B',
+        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Caffeine is widely consumed across the globe primarily (17)---- its well-known stimulant properties on the central nervous system. Upon entering the bloodstream, it readily crosses the blood-brain barrier and binds to adenosine receptors, temporarily blocking the neuromodulator that induces drowsiness. This biochemical mechanism triggers an increase in alertness and enhances overall cognitive (18)---- during complex tasks. (19)----, excessive or ill-timed intake can disrupt circadian rhythms and impair deep restorative sleep. Scientific studies indicate that individuals who consume high doses late in the evening (20)---- from chronic sleep fragmentation and increased daytime fatigue over time. To avoid these adverse physiological outcomes, health experts advise individuals to (21)---- their daily intake and abstain from caffeinated beverages in the hours leading up to bedtime.",
         text: "",
-        options: { A: "may contribute", B: "contributed", C: "must have contributed", D: "has contributed", E: "will contribute" },
-        correct: "E",
-        dict: { "upcoming": "yaklaşan", "literature": "literatür", "existing": "mevcut" },
-        explanation: `<b>✅ Doğru Cevap: E) will contribute</b><br><b>📌 Sebep:</b> Gelecek araştırmalar (upcoming) literatüre katkı <i>sağlayacaktır</i> (Future Tense).<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) may contribute:</b> Katkı sağlayabilir - kesinlik yok.<br><b>B) contributed:</b> Katkı sağladı - geçmiş, gelecek için uygun değil.<br><b>C) must have contributed:</b> Katkı sağlamış olmalı - geçmiş tahmin.<br><b>D) has contributed:</b> Katkı sağladı - geçmiş, gelecek için uygun değil.`
+        options: { A: "are suffering", B: "suffer", C: "had suffered", D: "will have suffered", E: "were suffering" },
+        correct: "B",
+        dict: { "fragmentation": "bölünme/parçalanma", "fatigue": "yorgunluk/bitkinlik", "suffer from": "-den muzdarip olmak", "over time": "zamanla" },
+        explanation: `<b>✅ Doğru Cevap: B) suffer</b><br><b>📌 Sebep:</b> "Scientific studies indicate that..." ile başlayan ifadede genel bilimsel bir gerçek ve nedensellik kuralı aktarıldığı için Simple Present Tense (<b>suffer</b>) kullanımı esastır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) are suffering:</b> Şimdiki zaman - genel bilimsel olguyu ifade etmekte tercih edilmez.<br><b>C) had suffered:</b> Past Perfect - geçmişte tamamlanmış eylemler için kullanılır.<br><b>D) will have suffered:</b> Future Perfect - gelecekte belirli bir andan önce tamamlanacak durumlar içindir.<br><b>E) were suffering:</b> Past Continuous - geçmiş süreç anlatımına aittir.`
     },
     {
         id: 21,
-        type: "B",
-        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "There is no clear heading on the paper (17)---- justification or motivation. (18)----, it is easy to be depicted by reading it. Some previous research were quite (19)---- for this research so we can comprehend that this research might open the door for upcoming research, which certainly (20)---- to the existing literature of ABC. The researchers haven't mentioned clearly if their motivation is to supersede previous studies or (21)---- their validity.",
+        type: 'B',
+        instruction: "17-21 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Caffeine is widely consumed across the globe primarily (17)---- its well-known stimulant properties on the central nervous system. Upon entering the bloodstream, it readily crosses the blood-brain barrier and binds to adenosine receptors, temporarily blocking the neuromodulator that induces drowsiness. This biochemical mechanism triggers an increase in alertness and enhances overall cognitive (18)---- during complex tasks. (19)----, excessive or ill-timed intake can disrupt circadian rhythms and impair deep restorative sleep. Scientific studies indicate that individuals who consume high doses late in the evening (20)---- from chronic sleep fragmentation and increased daytime fatigue over time. To avoid these adverse physiological outcomes, health experts advise individuals to (21)---- their daily intake and abstain from caffeinated beverages in the hours leading up to bedtime.",
         text: "",
-        options: { A: "ensured", B: "to ensure", C: "to be ensuring", D: "being ensured", E: "having ensured" },
-        correct: "B",
-        dict: { "supersede": "yerine geçmek", "validity": "geçerlilik", "motivation": "motivasyon" },
-        explanation: `<b>✅ Doğru Cevap: B) to ensure</b><br><b>📌 Sebep:</b> Paralel yapı: 'to supersede ... or <i>to ensure</i>'.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) ensured:</b> Sağladı - geçmiş zaman, paralel yapı bozulur.<br><b>C) to be ensuring:</b> Sağlamakta olmak - gereksiz süreklilik.<br><b>D) being ensured:</b> Sağlanmakta olmak - edilgen yapı.<br><b>E) having ensured:</b> Sağlamış olmak - perfect yapı.`
+        options: { A: "cut down on", B: "make up for", C: "look forward to", D: "run out of", E: "bring about" },
+        correct: "A",
+        dict: { "adverse": "olumsuz/zararlı", "abstain from": "-den kaçınmak/uzak durmak", "cut down on": "azaltmak/kısmak", "intake": "alım/tüketim" },
+        explanation: `<b>✅ Doğru Cevap: A) cut down on</b><br><b>📌 Sebep:</b> Paragraftaki "abstain from caffeinated beverages" (kafeinli içeceklerden uzak durmak) ifadesiyle paralel olarak, sağlık uzmanlarının günlük kafein alımını <i>azaltmalarını / kısmalarını</i> (cut down on) önerdiği belirtilmektedir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) make up for:</b> Telafi etmek - bağlama uymaz.<br><b>C) look forward to:</b> Dört gözle beklemek - anlamsızdır.<br><b>D) run out of:</b> Tüketmek/bitmek - tavsiye edilen eylem değildir.<br><b>E) bring about:</b> Sebep olmak/yol açmak - nesneyle tamlama oluşturmaz.`
     },
     {
         id: 22,
-        type: "B",
-        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "A war has been going on in the Western U.S. since June 27, and (22)---- 4,000 separate blazes have destroyed about 1.5 million acres in 14 states, including North and South Dakota, Colorado and Nebraska, as well as Canada. So far this year, 2.1 million acres in the West have been burnt. That (23)---- up to 900,000 more acres than were affected in all of 1984. In California, the hardest-hit state, officials estimate the (24)---- to cost at least $50 million, including the destruction of 184 homes. California Governor George Deukmejian has declared a state of emergency in seven counties. So far, three people have died in California, (25)---- hundreds of fires, both large and small, continue to (26)---- huge devastation.",
+        type: 'B',
+        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Cognitive development in early childhood is deeply reliant (22)---- environmental stimuli and structured social interactions that shape neural architecture. During the formative pre-school years, children continuously assimilate sensory experiences to construct coherent mental models of the world around them. Engaging in cooperative play and language-rich activities significantly enhances their capacity for abstract (23)---- and problem-solving. (24)----, severe environmental deprivation or chronic neglect during these critical neurodevelopmental windows can impair synaptic pruning and delay executive functioning. Developmental psychologists emphasize that unless enriched learning environments (25)---- in early childhood education centres, socio-emotional disparities will widen. Caregivers and educators are thus strongly encouraged to (26)---- stimulating educational strategies that nurture inquisitive minds and foster lifelong cognitive resilience.",
         text: "",
-        options: { A: "more", B: "some", C: "as much as", D: "in short", E: "similarly" },
+        options: { A: "with", B: "upon", C: "about", D: "towards", E: "into" },
         correct: "B",
-        dict: { "blazes": "yangınlar", "acres": "dönüm", "destroyed": "yok etmiş" },
-        explanation: `<b>✅ Doğru Cevap: B) some</b><br><b>📌 Sebep:</b> Rakamlardan önce 'yaklaşık/tahmini' anlamında kullanılır. Some 4000 blazes.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) more:</b> Daha fazla - karşılaştırma belirtir.<br><b>C) as much as:</b> Kadar - miktar karşılaştırması.<br><b>D) in short:</b> Kısacası - özetleme.<br><b>E) similarly:</b> Benzer şekilde - karşılaştırma.`
+        dict: { "reliant": "bağımlı/dayalı", "stimuli": "uyaranlar", "formative": "biçimlendirici/gelişimsel", "assimilate": "özümsemek" },
+        explanation: `<b>✅ Doğru Cevap: B) upon</b><br><b>📌 Sebep:</b> "Reliant" sıfatı nesnesiyle birlikte "reliant on / upon" (bir şeye dayalı/bağımlı olma) kalıbı şeklinde kullanılır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) with:</b> Bağlama uymaz.<br><b>C) about:</b> "Reliant" ile kullanılmaz.<br><b>D) towards:</b> Yönelme anlamı verir, kalıpla uyuşmaz.<br><b>E) into:</b> Hatalı edat kullanımıdır.`
     },
     {
         id: 23,
-        type: "B",
-        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "A war has been going on in the Western U.S. since June 27, and (22)---- 4,000 separate blazes have destroyed about 1.5 million acres in 14 states, including North and South Dakota, Colorado and Nebraska, as well as Canada. So far this year, 2.1 million acres in the West have been burnt. That (23)---- up to 900,000 more acres than were affected in all of 1984. In California, the hardest-hit state, officials estimate the (24)---- to cost at least $50 million, including the destruction of 184 homes. California Governor George Deukmejian has declared a state of emergency in seven counties. So far, three people have died in California, (25)---- hundreds of fires, both large and small, continue to (26)---- huge devastation.",
+        type: 'B',
+        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Cognitive development in early childhood is deeply reliant (22)---- environmental stimuli and structured social interactions that shape neural architecture. During the formative pre-school years, children continuously assimilate sensory experiences to construct coherent mental models of the world around them. Engaging in cooperative play and language-rich activities significantly enhances their capacity for abstract (23)---- and problem-solving. (24)----, severe environmental deprivation or chronic neglect during these critical neurodevelopmental windows can impair synaptic pruning and delay executive functioning. Developmental psychologists emphasize that unless enriched learning environments (25)---- in early childhood education centres, socio-emotional disparities will widen. Caregivers and educators are thus strongly encouraged to (26)---- stimulating educational strategies that nurture inquisitive minds and foster lifelong cognitive resilience.",
         text: "",
-        options: { A: "adds", B: "could add", C: "used to add", D: "may be adding", E: "was to add" },
+        options: { A: "reasoning", B: "suppression", C: "deterioration", D: "reluctance", E: "precaution" },
         correct: "A",
-        dict: { "acres": "dönüm", "affected": "etkilenmiş", "burnt": "yanmış" },
-        explanation: `<b>✅ Doğru Cevap: A) adds</b><br><b>📌 Sebep:</b> 'Adds up to' (toplam ... eder) genel bir matematiksel ifade olduğu için Simple Present.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) could add:</b> Ekleyebilir - olasılık belirtir.<br><b>C) used to add:</b> Eklerdi - geçmiş alışkanlık.<br><b>D) may be adding:</b> Ekliyor olabilir - olasılık ve süreklilik.<br><b>E) was to add:</b> Eklemekti - planlanmış geçmiş.`
+        dict: { "abstract": "soyut", "reasoning": "akıl yürütme/muhakeme", "problem-solving": "problem çözme", "deprivation": "yoksunluk" },
+        explanation: `<b>✅ Doğru Cevap: A) reasoning</b><br><b>📌 Sebep:</b> Cümlede "abstract ---- and problem-solving" tamlamasında bilişsel bir beceri ifade edilmektedir. "Abstract reasoning" (soyut akıl yürütme/muhakeme) akademik bağlamı tam olarak karşılar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) suppression:</b> Baskılama - olumsuz anlam içerir.<br><b>C) deterioration:</b> Kötüleşme/bozulma - "enhances" fiiliyle çelişir.<br><b>D) reluctance:</b> İsteksizlik - bağlama uymaz.<br><b>E) precaution:</b> Önlem - bilişsel beceriyi nitelemez.`
     },
     {
         id: 24,
-        type: "B",
-        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "A war has been going on in the Western U.S. since June 27, and (22)---- 4,000 separate blazes have destroyed about 1.5 million acres in 14 states, including North and South Dakota, Colorado and Nebraska, as well as Canada. So far this year, 2.1 million acres in the West have been burnt. That (23)---- up to 900,000 more acres than were affected in all of 1984. In California, the hardest-hit state, officials estimate the (24)---- to cost at least $50 million, including the destruction of 184 homes. California Governor George Deukmejian has declared a state of emergency in seven counties. So far, three people have died in California, (25)---- hundreds of fires, both large and small, continue to (26)---- huge devastation.",
+        type: 'B',
+        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Cognitive development in early childhood is deeply reliant (22)---- environmental stimuli and structured social interactions that shape neural architecture. During the formative pre-school years, children continuously assimilate sensory experiences to construct coherent mental models of the world around them. Engaging in cooperative play and language-rich activities significantly enhances their capacity for abstract (23)---- and problem-solving. (24)----, severe environmental deprivation or chronic neglect during these critical neurodevelopmental windows can impair synaptic pruning and delay executive functioning. Developmental psychologists emphasize that unless enriched learning environments (25)---- in early childhood education centres, socio-emotional disparities will widen. Caregivers and educators are thus strongly encouraged to (26)---- stimulating educational strategies that nurture inquisitive minds and foster lifelong cognitive resilience.",
         text: "",
-        options: { A: "jeopardy", B: "withdrawal", C: "damage", D: "recognition", E: "acquisition" },
-        correct: "C",
-        dict: { "estimate": "tahmin etmek", "destruction": "yıkım", "cost": "maliyet" },
-        explanation: `<b>✅ Doğru Cevap: C) damage</b><br><b>📌 Sebep:</b> 50 milyon dolarlık maliyet 'hasar' (damage) maliyetidir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) jeopardy:</b> Tehlike - risk durumu.<br><b>B) withdrawal:</b> Çekilme - geri çekilme.<br><b>D) recognition:</b> Tanıma - farkına varma.<br><b>E) acquisition:</b> Edinme - kazanma.`
+        options: { A: "Furthermore", B: "However", C: "Therefore", D: "Consequently", E: "Similarly" },
+        correct: "B",
+        dict: { "synaptic pruning": "sinaptik budanma", "executive functioning": "yürütücü işlevler", "impair": "bozmak/zarar vermek" },
+        explanation: `<b>✅ Doğru Cevap: B) However</b><br><b>📌 Sebep:</b> Önceki cümlede zengin çevrenin ve oyunların bilişsel gelişimi artırması (olumlu), bu cümlede ise çevresel yoksunluğun ve ihmalin beyin gelişimini bozması (olumsuz) anlatıldığı için iki bağımsız cümle arasındaki zıtlığı <b>However</b> sağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) Furthermore:</b> Ek bilgi verir, zıtlığı bağlamaz.<br><b>C) Therefore:</b> Sebep-sonuç bağlar.<br><b>D) Consequently:</b> Sonuç bildirir.<br><b>E) Similarly:</b> Benzerlik kurar.`
     },
     {
         id: 25,
-        type: "B",
-        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "A war has been going on in the Western U.S. since June 27, and (22)---- 4,000 separate blazes have destroyed about 1.5 million acres in 14 states, including North and South Dakota, Colorado and Nebraska, as well as Canada. So far this year, 2.1 million acres in the West have been burnt. That (23)---- up to 900,000 more acres than were affected in all of 1984. In California, the hardest-hit state, officials estimate the (24)---- to cost at least $50 million, including the destruction of 184 homes. California Governor George Deukmejian has declared a state of emergency in seven counties. So far, three people have died in California, (25)---- hundreds of fires, both large and small, continue to (26)---- huge devastation.",
+        type: 'B',
+        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Cognitive development in early childhood is deeply reliant (22)---- environmental stimuli and structured social interactions that shape neural architecture. During the formative pre-school years, children continuously assimilate sensory experiences to construct coherent mental models of the world around them. Engaging in cooperative play and language-rich activities significantly enhances their capacity for abstract (23)---- and problem-solving. (24)----, severe environmental deprivation or chronic neglect during these critical neurodevelopmental windows can impair synaptic pruning and delay executive functioning. Developmental psychologists emphasize that unless enriched learning environments (25)---- in early childhood education centres, socio-emotional disparities will widen. Caregivers and educators are thus strongly encouraged to (26)---- stimulating educational strategies that nurture inquisitive minds and foster lifelong cognitive resilience.",
         text: "",
-        options: { A: "owing to", B: "after", C: "notwithstanding", D: "and", E: "thereby" },
-        correct: "D",
-        dict: { "devastation": "yıkım", "continue": "devam etmek", "died": "öldü" },
-        explanation: `<b>✅ Doğru Cevap: D) and</b><br><b>📌 Sebep:</b> '3 kişi öldü <i>ve</i> yangınlar devam ediyor' şeklinde iki cümleyi bağlar.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) owing to:</b> Nedeniyle - sebep belirtir.<br><b>B) after:</b> Sonra - zaman belirtir.<br><b>C) notwithstanding:</b> Rağmen - zıtlık belirtir.<br><b>E) thereby:</b> Böylece - sonuç belirtir.`
+        options: { A: "had been provided", B: "are provided", C: "were providing", D: "have provided", E: "will be provided" },
+        correct: "B",
+        dict: { "enriched": "zenginleştirilmiş", "disparities": "eşitsizlikler/farklılıklar", "widen": "genişlemek/artmak" },
+        explanation: `<b>✅ Doğru Cevap: B) are provided</b><br><b>📌 Sebep:</b> "Unless" koşul yan cümlesinde ("unless ... will widen" Type 1 yapısı) Present Tense kullanılmalıdır. Cümlenin öznesi olan öğrenme ortamları eylemi uygulayan değil uygulanan konumunda olduğu için Simple Present Passive (<b>are provided</b>) doğru yapıdır.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) had been provided:</b> Past Perfect - zaman uyumunu bozar.<br><b>C) were providing:</b> Etken ve geçmiş zamandır.<br><b>D) have provided:</b> Etken yapıdır (nesnesi yoktur).<br><b>E) will be provided:</b> Koşul (unless/if) bağlaçlı yan cümlelerde doğrudan "will" kullanılmaz.`
     },
     {
         id: 26,
-        type: "B",
-        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",                
-        paragraph: "A war has been going on in the Western U.S. since June 27, and (22)---- 4,000 separate blazes have destroyed about 1.5 million acres in 14 states, including North and South Dakota, Colorado and Nebraska, as well as Canada. So far this year, 2.1 million acres in the West have been burnt. That (23)---- up to 900,000 more acres than were affected in all of 1984. In California, the hardest-hit state, officials estimate the (24)---- to cost at least $50 million, including the destruction of 184 homes. California Governor George Deukmejian has declared a state of emergency in seven counties. So far, three people have died in California, (25)---- hundreds of fires, both large and small, continue to (26)---- huge devastation.",
+        type: 'B',
+        instruction: "22-26 sorularda, aşağıdaki parçada numaralanmış yerlere uygun düşen sözcük ya da ifadeyi bulunuz.",
+        paragraph: "Cognitive development in early childhood is deeply reliant (22)---- environmental stimuli and structured social interactions that shape neural architecture. During the formative pre-school years, children continuously assimilate sensory experiences to construct coherent mental models of the world around them. Engaging in cooperative play and language-rich activities significantly enhances their capacity for abstract (23)---- and problem-solving. (24)----, severe environmental deprivation or chronic neglect during these critical neurodevelopmental windows can impair synaptic pruning and delay executive functioning. Developmental psychologists emphasize that unless enriched learning environments (25)---- in early childhood education centres, socio-emotional disparities will widen. Caregivers and educators are thus strongly encouraged to (26)---- stimulating educational strategies that nurture inquisitive minds and foster lifelong cognitive resilience.",
         text: "",
-        options: { A: "set out", B: "take in", C: "compensate for", D: "stand for", E: "bring about" },
-        correct: "E",
-        dict: { "bring about": "yol açmak", "devastation": "yıkım", "continue": "devam etmek" },
-        explanation: `<b>✅ Doğru Cevap: E) bring about</b><br><b>📌 Sebep:</b> Neden olmak, yol açmak. Büyük yıkıma <i>neden olmaya</i> devam ediyor.<br><br><b>❌ Diğer Seçenekler:</b><br><b>A) set out:</b> Yola çıkmak - başlamak.<br><b>B) take in:</b> İçeri almak - anlamak/kabul etmek.<br><b>C) compensate for:</b> Telafi etmek - karşılamak.<br><b>D) stand for:</b> Temsil etmek - anlamına gelmek.`
+        options: { A: "draw on", B: "call off", C: "run out of", D: "turn down", E: "break into" },
+        correct: "A",
+        dict: { "nurture": "beslemek/geliştirmek", "inquisitive": "meraklı/araştırmacı", "resilience": "dayanıklılık/esneklik", "draw on": "yararlanmak/kullanmak" },
+        explanation: `<b>✅ Doğru Cevap: A) draw on</b><br><b>📌 Sebep:</b> Cümlede eğitimcilerin çocukların bilişsel dayanıklılığını artırmak için uyarıcı eğitim stratejilerinden <i>faydalanmaları / bunları kullanmaları</i> (draw on educational strategies) tavsiye edilmektedir.<br><br><b>❌ Diğer Seçenekler:</b><br><b>B) call off:</b> İptal etmek - bağlama terstir.<br><b>C) run out of:</b> Tükenmek/bitmek - tavsiye edilen eylemle uyuşmaz.<br><b>D) turn down:</b> Reddetmek/geri çevirmek - olumsuzdur.<br><b>E) break into:</b> Zorla girmek/aniden başlamak - uygun değildir.`
     },
     {
         id: 27,
